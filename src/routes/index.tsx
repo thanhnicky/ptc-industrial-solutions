@@ -74,13 +74,14 @@ function Index() {
           <div className="rise-in max-w-2xl">
             <Eyebrow>{CONTACT.brand} — {CONTACT.slogan}</Eyebrow>
             <h1 className="mt-6 text-[2rem] leading-[1.08] font-semibold text-ink sm:text-5xl lg:text-[3.4rem]">
-              PTC sản xuất tủ điện hạ thế &amp; thang máng cáp
-              <span className="block text-primary">cho nhà máy, KCN và dự án công nghiệp</span>
+              Tủ điện hạ thế &amp; thang máng cáp
+              <span className="block text-primary">cho nhà máy, KCN và dự án điện mặt trời</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
-              Thiết kế – sản xuất – thử nghiệm khép kín tại nhà máy 2.700 m², theo IEC 61439-1 &amp; 2
-              và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm trọn gói cho tổng thầu M&amp;E, EPC
-              điện mặt trời và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
+              Thiết kế, sản xuất và thử nghiệm khép kín tại nhà máy 2.700 m² ở TP.HCM theo IEC
+              61439-1 &amp; 2 và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm cả phần tủ và phần
+              dẫn cáp cho tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ hoặc BOQ – nhận báo
+              giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
@@ -96,6 +97,7 @@ function Index() {
                 />
               </a>
             </div>
+
           </div>
 
           <div className="rise-in relative">
