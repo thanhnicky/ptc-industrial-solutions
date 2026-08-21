@@ -35,18 +35,18 @@ export function SectionHeading({
     <div className="mb-10 max-w-3xl">
       {eyebrow ? (
         <p
-          className={`mb-3 text-xs font-semibold tracking-[0.22em] uppercase ${light ? "text-steel-foreground/70" : "text-primary"}`}
+          className={`mb-3 eyebrow ${light ? "text-steel-foreground/70" : "text-primary"}`}
         >
           {eyebrow}
         </p>
       ) : null}
       <h2
-        className={`text-2xl font-bold md:text-3xl ${light ? "text-steel-foreground" : "text-ink"}`}
+        className={`text-2xl font-bold leading-snug md:text-[2.15rem] tracking-tight ${light ? "text-steel-foreground" : "text-ink"}`}
       >
         {title}
       </h2>
       {desc ? (
-        <p className={`mt-4 ${light ? "text-steel-foreground/80" : "text-muted-foreground"}`}>
+        <p className={`mt-3.5 text-[15px] sm:text-[16px] leading-relaxed ${light ? "text-steel-foreground/80" : "text-muted-foreground"}`}>
           {desc}
         </p>
       ) : null}
