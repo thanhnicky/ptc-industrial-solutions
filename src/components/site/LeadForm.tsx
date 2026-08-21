@@ -122,20 +122,21 @@ export function LeadForm({
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Mô tả yêu cầu — khối lượng, quy cách, tiến độ (hoặc gửi bản vẽ / BOQ qua Zalo)</Label>
-          <Textarea className="rounded-none" id="note" name="note" rows={4} />
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Yêu cầu kỹ thuật — khối lượng, quy cách, tiến độ giao hàng</Label>
+          <Textarea className="rounded-none" id="note" name="note" rows={4} placeholder="Ví dụ: 1 tủ MSB 4000A theo IEC 61439-2, 3 tủ DB tầng, 400m thang cáp mạ kẽm nhúng nóng – giao đợt đầu trong 6 tuần." />
         </div>
         <div className="sm:col-span-2">
           <Button type="submit" size="xl" disabled={loading} className="w-full sm:w-auto">
-            {loading ? "Đang gửi…" : "Gửi yêu cầu báo giá"}
+            {loading ? "Đang gửi…" : "Yêu cầu báo giá kỹ thuật"}
           </Button>
         </div>
       </form>
 
       <div className="mt-7 flex flex-wrap items-center gap-3 border-t border-border pt-5">
         <span className="text-sm text-muted-foreground">Đã có bản vẽ hoặc BOQ? Gửi qua Zalo để PTC bóc tách ngay:</span>
-        <ZaloButton label="Gửi bản vẽ / BOQ qua Zalo" size="sm" location={`form-${sourcePage}`} />
+        <ZaloButton label="Gửi BOQ để PTC bóc tách" size="sm" location={`form-${sourcePage}`} />
       </div>
+
     </div>
   );
 }
