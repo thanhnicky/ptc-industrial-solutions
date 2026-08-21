@@ -200,20 +200,21 @@ export const PROJECT_FILTERS = [
 export const AUDIENCES = [
   {
     title: "Tổng thầu cơ điện (M&E)",
-    pain: "Bóc tách BOQ – tiến độ – hồ sơ nghiệm thu",
-    desc: "Kỹ sư PTC bóc tách bản vẽ và BOQ cùng đội kỹ thuật của bạn, làm rõ điểm thiếu trước khi báo giá, phát hành shop drawing để duyệt và giao cuốn chiếu theo từng block. Biên bản thử nghiệm, CO/CQ và bản vẽ hoàn công chuẩn bị sẵn để nghiệm thu không phải làm lại.",
+    pain: "Bóc tách BOQ · shop drawing · tiến độ giao",
+    desc: "Kỹ sư PTC bóc tách bản vẽ và BOQ cùng đội kỹ thuật của bạn, làm rõ điểm thiếu trước khi chốt giá, phát hành shop drawing để duyệt và cam kết mốc giao theo từng block thi công. Biên bản thử nghiệm, CO/CQ và bản vẽ hoàn công sẵn sàng ngay khi nghiệm thu.",
   },
   {
     title: "Chủ đầu tư nhà máy & KCN",
-    pain: "Chất lượng ổn định – một đầu mối chịu trách nhiệm",
-    desc: "Tủ điện và thang máng cáp từ cùng một nhà máy: một hợp đồng, một đầu mối bảo hành, quy cách và chất lượng giống nhau giữa các đợt giao hàng. Hồ sơ vật tư được lưu để tra cứu khi vận hành, sửa chữa hay mở rộng dây chuyền về sau.",
+    pain: "Một đầu mối · chất lượng ổn định · hồ sơ đầy đủ",
+    desc: "Tủ điện và thang máng cáp từ cùng một nhà máy: một hợp đồng, một đầu mối bảo hành, quy cách đồng nhất giữa các đợt giao. Hồ sơ vật tư được lưu trữ để tra cứu khi vận hành, thay thế hoặc mở rộng dây chuyền.",
   },
   {
     title: "EPC điện mặt trời",
-    pain: "Lắp ngoài trời – phản hồi kỹ thuật nhanh",
-    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của đơn vị điện lực; máng cáp mạ kẽm nhúng nóng chịu nắng gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày và giao hàng bám theo lịch lắp đặt trên mái.",
+    pain: "Đúng thông số inverter · phản hồi trong ngày",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của điện lực; máng cáp mạ kẽm nhúng nóng chịu bức xạ và gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày, giao hàng bám lịch lắp đặt trên mái.",
   },
 ];
+
 
 export const CAPABILITIES = [
   {
