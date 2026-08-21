@@ -79,22 +79,22 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
               Thiết kế – sản xuất – thử nghiệm khép kín tại nhà máy 2.700 m², theo IEC 61439-1 &amp; 2
-              và ISO 9001:2015. Một đầu mối làm việc với tổng thầu M&amp;E, EPC solar và chủ đầu tư.
-              Báo giá kỹ thuật trong 24h làm việc.
+              và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm trọn gói cho tổng thầu M&amp;E, EPC
+              điện mặt trời và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
               <CallButton size="xl" location="hero" />
-              <Link
-                to="/nang-luc-san-xuat"
+              <a
+                href="#bao-gia"
                 className="group inline-flex items-center gap-1.5 px-1 text-sm font-semibold text-ink"
               >
-                Xem năng lực sản xuất
+                Yêu cầu báo giá kỹ thuật
                 <ArrowRight
                   className="size-4 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
                 />
-              </Link>
+              </a>
             </div>
           </div>
 
