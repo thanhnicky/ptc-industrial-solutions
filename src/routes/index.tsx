@@ -30,9 +30,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/" },
+      { property: "og:url", content: "https://tudienptc.vn/" },
     ],
-    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://tudienptc.vn/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -81,7 +81,7 @@ function Index() {
               Thiết kế – sản xuất – thử nghiệm tại nhà máy 2.700 m² ở TP.HCM theo IEC 61439-1 &amp; 2
               và ISO 9001:2015. Một đầu mối chịu trách nhiệm cả phần tủ và phần dẫn cáp, phối hợp
               bản vẽ, hồ sơ và tiến độ cùng tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ
-              hoặc BOQ – nhận báo giá kỹ thuật trong 24 giờ làm việc.
+              hoặc BOQ – nhận báo giá kỹ thuật nhanh chóng từ chuyên gia PTC.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />

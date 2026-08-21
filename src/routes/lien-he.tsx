@@ -6,9 +6,9 @@ import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import { CONTACT } from "@/lib/site";
 
-const TITLE = "Liên hệ PTC – hotline 0909 363 937, báo giá 24h";
+const TITLE = "Liên hệ PTC – hotline 0836 97 77 99, báo giá 24h";
 const DESC =
-  "Liên hệ Công ty Cổ phần Tủ bảng điện PTC: hotline 0909 363 937, Zalo, email info@ptcswitchboard.vn. Nhà máy tại Linh Xuân, TP.HCM.";
+  "Liên hệ Công ty Cổ phần Tủ bảng điện PTC: hotline 0836 97 77 99, Zalo, email hi@tudienptc.vn. Nhà máy tại Linh Xuân, TP.HCM.";
 
 export const Route = createFileRoute("/lien-he")({
   head: () => ({
@@ -19,9 +19,9 @@ export const Route = createFileRoute("/lien-he")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/lien-he" },
+      { property: "og:url", content: "https://tudienptc.vn/lien-he" },
     ],
-    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/lien-he" }],
+    links: [{ rel: "canonical", href: "https://tudienptc.vn/lien-he" }],
   }),
   component: Page,
 });
@@ -46,10 +46,6 @@ function Page() {
               <div>
                 <dt className="font-semibold text-ink">Hotline kỹ thuật (24/7)</dt>
                 <dd className="text-muted-foreground">{CONTACT.hotline}</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-ink">Kinh doanh dự án</dt>
-                <dd className="text-muted-foreground">{CONTACT.sales.join(" · ")}</dd>
               </div>
               <div>
                 <dt className="font-semibold text-ink">Email</dt>

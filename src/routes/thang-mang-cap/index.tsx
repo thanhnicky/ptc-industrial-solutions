@@ -10,7 +10,7 @@ const TITLE = "Thang máng cáp mạ kẽm nhúng nóng, sơn tĩnh điện | PT
 const DESC =
   "PTC sản xuất thang cáp, máng cáp, khay cáp và phụ kiện theo kích thước dự án: mạ kẽm nhúng nóng, mạ điện phân hoặc sơn tĩnh điện, giao hàng đúng tiến độ.";
 
-export const Route = createFileRoute("/thang-mang-cap")({
+export const Route = createFileRoute("/thang-mang-cap/")({
   head: () => ({
     meta: [
       { title: TITLE },
@@ -19,9 +19,9 @@ export const Route = createFileRoute("/thang-mang-cap")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/thang-mang-cap" },
+      { property: "og:url", content: "https://tudienptc.vn/thang-mang-cap" },
     ],
-    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/thang-mang-cap" }],
+    links: [{ rel: "canonical", href: "https://tudienptc.vn/thang-mang-cap" }],
   }),
   component: Page,
 });

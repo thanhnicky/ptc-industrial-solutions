@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
-  <url><loc>https://ptc-industrial-solutions.lovable.app/</loc><priority>1.0</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/tu-dien-cong-nghiep</loc><priority>0.9</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/thang-mang-cap</loc><priority>0.9</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/du-an</loc><priority>0.8</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/nang-luc-san-xuat</loc><priority>0.7</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/tieu-chuan-chat-luong</loc><priority>0.7</priority></url>
-  <url><loc>https://ptc-industrial-solutions.lovable.app/lien-he</loc><priority>0.8</priority></url>
+  <!-- CORE PAGES -->
+  <url><loc>https://tudienptc.vn/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://tudienptc.vn/gioi-thieu-ptc</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/nang-luc-san-xuat</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tieu-chuan-chat-luong</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/quy-trinh-san-xuat-tu-dien</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/bao-hanh-ho-tro-ky-thuat</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/du-an</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/lien-he</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- PRODUCT HUBS -->
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+
+  <!-- ELECTRICAL PANEL PRODUCTS -->
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-dien-tong-msb</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-phan-phoi-sdb</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-dien-db</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-mcc</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-bien-tan-vsd</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-hoa-dong-bo</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-dien-ngoai-troi</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-dien-solar</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-cap-nguon-cong-trinh</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tram-kios</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-dieu-khien</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tu-dien-cong-nghiep/tu-cong-to-composite</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- CABLE MANAGEMENT PRODUCTS -->
+  <url><loc>https://tudienptc.vn/thang-mang-cap/mang-cap</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/khay-cap</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/thang-cap</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/san-thao-tac</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/phu-kien-thang-mang-cap</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/mang-cap-ma-kem-nhung-nong</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/khay-cap-ma-kem-nhung-nong</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/thang-mang-cap/thang-cap-ma-kem-nhung-nong</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+
+  <!-- SOLUTIONS / USE-CASES -->
+  <url><loc>https://tudienptc.vn/giai-phap/tu-dien-cho-nha-may</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/giai-phap/tu-dien-cho-nha-thau-me</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/giai-phap/tu-dien-cho-du-an-solar</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/giai-phap/tu-dien-cho-toa-nha</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/giai-phap/thang-mang-cap-cho-nha-xuong</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/giai-phap/gia-cong-theo-ban-ve-va-boq</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- COMMERCIAL INTENT PAGES -->
+  <url><loc>https://tudienptc.vn/gui-ban-ve-boq</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/bao-gia-tu-dien-cong-nghiep</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/bao-gia-thang-mang-cap</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/tai-catalogue</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/yeu-cau-tu-van-ky-thuat</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- KNOWLEDGE HUB -->
+  <url><loc>https://tudienptc.vn/kien-thuc</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/tu-dien-cong-nghiep-la-gi</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/cach-chon-tu-dien-msb</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/tieu-chuan-iec-61439-la-gi</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/phan-biet-msb-sdb-db</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/tu-mcc-la-gi</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/tu-hoa-dong-bo-la-gi</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/tu-dien-ngoai-troi-ip55-ip65</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/thang-mang-cap-la-gi</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/phan-biet-thang-cap-khay-cap-mang-cap</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/ma-kem-nhung-nong-va-ma-kem-dien-phan</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/ho-so-can-co-de-bao-gia-tu-dien</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tudienptc.vn/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
 </urlset>

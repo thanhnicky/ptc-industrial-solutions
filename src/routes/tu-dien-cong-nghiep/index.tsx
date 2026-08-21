@@ -10,7 +10,7 @@ const TITLE = "Tủ điện công nghiệp – MSB, MCC, ATS, tủ solar | PTC";
 const DESC =
   "Sản xuất tủ điện hạ thế theo IEC 61439: tủ MSB/MDB, tủ DB, tủ tụ bù, ATS, MCC, VSD và tủ điện cho hệ solar. Thử nghiệm routine test tại xưởng PTC.";
 
-export const Route = createFileRoute("/tu-dien-cong-nghiep")({
+export const Route = createFileRoute("/tu-dien-cong-nghiep/")({
   head: () => ({
     meta: [
       { title: TITLE },
@@ -19,9 +19,9 @@ export const Route = createFileRoute("/tu-dien-cong-nghiep")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/tu-dien-cong-nghiep" },
+      { property: "og:url", content: "https://tudienptc.vn/tu-dien-cong-nghiep" },
     ],
-    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/tu-dien-cong-nghiep" }],
+    links: [{ rel: "canonical", href: "https://tudienptc.vn/tu-dien-cong-nghiep" }],
   }),
   component: Page,
 });

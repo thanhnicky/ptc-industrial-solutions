@@ -9,10 +9,10 @@ import { track } from "@/lib/analytics";
 import { ZaloButton } from "./ZaloButton";
 
 const NEEDS = [
-  { value: "tu-dien", label: "Tủ điện" },
-  { value: "thang-mang-cap", label: "Thang máng cáp" },
-  { value: "ca-hai", label: "Cả hai" },
-  { value: "khac", label: "Khác" },
+  { value: "tu-dien", label: "Tủ điện công nghiệp (MSB, DB, MCC, VSD, Solar...)" },
+  { value: "thang-mang-cap", label: "Thang máng cáp (Máng, Khay, Thang, Phụ kiện...)" },
+  { value: "ca-hai", label: "Trọn gói cả Tủ điện & Thang máng cáp" },
+  { value: "khac", label: "Gia công cơ khí theo bản vẽ / Khác" },
 ];
 
 export function LeadForm({
@@ -24,11 +24,32 @@ export function LeadForm({
 }) {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
+
+  function handleFocus() {
+    if (!hasStarted) {
+      setHasStarted(true);
+      track("lead_form_start", {
+        page_path: window.location.pathname,
+        source_context: sourcePage,
+        lead_type: "form_consultation",
+      });
+    }
+  }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
+
+    // Anti-spam honeypot
+    const honeypot = String(data.get("website_hp") ?? "").trim();
+    if (honeypot) {
+      // Bot detected - silently ignore
+      setDone(true);
+      return;
+    }
+
     const payload = {
       full_name: String(data.get("full_name") ?? "").trim(),
       company: String(data.get("company") ?? "").trim(),
@@ -40,75 +61,97 @@ export function LeadForm({
     };
 
     if (!payload.full_name || !payload.company || !payload.phone) {
-      toast.error("Vui lòng nhập họ tên, công ty và số điện thoại.");
+      toast.error("Vui lòng nhập đầy đủ họ tên, công ty và số điện thoại.");
       return;
     }
+
+    track("lead_form_submit", {
+      page_path: window.location.pathname,
+      source_context: sourcePage,
+      product_category: payload.need as never,
+      lead_type: "form_consultation",
+    });
 
     setLoading(true);
     const { error } = await supabase.from("leads").insert(payload);
     setLoading(false);
 
     if (error) {
-      toast.error("Gửi yêu cầu chưa thành công. Vui lòng gọi hotline hoặc nhắn Zalo.");
+      toast.error("Gửi yêu cầu chưa thành công. Quý khách vui lòng nhắn trực tiếp qua Zalo hoặc Hotline.");
       return;
     }
 
-    track("form_submit", { form: "lead", need: payload.need, page: sourcePage });
+    track("lead_form_success", {
+      page_path: window.location.pathname,
+      source_context: sourcePage,
+      product_category: payload.need as never,
+      lead_type: "form_consultation",
+    });
+
     setDone(true);
     form.reset();
-    toast.success("Cảm ơn, chúng tôi sẽ liên hệ trong 24h.");
+    toast.success("Cảm ơn quý khách! Kỹ sư PTC sẽ liên hệ trao đổi phương án kỹ thuật sớm nhất.");
   }
 
   return (
-    <div className="border border-border bg-card p-6 md:p-9">
+    <div className="border border-border bg-card p-6 md:p-9 shadow-xs">
       <div className="mb-7 border-b border-border pb-5">
-        <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật</p>
+        <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật & Báo giá</p>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Kỹ sư dự án phản hồi trong 24 giờ làm việc kèm phương án cấu hình, tiêu chuẩn áp dụng và
-          tiến độ giao hàng. Thông tin dự án được bảo mật.
+          Kỹ sư PTC sẽ bóc tách sơ đồ nguyên lý, kiểm tra thông số dòng Icw/cấp IP và phản hồi phương án cấu hình tối ưu chi phí cho dự án. Mọi thông tin dự án được bảo mật tuyệt đối.
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3">
-          <ZaloButton label="Nhắn Zalo gửi bản vẽ" location={`form-${sourcePage}`} />
-          <span className="text-[13px] text-muted-foreground">
-            Ưu tiên phản hồi nhanh khi gửi kèm bản vẽ hoặc BOQ qua Zalo.
+          <ZaloButton label="Nhắn Zalo gửi bản vẽ ngay" location={`form-${sourcePage}`} />
+          <span className="text-xs text-muted-foreground">
+            Khuyến nghị gửi file CAD/PDF hoặc BOQ qua Zalo để được xử lý nhanh nhất.
           </span>
         </div>
       </div>
 
       {done ? (
-        <div className="mb-6 border border-border bg-secondary px-5 py-4">
-          <p className="font-semibold text-ink">Đã nhận yêu cầu. PTC sẽ liên hệ trong 24 giờ làm việc.</p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Cần xử lý gấp? Gửi bản vẽ hoặc BOQ qua Zalo để kỹ sư PTC bóc tách ngay.
+        <div className="mb-6 border border-primary/30 bg-primary/[0.04] p-5">
+          <p className="font-semibold text-ink">Đã tiếp nhận yêu cầu thành công!</p>
+          <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+            Kỹ sư phụ trách dự án của PTC sẽ liên hệ lại với quý khách trong thời gian sớm nhất. Nếu cần xử lý bản vẽ khẩn cấp, quý khách vui lòng nhắn qua Zalo kỹ thuật.
           </p>
         </div>
       ) : null}
 
-      <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6">
+      <form onSubmit={onSubmit} onFocus={handleFocus} className="grid gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6">
+        {/* Honeypot field (hidden from real users) */}
+        <input
+          type="text"
+          name="website_hp"
+          tabIndex={-1}
+          autoComplete="off"
+          style={{ display: "none", position: "absolute", left: "-9999px" }}
+          aria-hidden="true"
+        />
+
         <div className="grid gap-2">
           <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="full_name">
             Họ và tên <span className="text-destructive">*</span>
           </Label>
-          <Input className="h-11 rounded-none" id="full_name" name="full_name" required autoComplete="name" />
+          <Input className="h-11 rounded-none" id="full_name" name="full_name" required autoComplete="name" placeholder="Nguyễn Văn A" />
         </div>
         <div className="grid gap-2">
           <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="company">
-            Công ty / đơn vị <span className="text-destructive">*</span>
+            Công ty / Nhà thầu / Chủ đầu tư <span className="text-destructive">*</span>
           </Label>
-          <Input className="h-11 rounded-none" id="company" name="company" required autoComplete="organization" />
+          <Input className="h-11 rounded-none" id="company" name="company" required autoComplete="organization" placeholder="Tên công ty hoặc dự án" />
         </div>
         <div className="grid gap-2">
           <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="phone">
-            Số điện thoại <span className="text-destructive">*</span>
+            Số điện thoại liên hệ <span className="text-destructive">*</span>
           </Label>
-          <Input className="h-11 rounded-none" id="phone" name="phone" type="tel" required autoComplete="tel" />
+          <Input className="h-11 rounded-none" id="phone" name="phone" type="tel" required autoComplete="tel" placeholder="090x xxx xxx" />
         </div>
         <div className="grid gap-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="email">Email</Label>
-          <Input className="h-11 rounded-none" id="email" name="email" type="email" autoComplete="email" />
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="email">Email công ty (Nhận báo giá)</Label>
+          <Input className="h-11 rounded-none" id="email" name="email" type="email" autoComplete="email" placeholder="email@company.vn" />
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="need">Hạng mục cần báo giá</Label>
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="need">Hạng mục cần báo giá / Tư vấn</Label>
           <select
             id="need"
             name="need"
@@ -123,16 +166,17 @@ export function LeadForm({
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Ghi chú yêu cầu kỹ thuật</Label>
-          <Textarea className="rounded-none" id="note" name="note" rows={4} placeholder="Ví dụ: 1 tủ MSB 4000A theo IEC 61439-2, 3 tủ DB tầng, 400m thang cáp mạ kẽm nhúng nóng – giao đợt đầu trong 6 tuần." />
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Mô tả thông số kỹ thuật & mốc tiến độ</Label>
+          <Textarea className="rounded-none text-sm" id="note" name="note" rows={4} placeholder="Ví dụ: 1 tủ MSB 3200A Form 3b thiết bị Schneider, 300m máng cáp 400x100 mạ kẽm nhúng nóng – cần giao đợt 1 trong 4 tuần tại KCN VSIP." />
         </div>
         <div className="sm:col-span-2">
           <Button type="submit" size="xl" disabled={loading} className="w-full sm:w-auto">
-            {loading ? "Đang gửi…" : "Gửi yêu cầu báo giá"}
+            {loading ? "Đang gửi yêu cầu…" : "Gửi yêu cầu kỹ thuật & Báo giá"}
           </Button>
         </div>
       </form>
     </div>
   );
 }
+
 
