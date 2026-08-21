@@ -180,8 +180,9 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hệ thiết bị điện đồng bộ cho dự án công nghiệp
+            Hai hạng mục, một nhà máy chịu trách nhiệm
           </h2>
+
 
           <div className="mt-12 space-y-px">
             {PRODUCT_LINES.map((p, i) => (
