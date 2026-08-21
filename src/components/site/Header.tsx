@@ -11,40 +11,39 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between gap-4 md:h-20">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
+      <div className="container-wide grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-6 md:h-[72px] xl:grid-cols-[auto_1fr_auto]">
         <Logo />
 
-        <nav className="hidden items-center gap-5 xl:flex" aria-label="Điều hướng chính">
-          {NAV.map((item) => (
+        <nav className="hidden justify-center gap-7 xl:flex" aria-label="Điều hướng chính">
+          {NAV.filter((n) => n.to !== "/").map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
-              activeProps={{ className: "text-primary" }}
-              className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+              activeProps={{ className: "text-ink after:scale-x-100" }}
+              className="relative py-1 text-[13px] font-medium text-muted-foreground transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-primary after:transition-transform hover:text-ink hover:after:scale-x-100"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <LanguageToggle className="hidden sm:flex" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <LanguageToggle className="hidden lg:flex" />
           <a
             href={`tel:${CONTACT.hotlineRaw}`}
             onClick={() => track("click_call", { location: "header" })}
-            className="hidden items-center gap-2 text-sm font-semibold text-ink lg:flex"
+            className="hidden items-center gap-2 text-[13px] font-semibold text-ink transition-colors hover:text-primary lg:flex"
           >
-            <Phone className="size-4 text-primary" aria-hidden="true" />
+            <Phone className="size-3.5 text-primary" aria-hidden="true" />
             {CONTACT.hotline}
           </a>
-          <ZaloButton label="Zalo" location="header" className="hidden sm:inline-flex" />
+          <ZaloButton label="Nhắn Zalo" size="sm" location="header" className="hidden sm:inline-flex" />
           <button
             type="button"
             aria-label={open ? "Đóng menu" : "Mở menu"}
             onClick={() => setOpen((v) => !v)}
-            className="grid size-10 place-items-center border border-border xl:hidden"
+            className="grid size-10 shrink-0 place-items-center border border-border text-ink xl:hidden"
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
@@ -53,19 +52,19 @@ export function Header() {
 
       {open ? (
         <nav className="border-t border-border bg-background xl:hidden" aria-label="Điều hướng di động">
-          <div className="container-page flex flex-col py-2">
+          <div className="container-wide flex flex-col py-2">
             {NAV.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="border-b border-border py-3 text-sm font-medium last:border-0"
+                className="border-b border-border/70 py-3.5 text-sm font-medium text-ink last:border-0"
               >
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center gap-3 py-3">
-              <ZaloButton label="Nhắn Zalo" location="mobile-menu" />
+            <div className="flex items-center gap-3 py-4">
+              <ZaloButton label="Nhắn Zalo gửi bản vẽ" location="mobile-menu" />
               <LanguageToggle />
             </div>
           </div>
