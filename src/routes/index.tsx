@@ -358,15 +358,18 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Dự án khắt khe về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
+                Năng lực được kiểm chứng qua dự án thực tế
               </h2>
-
             </div>
-            <Button asChild variant="outline">
-              <Link to="/du-an">
-                Xem hồ sơ năng lực dự án <ArrowRight aria-hidden="true" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap gap-3">
+              <ZaloButton label="Gửi BOQ để PTC bóc tách" location="projects" />
+              <Button asChild variant="outline">
+                <Link to="/du-an">
+                  Xem thêm dự án <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
