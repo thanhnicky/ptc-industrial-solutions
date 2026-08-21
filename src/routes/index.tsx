@@ -151,12 +151,13 @@ function Index() {
           <div>
             <Eyebrow>Năng lực nền tảng</Eyebrow>
             <h2 className="mt-5 max-w-md text-2xl leading-snug md:text-[2rem]">
-              Đội ngũ hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
+              Hơn 10 năm đóng tủ bảng điện cho nhà máy và dự án FDI
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Nhà máy khép kín tại Linh Xuân, TP.HCM: cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm
-              trên cùng một dây chuyền – đã phục vụ các dự án nhà máy, KCN và solar quy mô MWp.
+              Cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm trên cùng một dây chuyền tại Linh Xuân,
+              TP.HCM – đã phục vụ nhà máy sản xuất, khu công nghiệp và các dự án solar quy mô MWp.
             </p>
+
           </div>
           <dl className="grid grid-cols-2 border-t border-l border-border">
             {STATS.map((s) => (
