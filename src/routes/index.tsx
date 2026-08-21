@@ -461,20 +461,21 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Tiếp nhận yêu cầu kỹ thuật cho dự án của bạn
+              Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi single-line diagram, BOQ hoặc mô tả hạng mục. Kỹ sư PTC bóc tách khối lượng, xác
-              nhận cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng bám sát kế
-              hoạch thi công trong 24h làm việc.
+              Gửi single-line diagram, BOQ hoặc yêu cầu kỹ thuật của hạng mục. Kỹ sư PTC bóc tách
+              khối lượng, chốt cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng
+              bám kế hoạch thi công trong 24h làm việc.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
               <CallButton size="xl" location="final-cta" variant="outlineLight" />
             </div>
             <p className="mt-5 text-xs text-steel-foreground/45">
-              Ưu tiên phản hồi nhanh cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC solar.
+              Ưu tiên xử lý cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC điện mặt trời.
             </p>
+
             <dl className="mt-10 grid gap-5 border-t border-steel-foreground/12 pt-8 text-sm sm:grid-cols-2">
               <div>
                 <dt className="text-steel-foreground/45">Hotline kỹ thuật 24/7</dt>
