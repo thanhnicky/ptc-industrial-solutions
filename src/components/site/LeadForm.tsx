@@ -66,13 +66,14 @@ export function LeadForm({
           <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             Kỹ sư dự án phản hồi trong 24h làm việc kèm phương án cấu hình, tiêu chuẩn áp dụng và
-            tiến độ giao hàng. Hồ sơ dự án được bảo mật.
+            tiến độ giao hàng. Thông tin dự án được bảo mật.
           </p>
         </div>
         <span className="hidden shrink-0 font-display text-xs font-semibold tracking-widest text-muted-foreground sm:block">
           01 / 02
         </span>
       </div>
+
       {done ? (
         <div className="rule-top -mx-6 -mt-6 mb-6 bg-secondary px-6 py-4 md:-mx-8 md:-mt-8 md:px-8">
           <p className="font-semibold text-ink">Cảm ơn, chúng tôi sẽ liên hệ trong 24h.</p>
