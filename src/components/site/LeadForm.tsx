@@ -65,7 +65,7 @@ export function LeadForm({
         <div>
           <p className="eyebrow text-primary">Phiếu yêu cầu kỹ thuật</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Kỹ sư PTC phản hồi trong 24h làm việc. Thông tin dự án được bảo mật.
+            Kỹ sư PTC phản hồi trong 24h làm việc kèm phương án cấu hình và tiến độ. Thông tin dự án được bảo mật.
           </p>
         </div>
         <span className="hidden shrink-0 font-display text-xs font-semibold tracking-widest text-muted-foreground sm:block">
@@ -84,13 +84,13 @@ export function LeadForm({
       <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6">
         <div className="grid gap-2">
           <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="full_name">
-            Họ tên <span className="text-destructive">*</span>
+            Họ và tên <span className="text-destructive">*</span>
           </Label>
           <Input className="h-11 rounded-none" id="full_name" name="full_name" required autoComplete="name" />
         </div>
         <div className="grid gap-2">
           <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="company">
-            Công ty <span className="text-destructive">*</span>
+            Công ty / đơn vị <span className="text-destructive">*</span>
           </Label>
           <Input className="h-11 rounded-none" id="company" name="company" required autoComplete="organization" />
         </div>
@@ -120,19 +120,19 @@ export function LeadForm({
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Mô tả kỹ thuật (khối lượng, quy cách, tiến độ mong muốn)</Label>
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Mô tả yêu cầu — khối lượng, quy cách, tiến độ (hoặc gửi bản vẽ / BOQ qua Zalo)</Label>
           <Textarea className="rounded-none" id="note" name="note" rows={4} />
         </div>
         <div className="sm:col-span-2">
           <Button type="submit" size="xl" disabled={loading} className="w-full sm:w-auto">
-            {loading ? "Đang gửi…" : "Yêu cầu báo giá kỹ thuật"}
+            {loading ? "Đang gửi…" : "Gửi yêu cầu báo giá"}
           </Button>
         </div>
       </form>
 
       <div className="mt-7 flex flex-wrap items-center gap-3 border-t border-border pt-5">
-        <span className="text-sm text-muted-foreground">Có bản vẽ sẵn? Gửi trực tiếp qua Zalo để xử lý nhanh hơn:</span>
-        <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="sm" location={`form-${sourcePage}`} />
+        <span className="text-sm text-muted-foreground">Đã có bản vẽ hoặc BOQ? Gửi qua Zalo để PTC bóc tách ngay:</span>
+        <ZaloButton label="Gửi bản vẽ / BOQ qua Zalo" size="sm" location={`form-${sourcePage}`} />
       </div>
     </div>
   );
