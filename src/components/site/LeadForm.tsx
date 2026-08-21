@@ -60,7 +60,7 @@ export function LeadForm({
   }
 
   return (
-    <div className="border border-border bg-card p-6 md:p-8">
+    <div className="bg-card p-6 md:p-9">
       {done ? (
         <div className="rule-top -mx-6 -mt-6 mb-6 bg-secondary px-6 py-4 md:-mx-8 md:-mt-8 md:px-8">
           <p className="font-semibold text-ink">Cảm ơn, chúng tôi sẽ liên hệ trong 24h.</p>
@@ -114,14 +114,14 @@ export function LeadForm({
         </div>
         <div className="sm:col-span-2">
           <Button type="submit" size="lg" disabled={loading} className="w-full sm:w-auto">
-            {loading ? "Đang gửi…" : "Gửi yêu cầu"}
+            {loading ? "Đang gửi…" : "Yêu cầu báo giá kỹ thuật"}
           </Button>
         </div>
       </form>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-border pt-5">
-        <span className="text-sm text-muted-foreground">Hoặc liên hệ nhanh qua Zalo:</span>
-        <ZaloButton label="Nhắn Zalo" location={`form-${sourcePage}`} />
+      <div className="mt-7 flex flex-wrap items-center gap-3 border-t border-border pt-5">
+        <span className="text-sm text-muted-foreground">Cần gấp? Gửi bản vẽ trực tiếp qua Zalo:</span>
+        <ZaloButton label="Nhắn Zalo" size="sm" location={`form-${sourcePage}`} />
       </div>
     </div>
   );

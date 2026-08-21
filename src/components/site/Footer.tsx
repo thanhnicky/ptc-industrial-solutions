@@ -5,28 +5,35 @@ import { track } from "@/lib/analytics";
 export function Footer() {
   return (
     <footer className="bg-steel text-steel-foreground">
-      <div className="container-page grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
-        <div>
+      <div className="container-wide grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_0.8fr_1fr] lg:gap-10">
+        <div className="max-w-sm">
           <div className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-xs bg-primary font-bold text-primary-foreground">
+            <span className="grid h-9 w-9 place-items-center bg-primary font-display text-[13px] font-bold text-primary-foreground">
               PTC
             </span>
-            <span className="text-sm font-bold tracking-[0.18em]">SWITCHBOARD</span>
+            <span className="font-display text-sm font-semibold tracking-[0.2em]">SWITCHBOARD</span>
           </div>
-          <p className="mt-4 text-sm text-steel-foreground/75">
-            {CONTACT.companyVi} – sản xuất tủ bảng điện hạ thế và hệ thang máng cáp cho nhà máy, khu
-            công nghiệp và điện mặt trời.
+          <p className="mt-5 text-sm leading-relaxed text-steel-foreground/65">
+            {CONTACT.companyVi} sản xuất tủ bảng điện hạ thế và hệ thang máng cáp cho nhà máy, khu
+            công nghiệp và dự án điện mặt trời – thiết kế, sản xuất và thử nghiệm tại nhà máy 2.700 m²
+            ở TP.HCM.
           </p>
-          <p className="mt-4 text-sm font-semibold">{CONTACT.slogan}</p>
+          <p className="mt-6 font-display text-sm font-semibold tracking-wide">{CONTACT.slogan}</p>
         </div>
 
         <div>
-          <h2 className="text-sm font-bold tracking-wider uppercase">Thông tin liên hệ</h2>
-          <ul className="mt-4 space-y-3 text-sm text-steel-foreground/80">
-            <li>Trụ sở: {CONTACT.headOffice}</li>
-            <li>Nhà máy: {CONTACT.factory}</li>
+          <h2 className="eyebrow text-steel-foreground/50">Liên hệ</h2>
+          <ul className="mt-5 space-y-3.5 text-sm text-steel-foreground/70">
             <li>
-              Hotline 24/7:{" "}
+              <span className="block text-steel-foreground/45">Trụ sở</span>
+              {CONTACT.headOffice}
+            </li>
+            <li>
+              <span className="block text-steel-foreground/45">Nhà máy</span>
+              {CONTACT.factory}
+            </li>
+            <li>
+              <span className="block text-steel-foreground/45">Hotline kỹ thuật 24/7</span>
               <a
                 className="font-semibold text-steel-foreground hover:underline"
                 href={`tel:${CONTACT.hotlineRaw}`}
@@ -36,19 +43,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              Zalo:{" "}
-              <a
-                className="font-semibold text-steel-foreground hover:underline"
-                href={CONTACT.zalo}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => track("click_zalo", { location: "footer" })}
-              >
-                {CONTACT.hotline}
-              </a>
-            </li>
-            <li>
-              Email:{" "}
+              <span className="block text-steel-foreground/45">Email</span>
               <a className="hover:underline" href={`mailto:${CONTACT.email}`}>
                 {CONTACT.email}
               </a>
@@ -57,11 +52,11 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold tracking-wider uppercase">Liên kết nhanh</h2>
-          <ul className="mt-4 space-y-2 text-sm text-steel-foreground/80">
+          <h2 className="eyebrow text-steel-foreground/50">Liên kết</h2>
+          <ul className="mt-5 space-y-2.5 text-sm text-steel-foreground/70">
             {NAV.filter((n) => n.to !== "/").map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="hover:text-steel-foreground hover:underline">
+                <Link to={item.to} className="transition-colors hover:text-steel-foreground">
                   {item.label}
                 </Link>
               </li>
@@ -70,8 +65,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold tracking-wider uppercase">Hồ sơ năng lực</h2>
-          <p className="mt-4 text-sm text-steel-foreground/80">
+          <h2 className="eyebrow text-steel-foreground/50">Hồ sơ năng lực</h2>
+          <p className="mt-5 text-sm leading-relaxed text-steel-foreground/70">
             Hồ sơ năng lực, catalog tủ điện và catalog thang máng cáp (PDF) được gửi qua Zalo hoặc
             email theo yêu cầu.
           </p>
@@ -80,16 +75,17 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("download_catalog", { location: "footer" })}
-            className="mt-4 inline-flex h-10 items-center border border-steel-foreground/40 px-4 text-sm font-semibold hover:bg-steel-foreground/10"
+            className="mt-5 inline-flex h-10 items-center border border-steel-foreground/25 px-4 text-sm font-semibold transition-colors hover:bg-steel-foreground/10"
           >
             Nhận hồ sơ năng lực
           </a>
         </div>
       </div>
 
-      <div className="border-t border-steel-foreground/15">
-        <div className="container-page py-5 text-xs text-steel-foreground/65">
-          © 2026 Công ty Cổ phần Tủ điện PTC. All rights reserved.
+      <div className="border-t border-steel-foreground/10">
+        <div className="container-wide flex flex-wrap justify-between gap-2 py-5 text-xs text-steel-foreground/45">
+          <span>© 2026 {CONTACT.companyVi}</span>
+          <span>Tủ điện công nghiệp · Thang máng cáp · TP. Hồ Chí Minh</span>
         </div>
       </div>
     </footer>
