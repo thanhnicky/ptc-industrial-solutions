@@ -238,8 +238,9 @@ function Index() {
             <div>
               <Eyebrow>Khách hàng</Eyebrow>
               <h2 className="mt-5 max-w-sm text-2xl leading-snug md:text-[2rem]">
-                Đáp ứng đúng yêu cầu của từng mô hình dự án
+                Hiểu áp lực của từng vai trò trong dự án
               </h2>
+
             </div>
             <div className="divide-y divide-border border-t border-border">
               {AUDIENCES.map((a) => (
