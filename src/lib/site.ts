@@ -27,18 +27,18 @@ export const NAV = [
 
 /** Trust strip ngay dưới hero. */
 export const TRUST_STRIP = [
-  "Nhà máy 2.700 m² tại TP.HCM",
-  "Thiết kế – sản xuất – thử nghiệm",
-  "IEC 61439-1 & 2 · ISO 9001:2015",
+  "Nhà máy khép kín 2.700 m² tại TP.HCM",
+  "Thiết kế – sản xuất – thử nghiệm nội bộ",
+  "Sản xuất theo IEC 61439 · ISO 9001:2015",
   "Báo giá kỹ thuật trong 24h làm việc",
-  "Trọn gói tủ điện và thang máng cáp từ một nhà cung cấp",
+  "Một đầu mối cho tủ điện và thang máng cáp",
 ];
 
 /** Khối số liệu năng lực. */
 export const STATS = [
-  { value: "2.700", unit: "m²", label: "Nhà máy tại Linh Xuân, TP.HCM" },
-  { value: "10+", unit: "năm", label: "Nền tảng kinh nghiệm của đội ngũ kỹ sư" },
-  { value: "50", unit: "nhân sự", label: "Kỹ sư thiết kế, QC và công nhân lành nghề" },
+  { value: "2.700", unit: "m²", label: "Nhà máy khép kín tại Linh Xuân, TP.HCM" },
+  { value: "10+", unit: "năm", label: "Kinh nghiệm tủ bảng điện của đội ngũ kỹ sư" },
+  { value: "50", unit: "nhân sự", label: "Kỹ sư thiết kế, QC và thợ cơ khí – điện lành nghề" },
   { value: "63", unit: "tỉnh thành", label: "Phạm vi giao hàng và hỗ trợ hiện trường" },
 ];
 
@@ -48,12 +48,12 @@ export const PRODUCT_LINES = [
     index: "01",
     kicker: "Tủ bảng điện hạ thế",
     title: "Tủ điện công nghiệp",
-    desc: "Đóng tủ theo single-line diagram của dự án: vỏ cơ khí sản xuất tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt theo đúng chủng loại được duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ để nghiệm thu một lần.",
+    desc: "Đóng tủ đúng single-line diagram được duyệt: vỏ cơ khí gia công tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt đúng chủng loại phê duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ đủ để nghiệm thu một lần.",
     items: [
-      "Tủ MSB / MDB phân phối tổng đến 6300A",
-      "Tủ DB tầng, tủ tụ bù, tủ ATS – chuyển nguồn",
-      "Tủ MCC điều khiển động cơ, tủ VSD biến tần",
-      "Tủ điện solar: DC combiner, AC, tủ hòa lưới",
+      "Tủ phân phối tổng MSB / MDB đến 6300A",
+      "Tủ phân phối tầng DB, tủ tụ bù, tủ ATS chuyển nguồn",
+      "Tủ điều khiển động cơ (MCC), tủ biến tần (VSD)",
+      "Tủ điện mặt trời: DC combiner, tủ AC, tủ hòa lưới",
     ],
   },
   {
@@ -61,11 +61,11 @@ export const PRODUCT_LINES = [
     index: "02",
     kicker: "Hệ dẫn cáp",
     title: "Thang máng cáp",
-    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước đặt riêng của tuyến cáp, xử lý bề mặt theo môi trường lắp đặt và giao kèm đủ phụ kiện. Đi cùng phần tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – giảm rủi ro giao diện giữa hai gói thầu.",
+    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước riêng của từng tuyến cáp, xử lý bề mặt theo môi trường lắp đặt, giao đủ phụ kiện đồng bộ. Đi cùng gói tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – loại bỏ rủi ro giao diện giữa hai nhà cung cấp.",
     items: [
       "Thang cáp, máng cáp, khay cáp, trunking",
-      "Mạ kẽm nhúng nóng / mạ điện phân / inox",
-      "Sơn tĩnh điện theo mã màu của dự án",
+      "Mạ kẽm nhúng nóng, mạ điện phân hoặc inox",
+      "Sơn tĩnh điện theo mã màu quy định của dự án",
       "Phụ kiện đồng bộ: co, tê, giảm, nắp, ty treo",
     ],
   },
@@ -75,24 +75,25 @@ export const PROCESS = [
   {
     step: "01",
     title: "Gửi bản vẽ, BOQ hoặc yêu cầu kỹ thuật",
-    desc: "Qua Zalo hoặc email. Chỉ cần single-line diagram, bảng khối lượng hoặc mô tả sơ bộ – kỹ sư PTC sẽ hỏi lại phần còn thiếu.",
+    desc: "Qua Zalo hoặc email. Chỉ cần single-line diagram, bảng khối lượng hoặc mô tả sơ bộ – kỹ sư PTC sẽ làm rõ phần còn thiếu.",
   },
   {
     step: "02",
-    title: "Bóc tách và đề xuất cấu hình",
-    desc: "Kiểm tra dòng định mức, Icw, IP, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án tối ưu chi phí mà vẫn đúng tiêu chuẩn.",
+    title: "Bóc tách và chốt cấu hình",
+    desc: "Rà soát dòng định mức, Icw, cấp bảo vệ IP, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án tối ưu chi phí mà vẫn đúng tiêu chuẩn.",
   },
   {
     step: "03",
-    title: "Báo giá kỹ thuật và tiến độ",
-    desc: "Báo giá trong 24h làm việc kèm bản vẽ bố trí, danh mục vật tư và mốc giao hàng theo từng block thi công.",
+    title: "Báo giá kỹ thuật kèm tiến độ",
+    desc: "Phản hồi trong 24h làm việc kèm bản vẽ bố trí, danh mục vật tư và mốc giao hàng theo từng block thi công.",
   },
   {
     step: "04",
-    title: "Sản xuất – nghiệm thu – bàn giao",
-    desc: "Routine test tại xưởng, mời chủ đầu tư kiểm tra trước khi xuất hàng, bàn giao kèm hồ sơ kỹ thuật và biên bản nghiệm thu.",
+    title: "Sản xuất – thử nghiệm – bàn giao",
+    desc: "Routine test tại xưởng, mời chủ đầu tư chứng kiến trước khi xuất hàng, bàn giao kèm hồ sơ kỹ thuật và biên bản nghiệm thu.",
   },
 ];
+
 
 export const STANDARDS = [
   { code: "IEC 61439-1 & 2", desc: "Tiêu chuẩn thiết kế và thử nghiệm tủ đóng cắt hạ thế." },
