@@ -74,13 +74,14 @@ function Index() {
           <div className="rise-in max-w-2xl">
             <Eyebrow>{CONTACT.brand} — {CONTACT.slogan}</Eyebrow>
             <h1 className="mt-6 text-[2rem] leading-[1.08] font-semibold text-ink sm:text-5xl lg:text-[3.4rem]">
-              PTC sản xuất tủ điện hạ thế &amp; thang máng cáp
-              <span className="block text-primary">cho nhà máy, KCN và dự án công nghiệp</span>
+              Tủ điện hạ thế &amp; thang máng cáp
+              <span className="block text-primary">cho nhà máy, KCN và dự án điện mặt trời</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
-              Thiết kế – sản xuất – thử nghiệm khép kín tại nhà máy 2.700 m², theo IEC 61439-1 &amp; 2
-              và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm trọn gói cho tổng thầu M&amp;E, EPC
-              điện mặt trời và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
+              Thiết kế, sản xuất và thử nghiệm khép kín tại nhà máy 2.700 m² ở TP.HCM theo IEC
+              61439-1 &amp; 2 và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm cả phần tủ và phần
+              dẫn cáp cho tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ hoặc BOQ – nhận báo
+              giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
@@ -96,6 +97,7 @@ function Index() {
                 />
               </a>
             </div>
+
           </div>
 
           <div className="rise-in relative">
@@ -149,12 +151,13 @@ function Index() {
           <div>
             <Eyebrow>Năng lực nền tảng</Eyebrow>
             <h2 className="mt-5 max-w-md text-2xl leading-snug md:text-[2rem]">
-              Đội ngũ hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
+              Hơn 10 năm đóng tủ bảng điện cho nhà máy và dự án FDI
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Nhà máy khép kín tại Linh Xuân, TP.HCM: cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm
-              trên cùng một dây chuyền – đã phục vụ các dự án nhà máy, KCN và solar quy mô MWp.
+              Cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm trên cùng một dây chuyền tại Linh Xuân,
+              TP.HCM – đã phục vụ nhà máy sản xuất, khu công nghiệp và các dự án solar quy mô MWp.
             </p>
+
           </div>
           <dl className="grid grid-cols-2 border-t border-l border-border">
             {STATS.map((s) => (
@@ -177,8 +180,9 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hệ thiết bị điện đồng bộ cho dự án công nghiệp
+            Hai hạng mục, một nhà máy chịu trách nhiệm
           </h2>
+
 
           <div className="mt-12 space-y-px">
             {PRODUCT_LINES.map((p, i) => (
@@ -234,8 +238,9 @@ function Index() {
             <div>
               <Eyebrow>Khách hàng</Eyebrow>
               <h2 className="mt-5 max-w-sm text-2xl leading-snug md:text-[2rem]">
-                Đáp ứng đúng yêu cầu của từng mô hình dự án
+                Hiểu áp lực của từng vai trò trong dự án
               </h2>
+
             </div>
             <div className="divide-y divide-border border-t border-border">
               {AUDIENCES.map((a) => (
@@ -311,8 +316,9 @@ function Index() {
             <div>
               <Eyebrow>Quy trình làm việc</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Từ bản vẽ, BOQ đến báo giá kỹ thuật trong 24h làm việc
+                Từ bản vẽ và BOQ đến báo giá kỹ thuật trong 24h
               </h2>
+
             </div>
             <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="lg" location="process" />
           </div>
@@ -336,8 +342,9 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Dự án yêu cầu cao về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
+                Dự án khắt khe về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
               </h2>
+
             </div>
             <Button asChild variant="outline">
               <Link to="/du-an">
@@ -454,20 +461,21 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Tiếp nhận yêu cầu kỹ thuật cho dự án của bạn
+              Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi single-line diagram, BOQ hoặc mô tả hạng mục. Kỹ sư PTC bóc tách khối lượng, xác
-              nhận cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng bám sát kế
-              hoạch thi công trong 24h làm việc.
+              Gửi single-line diagram, BOQ hoặc yêu cầu kỹ thuật của hạng mục. Kỹ sư PTC bóc tách
+              khối lượng, chốt cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng
+              bám kế hoạch thi công trong 24h làm việc.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
               <CallButton size="xl" location="final-cta" variant="outlineLight" />
             </div>
             <p className="mt-5 text-xs text-steel-foreground/45">
-              Ưu tiên phản hồi nhanh cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC solar.
+              Ưu tiên xử lý cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC điện mặt trời.
             </p>
+
             <dl className="mt-10 grid gap-5 border-t border-steel-foreground/12 pt-8 text-sm sm:grid-cols-2">
               <div>
                 <dt className="text-steel-foreground/45">Hotline kỹ thuật 24/7</dt>

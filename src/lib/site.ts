@@ -27,18 +27,18 @@ export const NAV = [
 
 /** Trust strip ngay dưới hero. */
 export const TRUST_STRIP = [
-  "Nhà máy 2.700 m² tại TP.HCM",
-  "Thiết kế – sản xuất – thử nghiệm",
-  "IEC 61439-1 & 2 · ISO 9001:2015",
+  "Nhà máy khép kín 2.700 m² tại TP.HCM",
+  "Thiết kế – sản xuất – thử nghiệm nội bộ",
+  "Sản xuất theo IEC 61439 · ISO 9001:2015",
   "Báo giá kỹ thuật trong 24h làm việc",
-  "Trọn gói tủ điện và thang máng cáp từ một nhà cung cấp",
+  "Một đầu mối cho tủ điện và thang máng cáp",
 ];
 
 /** Khối số liệu năng lực. */
 export const STATS = [
-  { value: "2.700", unit: "m²", label: "Nhà máy tại Linh Xuân, TP.HCM" },
-  { value: "10+", unit: "năm", label: "Nền tảng kinh nghiệm của đội ngũ kỹ sư" },
-  { value: "50", unit: "nhân sự", label: "Kỹ sư thiết kế, QC và công nhân lành nghề" },
+  { value: "2.700", unit: "m²", label: "Nhà máy khép kín tại Linh Xuân, TP.HCM" },
+  { value: "10+", unit: "năm", label: "Kinh nghiệm tủ bảng điện của đội ngũ kỹ sư" },
+  { value: "50", unit: "nhân sự", label: "Kỹ sư thiết kế, QC và thợ cơ khí – điện lành nghề" },
   { value: "63", unit: "tỉnh thành", label: "Phạm vi giao hàng và hỗ trợ hiện trường" },
 ];
 
@@ -48,12 +48,12 @@ export const PRODUCT_LINES = [
     index: "01",
     kicker: "Tủ bảng điện hạ thế",
     title: "Tủ điện công nghiệp",
-    desc: "Đóng tủ theo single-line diagram của dự án: vỏ cơ khí sản xuất tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt theo đúng chủng loại được duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ để nghiệm thu một lần.",
+    desc: "Đóng tủ đúng single-line diagram được duyệt: vỏ cơ khí gia công tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt đúng chủng loại phê duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ đủ để nghiệm thu một lần.",
     items: [
-      "Tủ MSB / MDB phân phối tổng đến 6300A",
-      "Tủ DB tầng, tủ tụ bù, tủ ATS – chuyển nguồn",
-      "Tủ MCC điều khiển động cơ, tủ VSD biến tần",
-      "Tủ điện solar: DC combiner, AC, tủ hòa lưới",
+      "Tủ phân phối tổng MSB / MDB đến 6300A",
+      "Tủ phân phối tầng DB, tủ tụ bù, tủ ATS chuyển nguồn",
+      "Tủ điều khiển động cơ (MCC), tủ biến tần (VSD)",
+      "Tủ điện mặt trời: DC combiner, tủ AC, tủ hòa lưới",
     ],
   },
   {
@@ -61,11 +61,11 @@ export const PRODUCT_LINES = [
     index: "02",
     kicker: "Hệ dẫn cáp",
     title: "Thang máng cáp",
-    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước đặt riêng của tuyến cáp, xử lý bề mặt theo môi trường lắp đặt và giao kèm đủ phụ kiện. Đi cùng phần tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – giảm rủi ro giao diện giữa hai gói thầu.",
+    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước riêng của từng tuyến cáp, xử lý bề mặt theo môi trường lắp đặt, giao đủ phụ kiện đồng bộ. Đi cùng gói tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – loại bỏ rủi ro giao diện giữa hai nhà cung cấp.",
     items: [
       "Thang cáp, máng cáp, khay cáp, trunking",
-      "Mạ kẽm nhúng nóng / mạ điện phân / inox",
-      "Sơn tĩnh điện theo mã màu của dự án",
+      "Mạ kẽm nhúng nóng, mạ điện phân hoặc inox",
+      "Sơn tĩnh điện theo mã màu quy định của dự án",
       "Phụ kiện đồng bộ: co, tê, giảm, nắp, ty treo",
     ],
   },
@@ -75,24 +75,25 @@ export const PROCESS = [
   {
     step: "01",
     title: "Gửi bản vẽ, BOQ hoặc yêu cầu kỹ thuật",
-    desc: "Qua Zalo hoặc email. Chỉ cần single-line diagram, bảng khối lượng hoặc mô tả sơ bộ – kỹ sư PTC sẽ hỏi lại phần còn thiếu.",
+    desc: "Qua Zalo hoặc email. Chỉ cần single-line diagram, bảng khối lượng hoặc mô tả sơ bộ – kỹ sư PTC sẽ làm rõ phần còn thiếu.",
   },
   {
     step: "02",
-    title: "Bóc tách và đề xuất cấu hình",
-    desc: "Kiểm tra dòng định mức, Icw, IP, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án tối ưu chi phí mà vẫn đúng tiêu chuẩn.",
+    title: "Bóc tách và chốt cấu hình",
+    desc: "Rà soát dòng định mức, Icw, cấp bảo vệ IP, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án tối ưu chi phí mà vẫn đúng tiêu chuẩn.",
   },
   {
     step: "03",
-    title: "Báo giá kỹ thuật và tiến độ",
-    desc: "Báo giá trong 24h làm việc kèm bản vẽ bố trí, danh mục vật tư và mốc giao hàng theo từng block thi công.",
+    title: "Báo giá kỹ thuật kèm tiến độ",
+    desc: "Phản hồi trong 24h làm việc kèm bản vẽ bố trí, danh mục vật tư và mốc giao hàng theo từng block thi công.",
   },
   {
     step: "04",
-    title: "Sản xuất – nghiệm thu – bàn giao",
-    desc: "Routine test tại xưởng, mời chủ đầu tư kiểm tra trước khi xuất hàng, bàn giao kèm hồ sơ kỹ thuật và biên bản nghiệm thu.",
+    title: "Sản xuất – thử nghiệm – bàn giao",
+    desc: "Routine test tại xưởng, mời chủ đầu tư chứng kiến trước khi xuất hàng, bàn giao kèm hồ sơ kỹ thuật và biên bản nghiệm thu.",
   },
 ];
+
 
 export const STANDARDS = [
   { code: "IEC 61439-1 & 2", desc: "Tiêu chuẩn thiết kế và thử nghiệm tủ đóng cắt hạ thế." },
@@ -117,7 +118,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     name: "Nhà máy phân bón Ong Biển",
-    desc: "Cung cấp tủ phân phối tổng, tủ điều khiển động cơ, hệ thang máng cáp toàn nhà máy và tủ điện cho hệ điện mặt trời mái nhà 960 kWp.",
+    desc: "Cung cấp trọn gói tủ phân phối tổng, tủ điều khiển động cơ, toàn bộ hệ thang máng cáp nhà máy và tủ điện cho hệ điện mặt trời mái nhà 960 kWp – một đầu mối cho cả phần tủ và phần dẫn cáp.",
     image: "plant",
     tags: ["tu-dien", "thang-mang-cap", "solar"],
     scope: "Tủ MSB, tủ MCC, thang máng cáp toàn nhà máy, tủ điện ĐMTMN 960 kWp",
@@ -125,7 +126,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ĐMTMN KCN Phú Mỹ 1 – 1.460 kWp",
-    desc: "Tủ DC, tủ AC, tủ hòa lưới và hệ máng cáp mạ kẽm nhúng nóng cho dự án điện mặt trời mái nhà 1.460 kWp trong khu công nghiệp.",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng cấu hình inverter, kèm máng cáp mạ kẽm nhúng nóng cho môi trường mái nhà xưởng. Giao theo từng phân khu để không chặn tiến độ lắp panel.",
     image: "solar",
     tags: ["tu-dien", "solar", "thang-mang-cap"],
     scope: "Tủ DC / AC / hòa lưới, máng cáp mạ kẽm nhúng nóng",
@@ -133,7 +134,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Kho vận DPL",
-    desc: "Tủ MSB, tủ DB tầng và hệ khay cáp – máng cáp cho khu kho vận, đáp ứng tiến độ lắp đặt cuốn chiếu theo từng block.",
+    desc: "Tủ MSB, tủ DB tầng và hệ khay – máng cáp cho khu kho vận, giao cuốn chiếu theo từng block để bám tiến độ lắp đặt của tổng thầu M&E.",
     image: "warehouse",
     tags: ["tu-dien", "thang-mang-cap"],
     scope: "Tủ MSB, tủ DB tầng, khay cáp và máng cáp",
@@ -141,7 +142,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Nhà máy Hải Đức",
-    desc: "Thiết kế – sản xuất tủ phân phối chính, tủ tụ bù và tủ điều khiển cho dây chuyền sản xuất, thử nghiệm routine test tại xưởng PTC.",
+    desc: "Thiết kế và sản xuất tủ phân phối chính, tủ tụ bù và tủ điều khiển dây chuyền; routine test tại xưởng PTC trước khi xuất hàng, bàn giao kèm hồ sơ nghiệm thu.",
     image: "switchboard",
     tags: ["tu-dien"],
     scope: "Tủ phân phối chính, tủ tụ bù, tủ điều khiển dây chuyền",
@@ -149,12 +150,13 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Xưởng gạch Tuynel",
-    desc: "Tủ điều khiển động cơ, tủ VSD cho hệ băng tải – quạt lò và hệ thang cáp chịu môi trường nhiệt độ cao.",
+    desc: "Tủ điều khiển động cơ (MCC) và tủ biến tần (VSD) cho hệ băng tải – quạt lò, kèm thang cáp xử lý bề mặt cho khu vực nhiệt độ cao, bụi công nghiệp.",
     image: "cabletray",
     tags: ["tu-dien", "thang-mang-cap"],
-    scope: "Tủ MCC, tủ VSD, thang cáp môi trường nhiệt độ cao",
+    scope: "Tủ MCC, tủ VSD, thang cáp khu vực nhiệt độ cao",
     client: "Chủ đầu tư sản xuất vật liệu xây dựng",
   },
+
   {
     name: "Lexus – showroom & xưởng dịch vụ",
     desc: "Tủ phân phối tổng, tủ DB khu vực và hệ máng cáp sơn tĩnh điện cho showroom và xưởng dịch vụ, yêu cầu cao về thẩm mỹ lắp đặt.",
@@ -199,20 +201,21 @@ export const PROJECT_FILTERS = [
 export const AUDIENCES = [
   {
     title: "Tổng thầu cơ điện (M&E)",
-    pain: "Bóc tách BOQ – tiến độ – hồ sơ nghiệm thu",
-    desc: "Kỹ sư PTC bóc tách bản vẽ và BOQ cùng đội kỹ thuật của bạn, làm rõ điểm thiếu trước khi báo giá, phát hành shop drawing để duyệt và giao cuốn chiếu theo từng block. Biên bản thử nghiệm, CO/CQ và bản vẽ hoàn công chuẩn bị sẵn để nghiệm thu không phải làm lại.",
+    pain: "Bóc tách BOQ · shop drawing · tiến độ giao",
+    desc: "Kỹ sư PTC bóc tách bản vẽ và BOQ cùng đội kỹ thuật của bạn, làm rõ điểm thiếu trước khi chốt giá, phát hành shop drawing để duyệt và cam kết mốc giao theo từng block thi công. Biên bản thử nghiệm, CO/CQ và bản vẽ hoàn công sẵn sàng ngay khi nghiệm thu.",
   },
   {
     title: "Chủ đầu tư nhà máy & KCN",
-    pain: "Chất lượng ổn định – một đầu mối chịu trách nhiệm",
-    desc: "Tủ điện và thang máng cáp từ cùng một nhà máy: một hợp đồng, một đầu mối bảo hành, quy cách và chất lượng giống nhau giữa các đợt giao hàng. Hồ sơ vật tư được lưu để tra cứu khi vận hành, sửa chữa hay mở rộng dây chuyền về sau.",
+    pain: "Một đầu mối · chất lượng ổn định · hồ sơ đầy đủ",
+    desc: "Tủ điện và thang máng cáp từ cùng một nhà máy: một hợp đồng, một đầu mối bảo hành, quy cách đồng nhất giữa các đợt giao. Hồ sơ vật tư được lưu trữ để tra cứu khi vận hành, thay thế hoặc mở rộng dây chuyền.",
   },
   {
     title: "EPC điện mặt trời",
-    pain: "Lắp ngoài trời – phản hồi kỹ thuật nhanh",
-    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của đơn vị điện lực; máng cáp mạ kẽm nhúng nóng chịu nắng gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày và giao hàng bám theo lịch lắp đặt trên mái.",
+    pain: "Đúng thông số inverter · phản hồi trong ngày",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của điện lực; máng cáp mạ kẽm nhúng nóng chịu bức xạ và gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày, giao hàng bám lịch lắp đặt trên mái.",
   },
 ];
+
 
 export const CAPABILITIES = [
   {
