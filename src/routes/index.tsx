@@ -478,22 +478,28 @@ function Index() {
       <section id="bao-gia" className="bg-steel text-steel-foreground">
         <div className="container-wide grid gap-12 py-16 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:py-24">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <Eyebrow light>Liên hệ</Eyebrow>
+            <Eyebrow light>Tiếp nhận yêu cầu kỹ thuật</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
               Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi single-line diagram, BOQ hoặc yêu cầu kỹ thuật của hạng mục. Kỹ sư PTC bóc tách
-              khối lượng, chốt cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng
-              bám kế hoạch thi công trong 24h làm việc.
+              Gửi bản vẽ, BOQ hoặc thông tin hạng mục. Đội ngũ PTC sẽ phản hồi để hỗ trợ cấu hình,
+              bóc tách, báo giá và tiến độ phù hợp với dự án.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
-              <CallButton size="xl" location="final-cta" variant="outlineLight" />
+              <a
+                href={`tel:${CONTACT.hotlineRaw}`}
+                className="inline-flex items-center gap-2 text-sm text-steel-foreground/60 transition-colors hover:text-steel-foreground"
+              >
+                <Phone className="size-3.5" aria-hidden="true" />
+                Gọi hotline kỹ thuật · {CONTACT.hotline}
+              </a>
             </div>
             <p className="mt-5 text-xs text-steel-foreground/45">
-              Ưu tiên xử lý cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC điện mặt trời.
+              Ưu tiên phản hồi nhanh khi Quý khách gửi kèm bản vẽ hoặc BOQ qua Zalo.
             </p>
+
 
             <dl className="mt-10 grid gap-5 border-t border-steel-foreground/12 pt-8 text-sm sm:grid-cols-2">
               <div>
