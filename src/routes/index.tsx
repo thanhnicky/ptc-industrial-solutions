@@ -342,8 +342,9 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Dự án yêu cầu cao về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
+                Dự án khắt khe về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
               </h2>
+
             </div>
             <Button asChild variant="outline">
               <Link to="/du-an">
