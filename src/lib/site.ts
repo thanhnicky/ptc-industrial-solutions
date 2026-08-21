@@ -27,10 +27,10 @@ export const NAV = [
 
 /** Trust strip ngay dưới hero. */
 export const TRUST_STRIP = [
-  "Nhà máy 2.700 m² – TP.HCM",
-  "IEC 61439-1 & 2",
-  "ISO 9001:2015",
-  "Báo giá kỹ thuật trong 24h",
+  "Nhà máy 2.700 m² tại TP.HCM",
+  "Thiết kế – sản xuất – thử nghiệm",
+  "IEC 61439-1 & 2 · ISO 9001:2015",
+  "Báo giá kỹ thuật trong 24h làm việc",
   "Một đầu mối: tủ điện + thang máng cáp",
 ];
 
@@ -48,7 +48,7 @@ export const PRODUCT_LINES = [
     index: "01",
     kicker: "Tủ bảng điện hạ thế",
     title: "Tủ điện công nghiệp",
-    desc: "Thiết kế theo single-line diagram của dự án, đóng tủ trên vỏ cơ khí PTC, thanh cái đồng tính toán theo dòng định mức và thử nghiệm routine test trước khi xuất xưởng.",
+    desc: "Đóng tủ theo single-line diagram của dự án: vỏ cơ khí sản xuất tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt theo đúng chủng loại được duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ để nghiệm thu một lần.",
     items: [
       "Tủ MSB / MDB phân phối tổng đến 6300A",
       "Tủ DB tầng, tủ tụ bù, tủ ATS – chuyển nguồn",
@@ -61,7 +61,7 @@ export const PRODUCT_LINES = [
     index: "02",
     kicker: "Hệ dẫn cáp",
     title: "Thang máng cáp",
-    desc: "Cán – đột – chấn trên dây chuyền cơ khí của PTC, xử lý bề mặt theo môi trường lắp đặt, đồng bộ phụ kiện để thi công nhanh và gọn tại công trường.",
+    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước đặt riêng của tuyến cáp, xử lý bề mặt theo môi trường lắp đặt và giao kèm đủ phụ kiện. Đi cùng phần tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – giảm rủi ro giao diện giữa hai gói thầu.",
     items: [
       "Thang cáp, máng cáp, khay cáp, trunking",
       "Mạ kẽm nhúng nóng / mạ điện phân / inox",
@@ -199,18 +199,18 @@ export const PROJECT_FILTERS = [
 export const AUDIENCES = [
   {
     title: "Tổng thầu cơ điện (M&E)",
-    pain: "Áp lực tiến độ và hồ sơ",
-    desc: "PTC bóc tách bản vẽ cùng đội kỹ thuật của bạn, chốt cấu hình nhanh và giao hàng cuốn chiếu theo từng block. Hồ sơ thử nghiệm, CO/CQ và bản vẽ hoàn công được chuẩn bị đồng bộ để nghiệm thu không phải làm lại.",
+    pain: "Bóc tách BOQ – tiến độ – hồ sơ nghiệm thu",
+    desc: "Kỹ sư PTC bóc tách bản vẽ và BOQ cùng đội kỹ thuật của bạn, làm rõ điểm thiếu trước khi báo giá, phát hành shop drawing để duyệt và giao cuốn chiếu theo từng block. Biên bản thử nghiệm, CO/CQ và bản vẽ hoàn công chuẩn bị sẵn để nghiệm thu không phải làm lại.",
   },
   {
     title: "Chủ đầu tư nhà máy & KCN",
-    pain: "Cần một đầu mối chịu trách nhiệm",
-    desc: "Tủ điện và thang máng cáp cùng một nhà sản xuất: một hợp đồng, một đầu mối bảo hành, chất lượng ổn định giữa các đợt giao hàng và thuận lợi khi mở rộng dây chuyền về sau.",
+    pain: "Chất lượng ổn định – một đầu mối chịu trách nhiệm",
+    desc: "Tủ điện và thang máng cáp từ cùng một nhà máy: một hợp đồng, một đầu mối bảo hành, quy cách và chất lượng giống nhau giữa các đợt giao hàng. Hồ sơ vật tư được lưu để tra cứu khi vận hành, sửa chữa hay mở rộng dây chuyền về sau.",
   },
   {
     title: "EPC điện mặt trời",
-    pain: "Kỹ thuật chặt, tiến độ gấp",
-    desc: "Tủ DC, tủ AC, tủ hòa lưới đúng thông số inverter và yêu cầu đấu nối, đi cùng hệ máng cáp mạ kẽm nhúng nóng chịu được điều kiện mái nhà xưởng và nắng gió ngoài trời.",
+    pain: "Lắp ngoài trời – phản hồi kỹ thuật nhanh",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của đơn vị điện lực; máng cáp mạ kẽm nhúng nóng chịu nắng gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày và giao hàng bám theo lịch lắp đặt trên mái.",
   },
 ];
 
