@@ -60,7 +60,18 @@ export function LeadForm({
   }
 
   return (
-    <div className="bg-card p-6 md:p-9">
+    <div className="border border-border bg-card p-6 md:p-9">
+      <div className="mb-7 flex items-baseline justify-between gap-4 border-b border-border pb-5">
+        <div>
+          <p className="eyebrow text-primary">Phiếu yêu cầu kỹ thuật</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            Kỹ sư PTC phản hồi trong 24h làm việc. Thông tin dự án được bảo mật.
+          </p>
+        </div>
+        <span className="hidden shrink-0 font-display text-xs font-semibold tracking-widest text-muted-foreground sm:block">
+          01 / 02
+        </span>
+      </div>
       {done ? (
         <div className="rule-top -mx-6 -mt-6 mb-6 bg-secondary px-6 py-4 md:-mx-8 md:-mt-8 md:px-8">
           <p className="font-semibold text-ink">Cảm ơn, chúng tôi sẽ liên hệ trong 24h.</p>
@@ -70,36 +81,36 @@ export function LeadForm({
         </div>
       ) : null}
 
-      <form onSubmit={onSubmit} className="grid gap-4 sm:grid-cols-2">
+      <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6">
         <div className="grid gap-2">
-          <Label htmlFor="full_name">
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="full_name">
             Họ tên <span className="text-destructive">*</span>
           </Label>
-          <Input id="full_name" name="full_name" required autoComplete="name" />
+          <Input className="h-11 rounded-none" id="full_name" name="full_name" required autoComplete="name" />
         </div>
         <div className="grid gap-2">
-          <Label htmlFor="company">
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="company">
             Công ty <span className="text-destructive">*</span>
           </Label>
-          <Input id="company" name="company" required autoComplete="organization" />
+          <Input className="h-11 rounded-none" id="company" name="company" required autoComplete="organization" />
         </div>
         <div className="grid gap-2">
-          <Label htmlFor="phone">
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="phone">
             Số điện thoại <span className="text-destructive">*</span>
           </Label>
-          <Input id="phone" name="phone" type="tel" required autoComplete="tel" />
+          <Input className="h-11 rounded-none" id="phone" name="phone" type="tel" required autoComplete="tel" />
         </div>
         <div className="grid gap-2">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" autoComplete="email" />
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="email">Email</Label>
+          <Input className="h-11 rounded-none" id="email" name="email" type="email" autoComplete="email" />
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label htmlFor="need">Nhu cầu</Label>
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="need">Hạng mục cần báo giá</Label>
           <select
             id="need"
             name="need"
             defaultValue={defaultNeed}
-            className="h-9 w-full rounded-md border border-input bg-background px-3 text-sm focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
+            className="h-11 w-full rounded-none border border-input bg-background px-3 text-sm focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
           >
             {NEEDS.map((n) => (
               <option key={n.value} value={n.value}>
@@ -109,19 +120,19 @@ export function LeadForm({
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label htmlFor="note">Ghi chú (khối lượng, quy cách, thời gian dự kiến…)</Label>
-          <Textarea id="note" name="note" rows={4} />
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Mô tả kỹ thuật (khối lượng, quy cách, tiến độ mong muốn)</Label>
+          <Textarea className="rounded-none" id="note" name="note" rows={4} />
         </div>
         <div className="sm:col-span-2">
-          <Button type="submit" size="lg" disabled={loading} className="w-full sm:w-auto">
+          <Button type="submit" size="xl" disabled={loading} className="w-full sm:w-auto">
             {loading ? "Đang gửi…" : "Yêu cầu báo giá kỹ thuật"}
           </Button>
         </div>
       </form>
 
       <div className="mt-7 flex flex-wrap items-center gap-3 border-t border-border pt-5">
-        <span className="text-sm text-muted-foreground">Cần gấp? Gửi bản vẽ trực tiếp qua Zalo:</span>
-        <ZaloButton label="Nhắn Zalo" size="sm" location={`form-${sourcePage}`} />
+        <span className="text-sm text-muted-foreground">Có bản vẽ sẵn? Gửi trực tiếp qua Zalo để xử lý nhanh hơn:</span>
+        <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="sm" location={`form-${sourcePage}`} />
       </div>
     </div>
   );
