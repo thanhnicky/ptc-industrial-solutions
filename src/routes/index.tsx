@@ -182,8 +182,15 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hai hạng mục, một nhà máy chịu trách nhiệm
+            Hệ thiết bị điện đồng bộ cho dự án công nghiệp
           </h2>
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Tủ điện và thang máng cáp sản xuất trong cùng một nhà máy: thống nhất quy cách, đồng bộ
+            hồ sơ kỹ thuật, kiểm soát chất lượng theo một quy trình và giao hàng bám tiến độ từng
+            giai đoạn thi công – thuận lợi khi nghiệm thu.
+          </p>
+
+
 
 
           <div className="mt-12 space-y-px">
