@@ -21,7 +21,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/" },
     ],
+    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/" }],
     scripts: [
       {
         type: "application/ld+json",
