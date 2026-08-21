@@ -68,8 +68,8 @@ export function Footer() {
         <div>
           <h2 className="eyebrow text-steel-foreground/50">Hồ sơ năng lực</h2>
           <p className="mt-5 text-sm leading-relaxed text-steel-foreground/70">
-            Hồ sơ năng lực, catalog tủ điện và catalog thang máng cáp (PDF) được gửi qua Zalo hoặc
-            email theo yêu cầu.
+            Hồ sơ năng lực, catalog tủ điện và catalog thang máng cáp (PDF) được gửi qua Zalo theo
+            yêu cầu.
           </p>
           <a
             href={CONTACT.zalo}
@@ -78,8 +78,9 @@ export function Footer() {
             onClick={() => track("download_catalog", { location: "footer" })}
             className="mt-5 inline-flex h-10 items-center border border-steel-foreground/25 px-4 text-sm font-semibold transition-colors hover:bg-steel-foreground/10"
           >
-            Nhận hồ sơ năng lực
+            Nhắn Zalo nhận hồ sơ năng lực
           </a>
+
         </div>
       </div>
 
