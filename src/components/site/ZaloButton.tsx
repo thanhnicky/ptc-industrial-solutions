@@ -10,7 +10,7 @@ type Props = {
   className?: string;
 };
 
-export function ZaloButton({ label = "Nhắn Zalo ngay", size = "default", location, className }: Props) {
+export function ZaloButton({ label = "Nhắn Zalo gửi bản vẽ", size = "default", location, className }: Props) {
   return (
     <Button asChild variant="zalo" size={size} className={className}>
       <a

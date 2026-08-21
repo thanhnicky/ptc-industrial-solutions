@@ -74,12 +74,13 @@ function Index() {
           <div className="rise-in max-w-2xl">
             <Eyebrow>{CONTACT.brand} — {CONTACT.slogan}</Eyebrow>
             <h1 className="mt-6 text-[2rem] leading-[1.08] font-semibold text-ink sm:text-5xl lg:text-[3.4rem]">
-              Tủ điện hạ thế &amp; thang máng cáp
-              <span className="block text-primary">đạt chuẩn IEC, giao đúng tiến độ</span>
+              PTC sản xuất tủ điện hạ thế &amp; thang máng cáp
+              <span className="block text-primary">cho nhà máy, KCN và dự án công nghiệp</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
-              Thiết kế – sản xuất – thử nghiệm trọn gói tại nhà máy PTC. Một đầu mối cho tổng thầu
-              M&amp;E, EPC solar và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
+              Thiết kế – sản xuất – thử nghiệm khép kín tại nhà máy 2.700 m², theo IEC 61439-1 &amp; 2
+              và ISO 9001:2015. Một đầu mối làm việc với tổng thầu M&amp;E, EPC solar và chủ đầu tư.
+              Báo giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
@@ -88,7 +89,7 @@ function Index() {
                 to="/nang-luc-san-xuat"
                 className="group inline-flex items-center gap-1.5 px-1 text-sm font-semibold text-ink"
               >
-                Năng lực nhà máy
+                Xem năng lực sản xuất
                 <ArrowRight
                   className="size-4 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
@@ -148,7 +149,7 @@ function Index() {
           <div>
             <Eyebrow>Năng lực nền tảng</Eyebrow>
             <h2 className="mt-5 max-w-md text-2xl leading-snug md:text-[2rem]">
-              Hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
+              Đội ngũ hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
               Nhà máy khép kín tại Linh Xuân, TP.HCM: cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm
@@ -176,7 +177,7 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hai dòng sản phẩm. Một nhà máy. Một đầu mối chịu trách nhiệm.
+            Hệ thiết bị điện đồng bộ cho dự án công nghiệp
           </h2>
 
           <div className="mt-12 space-y-px">
@@ -233,7 +234,7 @@ function Index() {
             <div>
               <Eyebrow>Khách hàng</Eyebrow>
               <h2 className="mt-5 max-w-sm text-2xl leading-snug md:text-[2rem]">
-                Đúng ngôn ngữ kỹ thuật của từng dự án
+                Đáp ứng đúng yêu cầu của từng mô hình dự án
               </h2>
             </div>
             <div className="divide-y divide-border border-t border-border">
@@ -310,7 +311,7 @@ function Index() {
             <div>
               <Eyebrow>Quy trình làm việc</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Từ bản vẽ đến báo giá kỹ thuật: 24h làm việc
+                Từ bản vẽ, BOQ đến báo giá kỹ thuật trong 24h làm việc
               </h2>
             </div>
             <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="lg" location="process" />
@@ -335,7 +336,7 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Nhà máy, khu công nghiệp và hệ solar quy mô MWp
+                Dự án yêu cầu cao về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
               </h2>
             </div>
             <Button asChild variant="outline">
@@ -453,11 +454,11 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Gửi hồ sơ kỹ thuật – nhận báo giá trong 24h
+              Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Single-line diagram, BOQ hay mô tả sơ bộ đều đủ để bắt đầu. Kỹ sư PTC bóc tách cấu
-              hình, xác nhận tiêu chuẩn và chốt tiến độ giao hàng cho dự án của bạn.
+              Gửi bản vẽ, BOQ hoặc thông tin hạng mục. Kỹ sư PTC bóc tách khối lượng, xác nhận cấu
+              hình và tiêu chuẩn, rồi phản hồi báo giá cùng tiến độ giao hàng trong 24h làm việc.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
