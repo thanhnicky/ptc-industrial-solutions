@@ -29,8 +29,10 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { property: "og:url", content: "https://tudienptc.vn/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://tudienptc.vn/" }],
     scripts: [

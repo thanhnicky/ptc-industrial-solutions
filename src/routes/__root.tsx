@@ -91,7 +91,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "PTC Switchboard" },
       { property: "og:site_name", content: "PTC Switchboard" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { property: "og:image:secure_url", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { name: "twitter:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard" },
     ],
     links: [
       {
