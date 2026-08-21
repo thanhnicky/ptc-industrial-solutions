@@ -1,7 +1,7 @@
 export const CONTACT = {
   companyVi: "Công ty Cổ phần Tủ bảng điện PTC",
   brand: "PTC SWITCHBOARD",
-  slogan: "Chất lượng thật – Tiến độ thật",
+  slogan: "Đúng tiêu chuẩn – Đúng tiến độ",
   hotline: "0836 97 77 99",
   hotlineRaw: "0836977799",
   sales: ["0945 678 604", "0979 999 016", "0906 912 707"],
