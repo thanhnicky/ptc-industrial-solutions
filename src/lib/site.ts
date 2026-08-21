@@ -27,12 +27,13 @@ export const NAV = [
 
 /** Trust strip ngay dưới hero. */
 export const TRUST_STRIP = [
-  "Nhà máy khép kín 2.700 m² tại TP.HCM",
-  "Thiết kế – sản xuất – thử nghiệm nội bộ",
-  "Sản xuất theo IEC 61439 · ISO 9001:2015",
-  "Báo giá kỹ thuật trong 24h làm việc",
-  "Một đầu mối cho tủ điện và thang máng cáp",
+  "Nhà máy 2.700 m² tại TP.HCM",
+  "Sản xuất theo IEC 61439 & ISO 9001:2015",
+  "Bám tiến độ theo từng giai đoạn dự án",
+  "Một đầu mối cho tủ điện & thang máng cáp",
+  "Báo giá kỹ thuật trong 24 giờ làm việc",
 ];
+
 
 /** Khối số liệu năng lực. */
 export const STATS = [
