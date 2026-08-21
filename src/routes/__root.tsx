@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { getOrganizationSchema } from "@/lib/schema";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -82,24 +83,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PTC Switchboard – Tủ điện công nghiệp & thang máng cáp" },
+      { title: "PTC Switchboard – Nhà máy sản xuất tủ điện & thang máng cáp TP.HCM" },
       {
         name: "description",
         content:
-          "Công ty Cổ phần Tủ bảng điện PTC – sản xuất tủ điện hạ thế và thang máng cáp theo IEC 61439, ISO 9001:2015.",
+          "Công ty Cổ phần Tủ bảng điện PTC – Sản xuất tủ điện hạ thế (MSB, MCC, DB, ATS, Solar) và thang máng cáp theo chuẩn IEC 61439-1/2, ISO 9001:2015 tại TP.HCM. Báo giá trong 24h.",
       },
       { name: "author", content: "PTC Switchboard" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      { name: "googlebot", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      // GEO SEO Meta Tags for Local & Search Engines
+      { name: "geo.region", content: "VN-SG" },
+      { name: "geo.placename", content: "Thủ Đức, Thành phố Hồ Chí Minh" },
+      { name: "geo.position", content: "10.8753;106.7725" },
+      { name: "ICBM", content: "10.8753, 106.7725" },
+      // Open Graph
       { property: "og:site_name", content: "PTC Switchboard" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "vi_VN" },
       { property: "og:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { property: "og:image:secure_url", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
-      { property: "og:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard" },
+      { property: "og:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard tại TP.HCM" },
+      // Twitter Card
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
-      { name: "twitter:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard" },
+      { name: "twitter:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard tại TP.HCM" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(getOrganizationSchema()),
+      },
     ],
     links: [
+      { rel: "canonical", href: "https://tudienptc.vn" },
       {
         rel: "stylesheet",
         href: appCss,
