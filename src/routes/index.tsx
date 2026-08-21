@@ -454,11 +454,12 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
+              Tiếp nhận yêu cầu kỹ thuật cho dự án của bạn
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi bản vẽ, BOQ hoặc thông tin hạng mục. Kỹ sư PTC bóc tách khối lượng, xác nhận cấu
-              hình và tiêu chuẩn, rồi phản hồi báo giá cùng tiến độ giao hàng trong 24h làm việc.
+              Gửi single-line diagram, BOQ hoặc mô tả hạng mục. Kỹ sư PTC bóc tách khối lượng, xác
+              nhận cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng bám sát kế
+              hoạch thi công trong 24h làm việc.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
