@@ -74,13 +74,12 @@ function Index() {
           <div className="rise-in max-w-2xl">
             <Eyebrow>{CONTACT.brand} — {CONTACT.slogan}</Eyebrow>
             <h1 className="mt-6 text-[2rem] leading-[1.08] font-semibold text-ink sm:text-5xl lg:text-[3.4rem]">
-              Tủ điện hạ thế và thang máng cáp
-              <span className="block text-primary">sản xuất tại nhà máy PTC</span>
+              Tủ điện hạ thế &amp; thang máng cáp
+              <span className="block text-primary">đạt chuẩn IEC, giao đúng tiến độ</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
-              Thiết kế – sản xuất – thử nghiệm trọn gói cho nhà máy, khu công nghiệp và dự án điện
-              mặt trời. Báo giá kỹ thuật trong 24h, đồng hành cùng tổng thầu M&E, EPC solar và chủ
-              đầu tư trên toàn quốc.
+              Thiết kế – sản xuất – thử nghiệm trọn gói tại nhà máy PTC. Một đầu mối cho tổng thầu
+              M&amp;E, EPC solar và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
@@ -89,7 +88,7 @@ function Index() {
                 to="/nang-luc-san-xuat"
                 className="group inline-flex items-center gap-1.5 px-1 text-sm font-semibold text-ink"
               >
-                Xem năng lực sản xuất
+                Năng lực nhà máy
                 <ArrowRight
                   className="size-4 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
@@ -149,12 +148,11 @@ function Index() {
           <div>
             <Eyebrow>Năng lực nền tảng</Eyebrow>
             <h2 className="mt-5 max-w-md text-2xl leading-snug md:text-[2rem]">
-              Đội ngũ kỹ sư có hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
+              Hơn 10 năm làm tủ bảng điện cho nhà máy và dự án FDI
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              PTC vận hành nhà máy khép kín tại Linh Xuân, TP.HCM: cơ khí, sơn tĩnh điện, lắp ráp và
-              thử nghiệm trong cùng một dây chuyền. Cùng một đội ngũ đã triển khai các dự án nhà máy,
-              khu công nghiệp và hệ điện mặt trời quy mô MWp trên cả nước.
+              Nhà máy khép kín tại Linh Xuân, TP.HCM: cơ khí, sơn tĩnh điện, lắp ráp và thử nghiệm
+              trên cùng một dây chuyền – đã phục vụ các dự án nhà máy, KCN và solar quy mô MWp.
             </p>
           </div>
           <dl className="grid grid-cols-2 border-t border-l border-border">
@@ -178,7 +176,7 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hai dòng sản phẩm cốt lõi, cùng một nhà máy, cùng một đầu mối chịu trách nhiệm
+            Hai dòng sản phẩm. Một nhà máy. Một đầu mối chịu trách nhiệm.
           </h2>
 
           <div className="mt-12 space-y-px">
@@ -217,7 +215,7 @@ function Index() {
                   <div className="mt-8">
                     <Button asChild variant="outline" size="lg">
                       <Link to={p.to}>
-                        Xem chi tiết sản phẩm <ArrowUpRight aria-hidden="true" />
+                        Xem thông số kỹ thuật <ArrowUpRight aria-hidden="true" />
                       </Link>
                     </Button>
                   </div>
@@ -233,9 +231,9 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <Eyebrow>PTC phục vụ ai</Eyebrow>
+              <Eyebrow>Khách hàng</Eyebrow>
               <h2 className="mt-5 max-w-sm text-2xl leading-snug md:text-[2rem]">
-                Làm việc theo ngôn ngữ kỹ thuật của từng nhóm khách hàng
+                Đúng ngôn ngữ kỹ thuật của từng dự án
               </h2>
             </div>
             <div className="divide-y divide-border border-t border-border">
@@ -261,7 +259,7 @@ function Index() {
           <div>
             <Eyebrow light>Vì sao chọn PTC</Eyebrow>
             <h2 className="mt-5 max-w-xl text-2xl leading-snug text-steel-foreground md:text-[2rem]">
-              Kiểm soát toàn bộ chuỗi: vỏ cơ khí, sơn tĩnh điện, lắp ráp, thử nghiệm
+              Kiểm soát trọn chuỗi: vỏ cơ khí, sơn tĩnh điện, lắp ráp, thử nghiệm
             </h2>
             <div className="mt-10 divide-y divide-steel-foreground/12 border-t border-steel-foreground/12">
               {CAPABILITIES.map((c) => (
@@ -312,7 +310,7 @@ function Index() {
             <div>
               <Eyebrow>Quy trình làm việc</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Từ bản vẽ đến báo giá kỹ thuật trong 24h làm việc
+                Từ bản vẽ đến báo giá kỹ thuật: 24h làm việc
               </h2>
             </div>
             <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="lg" location="process" />
@@ -337,12 +335,12 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Đã cung cấp cho nhà máy, khu công nghiệp và hệ solar quy mô MWp
+                Nhà máy, khu công nghiệp và hệ solar quy mô MWp
               </h2>
             </div>
             <Button asChild variant="outline">
               <Link to="/du-an">
-                Xem tất cả dự án <ArrowRight aria-hidden="true" />
+                Xem hồ sơ năng lực dự án <ArrowRight aria-hidden="true" />
               </Link>
             </Button>
           </div>
@@ -431,7 +429,7 @@ function Index() {
               </h2>
               <Button asChild variant="outline" className="mt-8">
                 <Link to="/tieu-chuan-chat-luong">
-                  Xem hệ thống chất lượng <ArrowUpRight aria-hidden="true" />
+                  Xem hệ thống kiểm soát chất lượng <ArrowUpRight aria-hidden="true" />
                 </Link>
               </Button>
             </div>
@@ -455,11 +453,11 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Cần báo giá tủ điện hoặc thang máng cáp cho dự án?
+              Gửi hồ sơ kỹ thuật – nhận báo giá trong 24h
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi bản vẽ hoặc thông tin kỹ thuật, PTC sẽ phản hồi nhanh để hỗ trợ cấu hình, báo giá và
-              tiến độ phù hợp với dự án của bạn.
+              Single-line diagram, BOQ hay mô tả sơ bộ đều đủ để bắt đầu. Kỹ sư PTC bóc tách cấu
+              hình, xác nhận tiêu chuẩn và chốt tiến độ giao hàng cho dự án của bạn.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
@@ -489,7 +487,7 @@ function Index() {
             </dl>
           </div>
 
-          <div className="bg-background p-1">
+          <div className="bg-background">
             <LeadForm sourcePage="trang-chu" />
           </div>
         </div>
