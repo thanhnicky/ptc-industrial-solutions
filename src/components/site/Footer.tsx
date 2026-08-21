@@ -14,11 +14,12 @@ export function Footer() {
             <span className="font-display text-sm font-semibold tracking-[0.2em]">SWITCHBOARD</span>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-steel-foreground/65">
-            {CONTACT.companyVi} sản xuất tủ bảng điện hạ thế và hệ thang máng cáp cho nhà máy, khu
-            công nghiệp và dự án điện mặt trời – thiết kế, sản xuất và thử nghiệm tại nhà máy 2.700 m²
-            ở TP.HCM.
+            {CONTACT.companyVi} sản xuất tủ điện hạ thế và hệ thang máng cáp cho nhà máy, khu công
+            nghiệp, tổng thầu M&amp;E và dự án điện mặt trời. Thiết kế, gia công, sơn tĩnh điện, lắp
+            ráp và thử nghiệm tại nhà máy 2.700 m² ở TP.HCM theo IEC 61439 và ISO 9001:2015.
           </p>
           <p className="mt-6 font-display text-sm font-semibold tracking-wide">{CONTACT.slogan}</p>
+
         </div>
 
         <div>
