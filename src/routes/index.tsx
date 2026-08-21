@@ -54,14 +54,15 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function Eyebrow({ children, light = false }: { children: string; light?: boolean }) {
+function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
     <p className={`eyebrow ${light ? "text-steel-foreground/50" : "text-primary"}`}>{children}</p>
   );
 }
 
 function Index() {
-  const featured = PROJECTS.slice(0, 5);
+  const [lead, ...rest] = PROJECTS.slice(0, 5);
+  if (!lead) return null;
 
   return (
     <>
@@ -349,8 +350,8 @@ function Index() {
             <article className="group flex flex-col overflow-hidden border border-border bg-card lg:col-span-2 lg:flex-row">
               <div className="overflow-hidden lg:w-[55%]">
                 <img
-                  src={IMAGES[featured[0].image]}
-                  alt={featured[0].name}
+                  src={IMAGES[lead.image]}
+                  alt={lead.name}
                   loading="lazy"
                   width={1200}
                   height={800}
@@ -358,20 +359,20 @@ function Index() {
                 />
               </div>
               <div className="flex flex-1 flex-col justify-center p-7 md:p-9">
-                <p className="eyebrow text-primary">{featured[0].client}</p>
-                <h3 className="mt-4 text-xl md:text-2xl">{featured[0].name}</h3>
+                <p className="eyebrow text-primary">{lead.client}</p>
+                <h3 className="mt-4 text-xl md:text-2xl">{lead.name}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  {featured[0].desc}
+                  {lead.desc}
                 </p>
                 <p className="mt-6 border-t border-border pt-4 text-[13px] text-ink">
                   <span className="text-muted-foreground">Hạng mục: </span>
-                  {featured[0].scope}
+                  {lead.scope}
                 </p>
               </div>
             </article>
 
             <div className="grid gap-6">
-              {featured.slice(1, 3).map((p) => (
+              {rest.slice(0, 2).map((p) => (
                 <article key={p.name} className="group flex overflow-hidden border border-border bg-card">
                   <div className="w-32 shrink-0 overflow-hidden sm:w-40">
                     <img
@@ -392,7 +393,7 @@ function Index() {
               ))}
             </div>
 
-            {featured.slice(3, 5).map((p) => (
+            {rest.slice(2, 4).map((p) => (
               <article
                 key={p.name}
                 className="group flex overflow-hidden border border-border bg-card lg:col-span-1"
