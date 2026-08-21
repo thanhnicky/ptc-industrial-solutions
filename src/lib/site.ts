@@ -31,7 +31,7 @@ export const TRUST_STRIP = [
   "Thiết kế – sản xuất – thử nghiệm",
   "IEC 61439-1 & 2 · ISO 9001:2015",
   "Báo giá kỹ thuật trong 24h làm việc",
-  "Một đầu mối: tủ điện + thang máng cáp",
+  "Trọn gói tủ điện và thang máng cáp từ một nhà cung cấp",
 ];
 
 /** Khối số liệu năng lực. */

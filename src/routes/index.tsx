@@ -79,22 +79,22 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
               Thiết kế – sản xuất – thử nghiệm khép kín tại nhà máy 2.700 m², theo IEC 61439-1 &amp; 2
-              và ISO 9001:2015. Một đầu mối làm việc với tổng thầu M&amp;E, EPC solar và chủ đầu tư.
-              Báo giá kỹ thuật trong 24h làm việc.
+              và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm trọn gói cho tổng thầu M&amp;E, EPC
+              điện mặt trời và chủ đầu tư. Báo giá kỹ thuật trong 24h làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
               <CallButton size="xl" location="hero" />
-              <Link
-                to="/nang-luc-san-xuat"
+              <a
+                href="#bao-gia"
                 className="group inline-flex items-center gap-1.5 px-1 text-sm font-semibold text-ink"
               >
-                Xem năng lực sản xuất
+                Yêu cầu báo giá kỹ thuật
                 <ArrowRight
                   className="size-4 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
                 />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -454,11 +454,12 @@ function Index() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow light>Liên hệ</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
-              Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
+              Tiếp nhận yêu cầu kỹ thuật cho dự án của bạn
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi bản vẽ, BOQ hoặc thông tin hạng mục. Kỹ sư PTC bóc tách khối lượng, xác nhận cấu
-              hình và tiêu chuẩn, rồi phản hồi báo giá cùng tiến độ giao hàng trong 24h làm việc.
+              Gửi single-line diagram, BOQ hoặc mô tả hạng mục. Kỹ sư PTC bóc tách khối lượng, xác
+              nhận cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng bám sát kế
+              hoạch thi công trong 24h làm việc.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />

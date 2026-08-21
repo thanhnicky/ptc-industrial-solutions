@@ -141,7 +141,7 @@ function RootComponent() {
         <Footer />
         <StickyContact />
       </div>
-      <div id="google_translate_element" className="hidden" />
+      
       <Toaster position="top-center" richColors />
     </QueryClientProvider>
   );

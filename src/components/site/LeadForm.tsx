@@ -63,9 +63,10 @@ export function LeadForm({
     <div className="border border-border bg-card p-6 md:p-9">
       <div className="mb-7 flex items-baseline justify-between gap-4 border-b border-border pb-5">
         <div>
-          <p className="eyebrow text-primary">Phiếu yêu cầu kỹ thuật</p>
+          <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Kỹ sư PTC phản hồi trong 24h làm việc kèm phương án cấu hình và tiến độ. Thông tin dự án được bảo mật.
+            Kỹ sư dự án phản hồi trong 24h làm việc kèm phương án cấu hình, tiêu chuẩn áp dụng và
+            tiến độ giao hàng. Hồ sơ dự án được bảo mật.
           </p>
         </div>
         <span className="hidden shrink-0 font-display text-xs font-semibold tracking-widest text-muted-foreground sm:block">

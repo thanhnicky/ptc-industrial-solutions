@@ -175,9 +175,10 @@
   }
 }
 
-/* Ẩn thanh công cụ của Google Translate */
+/* Chặn mọi lớp phủ dịch tự động của trình duyệt */
 .goog-te-banner-frame,
-.skiptranslate iframe {
+.skiptranslate,
+#google_translate_element {
   display: none !important;
 }
 body {
