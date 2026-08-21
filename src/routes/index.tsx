@@ -226,13 +226,19 @@ function Index() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-8">
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <ZaloButton
+                      size="lg"
+                      label={i === 0 ? "Nhắn Zalo gửi bản vẽ" : "Gửi BOQ để PTC bóc tách"}
+                      location={`product-${p.index}`}
+                    />
                     <Button asChild variant="outline" size="lg">
                       <Link to={p.to}>
                         Xem thông số kỹ thuật <ArrowUpRight aria-hidden="true" />
                       </Link>
                     </Button>
                   </div>
+
                 </div>
               </article>
             ))}
