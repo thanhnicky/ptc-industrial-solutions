@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
 import { LeadForm } from "@/components/site/LeadForm";
-import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
+import { ZaloButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import {
   AUDIENCES,
