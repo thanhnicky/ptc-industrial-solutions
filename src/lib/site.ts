@@ -118,7 +118,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     name: "Nhà máy phân bón Ong Biển",
-    desc: "Cung cấp tủ phân phối tổng, tủ điều khiển động cơ, hệ thang máng cáp toàn nhà máy và tủ điện cho hệ điện mặt trời mái nhà 960 kWp.",
+    desc: "Cung cấp trọn gói tủ phân phối tổng, tủ điều khiển động cơ, toàn bộ hệ thang máng cáp nhà máy và tủ điện cho hệ điện mặt trời mái nhà 960 kWp – một đầu mối cho cả phần tủ và phần dẫn cáp.",
     image: "plant",
     tags: ["tu-dien", "thang-mang-cap", "solar"],
     scope: "Tủ MSB, tủ MCC, thang máng cáp toàn nhà máy, tủ điện ĐMTMN 960 kWp",
@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ĐMTMN KCN Phú Mỹ 1 – 1.460 kWp",
-    desc: "Tủ DC, tủ AC, tủ hòa lưới và hệ máng cáp mạ kẽm nhúng nóng cho dự án điện mặt trời mái nhà 1.460 kWp trong khu công nghiệp.",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng cấu hình inverter, kèm máng cáp mạ kẽm nhúng nóng cho môi trường mái nhà xưởng. Giao theo từng phân khu để không chặn tiến độ lắp panel.",
     image: "solar",
     tags: ["tu-dien", "solar", "thang-mang-cap"],
     scope: "Tủ DC / AC / hòa lưới, máng cáp mạ kẽm nhúng nóng",
@@ -134,7 +134,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Kho vận DPL",
-    desc: "Tủ MSB, tủ DB tầng và hệ khay cáp – máng cáp cho khu kho vận, đáp ứng tiến độ lắp đặt cuốn chiếu theo từng block.",
+    desc: "Tủ MSB, tủ DB tầng và hệ khay – máng cáp cho khu kho vận, giao cuốn chiếu theo từng block để bám tiến độ lắp đặt của tổng thầu M&E.",
     image: "warehouse",
     tags: ["tu-dien", "thang-mang-cap"],
     scope: "Tủ MSB, tủ DB tầng, khay cáp và máng cáp",
@@ -142,7 +142,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Nhà máy Hải Đức",
-    desc: "Thiết kế – sản xuất tủ phân phối chính, tủ tụ bù và tủ điều khiển cho dây chuyền sản xuất, thử nghiệm routine test tại xưởng PTC.",
+    desc: "Thiết kế và sản xuất tủ phân phối chính, tủ tụ bù và tủ điều khiển dây chuyền; routine test tại xưởng PTC trước khi xuất hàng, bàn giao kèm hồ sơ nghiệm thu.",
     image: "switchboard",
     tags: ["tu-dien"],
     scope: "Tủ phân phối chính, tủ tụ bù, tủ điều khiển dây chuyền",
@@ -150,12 +150,13 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Xưởng gạch Tuynel",
-    desc: "Tủ điều khiển động cơ, tủ VSD cho hệ băng tải – quạt lò và hệ thang cáp chịu môi trường nhiệt độ cao.",
+    desc: "Tủ điều khiển động cơ (MCC) và tủ biến tần (VSD) cho hệ băng tải – quạt lò, kèm thang cáp xử lý bề mặt cho khu vực nhiệt độ cao, bụi công nghiệp.",
     image: "cabletray",
     tags: ["tu-dien", "thang-mang-cap"],
-    scope: "Tủ MCC, tủ VSD, thang cáp môi trường nhiệt độ cao",
+    scope: "Tủ MCC, tủ VSD, thang cáp khu vực nhiệt độ cao",
     client: "Chủ đầu tư sản xuất vật liệu xây dựng",
   },
+
   {
     name: "Lexus – showroom & xưởng dịch vụ",
     desc: "Tủ phân phối tổng, tủ DB khu vực và hệ máng cáp sơn tĩnh điện cho showroom và xưởng dịch vụ, yêu cầu cao về thẩm mỹ lắp đặt.",
