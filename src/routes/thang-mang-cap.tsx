@@ -19,7 +19,9 @@ export const Route = createFileRoute("/thang-mang-cap")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/thang-mang-cap" },
     ],
+    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/thang-mang-cap" }],
   }),
   component: Page,
 });

@@ -19,7 +19,9 @@ export const Route = createFileRoute("/tieu-chuan-chat-luong")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://ptc-industrial-solutions.lovable.app/tieu-chuan-chat-luong" },
     ],
+    links: [{ rel: "canonical", href: "https://ptc-industrial-solutions.lovable.app/tieu-chuan-chat-luong" }],
   }),
   component: Page,
 });

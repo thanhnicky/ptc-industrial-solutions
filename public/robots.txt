@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://ptc-industrial-solutions.lovable.app/sitemap.xml
