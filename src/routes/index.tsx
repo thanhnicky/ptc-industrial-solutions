@@ -316,8 +316,9 @@ function Index() {
             <div>
               <Eyebrow>Quy trình làm việc</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Từ bản vẽ, BOQ đến báo giá kỹ thuật trong 24h làm việc
+                Từ bản vẽ và BOQ đến báo giá kỹ thuật trong 24h
               </h2>
+
             </div>
             <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="lg" location="process" />
           </div>
