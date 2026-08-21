@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
 import { LeadForm } from "@/components/site/LeadForm";
-import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
+import { ZaloButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import {
   AUDIENCES,
@@ -74,29 +74,31 @@ function Index() {
           <div className="rise-in max-w-2xl">
             <Eyebrow>{CONTACT.brand} — {CONTACT.slogan}</Eyebrow>
             <h1 className="mt-6 text-[2rem] leading-[1.08] font-semibold text-ink sm:text-5xl lg:text-[3.4rem]">
-              Tủ điện hạ thế &amp; thang máng cáp
-              <span className="block text-primary">cho nhà máy, KCN và dự án điện mặt trời</span>
+              PTC sản xuất tủ điện hạ thế và thang máng cáp
+              <span className="block text-primary">cho nhà máy, KCN và dự án công nghiệp</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-[17px]">
-              Thiết kế, sản xuất và thử nghiệm khép kín tại nhà máy 2.700 m² ở TP.HCM theo IEC
-              61439-1 &amp; 2 và ISO 9001:2015. Một nhà cung cấp chịu trách nhiệm cả phần tủ và phần
-              dẫn cáp cho tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ hoặc BOQ – nhận báo
-              giá kỹ thuật trong 24h làm việc.
+              Thiết kế – sản xuất – thử nghiệm tại nhà máy 2.700 m² ở TP.HCM theo IEC 61439-1 &amp; 2
+              và ISO 9001:2015. Một đầu mối chịu trách nhiệm cả phần tủ và phần dẫn cáp, phối hợp
+              bản vẽ, hồ sơ và tiến độ cùng tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ
+              hoặc BOQ – nhận báo giá kỹ thuật trong 24 giờ làm việc.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="hero" />
-              <CallButton size="xl" location="hero" />
-              <a
-                href="#bao-gia"
-                className="group inline-flex items-center gap-1.5 px-1 text-sm font-semibold text-ink"
-              >
-                Yêu cầu báo giá kỹ thuật
-                <ArrowRight
-                  className="size-4 transition-transform group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </a>
+              <Button asChild variant="outline" size="xl">
+                <a href="#bao-gia">
+                  Yêu cầu báo giá kỹ thuật <ArrowRight aria-hidden="true" />
+                </a>
+              </Button>
             </div>
+            <a
+              href={`tel:${CONTACT.hotlineRaw}`}
+              className="mt-5 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-ink"
+            >
+              <Phone className="size-3.5" aria-hidden="true" />
+              Gọi hotline kỹ thuật · {CONTACT.hotline}
+            </a>
+
 
           </div>
 
@@ -180,8 +182,15 @@ function Index() {
         <div className="container-wide py-16 lg:py-24">
           <Eyebrow>Sản phẩm</Eyebrow>
           <h2 className="mt-5 max-w-2xl text-2xl leading-snug md:text-[2rem]">
-            Hai hạng mục, một nhà máy chịu trách nhiệm
+            Hệ thiết bị điện đồng bộ cho dự án công nghiệp
           </h2>
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Tủ điện và thang máng cáp sản xuất trong cùng một nhà máy: thống nhất quy cách, đồng bộ
+            hồ sơ kỹ thuật, kiểm soát chất lượng theo một quy trình và giao hàng bám tiến độ từng
+            giai đoạn thi công – thuận lợi khi nghiệm thu.
+          </p>
+
+
 
 
           <div className="mt-12 space-y-px">
@@ -217,13 +226,19 @@ function Index() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-8">
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <ZaloButton
+                      size="lg"
+                      label={i === 0 ? "Nhắn Zalo gửi bản vẽ" : "Gửi BOQ để PTC bóc tách"}
+                      location={`product-${p.index}`}
+                    />
                     <Button asChild variant="outline" size="lg">
                       <Link to={p.to}>
                         Xem thông số kỹ thuật <ArrowUpRight aria-hidden="true" />
                       </Link>
                     </Button>
                   </div>
+
                 </div>
               </article>
             ))}
@@ -238,8 +253,9 @@ function Index() {
             <div>
               <Eyebrow>Khách hàng</Eyebrow>
               <h2 className="mt-5 max-w-sm text-2xl leading-snug md:text-[2rem]">
-                Hiểu áp lực của từng vai trò trong dự án
+                Đáp ứng đúng yêu cầu của từng mô hình dự án
               </h2>
+
 
             </div>
             <div className="divide-y divide-border border-t border-border">
@@ -342,15 +358,18 @@ function Index() {
             <div>
               <Eyebrow>Dự án tiêu biểu</Eyebrow>
               <h2 className="mt-5 max-w-xl text-2xl leading-snug md:text-[2rem]">
-                Dự án khắt khe về tiêu chuẩn, tiến độ và hồ sơ nghiệm thu
+                Năng lực được kiểm chứng qua dự án thực tế
               </h2>
-
             </div>
-            <Button asChild variant="outline">
-              <Link to="/du-an">
-                Xem hồ sơ năng lực dự án <ArrowRight aria-hidden="true" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap gap-3">
+              <ZaloButton label="Gửi BOQ để PTC bóc tách" location="projects" />
+              <Button asChild variant="outline">
+                <Link to="/du-an">
+                  Xem thêm dự án <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -459,22 +478,28 @@ function Index() {
       <section id="bao-gia" className="bg-steel text-steel-foreground">
         <div className="container-wide grid gap-12 py-16 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:py-24">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <Eyebrow light>Liên hệ</Eyebrow>
+            <Eyebrow light>Tiếp nhận yêu cầu kỹ thuật</Eyebrow>
             <h2 className="mt-5 max-w-lg text-2xl leading-snug text-steel-foreground md:text-[2.25rem]">
               Gửi yêu cầu kỹ thuật. Nhận phương án và báo giá phù hợp.
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-steel-foreground/65 md:text-base">
-              Gửi single-line diagram, BOQ hoặc yêu cầu kỹ thuật của hạng mục. Kỹ sư PTC bóc tách
-              khối lượng, chốt cấu hình và tiêu chuẩn áp dụng, phản hồi báo giá kèm tiến độ giao hàng
-              bám kế hoạch thi công trong 24h làm việc.
+              Gửi bản vẽ, BOQ hoặc thông tin hạng mục. Đội ngũ PTC sẽ phản hồi để hỗ trợ cấu hình,
+              bóc tách, báo giá và tiến độ phù hợp với dự án.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <ZaloButton size="xl" label="Nhắn Zalo gửi bản vẽ" location="final-cta" />
-              <CallButton size="xl" location="final-cta" variant="outlineLight" />
+              <a
+                href={`tel:${CONTACT.hotlineRaw}`}
+                className="inline-flex items-center gap-2 text-sm text-steel-foreground/60 transition-colors hover:text-steel-foreground"
+              >
+                <Phone className="size-3.5" aria-hidden="true" />
+                Gọi hotline kỹ thuật · {CONTACT.hotline}
+              </a>
             </div>
             <p className="mt-5 text-xs text-steel-foreground/45">
-              Ưu tiên xử lý cho nhà máy, khu công nghiệp, tổng thầu M&E và EPC điện mặt trời.
+              Ưu tiên phản hồi nhanh khi Quý khách gửi kèm bản vẽ hoặc BOQ qua Zalo.
             </p>
+
 
             <dl className="mt-10 grid gap-5 border-t border-steel-foreground/12 pt-8 text-sm sm:grid-cols-2">
               <div>

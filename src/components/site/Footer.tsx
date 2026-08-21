@@ -14,11 +14,12 @@ export function Footer() {
             <span className="font-display text-sm font-semibold tracking-[0.2em]">SWITCHBOARD</span>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-steel-foreground/65">
-            {CONTACT.companyVi} sản xuất tủ bảng điện hạ thế và hệ thang máng cáp cho nhà máy, khu
-            công nghiệp và dự án điện mặt trời – thiết kế, sản xuất và thử nghiệm tại nhà máy 2.700 m²
-            ở TP.HCM.
+            {CONTACT.companyVi} sản xuất tủ điện hạ thế và hệ thang máng cáp cho nhà máy, khu công
+            nghiệp, tổng thầu M&amp;E và dự án điện mặt trời. Thiết kế, gia công, sơn tĩnh điện, lắp
+            ráp và thử nghiệm tại nhà máy 2.700 m² ở TP.HCM theo IEC 61439 và ISO 9001:2015.
           </p>
           <p className="mt-6 font-display text-sm font-semibold tracking-wide">{CONTACT.slogan}</p>
+
         </div>
 
         <div>
@@ -67,8 +68,8 @@ export function Footer() {
         <div>
           <h2 className="eyebrow text-steel-foreground/50">Hồ sơ năng lực</h2>
           <p className="mt-5 text-sm leading-relaxed text-steel-foreground/70">
-            Hồ sơ năng lực, catalog tủ điện và catalog thang máng cáp (PDF) được gửi qua Zalo hoặc
-            email theo yêu cầu.
+            Hồ sơ năng lực, catalog tủ điện và catalog thang máng cáp (PDF) được gửi qua Zalo theo
+            yêu cầu.
           </p>
           <a
             href={CONTACT.zalo}
@@ -77,8 +78,9 @@ export function Footer() {
             onClick={() => track("download_catalog", { location: "footer" })}
             className="mt-5 inline-flex h-10 items-center border border-steel-foreground/25 px-4 text-sm font-semibold transition-colors hover:bg-steel-foreground/10"
           >
-            Nhận hồ sơ năng lực
+            Nhắn Zalo nhận hồ sơ năng lực
           </a>
+
         </div>
       </div>
 

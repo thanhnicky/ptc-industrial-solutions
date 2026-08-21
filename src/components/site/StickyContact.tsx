@@ -22,7 +22,7 @@ export function StickyContact() {
         className="flex h-14 items-center justify-center gap-2 text-sm font-semibold text-ink"
       >
         <Phone className="size-4 text-primary" aria-hidden="true" />
-        Gọi ngay
+        Gọi hotline
       </a>
     </div>
   );

@@ -61,24 +61,25 @@ export function LeadForm({
 
   return (
     <div className="border border-border bg-card p-6 md:p-9">
-      <div className="mb-7 flex items-baseline justify-between gap-4 border-b border-border pb-5">
-        <div>
-          <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật</p>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Kỹ sư dự án phản hồi trong 24h làm việc kèm phương án cấu hình, tiêu chuẩn áp dụng và
-            tiến độ giao hàng. Thông tin dự án được bảo mật.
-          </p>
+      <div className="mb-7 border-b border-border pb-5">
+        <p className="eyebrow text-primary">Phiếu tiếp nhận yêu cầu kỹ thuật</p>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Kỹ sư dự án phản hồi trong 24 giờ làm việc kèm phương án cấu hình, tiêu chuẩn áp dụng và
+          tiến độ giao hàng. Thông tin dự án được bảo mật.
+        </p>
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <ZaloButton label="Nhắn Zalo gửi bản vẽ" location={`form-${sourcePage}`} />
+          <span className="text-[13px] text-muted-foreground">
+            Ưu tiên phản hồi nhanh khi gửi kèm bản vẽ hoặc BOQ qua Zalo.
+          </span>
         </div>
-        <span className="hidden shrink-0 font-display text-xs font-semibold tracking-widest text-muted-foreground sm:block">
-          01 / 02
-        </span>
       </div>
 
       {done ? (
-        <div className="rule-top -mx-6 -mt-6 mb-6 bg-secondary px-6 py-4 md:-mx-8 md:-mt-8 md:px-8">
-          <p className="font-semibold text-ink">Cảm ơn, chúng tôi sẽ liên hệ trong 24h.</p>
+        <div className="mb-6 border border-border bg-secondary px-5 py-4">
+          <p className="font-semibold text-ink">Đã nhận yêu cầu. PTC sẽ liên hệ trong 24 giờ làm việc.</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Cần gấp hơn? Nhắn Zalo để được kỹ sư PTC hỗ trợ ngay.
+            Cần xử lý gấp? Gửi bản vẽ hoặc BOQ qua Zalo để kỹ sư PTC bóc tách ngay.
           </p>
         </div>
       ) : null}
@@ -122,21 +123,16 @@ export function LeadForm({
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">
-          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Yêu cầu kỹ thuật — khối lượng, quy cách, tiến độ giao hàng</Label>
+          <Label className="text-[12px] font-semibold tracking-wide text-ink uppercase" htmlFor="note">Ghi chú yêu cầu kỹ thuật</Label>
           <Textarea className="rounded-none" id="note" name="note" rows={4} placeholder="Ví dụ: 1 tủ MSB 4000A theo IEC 61439-2, 3 tủ DB tầng, 400m thang cáp mạ kẽm nhúng nóng – giao đợt đầu trong 6 tuần." />
         </div>
         <div className="sm:col-span-2">
           <Button type="submit" size="xl" disabled={loading} className="w-full sm:w-auto">
-            {loading ? "Đang gửi…" : "Yêu cầu báo giá kỹ thuật"}
+            {loading ? "Đang gửi…" : "Gửi yêu cầu báo giá"}
           </Button>
         </div>
       </form>
-
-      <div className="mt-7 flex flex-wrap items-center gap-3 border-t border-border pt-5">
-        <span className="text-sm text-muted-foreground">Đã có bản vẽ hoặc BOQ? Gửi qua Zalo để PTC bóc tách ngay:</span>
-        <ZaloButton label="Gửi BOQ để PTC bóc tách" size="sm" location={`form-${sourcePage}`} />
-      </div>
-
     </div>
   );
 }
+

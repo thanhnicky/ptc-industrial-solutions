@@ -1,7 +1,7 @@
 export const CONTACT = {
   companyVi: "Công ty Cổ phần Tủ bảng điện PTC",
   brand: "PTC SWITCHBOARD",
-  slogan: "Chất lượng thật – Tiến độ thật",
+  slogan: "Đúng tiêu chuẩn – Đúng tiến độ",
   hotline: "0836 97 77 99",
   hotlineRaw: "0836977799",
   sales: ["0945 678 604", "0979 999 016", "0906 912 707"],
@@ -27,12 +27,13 @@ export const NAV = [
 
 /** Trust strip ngay dưới hero. */
 export const TRUST_STRIP = [
-  "Nhà máy khép kín 2.700 m² tại TP.HCM",
-  "Thiết kế – sản xuất – thử nghiệm nội bộ",
-  "Sản xuất theo IEC 61439 · ISO 9001:2015",
-  "Báo giá kỹ thuật trong 24h làm việc",
-  "Một đầu mối cho tủ điện và thang máng cáp",
+  "Nhà máy 2.700 m² tại TP.HCM",
+  "Sản xuất theo IEC 61439 & ISO 9001:2015",
+  "Bám tiến độ theo từng giai đoạn dự án",
+  "Một đầu mối cho tủ điện & thang máng cáp",
+  "Báo giá kỹ thuật trong 24 giờ làm việc",
 ];
+
 
 /** Khối số liệu năng lực. */
 export const STATS = [
@@ -48,12 +49,13 @@ export const PRODUCT_LINES = [
     index: "01",
     kicker: "Tủ bảng điện hạ thế",
     title: "Tủ điện công nghiệp",
-    desc: "Đóng tủ đúng single-line diagram được duyệt: vỏ cơ khí gia công tại xưởng PTC, thanh cái đồng tính toán theo dòng định mức và Icw, thiết bị đóng cắt đúng chủng loại phê duyệt. Mọi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ đủ để nghiệm thu một lần.",
+    desc: "Đóng tủ theo single-line diagram đã duyệt: vỏ cơ khí gia công tại xưởng PTC, thanh cái đồng tính theo dòng định mức và Icw, thiết bị đóng cắt đúng chủng loại phê duyệt. Mỗi tủ đều qua routine test theo IEC 61439-2 và bàn giao kèm hồ sơ đủ cho nghiệm thu.",
     items: [
-      "Tủ phân phối tổng MSB / MDB đến 6300A",
-      "Tủ phân phối tầng DB, tủ tụ bù, tủ ATS chuyển nguồn",
-      "Tủ điều khiển động cơ (MCC), tủ biến tần (VSD)",
-      "Tủ điện mặt trời: DC combiner, tủ AC, tủ hòa lưới",
+      "Tủ MSB / MDB đến 6300A",
+      "Tủ DB tầng, tủ tụ bù, tủ ATS",
+      "Tủ MCC – Motor Control Center",
+      "Tủ VSD – Variable Speed Drive",
+      "Tủ điện solar: DC combiner, AC, hòa lưới",
     ],
   },
   {
@@ -61,15 +63,17 @@ export const PRODUCT_LINES = [
     index: "02",
     kicker: "Hệ dẫn cáp",
     title: "Thang máng cáp",
-    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo kích thước riêng của từng tuyến cáp, xử lý bề mặt theo môi trường lắp đặt, giao đủ phụ kiện đồng bộ. Đi cùng gói tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ – loại bỏ rủi ro giao diện giữa hai nhà cung cấp.",
+    desc: "Cán – đột – chấn trên dây chuyền cơ khí PTC theo bản vẽ và quy cách từng tuyến cáp, xử lý bề mặt theo môi trường lắp đặt, giao đủ phụ kiện đồng bộ. Đi cùng gói tủ điện nên khớp tuyến, khớp BOQ và khớp tiến độ, không phát sinh giao diện giữa hai nhà cung cấp.",
     items: [
-      "Thang cáp, máng cáp, khay cáp, trunking",
-      "Mạ kẽm nhúng nóng, mạ điện phân hoặc inox",
-      "Sơn tĩnh điện theo mã màu quy định của dự án",
+      "Thang cáp, máng cáp, khay cáp, máng cáp kín",
+      "Mạ kẽm nhúng nóng, mạ kẽm điện phân, inox",
+      "Sơn tĩnh điện theo mã màu quy định dự án",
       "Phụ kiện đồng bộ: co, tê, giảm, nắp, ty treo",
+      "Gia công theo bản vẽ và quy cách dự án",
     ],
   },
 ];
+
 
 export const PROCESS = [
   {
