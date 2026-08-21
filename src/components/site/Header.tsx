@@ -4,7 +4,6 @@ import { Menu, X, Phone } from "lucide-react";
 import { CONTACT, NAV } from "@/lib/site";
 import { track } from "@/lib/analytics";
 import { Logo } from "./Logo";
-import { LanguageToggle } from "./LanguageToggle";
 import { ZaloButton } from "./ZaloButton";
 
 export function Header() {
@@ -29,7 +28,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <LanguageToggle className="hidden lg:flex" />
           <a
             href={`tel:${CONTACT.hotlineRaw}`}
             onClick={() => track("click_call", { location: "header" })}
@@ -38,7 +36,7 @@ export function Header() {
             <Phone className="size-3.5 text-primary" aria-hidden="true" />
             {CONTACT.hotline}
           </a>
-          <ZaloButton label="Nhắn Zalo" size="sm" location="header" className="hidden sm:inline-flex" />
+          <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="sm" location="header" className="hidden sm:inline-flex" />
           <button
             type="button"
             aria-label={open ? "Đóng menu" : "Mở menu"}
@@ -65,7 +63,6 @@ export function Header() {
             ))}
             <div className="flex items-center gap-3 py-4">
               <ZaloButton label="Nhắn Zalo gửi bản vẽ" location="mobile-menu" />
-              <LanguageToggle />
             </div>
           </div>
         </nav>
