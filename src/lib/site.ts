@@ -33,7 +33,7 @@ export const CONTACT = {
   offices: [
     "Văn phòng TP. Hồ Chí Minh (Trụ sở: 3C Nguyễn Văn Quỳ, P. Phú Thuận)",
     "Nhà máy sản xuất 2.700 m² (Số 15, Đường 15, KP 13, P. Linh Xuân, TP.HCM)",
-    "Hỗ trợ kỹ thuật & giao hàng toàn quốc (63 tỉnh thành)",
+    "Hỗ trợ kỹ thuật & giao hàng toàn quốc (34 tỉnh thành)",
   ],
   
   mapEmbed:
@@ -82,7 +82,7 @@ export const STATS = [
   { value: "2.700+", unit: "m²", label: "Nhà máy sản xuất khép kín tại Linh Xuân, TP.HCM" },
   { value: "10+", unit: "năm", label: "Kinh nghiệm tích lũy của đội ngũ kỹ sư tiền thân Powertech" },
   { value: "7", unit: "bước", label: "Quy trình thiết kế, gia công CNC, sơn tĩnh điện & routine test" },
-  { value: "63", unit: "tỉnh thành", label: "Phạm vi giao hàng và hỗ trợ kỹ thuật hiện trường" },
+  { value: "34", unit: "tỉnh thành", label: "Phạm vi giao hàng và hỗ trợ kỹ thuật hiện trường" },
 ];
 
 /** Quy trình sản xuất 7 bước chuẩn của PTC */

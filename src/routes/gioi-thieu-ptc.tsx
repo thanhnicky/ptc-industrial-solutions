@@ -106,7 +106,7 @@ function Page() {
                 </div>
                 <div>
                   <dt className="text-xs text-muted-foreground">Phạm vi phục vụ</dt>
-                  <dd className="font-medium text-ink">Giao hàng và hỗ trợ kỹ thuật 63 tỉnh thành trên toàn quốc</dd>
+                  <dd className="font-medium text-ink">Giao hàng và hỗ trợ kỹ thuật 34 tỉnh thành trên toàn quốc</dd>
                 </div>
               </dl>
             </div>
