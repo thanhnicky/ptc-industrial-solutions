@@ -73,17 +73,42 @@ export function LeadForm({
     });
 
     setLoading(true);
+
+    const needLabel = NEEDS.find((n) => n.value === payload.need)?.label || payload.need;
+
+    // 1. Send email directly to nguyenxuanthanh2009@gmail.com
+    try {
+      await fetch("https://formsubmit.co/ajax/nguyenxuanthanh2009@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `[BÁO GIÁ MỚI - PTC] ${payload.full_name} - ${payload.company} (${payload.phone})`,
+          _template: "table",
+          "Họ và tên": payload.full_name,
+          "Công ty / Dự án": payload.company,
+          "Số điện thoại": payload.phone,
+          "Email khách": payload.email || "Không cung cấp",
+          "Hạng mục quan tâm": needLabel,
+          "Ghi chú / Yêu cầu kỹ thuật": payload.note || "Không có",
+          "Trang gửi yêu cầu": sourcePage,
+          "Thời gian gửi": new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }),
+        }),
+      });
+    } catch (emailErr) {
+      console.warn("Direct email delivery attempt:", emailErr);
+    }
+
+    // 2. Save lead to Supabase database
     const { error } = await supabase.from("leads").insert(payload);
     
-    // Asynchronously dispatch email notification
+    // 3. Trigger Supabase Edge function (if configured)
     if (!error) {
       try {
-        supabase.functions.invoke("send-lead-email", { body: payload }).catch(() => {
-          // ignore background failure
-        });
-      } catch {
-        // ignore background failure
-      }
+        supabase.functions.invoke("send-lead-email", { body: payload }).catch(() => {});
+      } catch {}
     }
     
     setLoading(false);
