@@ -13,7 +13,7 @@ export const CONTACT = {
   slogan: "Đúng tiêu chuẩn – Đúng tiến độ",
   canonicalDomain: SITE_URL,
   
-  // Hotline kỹ thuật (Hotline duy nhất được xác thực)
+  // Hotline CSKH (Hotline duy nhất được xác thực)
   hotline: "0836 97 77 99",
   hotlineRaw: "0836977799",
   hotlineDisplay: "0836 97 77 99",

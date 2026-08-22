@@ -92,7 +92,7 @@ function Page() {
               <Clock className="size-6 text-primary" aria-hidden="true" />
               <h2 className="mt-3 text-sm font-semibold text-ink">Phản hồi 2 giờ</h2>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Kênh tiếp nhận trực tiếp qua Hotline kỹ thuật và Zalo kỹ sư phụ trách dự án, giải đáp thắc mắc đấu nối 24/7.
+                Kênh tiếp nhận trực tiếp qua Hotline CSKH và Zalo kỹ sư phụ trách dự án, giải đáp thắc mắc đấu nối 24/7.
               </p>
             </div>
             <div className="rounded-lg border border-border bg-card p-5">

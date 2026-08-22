@@ -119,7 +119,7 @@ export function Footer() {
               {CONTACT.headOffice}
             </li>
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Hotline kỹ thuật</span>
+              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Hotline CSKH</span>
               <a
                 className="font-semibold text-white hover:underline tech-value"
                 href={`tel:${CONTACT.hotlineRaw}`}

@@ -39,7 +39,7 @@ export function CallButton({
     <Button asChild variant={variant} size={size}>
       <a href={`tel:${CONTACT.hotlineRaw}`} onClick={() => track("click_call", { location })}>
         <Phone aria-hidden="true" />
-        <span>Gọi hotline kỹ thuật</span>
+        <span>Gọi Hotline CSKH</span>
         <span className="hidden font-semibold sm:inline">· {CONTACT.hotline}</span>
       </a>
     </Button>

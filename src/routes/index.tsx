@@ -98,7 +98,7 @@ function Index() {
               className="mt-5 inline-flex items-center gap-2 text-[13.5px] font-medium text-muted-foreground transition-colors hover:text-ink tech-value"
             >
               <Phone className="size-3.5 text-primary" aria-hidden="true" />
-              <span>Gọi hotline kỹ thuật · {CONTACT.hotline}</span>
+              <span>Gọi Hotline CSKH · {CONTACT.hotline}</span>
             </a>
           </div>
 
@@ -484,7 +484,7 @@ function Index() {
                 className="inline-flex items-center gap-2 text-[14px] font-medium text-steel-foreground/75 transition-colors hover:text-white tech-value"
               >
                 <Phone className="size-3.5" aria-hidden="true" />
-                <span>Gọi hotline kỹ thuật · {CONTACT.hotline}</span>
+                <span>Gọi Hotline CSKH · {CONTACT.hotline}</span>
               </a>
             </div>
             <p className="mt-4 text-[13px] text-steel-foreground/55">
@@ -493,7 +493,7 @@ function Index() {
 
             <dl className="mt-10 grid gap-5 border-t border-steel-foreground/15 pt-8 text-[14px] sm:grid-cols-2">
               <div>
-                <dt className="text-steel-foreground/60 text-[12.5px] uppercase font-mono">Hotline kỹ thuật 24/7</dt>
+                <dt className="text-steel-foreground/60 text-[12.5px] uppercase font-mono">Hotline CSKH 24/7</dt>
                 <dd className="mt-1 font-semibold text-white">
                   <a href={`tel:${CONTACT.hotlineRaw}`} className="hover:underline tech-value">
                     <Phone className="mr-1.5 inline size-3.5 text-primary" aria-hidden="true" />

@@ -88,7 +88,7 @@ function Page() {
                   <dd className="font-medium text-ink">{CONTACT.email}</dd>
                 </div>
                 <div>
-                  <dt className="text-xs text-muted-foreground">Hotline hỗ trợ kỹ thuật</dt>
+                  <dt className="text-xs text-muted-foreground">Hotline CSKH</dt>
                   <dd className="font-medium text-ink">{CONTACT.hotline}</dd>
                 </div>
               </dl>

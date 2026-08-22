@@ -73,7 +73,7 @@ function Page() {
                 <h2 className="text-base font-bold text-ink">Kênh kết nối kỹ thuật trực tiếp:</h2>
                 <div className="mt-4 space-y-4 text-xs text-muted-foreground">
                   <div>
-                    <span className="font-semibold text-ink">Hotline kỹ thuật:</span>
+                    <span className="font-semibold text-ink">Hotline CSKH:</span>
                     <p className="mt-0.5 text-sm font-bold text-primary">{CONTACT.hotline}</p>
                   </div>
                   <div>
