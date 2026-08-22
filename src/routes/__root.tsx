@@ -14,7 +14,6 @@ import { getOrganizationSchema } from "@/lib/schema";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { StickyContact } from "@/components/site/StickyContact";
 import { Toaster } from "@/components/ui/sonner";
 
 
@@ -161,11 +160,10 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
-        <main className="flex-1 pb-14 sm:pb-0">
+        <main className="flex-1">
           <Outlet />
         </main>
         <Footer />
-        <StickyContact />
       </div>
       
       <Toaster position="top-center" richColors />
