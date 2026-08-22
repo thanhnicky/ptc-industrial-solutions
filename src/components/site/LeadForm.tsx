@@ -74,6 +74,18 @@ export function LeadForm({
 
     setLoading(true);
     const { error } = await supabase.from("leads").insert(payload);
+    
+    // Asynchronously dispatch email notification
+    if (!error) {
+      try {
+        supabase.functions.invoke("send-lead-email", { body: payload }).catch(() => {
+          // ignore background failure
+        });
+      } catch {
+        // ignore background failure
+      }
+    }
+    
     setLoading(false);
 
     if (error) {
