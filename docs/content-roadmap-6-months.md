@@ -48,7 +48,7 @@ Foundations   6 Core MSB/   Cable Tray &   Knowledge &    Case Studies   Topical
 ---
 
 ### THÁNG 3: CABLE MANAGEMENT CLUSTER & NĂNG LỰC SẢN XUẤT
-* **Mục tiêu:** Triển khai toàn bộ nhóm sản phẩm thang máng cáp mạ kẽm nhúng nóng và đẩy mạnh entity nhà máy 2.700m².
+* **Mục tiêu:** Triển khai toàn bộ nhóm sản phẩm thang máng cáp mạ kẽm nhúng nóng và đẩy mạnh entity nhà máy ~ 3.000m².
 * **Hạng mục triển khai:**
   - `/thang-mang-cap/mang-cap-ma-kem-nhung-nong`
   - `/thang-mang-cap/khay-cap-ma-kem-nhung-nong`

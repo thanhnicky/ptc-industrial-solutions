@@ -6,9 +6,9 @@ import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import { CONTACT } from "@/lib/site";
 
-const TITLE = "Năng lực sản xuất – nhà máy 2.700m² tại TP.HCM | PTC";
+const TITLE = "Năng lực sản xuất – nhà máy ~ 3.000m² tại TP.HCM | PTC";
 const DESC =
-  "Nhà máy PTC 2.700m² tại Linh Xuân, TP.HCM: dây chuyền cắt – đột – chấn CNC, buồng sơn tĩnh điện, khu lắp ráp và phòng thử nghiệm tủ điện.";
+  "Nhà máy PTC ~ 3.000m² tại Linh Xuân, TP.HCM: dây chuyền cắt – đột – chấn CNC, buồng sơn tĩnh điện, khu lắp ráp và phòng thử nghiệm tủ điện.";
 
 export const Route = createFileRoute("/nang-luc-san-xuat")({
   head: () => ({
@@ -34,7 +34,7 @@ const LINES = [
 ];
 
 const STATS = [
-  ["2.700 m²", "Diện tích nhà máy"],
+  ["~ 3.000 m²", "Diện tích nhà máy"],
   ["3", "Văn phòng: TP.HCM – Hà Nội – Đà Nẵng"],
   ["6300A", "Dòng định mức tủ MSB tối đa"],
   ["24h", "Thời gian phản hồi báo giá"],

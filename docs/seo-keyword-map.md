@@ -9,7 +9,7 @@
 
 | URL Canonical | Primary Keyword | Secondary Keywords | Search Intent | Funnel Stage | Buyer Persona | CTA Chính | Evidence / Asset Cần | Trạng Thái |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `/` | tủ điện công nghiệp & thang máng cáp | nhà sản xuất tủ điện, công ty sản xuất tủ điện hạ thế, thang máng cáp công nghiệp | Commercial / Navigational | BoFu | Tổng thầu M&E, Chủ đầu tư, Procurement | Nhắn Zalo gửi bản vẽ / Gửi BOQ | Chứng chỉ ISO 9001, IEC 61439, ảnh nhà máy 2.700m² | **Ready** |
+| `/` | tủ điện công nghiệp & thang máng cáp | nhà sản xuất tủ điện, công ty sản xuất tủ điện hạ thế, thang máng cáp công nghiệp | Commercial / Navigational | BoFu | Tổng thầu M&E, Chủ đầu tư, Procurement | Nhắn Zalo gửi bản vẽ / Gửi BOQ | Chứng chỉ ISO 9001, IEC 61439, ảnh nhà máy ~ 3.000m² | **Ready** |
 | `/gioi-thieu-ptc` | công ty sản xuất tủ điện PTC | công ty cổ phần tủ bảng điện PTC, năng lực sản xuất PTC | Informational / Trust | MoFu | Ban quản lý dự án, Tư vấn giám sát | Nhắn Zalo tư vấn năng lực | Pháp nhân, hồ sơ năng lực PDF | **Ready** |
 | `/nang-luc-san-xuat` | nhà máy sản xuất tủ điện TP HCM | xưởng gia công tủ điện Linh Xuân, máy cắt đột CNC, sơn tĩnh điện tủ điện | Commercial / Trust | MoFu | Kỹ sư MEP, Trưởng ban quản lý dự án | Nhắn Zalo đặt lịch thăm xưởng | Danh mục máy móc CNC, video dây chuyền | **Ready** |
 | `/tieu-chuan-chat-luong` | tiêu chuẩn sản xuất tủ điện | IEC 61439-1, IEC 61439-2, ISO 9001:2015, TCVN 7994, Routine test tủ điện | Informational / Trust | MoFu | Kỹ sư QC, Tư vấn thiết kế MEP | Nhắn Zalo nhận hồ sơ QC | Kết quả thử nghiệm QUATEST 3, mẫu biên bản Routine test | **Ready** |

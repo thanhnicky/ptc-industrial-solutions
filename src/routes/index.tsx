@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 
 const TITLE = "Tủ điện công nghiệp & thang máng cáp | PTC Switchboard";
 const DESC =
-  "PTC sản xuất tủ điện hạ thế (MSB, MDB, DB, ATS, MCC, VSD) và thang máng cáp theo IEC 61439, ISO 9001:2015. Nhà máy 2.700 m² tại TP.HCM, báo giá kỹ thuật trong 24h.";
+  "PTC sản xuất tủ điện hạ thế (MSB, MDB, DB, ATS, MCC, VSD) và thang máng cáp theo IEC 61439, ISO 9001:2015. Nhà máy ~ 3.000 m² tại TP.HCM, báo giá kỹ thuật trong 24h.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,7 +80,7 @@ function Index() {
               <span className="block text-primary">cho nhà máy, KCN và dự án công nghiệp</span>
             </h1>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-relaxed text-muted-foreground sm:text-[17.5px]">
-              Thiết kế – sản xuất – thử nghiệm tại nhà máy 2.700 m² ở TP.HCM theo IEC 61439-1 &amp; 2
+              Thiết kế – sản xuất – thử nghiệm tại nhà máy ~ 3.000 m² ở TP.HCM theo IEC 61439-1 &amp; 2
               và ISO 9001:2015. Một đầu mối chịu trách nhiệm cả phần tủ và phần dẫn cáp, phối hợp
               bản vẽ, hồ sơ và tiến độ cùng tổng thầu M&amp;E, chủ đầu tư và EPC solar. Gửi bản vẽ
               hoặc BOQ – nhận báo giá kỹ thuật nhanh chóng từ chuyên gia PTC.

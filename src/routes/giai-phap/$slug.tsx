@@ -62,7 +62,7 @@ const SOLUTIONS_DATA: Record<
     ],
     painPoints: [
       { pain: "Bản vẽ thiết kế cơ sở còn thiếu nhiều thông số", solution: "Kỹ sư PTC chủ động rà soát, đề xuất thông số dòng Iđm, Icw và sơ đồ nhị thứ để nhà thầu trình duyệt." },
-      { pain: "Tiến độ gấp, trễ hạn giao tủ làm chậm kéo cáp", solution: "Nhà máy 2.700 m² tại TP.HCM với máy CNC tốc độ cao cho phép gia công nhanh và giao từng đợt theo yêu cầu." },
+      { pain: "Tiến độ gấp, trễ hạn giao tủ làm chậm kéo cáp", solution: "Nhà máy ~ 3.000 m² tại TP.HCM với máy CNC tốc độ cao cho phép gia công nhanh và giao từng đợt theo yêu cầu." },
       { pain: "Khó khăn trong khâu nghiệm thu vật tư đầu vào", solution: "Cung cấp hồ sơ chất lượng hoàn chỉnh, hỗ trợ TVGS chứng kiến FAT tại xưởng PTC." },
     ],
     recommendedProducts: ["Tủ điện tổng MSB", "Tủ phân phối SDB / DB", "Máng cáp sơn tĩnh điện", "Khay cáp mạ kẽm nhúng nóng"],

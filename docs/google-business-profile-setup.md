@@ -20,7 +20,7 @@
 ---
 
 ## 2. ĐOẠN MÔ TẢ DOANH NGHIỆP (750 KÝ TỰ CHUẨN)
-> Công ty Cổ phần Tủ bảng điện PTC (PTC Switchboard) chuyên sản xuất, lắp ráp tủ điện hạ thế và gia công hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Với nhà máy quy mô hơn 2.700 m² tại Linh Xuân (TP. Thủ Đức, TP.HCM), PTC sở hữu dây chuyền cắt đột CNC, buồng sơn tĩnh điện công nghiệp và phòng thử nghiệm Routine test 100% trước khi xuất xưởng. Các sản phẩm chủ lực: Tủ điện tổng MSB đến 6300A, tủ điều khiển động cơ MCC, tủ biến tần VSD, tủ hòa đồng bộ, tủ solar và thang máng cáp mạ kẽm nhúng nóng ASTM A123. Phục vụ tổng thầu M&E, chủ đầu tư nhà máy KCN và đơn vị EPC toàn quốc. Hotline kỹ thuật: 0836 97 77 99.
+> Công ty Cổ phần Tủ bảng điện PTC (PTC Switchboard) chuyên sản xuất, lắp ráp tủ điện hạ thế và gia công hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Với nhà máy quy mô ~ 3.000 m² tại Linh Xuân (TP. Thủ Đức, TP.HCM), PTC sở hữu dây chuyền cắt đột CNC, buồng sơn tĩnh điện công nghiệp và phòng thử nghiệm Routine test 100% trước khi xuất xưởng. Các sản phẩm chủ lực: Tủ điện tổng MSB đến 6300A, tủ điều khiển động cơ MCC, tủ biến tần VSD, tủ hòa đồng bộ, tủ solar và thang máng cáp mạ kẽm nhúng nóng ASTM A123. Phục vụ tổng thầu M&E, chủ đầu tư nhà máy KCN và đơn vị EPC toàn quốc. Hotline CSKH: 0836 97 77 99.
 
 ---
 

@@ -98,7 +98,7 @@ function Page() {
 
       <PageHero
         title={product.name}
-        subtitle={`${product.shortDesc} Thiết kế và thử nghiệm tại nhà máy 2.700 m² của PTC theo tiêu chuẩn IEC 61439-1 & 2 và ISO 9001:2015.`}
+        subtitle={`${product.shortDesc} Thiết kế và thử nghiệm tại nhà máy ~ 3.000 m² của PTC theo tiêu chuẩn IEC 61439-1 & 2 và ISO 9001:2015.`}
         image={IMAGES.switchboard}
       >
         <ZaloButton size="lg" location={`hero-${product.slug}`} label="Nhắn Zalo gửi bản vẽ báo giá" />

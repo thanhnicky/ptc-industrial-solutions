@@ -10,7 +10,7 @@
 
 ### A. Core & Brand Entity Pages:
 1. `/` — Trang chủ: Tối ưu H1, Hero, Trust Strip, 7 bước sản xuất, Schema Organization, WebSite, LocalBusiness, FAQPage.
-2. `/gioi-thieu-ptc` — Giới thiệu pháp nhân, nhà máy 2.700m², lịch sử đội ngũ tiền thân Powertech, SLA 2h/24-48h.
+2. `/gioi-thieu-ptc` — Giới thiệu pháp nhân, nhà máy ~ 3.000m², lịch sử đội ngũ tiền thân Powertech, SLA 2h/24-48h.
 3. `/nang-luc-san-xuat` — Năng lực xưởng cơ khí CNC, sơn tĩnh điện, phòng kiểm tra Routine test.
 4. `/tieu-chuan-chat-luong` — Tiêu chuẩn ISO 9001:2015, IEC 61439-1/2, TCVN 7994, QUATEST 3.
 5. `/quy-trinh-san-xuat-tu-dien` — 7 bước sản xuất và các hạng mục Routine test bắt buộc.

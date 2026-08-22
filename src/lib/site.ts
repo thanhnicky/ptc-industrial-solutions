@@ -32,7 +32,7 @@ export const CONTACT = {
   
   offices: [
     "Văn phòng TP. Hồ Chí Minh (Trụ sở: 3C Nguyễn Văn Quỳ, P. Phú Thuận)",
-    "Nhà máy sản xuất 2.700 m² (Số 15, Đường 15, KP 13, P. Linh Xuân, TP.HCM)",
+    "Nhà máy sản xuất ~ 3.000 m² (Số 15, Đường 15, KP 13, P. Linh Xuân, TP.HCM)",
     "Hỗ trợ kỹ thuật & giao hàng toàn quốc (34 tỉnh thành)",
   ],
   
@@ -69,7 +69,7 @@ export const NAV = [
 
 /** Trust strip / Highlight năng lực */
 export const TRUST_STRIP = [
-  "Nhà máy hơn 2.700 m² tại TP.HCM",
+  "Nhà máy ~ 3.000 m² tại TP.HCM",
   "Thiết kế theo IEC 61439 & ISO 9001:2015",
   "Quy trình sản xuất 7 bước khép kín",
   "Đội ngũ kế thừa hơn 10 năm kinh nghiệm",
@@ -79,7 +79,7 @@ export const TRUST_STRIP = [
 
 /** Số liệu năng lực xác thực */
 export const STATS = [
-  { value: "2.700+", unit: "m²", label: "Nhà máy sản xuất khép kín tại Linh Xuân, TP.HCM" },
+  { value: "~3.000", unit: "m²", label: "Nhà máy sản xuất khép kín tại Linh Xuân, TP.HCM" },
   { value: "10+", unit: "năm", label: "Kinh nghiệm tích lũy của đội ngũ kỹ sư tiền thân Powertech" },
   { value: "7", unit: "bước", label: "Quy trình thiết kế, gia công CNC, sơn tĩnh điện & routine test" },
   { value: "34", unit: "tỉnh thành", label: "Phạm vi giao hàng và hỗ trợ kỹ thuật hiện trường" },

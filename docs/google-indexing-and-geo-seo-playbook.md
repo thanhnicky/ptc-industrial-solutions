@@ -56,7 +56,7 @@ Người mua B2B (Nhà thầu M&E, Chủ đầu tư) thường tìm kiếm theo 
 2. **Địa chỉ:** `Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh`
 3. **Danh mục chính:** *Nhà sản xuất thiết bị điện (Electrical equipment manufacturer)*, *Nhà máy sản xuất (Manufacturer)*.
 4. **Khu vực phục vụ (Service Area):** Chọn TP.HCM, Bình Dương, Đồng Nai, Long An, Bà Rịa - Vũng Tàu, Tây Ninh, Cần Thơ.
-5. **Hình ảnh thật:** Đăng 10–20 ảnh chụp nhà máy 2.700 m², máy đột dập CNC, sản phẩm tủ MSB đã đấu thanh cái, xe tải giao hàng.
+5. **Hình ảnh thật:** Đăng 10–20 ảnh chụp nhà máy ~ 3.000 m², máy đột dập CNC, sản phẩm tủ MSB đã đấu thanh cái, xe tải giao hàng.
 6. **Đánh giá (Reviews):** Nhờ đối tác, khách hàng để lại 5–10 đánh giá 5 sao kèm từ khóa *"nhà máy uy tín"*, *"tủ điện chất lượng"*, *"giao hàng đúng tiến độ"*.
 
 ### 3. Đồng Nhất NAP (Name - Address - Phone) trên Toàn Mạng
@@ -70,5 +70,5 @@ Thông tin sau đây cần xuất hiện 100% đồng nhất trên Website, Goog
 ## PHẦN 3: TỐI ƯU GEO CHO AI OVERVIEWS & CHATGPT SEARCH (GENERATIVE ENGINE OPTIMIZATION)
 
 1. **Schema JSON-LD LocalBusiness & Manufacturer:** Đã được cài đặt trực tiếp vào code với tọa độ GPS `10.8753, 106.7725`, khu vực phục vụ `areaServed` và danh mục sản phẩm.
-2. **Dữ liệu thực tế, số liệu rõ ràng:** AI ưu tiên trích dẫn các trang có thông số kỹ thuật rõ ràng (IEC 61439, Icw 100kA, diện tích 2.700 m², SLA phản hồi 2h).
+2. **Dữ liệu thực tế, số liệu rõ ràng:** AI ưu tiên trích dẫn các trang có thông số kỹ thuật rõ ràng (IEC 61439, Icw 100kA, diện tích ~ 3.000 m², SLA phản hồi 2h).
 3. **Câu trả lời trực diện (Direct Answer):** Mỗi bài viết kỹ thuật trên web đều có thẻ Tóm tắt nhanh (`QuickSummary`) giúp AI bot quét lấy làm đoạn trích nổi bật (Featured Snippets).

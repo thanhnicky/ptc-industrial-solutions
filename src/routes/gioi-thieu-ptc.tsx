@@ -12,7 +12,7 @@ import { OrganizationSchema, LocalBusinessSchema } from "@/components/seo/JsonLd
 
 const TITLE = "Giới thiệu Công ty Cổ phần Tủ bảng điện PTC | Năng lực & Pháp nhân";
 const DESC =
-  "Công ty Cổ phần Tủ bảng điện PTC chuyên sản xuất tủ điện hạ thế và thang máng cáp theo chuẩn IEC 61439, ISO 9001:2015. Nhà máy hơn 2.700 m² tại Linh Xuân, TP.HCM.";
+  "Công ty Cổ phần Tủ bảng điện PTC chuyên sản xuất tủ điện hạ thế và thang máng cáp theo chuẩn IEC 61439, ISO 9001:2015. Nhà máy ~ 3.000 m² tại Linh Xuân, TP.HCM.";
 
 export const Route = createFileRoute("/gioi-thieu-ptc")({
   head: () => ({
@@ -63,7 +63,7 @@ function Page() {
             title="Hồ sơ năng lực cốt lõi của PTC"
             bullets={[
               "Pháp nhân: CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC (Thương hiệu PTC Switchboard).",
-              "Nhà máy sản xuất: Hơn 2.700 m² khép kín tại Số 15, Đường 15, Khu Phố 13, P. Linh Xuân, TP.HCM.",
+              "Nhà máy sản xuất: ~ 3.000 m² khép kín tại Số 15, Đường 15, Khu Phố 13, P. Linh Xuân, TP.HCM.",
               "Đội ngũ kỹ thuật: Kế thừa hơn 10 năm kinh nghiệm trong mảng cơ điện và năng lượng của đội ngũ tiền thân Powertech.",
               "Tiêu chuẩn công bố: ISO 9001:2015, IEC 61439-1/2, TCVN 7994-1:2009; thử nghiệm QUATEST 3.",
               "Quy trình sản xuất 7 bước: 100% Routine Test trước khi xuất xưởng và bàn giao hồ sơ nghiệm thu hoàn chỉnh.",
@@ -97,7 +97,7 @@ function Page() {
               <h2 className="text-sm font-semibold tracking-wide text-ink uppercase">Địa điểm hoạt động</h2>
               <dl className="mt-4 space-y-3 text-sm">
                 <div>
-                  <dt className="text-xs text-muted-foreground">Nhà máy sản xuất (2.700 m²)</dt>
+                  <dt className="text-xs text-muted-foreground">Nhà máy sản xuất (~ 3.000 m²)</dt>
                   <dd className="font-medium text-ink">{CONTACT.factoryAddress}</dd>
                 </div>
                 <div>
@@ -122,7 +122,7 @@ function Page() {
               <div className="flex gap-4 rounded-lg border border-border p-5">
                 <Factory className="size-6 shrink-0 text-primary" aria-hidden="true" />
                 <div>
-                  <h3 className="font-semibold text-ink">Nhà máy 2.700 m² khép kín</h3>
+                  <h3 className="font-semibold text-ink">Nhà máy ~ 3.000 m² khép kín</h3>
                   <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                     Sở hữu dây chuyền cắt đột CNC, buồng phun sơn tĩnh điện công nghiệp, khu vực gia công uốn thanh cái đồng và phòng kiểm tra thử nghiệm tại xưởng.
                   </p>

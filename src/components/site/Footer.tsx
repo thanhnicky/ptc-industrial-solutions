@@ -17,7 +17,7 @@ export function Footer() {
             />
           </div>
           <p className="text-[14px] leading-relaxed text-steel-foreground/80">
-            <strong>{CONTACT.legalName}</strong> (Thương hiệu: {CONTACT.brand}) – Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Nhà máy hơn 2.700 m² tại Linh Xuân, TP.HCM.
+            <strong>{CONTACT.legalName}</strong> (Thương hiệu: {CONTACT.brand}) – Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Nhà máy ~ 3.000 m² tại Linh Xuân, TP.HCM.
           </p>
           <div className="space-y-1.5 text-[13px] text-steel-foreground/70">
             <p><strong>Tiêu chuẩn:</strong> ISO 9001:2015 · IEC 61439-1/2 · QUATEST 3</p>
@@ -111,7 +111,7 @@ export function Footer() {
           <h2 className="text-[13px] font-semibold tracking-wider text-steel-foreground/70 uppercase font-mono">Thông tin liên hệ</h2>
           <ul className="mt-4 space-y-3 text-[14px] text-steel-foreground/80">
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Nhà máy sản xuất (2.700 m²)</span>
+              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Nhà máy sản xuất (~ 3.000 m²)</span>
               {CONTACT.factoryAddress}
             </li>
             <li>
