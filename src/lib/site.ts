@@ -8,6 +8,8 @@ export const SITE_URL = "https://tudienptc.vn";
 export const CONTACT = {
   legalName: "CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC",
   companyVi: "Công ty Cổ phần Tủ bảng điện PTC",
+  taxCode: "0319324471",
+  mst: "0319324471",
   brand: "PTC Switchboard",
   brandShort: "PTC",
   slogan: "Đúng tiêu chuẩn – Đúng tiến độ",

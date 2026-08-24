@@ -44,6 +44,10 @@ function Page() {
             <SectionHeading eyebrow="Thông tin công ty" title={CONTACT.companyVi} />
             <dl className="space-y-5 text-sm">
               <div>
+                <dt className="font-semibold text-ink">Mã số thuế (MST)</dt>
+                <dd className="text-primary font-semibold tech-value">{CONTACT.taxCode}</dd>
+              </div>
+              <div>
                 <dt className="font-semibold text-ink">Hotline CSKH (24/7)</dt>
                 <dd className="text-muted-foreground">{CONTACT.hotline}</dd>
               </div>

@@ -80,6 +80,10 @@ function Page() {
                   <dd className="font-semibold text-ink">{CONTACT.legalName}</dd>
                 </div>
                 <div>
+                  <dt className="text-xs text-muted-foreground">Mã số thuế (MST)</dt>
+                  <dd className="font-semibold text-primary tech-value">{CONTACT.taxCode}</dd>
+                </div>
+                <div>
                   <dt className="text-xs text-muted-foreground">Tên thương hiệu</dt>
                   <dd className="font-medium text-ink">{CONTACT.brand} ({CONTACT.brandShort})</dd>
                 </div>

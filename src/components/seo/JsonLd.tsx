@@ -7,6 +7,8 @@ export function OrganizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: CONTACT.legalName,
     alternateName: [CONTACT.brand, CONTACT.brandShort, "PTC Switchboard"],
+    taxID: CONTACT.taxCode,
+    vatID: CONTACT.taxCode,
     url: SITE_URL,
     logo: `${SITE_URL}/logo-ptc.png`,
     email: CONTACT.email,

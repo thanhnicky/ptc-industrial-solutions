@@ -20,6 +20,7 @@ export function Footer() {
             <strong>{CONTACT.legalName}</strong> (Thương hiệu: {CONTACT.brand}) – Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Nhà máy ~ 3.000 m² tại Linh Xuân, TP.HCM.
           </p>
           <div className="space-y-1.5 text-[13px] text-steel-foreground/70">
+            <p><strong>Mã số thuế:</strong> {CONTACT.taxCode}</p>
             <p><strong>Tiêu chuẩn:</strong> ISO 9001:2015 · IEC 61439-1/2 · QUATEST 3</p>
             <p><strong>SLA Hậu mãi:</strong> Phản hồi 2h · Hiện trường 24–48h</p>
           </div>

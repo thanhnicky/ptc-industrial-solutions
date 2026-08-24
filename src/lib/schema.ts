@@ -7,6 +7,8 @@ export function getOrganizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: CONTACT.legalName,
     alternateName: ["PTC Switchboard", "Tủ Điện PTC", "Công ty Cổ phần Tủ bảng điện PTC"],
+    taxID: CONTACT.taxCode,
+    vatID: CONTACT.taxCode,
     url: SITE_URL,
     logo: `${SITE_URL}/logo-ptc.png`,
     image: `${SITE_URL}/nha-may-tu-dien-ptc.jpg`,
