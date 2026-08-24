@@ -77,32 +77,32 @@
   --space-20: 5rem;
   --space-24: 6rem;
 
-  /* Precision Industrial Colors */
-  --radius: 0.375rem;
-  --background: oklch(0.99 0.002 106);
-  --foreground: oklch(0.25 0.01 250);
-  --ink: oklch(0.16 0.012 250);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.01 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.01 250);
-  --primary: oklch(0.42 0.07 225);
-  --primary-foreground: oklch(0.99 0.002 250);
-  --secondary: oklch(0.965 0.003 106);
-  --secondary-foreground: oklch(0.25 0.02 240);
-  --muted: oklch(0.965 0.003 106);
-  --muted-foreground: oklch(0.46 0.012 250);
-  --accent: oklch(0.94 0.015 225);
-  --accent-foreground: oklch(0.28 0.04 225);
-  --destructive: oklch(0.52 0.18 27);
-  --destructive-foreground: oklch(0.99 0.005 250);
-  --border: oklch(0.89 0.005 250);
-  --input: oklch(0.86 0.008 250);
-  --ring: oklch(0.42 0.07 225);
-  --zalo: oklch(0.42 0.07 225);
-  --zalo-foreground: oklch(0.99 0.002 250);
-  --steel: oklch(0.18 0.015 250);
-  --steel-foreground: oklch(0.97 0.004 106);
+    /* Precision Industrial Colors - Master Agency Color System */
+    --radius: 0.375rem;
+    --background: oklch(0.988 0.003 240);
+    --foreground: oklch(0.30 0.018 255);
+    --ink: oklch(0.16 0.028 260);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.30 0.018 255);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.30 0.018 255);
+    --primary: oklch(0.37 0.135 250);
+    --primary-foreground: oklch(0.99 0.002 250);
+    --secondary: oklch(0.96 0.006 245);
+    --secondary-foreground: oklch(0.24 0.02 255);
+    --muted: oklch(0.96 0.006 245);
+    --muted-foreground: oklch(0.48 0.018 255);
+    --accent: oklch(0.95 0.02 250);
+    --accent-foreground: oklch(0.26 0.09 250);
+    --destructive: oklch(0.52 0.18 27);
+    --destructive-foreground: oklch(0.99 0.005 250);
+    --border: oklch(0.90 0.008 250);
+    --input: oklch(0.85 0.012 250);
+    --ring: oklch(0.37 0.135 250);
+    --zalo: oklch(0.55 0.22 255);
+    --zalo-foreground: oklch(0.99 0.002 250);
+    --steel: oklch(0.15 0.035 255);
+    --steel-foreground: oklch(0.985 0.005 240);
 }
 
 .dark {
