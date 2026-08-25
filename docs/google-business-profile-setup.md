@@ -1,6 +1,6 @@
 # HƯỚNG DẪN THIẾT LẬP VÀ TỐI ƯU GOOGLE BUSINESS PROFILE (GBP)
 **Doanh nghiệp:** CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC  
-**Địa điểm:** Nhà máy sản xuất Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Hồ Chí Minh  
+**Địa điểm:** Nhà máy sản xuất Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh  
 **Mục tiêu:** Thống trị truy vấn Local SEO B2B ("nhà sản xuất tủ điện TP HCM", "thang máng cáp Thủ Đức").
 
 ---
@@ -12,7 +12,7 @@
   - `Nhà sản xuất kim loại tấm (Sheet metal manufacturer)`
   - `Dịch vụ kỹ thuật điện (Electrical engineering service)`
   - `Nhà cung cấp thiết bị công nghiệp (Industrial equipment supplier)`
-* **Địa chỉ chính xác:** `Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh`
+* **Địa chỉ chính xác:** `Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh`
 * **Số điện thoại:** `0836 97 77 99`
 * **Website URL gắn UTM:** `https://tudienptc.vn/?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 * **Giờ làm việc:** Thứ 2 – Thứ 7: 08:00 – 17:30 (Chủ nhật: Nghỉ).

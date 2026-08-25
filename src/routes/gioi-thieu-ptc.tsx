@@ -63,7 +63,7 @@ function Page() {
             title="Hồ sơ năng lực cốt lõi của PTC"
             bullets={[
               "Pháp nhân: CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC (Thương hiệu PTC Switchboard).",
-              "Nhà máy sản xuất: ~ 3.000 m² khép kín tại Số 15, Đường 15, Khu Phố 13, P. Linh Xuân, TP.HCM.",
+              "Nhà máy sản xuất: ~ 3.000 m² khép kín tại Số 15, Đường 15, P. Linh Xuân, TP.HCM.",
               "Đội ngũ kỹ thuật: Kế thừa hơn 10 năm kinh nghiệm trong mảng cơ điện và năng lượng của đội ngũ tiền thân Powertech.",
               "Tiêu chuẩn công bố: ISO 9001:2015, IEC 61439-1/2, TCVN 7994-1:2009; thử nghiệm QUATEST 3.",
               "Quy trình sản xuất 7 bước: 100% Routine Test trước khi xuất xưởng và bàn giao hồ sơ nghiệm thu hoàn chỉnh.",

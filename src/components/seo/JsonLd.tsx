@@ -26,7 +26,7 @@ export function OrganizationSchema() {
         name: "Nhà máy sản xuất Tủ điện & Thang máng cáp PTC",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân",
+          streetAddress: "Số 15, Đường 15, Phường Linh Xuân",
           addressLocality: "TP. Thủ Đức",
           addressRegion: "TP. Hồ Chí Minh",
           addressCountry: "VN",
@@ -84,7 +84,7 @@ export function LocalBusinessSchema() {
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân",
+      streetAddress: "Số 15, Đường 15, Phường Linh Xuân",
       addressLocality: "TP. Thủ Đức",
       addressRegion: "TP. Hồ Chí Minh",
       postalCode: "700000",

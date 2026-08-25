@@ -16,7 +16,7 @@
 5. `/quy-trinh-san-xuat-tu-dien` — 7 bước sản xuất và các hạng mục Routine test bắt buộc.
 6. `/bao-hanh-ho-tro-ky-thuat` — Chính sách bảo hành, SLA phản hồi 2h, hiện trường 24–48h.
 7. `/du-an` — Dự án thực tế (Ong Biển, Phú Mỹ 1, DPL, Hải Đức, LEGO VSIP 3, LG 17MWp).
-8. `/lien-he` — Thông tin liên hệ chuẩn hóa NAP, nhà máy Khu Phố 13 Linh Xuân, Hotline 0836 97 77 99, Email hi@tudienptc.vn.
+8. `/lien-he` — Thông tin liên hệ chuẩn hóa NAP, nhà máy Linh Xuân, Hotline 0836 97 77 99, Email hi@tudienptc.vn.
 
 ### B. Product Hubs & Chi tiết sản phẩm:
 1. `/tu-dien-cong-nghiep` — Hub tủ điện hạ thế.
@@ -111,5 +111,5 @@ VITE_GTM_ID=GTM-XXXXXXX
 6. **Xác minh Zalo Official Account (Zalo OA):** Đăng ký Zalo Doanh nghiệp và cập nhật link vào biến `VITE_ZALO_URL`.
 7. **Tải lên Catalogue PDF:** Đưa file Catalogue Tủ điện & Thang máng cáp lên cloud để gửi cho khách khi có yêu cầu.
 8. **Chạy thử nghiệm PageSpeed Insights:** Kiểm tra Core Web Vitals trên cả Mobile và Desktop đạt điểm xanh (> 90).
-9. **Rà soát dữ liệu Khu Phố 13:** Đảm bảo toàn bộ tài liệu hồ sơ doanh nghiệp khớp địa chỉ "Khu Phố 13, Phường Linh Xuân, TP.HCM".
+9. **Rà soát dữ liệu NAP:** Đảm bảo toàn bộ tài liệu hồ sơ doanh nghiệp khớp địa chỉ "Số 15, Đường 15, Phường Linh Xuân, TP.HCM".
 10. **Lên lịch đăng bài định kỳ:** Thực hiện theo `/docs/content-roadmap-6-months.md` và kiểm duyệt bài viết theo `/docs/content-governance-and-technical-review.md`.

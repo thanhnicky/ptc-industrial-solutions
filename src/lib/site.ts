@@ -27,14 +27,13 @@ export const CONTACT = {
   zalo: import.meta.env.VITE_ZALO_URL || "https://zalo.me/0836977799",
 
   // Địa chỉ nhà máy: Chuẩn hóa theo tài liệu xác minh doanh nghiệp
-  // NOTE: Địa chỉ đã xác minh là Khu Phố 13, Phường Linh Xuân, TP.HCM
-  factoryAddress: "Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Hồ Chí Minh",
-  factory: "Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Hồ Chí Minh",
+  factoryAddress: "Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh",
+  factory: "Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh",
   headOffice: "3C Nguyễn Văn Quỳ, Khu phố 1, Tổ 11, Phường Phú Thuận, TP. Hồ Chí Minh",
   
   offices: [
     "Văn phòng TP. Hồ Chí Minh (Trụ sở: 3C Nguyễn Văn Quỳ, P. Phú Thuận)",
-    "Nhà máy sản xuất ~ 3.000 m² (Số 15, Đường 15, KP 13, P. Linh Xuân, TP.HCM)",
+    "Nhà máy sản xuất ~ 3.000 m² (Số 15, Đường 15, P. Linh Xuân, TP.HCM)",
     "Hỗ trợ kỹ thuật & giao hàng toàn quốc (34 tỉnh thành)",
   ],
   

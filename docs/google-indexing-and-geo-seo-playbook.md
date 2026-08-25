@@ -53,7 +53,7 @@ Người mua B2B (Nhà thầu M&E, Chủ đầu tư) thường tìm kiếm theo 
 ### 2. Tối Ưu Triệt Để Google Business Profile (Google Maps)
 Đây là yếu tố quyết định 60% thứ hạng SEO GEO Local:
 1. **Tên Doanh Nghiệp chuẩn SEO:** `Nhà Máy Sản Xuất Tủ Điện & Thang Máng Cáp PTC Switchboard`
-2. **Địa chỉ:** `Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh`
+2. **Địa chỉ:** `Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh`
 3. **Danh mục chính:** *Nhà sản xuất thiết bị điện (Electrical equipment manufacturer)*, *Nhà máy sản xuất (Manufacturer)*.
 4. **Khu vực phục vụ (Service Area):** Chọn TP.HCM, Bình Dương, Đồng Nai, Long An, Bà Rịa - Vũng Tàu, Tây Ninh, Cần Thơ.
 5. **Hình ảnh thật:** Đăng 10–20 ảnh chụp nhà máy ~ 3.000 m², máy đột dập CNC, sản phẩm tủ MSB đã đấu thanh cái, xe tải giao hàng.
@@ -62,7 +62,7 @@ Người mua B2B (Nhà thầu M&E, Chủ đầu tư) thường tìm kiếm theo 
 ### 3. Đồng Nhất NAP (Name - Address - Phone) trên Toàn Mạng
 Thông tin sau đây cần xuất hiện 100% đồng nhất trên Website, Google Maps, Trang Vàng Doanh Nghiệp (YellowPages VN), Facebook, LinkedIn:
 - **Name:** Công ty Cổ phần Tủ bảng điện PTC
-- **Address:** Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Hồ Chí Minh
+- **Address:** Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh
 - **Phone:** 0836 97 77 99
 
 ---

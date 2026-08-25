@@ -8,7 +8,7 @@
 Mọi trang mạng xã hội, danh bạ doanh nghiệp, profile nhà thầu phải dùng chính xác 100% các dữ liệu sau:
 * **Tên pháp lý:** `CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC`
 * **Tên thương hiệu:** `PTC Switchboard`
-* **Địa chỉ nhà máy:** `Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân, TP. Hồ Chí Minh`
+* **Địa chỉ nhà máy:** `Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh`
 * **Địa chỉ trụ sở:** `3C Nguyễn Văn Quỳ, Khu phố 1, Tổ 11, Phường Phú Thuận, TP. Hồ Chí Minh`
 * **Điện thoại:** `0836 97 77 99`
 * **Email:** `hi@tudienptc.vn`
@@ -36,4 +36,4 @@ Mọi trang mạng xã hội, danh bạ doanh nghiệp, profile nhà thầu ph�
 ## 3. KHÔNG THỰC HIỆN CÁC HÀNH VI SPAM
 - Tuyệt đối không mua link rác hoặc spam đăng ký hàng loạt trên các web danh bạ kém chất lượng.
 - Không tự động tạo tài khoản mạo danh các tổ chức kiểm định độc lập.
-- Duy trì đồng bộ thông tin địa chỉ Khu Phố 13 (không dùng thông tin Khu Phố 4 cũ).
+- Duy trì đồng bộ thông tin địa chỉ: Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh.

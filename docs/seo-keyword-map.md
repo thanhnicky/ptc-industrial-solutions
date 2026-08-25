@@ -16,7 +16,7 @@
 | `/quy-trinh-san-xuat-tu-dien` | quy trình sản xuất tủ điện | 7 bước sản xuất tủ điện, quy trình lắp ráp tủ điện hạ thế, thử nghiệm routine test | Informational / Educational | MoFu | Kỹ sư MEP, Nhà thầu cơ điện | Nhắn Zalo gửi bản vẽ đơn tuyến | Ảnh/video 7 công đoạn thực tế tại xưởng | **Ready** |
 | `/bao-hanh-ho-tro-ky-thuat` | bảo hành tủ điện công nghiệp | hỗ trợ kỹ thuật hiện trường 24h, commissioning tủ điện hạ thế | Trust / Support | BoFu | Kỹ sư vận hành, Trưởng ban cơ điện | Nhắn Zalo hỗ trợ kỹ thuật | SLA 2h/24-48h, quy trình tiếp nhận sự cố | **Ready** |
 | `/du-an` | dự án tủ điện hạ thế tiêu biểu | dự án tủ điện solar, tủ điện nhà máy KCN, tủ điện LEGO VSIP 3, LG 17MWp | Commercial / Trust | MoFu / BoFu | Tổng thầu M&E, Chủ đầu tư FDI | Nhắn Zalo tư vấn dự án tương tự | Xác thực diễn đạt "kinh nghiệm đội ngũ tiền thân Powertech" | **Ready** |
-| `/lien-he` | liên hệ công ty tủ điện PTC | địa chỉ nhà máy tủ điện Linh Xuân, hotline kỹ thuật PTC | Navigational / Contact | BoFu | Tất cả khách hàng có nhu cầu | Gọi hotline / Nhắn Zalo | Địa chỉ xác minh Khu Phố 13, Google Map embed | **Ready** |
+| `/lien-he` | liên hệ công ty tủ điện PTC | địa chỉ nhà máy tủ điện Linh Xuân, hotline kỹ thuật PTC | Navigational / Contact | BoFu | Tất cả khách hàng có nhu cầu | Gọi hotline / Nhắn Zalo | Địa chỉ Số 15 Đường 15 Linh Xuân, Google Map embed | **Ready** |
 
 ---
 

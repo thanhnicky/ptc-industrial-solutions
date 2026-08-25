@@ -19,7 +19,7 @@ export function getOrganizationSchema() {
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Số 15, Đường 15, Khu Phố 13, Phường Linh Xuân",
+      streetAddress: "Số 15, Đường 15, Phường Linh Xuân",
       addressLocality: "Thành phố Thủ Đức",
       addressRegion: "Thành phố Hồ Chí Minh",
       postalCode: "700000",
