@@ -11,7 +11,7 @@ import { track } from "@/lib/analytics";
 
 const TITLE = "Dự án tiêu biểu – tủ điện & thang máng cáp | PTC";
 const DESC =
-  "Các dự án PTC đã triển khai: Ong Biển, ĐMTMN Phú Mỹ 1 1.460 kWp, kho vận DPL, Hải Đức, Lexus, LEGO VSIP 3, LG 17 MWp và nhiều nhà máy KCN.";
+  "Các dự án PTC / tiền thân Powertech đã triển khai: Phúc Ý – KCN Phú Mỹ 1 (999 kWp), Solarlink – Ong Biển (1.250 kWp), kho DPL & Hải Đức (960 kWp), Xưởng gạch Tuynel 2 (1.460 kWp), Lexus (250.96 kWp) và nhiều nhà máy KCN.";
 
 export const Route = createFileRoute("/du-an")({
   head: () => ({

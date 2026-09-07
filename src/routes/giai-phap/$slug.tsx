@@ -80,7 +80,7 @@ const SOLUTIONS_DATA: Record<
       "Tủ DC Combiner Box IP65: Chống nước, chống bụi, tích hợp SPD chống sét DC 1000V/1500V và cầu chì DC chuyên dụng.",
       "Tủ AC & Tủ hòa lưới: Đo đếm đa năng, bảo vệ quá áp/kém áp/tần số (Relay bảo vệ hòa lưới), liên động máy cắt ACB/MCCB.",
       "Máng cáp mạ kẽm nhúng nóng: Chiều dày mạ 65–85 µm, chịu bức xạ UV và gió bão trên mái tôn.",
-      "Kinh nghiệm thực tế: Kế thừa kinh nghiệm thực hiện hệ thống solar quy mô lớn (như LG 17 MWp, Phú Mỹ 1 1.460 kWp).",
+      "Kinh nghiệm thực tế: Kế thừa kinh nghiệm thực hiện hệ thống solar quy mô lớn (như LG 17 MWp, Phúc Ý – KCN Phú Mỹ 1 999 kWp, Solarlink – Ong Biển 1.250 kWp).",
     ],
     painPoints: [
       { pain: "Vỏ tủ ngoài trời bị đọng nước, rỉ sét sau 1-2 năm", solution: "Vỏ tủ IP65 2 lớp cánh, gioăng đúc PU liền khối, sơn polyester ngoài trời hoặc inox 304." },
