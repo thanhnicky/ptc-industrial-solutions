@@ -229,7 +229,6 @@ export interface ArticleSchemaProps {
   datePublished: string;
   dateModified: string;
   authorName?: string;
-  reviewerName?: string;
   image?: string;
 }
 
@@ -239,8 +238,7 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  authorName = "Ban Kỹ thuật PTC",
-  reviewerName = "Kỹ sư Trưởng PTC",
+  authorName = "Mr X.Bach PTC",
   image,
 }: ArticleSchemaProps) {
   const schema = {
@@ -256,11 +254,6 @@ export function ArticleSchema({
     author: {
       "@type": "Organization",
       name: authorName,
-      url: SITE_URL,
-    },
-    reviewedBy: {
-      "@type": "Organization",
-      name: reviewerName,
       url: SITE_URL,
     },
     publisher: {

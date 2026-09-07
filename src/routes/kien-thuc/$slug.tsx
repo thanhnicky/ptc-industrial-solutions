@@ -1,5 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
-import { Calendar, Clock, ShieldCheck, UserCheck } from "lucide-react";
+import { Calendar, Clock, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -26,7 +26,6 @@ interface ArticleType {
   category: string;
   readTime: string;
   author: string;
-  reviewer: string;
   datePublished: string;
   dateModified: string;
   quickAnswer: string;
@@ -46,7 +45,7 @@ export const Route = createFileRoute("/kien-thuc/$slug")({
     const article = loaderData?.article;
     if (!article) return {};
 
-    const title = `${article.title} | Ban Kỹ thuật PTC`;
+    const title = `${article.title} | Mr X.Bach PTC`;
     const desc = `${article.quickAnswer} Xem phân tích kỹ thuật chi tiết từ kỹ sư PTC.`;
 
     return {
@@ -91,14 +90,13 @@ function Page() {
         datePublished={article.datePublished}
         dateModified={article.dateModified}
         authorName={article.author}
-        reviewerName={article.reviewer}
         image="/logo-ptc.png"
       />
       <FAQSchema items={faqs} />
 
       <PageHero
         title={article.title}
-        subtitle={`Chuyên mục: ${article.category} · Biên soạn bởi ${article.author} · Kiểm duyệt kỹ thuật bởi ${article.reviewer}`}
+        subtitle={`Chuyên mục: ${article.category} · Biên soạn bởi ${article.author}`}
         image={IMAGES.switchboard}
       >
         <ZaloButton size="lg" location={`hero-article-${article.slug}`} label="Nhắn Zalo trao đổi với Kỹ sư" />
@@ -114,16 +112,12 @@ function Page() {
             ]}
           />
 
-          {/* E-E-A-T Author & Reviewer Metadata */}
+          {/* E-E-A-T Author Metadata */}
           <div className="flex flex-wrap items-center justify-between gap-4 rounded-lg border border-border bg-card p-4 text-xs text-muted-foreground">
             <div className="flex flex-wrap items-center gap-4">
               <span className="flex items-center gap-1.5 font-medium text-ink">
                 <ShieldCheck className="size-4 text-primary" aria-hidden="true" />
                 Tác giả: {article.author}
-              </span>
-              <span className="flex items-center gap-1.5 font-medium text-ink">
-                <UserCheck className="size-4 text-primary" aria-hidden="true" />
-                Kiểm duyệt: {article.reviewer}
               </span>
             </div>
             <div className="flex items-center gap-4">

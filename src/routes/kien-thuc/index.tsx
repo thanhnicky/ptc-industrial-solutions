@@ -13,7 +13,7 @@ import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Kiến thức kỹ thuật Tủ điện công nghiệp & Thang máng cáp | PTC";
 const DESC =
-  "Thư viện kiến thức chuyên sâu về thiết kế, tiêu chuẩn IEC 61439, cách chọn tủ MSB/MCC, phân biệt thang máng cáp và quy trình nghiệm thu cơ điện M&E từ Ban Kỹ thuật PTC.";
+  "Thư viện kiến thức chuyên sâu về thiết kế, tiêu chuẩn IEC 61439, cách chọn tủ MSB/MCC, phân biệt thang máng cáp và quy trình nghiệm thu cơ điện M&E từ Mr X.Bach PTC.";
 
 export const Route = createFileRoute("/kien-thuc/")({
   head: () => ({
@@ -47,7 +47,7 @@ function Page() {
 
       <PageHero
         title="Kiến thức kỹ thuật cơ điện M&E"
-        subtitle="Tổng hợp các bài viết chuyên môn, phân tích tiêu chuẩn IEC 61439, hướng dẫn bóc tách BOQ và lưu ý kỹ thuật thực tế được biên soạn bởi Ban Kỹ thuật PTC."
+        subtitle="Tổng hợp các bài viết chuyên môn, phân tích tiêu chuẩn IEC 61439, hướng dẫn bóc tách BOQ và lưu ý kỹ thuật thực tế được biên soạn bởi Mr X.Bach PTC."
         image={IMAGES.switchboard}
       >
         <ZaloButton size="lg" location="hero-kien-thuc" label="Nhắn Zalo trao đổi kỹ thuật" />
@@ -67,7 +67,7 @@ function Page() {
           </div>
 
           <QuickSummary
-            title="Định hướng nội dung từ Ban Kỹ thuật PTC"
+            title="Định hướng nội dung từ Mr X.Bach PTC"
             bullets={[
               "100% nội dung được biên soạn và kiểm duyệt bởi các kỹ sư điện & cơ khí giàu kinh nghiệm thực tế.",
               "Trích dẫn đúng các tiêu chuẩn kỹ thuật: IEC 61439-1/2, TCVN 7994, ASTM A123, ISO 9001:2015.",
@@ -118,7 +118,7 @@ function Page() {
                   <div className="flex items-center justify-between text-[11px] text-muted-foreground">
                     <span className="flex items-center gap-1">
                       <UserCheck className="size-3 text-primary" aria-hidden="true" />
-                      {article.reviewer}
+                      {article.author}
                     </span>
                     <span className="flex items-center gap-1">
                       <Calendar className="size-3" aria-hidden="true" />
