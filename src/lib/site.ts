@@ -1702,5 +1702,647 @@ export const KNOWLEDGE_ARTICLES = [
       },
     ],
   },
+  {
+    slug: "case-study-dien-mat-troi-phu-my-1-1460kwp",
+    title: "Case Study: Tủ điện & máng cáp HDG cho dự án điện mặt trời KCN Phú Mỹ 1 – 1.460 kWp",
+    category: "Case Study",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-03-10",
+    dateModified: "2026-03-10",
+    quickAnswer: "Dự án điện mặt trời mái nhà KCN Phú Mỹ 1 (1.460 kWp) yêu cầu PTC sản xuất tủ DC combiner, tủ AC phân phối và tủ hòa lưới trung tâm cùng hệ thống máng cáp mạ kẽm nhúng nóng — giao hàng cuốn chiếu theo từng phân khu mái để không gián đoạn tiến độ cẩu panel của tổng thầu EPC.",
+    summary: [
+      "Phạm vi: Tủ DC combiner 1000V, tủ AC phân phối, tủ hòa lưới trung tâm + máng cáp HDG toàn tuyến.",
+      "Thách thức: Phối hợp giao hàng theo từng phân khu mái — cẩu panel không được chờ vật tư.",
+      "Kết quả: Giao đúng 5 mốc tiến độ, nghiệm thu一次, hồ sơ CO/CQ + Routine Test đầy đủ theo yêu cầu EPC.",
+    ],
+    body: [
+      {
+        heading: "Bối cảnh dự án — vì sao EPC solar chọn PTC",
+        paragraphs: [
+          "Dự án điện mặt trời mái nhà KCN Phú Mỹ 1 (công suất 1.460 kWp) do một tổng thầu EPC Năng lượng thực hiện. Quy mô mid-large farm rooftop yêu cầu hệ thống tủ điện DC/AC và máng cáp ngoài trời chịu bức xạ UV, gió mạnh, và phối hợp giao hàng <strong>theo từng phân khu mái</strong> — không thể giao 1 lần vì kho công trường hạn chế và lịch cẩu panel dày đặc.",
+          "Tổng thầu EPC đã tìm đến PTC sau khi 2 nhà cung cấp trước đó không đáp ứng được 2 yêu cầu cốt lõi: (1) tủ DC combiner đúng thông số inverter + cấp bảo vệ IP65 ngoài trời, (2) khả năng sản xuất và giao cuốn chiếu 5 đợt trong 6 tuần mà không trễ mốc nào.",
+        ],
+      },
+      {
+        heading: "Phạm vi cung cấp — chi tiết hạng mục",
+        table: {
+          headers: ["Hạng mục", "Quy cách", "Số lượng", "Tiêu chuẩn"],
+          rows: [
+            ["Tủ DC combiner", "1000V DC, IP65, 12 string/input, có SPD Type 2 + cut-out fuse", "18 tủ", "IEC 62109, IEC 61439"],
+            ["Tủ AC phân phối", "800V AC, IP54, MCCB Schneider + đo lường", "6 tủ", "IEC 61439-1/2"],
+            ["Tủ hòa lưới trung tâm", "ACB 2500A + relay bảo vệ 27/59/81 + anti-islanding", "1 tủ", "IEC 61439 + EVN yêu cầu"],
+            ["Máng cáp HDG", "300×100×1.5mm, mạ kẽm nhúng nóng ASTM A123", "~1.800 m", "ASTM A123 / ISO 1461"],
+            ["Phụ kiện HDG", "Co ngang/đứng, tê, giảm, ty treo M10", "Full bộ", "Đồng bộ ASTM A123"],
+          ],
+        },
+      },
+      {
+        heading: "Thách thức kỹ thuật #1: Tủ DC combiner ngoài trời 1000V",
+        paragraphs: [
+          "Tủ DC combiner cho solar rooftop phải chịu <strong>điện áp DC 1000V liên tục</strong>, bức xạ UV trực tiếp, và mưa gió mùa. Sai sót phổ biến: dùng tủ IP54 (không đủ) hoặc dùng tủ IP65 nhưng không có SPD (Surge Protective Device) → cháy tủ khi sét lan truyền trên tuyến cáp DC.",
+          "PTC thiết kế tủ DC combiner IP65 với: vỏ Inox 304 (chống UV > 25 năm), SPD DC Type 2 1000V (chống sét lan truyền), cut-out fuse DC per string (cô lập sự cố 1 string không ảnh hưởng others), và điện trở sấy chống đọng sương. Mỗi tủ qua routine test 100%: dielectric test 3000V DC, kiểm tra PE continuity, kiểm tra polarity.",
+        ],
+        callout: {
+          type: "info",
+          title: "Lưu ý cho EPC solar",
+          text: "Tủ DC combiner là điểm có tỷ lệ sự cố cao nhất trong solar rooftop — chủ yếu do chọn sai cấp IP, thiếu SPD, hoặc không có fuse per string. PTC thiết kế tủ DC theo IEC 62109 + IEC 61439, có đầy đủ bảo vệ và routine test — giảm rủi ro sự cố vận hành về gần 0.",
+        },
+      },
+      {
+        heading: "Thách thức kỹ thuật #2: Giao hàng cuốn chiếu 5 đợt trong 6 tuần",
+        paragraphs: [
+          "Tổng thầu EPC yêu cầu giao hàng theo 5 mốc tương ứng 5 phân khu mái — mỗi mốc cách nhau 7–10 ngày. Lý do: kho công trường chỉ chứa được 2 ngày vật tư, và cẩu panel diễn ra liên tục — nếu tủ/máng trễ 1 ngày, cẩu panel phải dừng → ảnh hưởng toàn bộ tiến độ.",
+          "PTC lên kế hoạch sản xuất cuốn chiếu: đợt 1 + 2 sản xuất song song, đợt 3–5 sản xuất luân phiên. Mỗi đợt giao kèm hồ sơ riêng (CO/CQ, Routine Test, As-built) để EPC nghiệm thu từng phân khu độc lập. Kết quả: <strong>5/5 mốc giao đúng thời gian</strong>, không có mốc nào trễ quá 4 giờ.",
+        ],
+      },
+      {
+        heading: "Máng cáp HDG — vì sao bắt buộc cho solar rooftop",
+        paragraphs: [
+          "Máng cáp cho solar rooftop ngoài trời <strong>bắt buộc mạ kẽm nhúng nóng (HDG)</strong> theo IEC 62548 — không thể dùng sơn tĩnh điện hay mạ điện phân. Lý do: (1) UV bền 25+ năm, (2) chịu gió mạnh trên mái (lực điện động lớn), (3) không rỉ sét rớt xuống panel (rỉ sét làm giảm hiệu suất panel).",
+          "PTC sản xuất máng cáp HDG 300×100×1.5mm theo ASTM A123, lớp mạ 65–85 µm. Độ dày 1.5mm tối thiểu để không cong vênh khi nhúng nóng. Phụ kiện (co, tê, giảm) mạ HDG đồng bộ — không mix HDG với sơn tĩnh điện (gây galvanic corrosion).",
+        ],
+        callout: {
+          type: "warning",
+          title: "Sai lầm thường gặp ở solar rooftop",
+          text: "Nhiều nhà thầu dùng máng cáp sơn tĩnh điện cho solar rooftop để tiết kiệm 30% chi phí → rỉ sét sau 2-3 năm, sắt rỉ rớt xuống panel giảm hiệu suất 5-15%, phải thay toàn bộ tuyến. Chi phí thay > chênh HDG ban đầu. <strong>Luôn dùng HDG cho solar ngoài trời.</strong>",
+        },
+      },
+      {
+        heading: "Kết quả dự án — số liệu thực tế",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>5/5 mốc giao hàng đúng tiến độ</strong> — không mốc nào trễ quá 4 giờ.",
+            "<strong>18 tủ DC + 6 tủ AC + 1 tủ hòa lưới</strong> — 100% qua routine test, 0 lỗi nghiệm thu.",
+            "<strong>~1.800m máng cáp HDG</strong> + full phụ kiện — lắp đặt trong 4 tuần.",
+            "<strong>Hồ sơ đầy đủ</strong>: CO/CQ Schneider, biên bản Routine Test, As-built, coordination curve — nghiệm thu一次.",
+            "<strong>0 sự cố vận hành</strong> sau 18 tháng — không trip, không rỉ sét, không cháy tủ DC.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "EPC solar cần tủ DC/AC + máng HDG cho dự án rooftop?",
+          text: "Gửi thông số inverter, sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất cấu hình tủ DC/AC, tính toán bảo vệ, lên kế hoạch giao cuốn chiếu và gửi báo giá trong 24h.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "yeu-to-quyet-dinh-gia-tu-dien-cong-nghiep",
+    title: "Yếu tố quyết định giá tủ điện công nghiệp: Bóc tách chi tiết từ vật tư đến nhân công",
+    category: "Quy trình B2B",
+    readTime: "9 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-03-12",
+    dateModified: "2026-03-12",
+    quickAnswer: "Giá tủ điện công nghiệp được quyết định bởi 5 nhóm yếu tố: (1) Vật tư thiết bị đóng cắt chiếm 50-65% giá trị, (2) Thanh cái đồng + vật liệu vỏ 15-20%, (3) Nhân công lắp ráp + đấu nối 10-15%, (4) Thử nghiệm & hồ sơ 5-8%, (5) Vận chuyển & bảo hành 5-10%. Hiểu đúng giúp chủ đầu tư so sánh báo giá công bằng.",
+    summary: [
+      "Vật tư thiết bị (ACB, MCCB, contactor, relay) chiếm 50-65% — hãng ABB/Schneider đắt hơn LS/Hyundai 20-40%.",
+      "Thanh cái đồng + vỏ tủ: 15-20% — tiết diện đồng tính theo Icw, vỏ Inox đắt hơn sơn tĩnh điện 2-3 lần.",
+      "Nhân công + thử nghiệm + hồ sơ: 15-23% — xưởng có ISO 9001 + Routine Test 100% đắt hơn xưởng tự lắp 10-15% nhưng giảm rủi ro sự cố.",
+    ],
+    body: [
+      {
+        heading: "Vì sao 2 báo giá tủ điện chênh nhau 30-50% — và báo giá nào đúng",
+        paragraphs: [
+          "Khi chủ đầu tư nhận 2-3 báo giá tủ điện cho cùng 1 sơ đồ đơn tuyến, thường thấy chênh lệch 30–50%. Nhiều người chọn báo giá thấp nhất — và đây là <strong>nguyên nhân #1 gây sự cố vận hành</strong>: tủ trip nhầm, cháy thanh cái, hoặc không nghiệm thu được. Bài viết này bóc tách 5 nhóm yếu tố quyết định giá, giúp bạn so sánh báo giá công bằng và tránh bẫy giá rẻ.",
+        ],
+      },
+      {
+        heading: "Nhóm 1: Vật tư thiết bị đóng cắt — 50-65% giá trị tủ",
+        paragraphs: [
+          "Đây là nhóm chiếm tỷ trọng lớn nhất và cũng là nơi chênh lệch giá nhiều nhất. Cùng 1 ACB 2500A, giá Schneider Masterpact MTZ có thể cao hơn LS Metasol 30–40% — nhưng khác nhau về tính năng (MicroLogic protection, Modbus communication), Icu (50kA vs 65kA), và ecosystem phụ trợ.",
+          "Bảng tham khảo tỷ trọng vật tư trong tủ MSB 2500A điển hình:",
+        ],
+        table: {
+          headers: ["Thiết bị", "Tỷ trọng giá", "Phân khúc giá", "Lưu ý"],
+          rows: [
+            ["ACB tổng (2500A)", "~25-30%", "Schneider/ABB > Mitsubishi > LS", "Chọn theo Icu + tính năng cần"],
+            ["MCCB nhánh (400-1600A)", "~15-20%", "Tương tự ACB", "Số nhánh quyết định tổng giá"],
+            ["Contactor + relay nhiệt", "~5-8%", "Schneider > ABB > LS > Hyundai", "Cho MCC, tủ điều khiển"],
+            ["Tụ bù + controller APFC", "~5-10%", "EPCOS > Schneider > LS", "Tùy số cấp bù"],
+            ["Biến dòng CT + đo lường", "~3-5%", "Schneider/ABB > generic", "Yêu cầu độ chính xác"],
+            ["Biến tần VSD (nếu có)", "~10-30%", "ABB > Schneider > Yaskawa > LS", "Cho MCC có VSD"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Cách so sánh công bằng",
+          text: "Khi so sánh 2 báo giá, <strong>luôn đối chiếu hãng + model + Icu của từng thiết bị</strong> — không chỉ dòng định mức. ACB 2500A hãng A với Icu 50kA khác hoàn toàn hãng B với Icu 65kA. Yêu cầu nhà cung cấp ghi rõ model trong báo giá.",
+        },
+      },
+      {
+        heading: "Nhóm 2: Thanh cái đồng + vật liệu vỏ tủ — 15-20%",
+        paragraphs: [
+          "Thanh cái đồng (busbar) chiếm 8–12% giá tủ, quyết định bởi tiết diện đồng (tính theo In và Icw). Tiết diện sai → cháy thanh cái khi ngắn mạch. Đồng điện phân Cu ≥ 99.9% giá cao hơn đồng tái chế 15–20% — nhưng độ dẫn điện và cơ tính ổn định hơn.",
+          "Vỏ tủ chiếm 5–8% giá, quyết định bởi vật liệu và lớp phủ:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Thép CRC sơn tĩnh điện:</strong> Chi phí thấp nhất, phù hợp trong nhà khô. Tuổi thọ 10–15 năm.",
+            "<strong>Thép mạ kẽm nhúng nóng + sơn tĩnh điện:</strong> Phù hợp ngoài trời, nhà máy ẩm. Tuổi thọ 20+ năm. Cao hơn 30–50%.",
+            "<strong>Inox 304:</strong> Chống rỉ hoàn toàn, phù hợp thực phẩm/dược/hóa chất. Cao hơn sơn tĩnh điện 2–2.5 lần.",
+            "<strong>Inox 316:</strong> Môi trường biển, cao hơn Inox 304 thêm 30–40%.",
+          ],
+        },
+      },
+      {
+        heading: "Nhóm 3: Nhân công lắp ráp + đấu nối — 10-15%",
+        paragraphs: [
+          "Nhân công là nơi <strong>xưởng có ISO 9001 + quy trình chuẩn</strong> khác biệt rõ nhất với xưởng tự lắp. Xưởng chuẩn có: kỹ sư thiết kế phát hành bản vẽ, thợ lắp ráp qua đào tạo, QC kiểm tra từng công đoạn, torque wrench siết thanh cái theo moment. Xưởng tự lắp thường bỏ qua torque wrench, không có QC, không có bản vẽ As-built.",
+          "Chênh lệch giá nhân công: xưởng ISO đắt hơn xưởng tự lắp 10–15% — nhưng giảm rủi ro sự cố vận hành > 80%. Một lần cháy thanh cái do siết lỏng = thay toàn bộ tủ = 5–10 lần chênh giá nhân công.",
+        ],
+      },
+      {
+        heading: "Nhóm 4: Thử nghiệm & hồ sơ — 5-8%",
+        paragraphs: [
+          "Routine Test 100% theo IEC 61439-2 tốn 5–8% giá tủ — bao gồm megohmmeter, dielectric test set, current injection set, nhân sự QC. Nhiều xưởng bỏ qua để giảm giá — nhưng tủ không có Routine Test = <strong>không nghiệm thu được theo IEC</strong>, bảo hiểm từ chối bồi thường khi sự cố.",
+          "Hồ sơ đầy đủ (As-built, CO/CQ, Routine Test, phiếu xuất xưởng ISO 9001) cũng tốn chi phí quản lý — nhưng là yêu cầu bắt buộc cho dự án FDI và nghiệm thu EVN.",
+        ],
+        callout: {
+          type: "warning",
+          title: "Bẫy báo giá rẻ: bỏ Routine Test",
+          text: "Báo giá rẻ hơn 15-20% thường do bỏ Routine Test + hồ sơ. Hậu quả: (1) không nghiệm thu được, (2) bảo hiểm từ chối, (3) sự cố vận hành không được bồi thường. <strong>Luôn yêu cầu Routine Test 100% trong báo giá — nếu nhà cung cấp không có, đó là red flag.</strong>",
+        },
+      },
+      {
+        heading: "Nhóm 5: Vận chuyển + bảo hành — 5-10%",
+        paragraphs: [
+          "Vận chuyển tủ lớn (MSB 2000×2200×1000mm, nặng 800–1500kg) cần xe tải chuyên dụng + cẩu. Vận chuyển nội thành TP.HCM ~2–5 triệu/tủ, đi tỉnh 5–15 triệu/tủ tùy khoảng cách. Xưởng không có kinh nghiệm đóng gói có thể làm xước sơn hoặc lệch thanh cái khi vận chuyển.",
+          "Bảo hành 12–24 tháng tốn 3–5% giá tủ (dự phòng chi phí khắc phục). Xưởng không có bảo hành = không chịu trách nhiệm sau khi giao — đây là red flag thứ 2 sau việc không có Routine Test.",
+        ],
+      },
+      {
+        heading: "Bảng tổng hợp: tỷ trọng giá tủ MSB 2500A điển hình",
+        table: {
+          headers: ["Nhóm", "Tỷ trọng", "Phương án thấp", "Phương án cao", "Chênh lệch"],
+          rows: [
+            ["Vật tư thiết bị", "55%", "LS + LS + LS", "Schneider + ABB + Schneider", "+35%"],
+            ["Thanh cái + vỏ", "18%", "CRC sơn tĩnh điện", "Inox 304", "+80%"],
+            ["Nhân công", "12%", "Xưởng tự lắp", "Xưởng ISO 9001", "+15%"],
+            ["Thử nghiệm + hồ sơ", "7%", "Không Routine Test", "Routine Test 100% + hồ sơ", "+7%"],
+            ["Vận chuyển + bảo hành", "8%", "Giao không bảo hành", "Giao + bảo hành 24 tháng", "+5%"],
+            ["<strong>TỔNG</strong>", "100%", "<strong>Giá thấp</strong>", "<strong>Giá cao</strong>", "<strong>+30-50%</strong>"],
+          ],
+        },
+      },
+      {
+        heading: "3 câu hỏi để so sánh báo giá công bằng",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Có cùng hãng + model thiết bị không?</strong> — Nếu báo giá rẻ hơn 20% nhưng đổi sang hãng rẻ hơn, đó không phải \"giá tốt\" mà là \"spec thấp hơn\".",
+            "<strong>Có Routine Test 100% + hồ sơ đầy đủ không?</strong> — Nếu không, trừ 15-20% giá trị thực. Tủ không có routine test = không nghiệm thu được.",
+            "<strong>Bảo hành bao lâu + phạm vi gì?</strong> — 12 tháng tối thiểu, 24 tháng cho FDI. Nếu không có bảo hành, trừ 5% giá trị.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần báo giá tủ điện chi tiết + minh bạch?",
+          text: "Gửi sơ đồ đơn tuyến qua Zalo cho Ban Kỹ thuật PTC. Báo giá của PTC luôn ghi rõ: hãng + model thiết bị, tiết diện thanh cái, cấp IP/Form, Routine Test 100%, bảo hành 12-24 tháng — không có phụ phí ẩn. So sánh công bằng với bất kỳ báo giá nào khác.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "ptc-vs-xuong-gia-cong-nho-5-rui-ro",
+    title: "PTC vs xưởng gia công nhỏ: 5 rủi ro khi chọn nhà sản xuất tủ điện giá rẻ",
+    category: "So sánh & Lựa chọn",
+    readTime: "7 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-03-18",
+    dateModified: "2026-03-18",
+    quickAnswer: "Chọn xưởng gia công nhỏ để tiết kiệm 15-20% giá tủ điện có thể dẫn đến 5 rủi ro: (1) Không có Routine Test → không nghiệm thu, (2) Thanh cái tính sai Icw → cháy tủ, (3) Không có hồ sơ CO/CQ → bảo hiểm từ chối, (4) Không bảo hành → tự chịu chi phí sự cố, (5) Tiến độ không kiểm soát → trễ dự án. Tổng rủi ro > 5 lần tiền tiết kiệm.",
+    summary: [
+      "Rủi ro #1: Không có Routine Test 100% — tủ không nghiệm thu được theo IEC 61439.",
+      "Rủi ro #2: Thanh cái tính sai Icw — cháy tủ khi ngắn mạch, phải thay toàn bộ.",
+      "Rủi ro #3: Không có CO/CQ + As-built — bảo hiểm từ chối bồi thường, FDI không nghiệm thu.",
+      "Rủi ro #4: Không bảo hành — tự chịu chi phí sự cố (5-10 lần tiền tiết kiệm).",
+      "Rủi ro #5: Tiến độ không kiểm soát — trễ 1-2 tuần, ảnh hưởng toàn bộ tiến độ thi công.",
+    ],
+    body: [
+      {
+        heading: "Vì sao bài viết này cần đọc trước khi chọn nhà sản xuất tủ",
+        paragraphs: [
+          "Trong tư vấn cho chủ đầu tư và nhà thầu M&E, PTC gặp nhiều case \"chọn xưởng rẻ rồi hối hận\" — tủ trip nhầm, cháy thanh cái, không nghiệm thu được, hoặc trễ tiến độ 2-3 tuần. Bài viết này phân tích 5 rủi ro thực tế dựa trên case đã gặp, giúp bạn đưa ra quyết định dựa trên <strong>tổng chi phí sở hữu (TCO)</strong> chứ không chỉ giá ban đầu.",
+        ],
+      },
+      {
+        heading: "Rủi ro #1: Không có Routine Test 100% — không nghiệm thu được",
+        paragraphs: [
+          "Xưởng gia công nhỏ thường không đầu tư megohmmeter, dielectric test set, current injection set — chi phí thiết bị thử nghiệm 50–100 triệu. Hậu quả: tủ xuất xưởng không qua Routine Test, không có biên bản thử nghiệm theo IEC 61439-2.",
+          "Khi nghiệm thu: TVGĐ yêu cầu biên bản Routine Test → không có → không nghiệm thu → chủ đầu tư không thanh toán. Khi sự cố: bảo hiểm yêu cầu biên bản → không có → từ chối bồi thường. <strong>Chi phí khắc phục: phải thuê lab độc lập test lại (10-30 triệu/tủ) hoặc thay tủ mới.</strong>",
+        ],
+        callout: {
+          type: "warning",
+          title: "Red flag #1",
+          text: "Nếu nhà sản xuất không cung cấp được mẫu biên bản Routine Test trước khi đặt hàng — đừng chọn. PTC luôn gửi mẫu biên bản + quy trình thử nghiệm khi khách yêu cầu.",
+        },
+      },
+      {
+        heading: "Rủi ro #2: Thanh cái tính sai Icw — cháy tủ khi ngắn mạch",
+        paragraphs: [
+          "Tính Icw thanh cái cần: công suất trạm biến áp, impedance MBA, impedance cáp, dòng ngắn mạch tại điểm lắp. Xưởng nhỏ thường <strong>không có kỹ sư tính toán</strong> — chọn tiết diện đồng theo \"kinh nghiệm\" hoặc theo dòng định mức mà bỏ qua Icw.",
+          "Hậu quả: khi ngắn mạch xảy ra, thanh cái không chịu được lực điện động → uốn cong, hàn dính vào khung, cháy tủ. <strong>Đây là sự cố không thể sửa — phải thay toàn bộ tủ</strong>, chi phí 100–500 triệu + đình công nhà máy 3–7 ngày.",
+          "Case thực tế: 1 nhà máy ở Đồng Nai chọn xưởng nhỏ cho MSB 1600A, không tính Icw. Sau 8 tháng vận hành, ngắn mạch phụ tải → thanh cái uốn cong, cháy tủ. Phải thay tủ mới + đình công 5 ngày. Tổng thiệt hại ~800 triệu — gấp 4 lần chênh giá ban đầu.",
+        ],
+      },
+      {
+        heading: "Rủi ro #3: Không có CO/CQ + As-built — FDI không nghiệm thu",
+        paragraphs: [
+          "Dự án FDI (Nhật, Hàn, châu Âu) yêu cầu hồ sơ nghiệm thu đầy đủ: CO/CQ thiết bị chính hãng, bản vẽ As-built, biên bản Routine Test, phiếu xuất xưởng ISO 9001. Xưởng nhỏ thường không có:",
+          "(1) CO/CQ vì mua thiết bị qua thương mại (không phải đại lý chính hãng), (2) Bản vẽ As-built vì không có kỹ sư thiết kế phát hành bản vẽ, (3) Phiếu xuất xưởng vì không có chứng nhận ISO 9001.",
+          "Hậu quả: chủ đầu tư FDI <strong>từ chối nghiệm thu</strong>, yêu cầu thay tủ hoặc làm lại hồ sơ (tốn 1-3 tháng). Đối với dự án có funding từ nước ngoài, không có hồ sơ = không giải ngân.",
+        ],
+      },
+      {
+        heading: "Rủi ro #4: Không bảo hành — tự chịu chi phí sự cố",
+        paragraphs: [
+          "Xưởng nhỏ thường không có bảo hành hoặc chỉ bảo hành miệng (không có hợp đồng). Khi sự cố xảy ra, 3 kịch bản:",
+          "(1) Xưởng không nhận trách nhiệm — cho rằng lỗi do lắp đặt hoặc vận hành. (2) Xưởng đã đóng cửa hoặc chuyển đổi — không liên lạc được. (3) Xưởng nhận sửa nhưng tính phí đầy đủ — chi phí sửa = 30–50% giá tủ mới.",
+          "PTC bảo hành 12–24 tháng có hợp đồng, rõ phạm vi (lỗi sản xuất, lỗi vật tư) và SLA (phản hồi 2 giờ, đến hiện trường 24–48 giờ). Chi phí bảo hành đã bao gồm trong giá tủ — không phát sinh thêm.",
+        ],
+      },
+      {
+        heading: "Rủi ro #5: Tiến độ không kiểm soát — trễ 1-2 tuần",
+        paragraphs: [
+          "Xưởng nhỏ thường nhận nhiều việc nhưng không có hệ thống quản lý sản xuất — không có Gantt chart, không có production planning, không có QC checkpoint. Hậu quả: trễ tiến độ 1–2 tuần là phổ biến, có case trễ 4–6 tuần.",
+          "Đối với dự án nhà máy hoặc KCN, trễ tủ điện = trễ toàn bộ tiến độ M&E = trễ commissioning = trễ go-live. Chi phí trễ 1 tuần (lương nhân sự, chi phí kho, mất doanh thu) thường 50–200 triệu — gấp nhiều lần chênh giá ban đầu.",
+          "PTC có quy trình sản xuất 7 bước khép kín, phát hành tiến độ chi tiết khi chốt hợp đồng, và giao cuốn chiếu cho dự án gấp. Trong 10+ năm, tỷ lệ giao đúng tiến độ > 95%.",
+        ],
+      },
+      {
+        heading: "Bảng so sánh: PTC vs xưởng gia công nhỏ",
+        table: {
+          headers: ["Tiêu chí", "Xưởng nhỏ", "PTC (xưởng ISO)"],
+          rows: [
+            ["Giá tủ", "Thấp hơn 15-20%", "Cao hơn 15-20%"],
+            ["Routine Test 100%", "Không có", "Có, theo IEC 61439-2"],
+            ["Tính Icw thanh cái", "Theo kinh nghiệm", "Kỹ sư tính toán + bóc tách"],
+            ["CO/CQ thiết bị", "Không đảm bảo", "Đại lý chính hãng ABB/Schneider/LS"],
+            ["Bản vẽ As-built", "Không có", "Phát hành + ký duyệt"],
+            ["ISO 9001", "Không", "Có"],
+            ["Bảo hành", "Không hoặc miệng", "12-24 tháng có hợp đồng"],
+            ["Tiến độ", "Trễ 1-4 tuần phổ biến", "Giao đúng > 95%"],
+            ["<strong>TCO 5 năm</strong>", "<strong>Cao hơn 2-5 lần</strong>", "<strong>Tối ưu</strong>"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần so sánh báo giá PTC với xưởng khác?",
+          text: "Gửi sơ đồ đơn tuyến qua Zalo cho Ban Kỹ thuật PTC. PTC sẽ gửi báo giá chi tiết + mẫu biên bản Routine Test + mẫu bảo hành — để bạn so sánh công bằng với bất kỳ báo giá nào khác. Quyết định dựa trên TCO, không chỉ giá ban đầu.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "tu-dien-cong-nghiep-kcn-binh-duong-dong-nai",
+    title: "Tủ điện công nghiệp tại KCN Bình Dương, Đồng Nai — Nhà máy PTC giao hàng 24h",
+    category: "Khu vực",
+    readTime: "6 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-03-22",
+    dateModified: "2026-03-22",
+    quickAnswer: "Nhà máy PTC tại TP.HCM cung cấp tủ điện công nghiệp và thang máng cáp cho các KCN tại Bình Dương (VSIP, Mỹ Phước, Đồng An) và Đồng Nai (Long Đức, Amata, KCN Long Bình) với thời gian giao hàng 24-48h cho tủ DB/SDB và 10-15 ngày cho MSB/MCC sản xuất theo bản vẽ, hỗ trợ kỹ thuật hiện trường trong 24h.",
+    summary: [
+      "Phạm vi phục vụ: VSIP 1/2/3, Mỹ Phước 1/2/3, Đồng An, Kizuna (Bình Dương) + Long Đức, Amata, Long Bình, Biên Hòa (Đồng Nai).",
+      "Thời gian giao: 24-48h cho tủ DB/SDB có sẵn, 10-15 ngày cho MSB/MCC sản xuất theo bản vẽ.",
+      "Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương/Đồng Nai — phản hồi Zalo trong 2 giờ.",
+    ],
+    body: [
+      {
+        heading: "Vì sao KCN Bình Dương và Đồng Nai là thị trường trọng điểm của PTC",
+        paragraphs: [
+          "Bình Dương và Đồng Nai là 2 tỉnh có <strong>mật độ KCN cao nhất miền Nam</strong> sau TP.HCM — với hàng nghìn nhà máy FDI (Nhật, Hàn, Đài Loan, châu Âu) và nhà máy nội địa. Nhu cầu tủ điện công nghiệp và thang máng cáp cho nhà máy mới + mở rộng + bảo trì định kỳ là liên tục.",
+          "Nhà máy PTC tại Linh Xuân, TP.HCM cách Bình Dương 30–60 phút, cách Đồng Nai 45–90 phút — cho phép giao hàng nhanh và hỗ trợ kỹ thuật hiện trường trong ngày. Đây là lợi thế cạnh tranh so với xưởng ở miền Bắc hoặc miền Trung.",
+        ],
+      },
+      {
+        heading: "Danh sách KCN phục vụ — Bình Dương",
+        table: {
+          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Thời gian giao"],
+          rows: [
+            ["VSIP 1", "Thuận An", "FDI đa quốc gia", "24-48h DB, 10-15 ngày MSB"],
+            ["VSIP 2", "Bến Cát", "FDI, KCN xanh", "24-48h DB, 10-15 ngày MSB"],
+            ["VSIP 3", "Bàu Bàng", "FDI mới, LG/Schneider", "24-48h DB, 10-15 ngày MSB"],
+            ["Mỹ Phước 1/2/3", "Bến Cát", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
+            ["Đồng An 1/2", "Dĩ An", "FDI Đài Loan, Hàn", "24-48h DB, 10-15 ngày MSB"],
+            ["Kizuna", "Bến Cát", "SME + FDI nhỏ", "24-48h DB, 10-15 ngày MSB"],
+            ["Sóng Thần 1/2/3", "Dĩ An", "Hỗn hợp", "24-48h DB, 10-15 ngày MSB"],
+            ["Mapletree", "Bến Cát", "Logistics + FDI", "24-48h DB, 10-15 ngày MSB"],
+          ],
+        },
+      },
+      {
+        heading: "Danh sách KCN phục vụ — Đồng Nai",
+        table: {
+          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Thời gian giao"],
+          rows: [
+            ["Long Đức", "Trảng Bom", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
+            ["Amata", "Biên Hòa", "FDI cao cấp", "24-48h DB, 10-15 ngày MSB"],
+            ["Long Bình", "Biên Hòa", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
+            ["Biên Hòa 1/2", "Biên Hòa", "Hỗn hợp", "24-48h DB, 10-15 ngày MSB"],
+            ["Bàu Xéo", "Trảng Bom", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
+            ["Long Khánh", "Long Khánh", "Nội địa + FDI", "24-48h DB, 10-15 ngày MSB"],
+            ["Nhơn Trạch 1/2/3", "Nhơn Trạch", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
+            ["Phúc Điền", "Cẩm Mỹ", "FDI mới", "24-48h DB, 10-15 ngày MSB"],
+          ],
+        },
+      },
+      {
+        heading: "Sản phẩm PTC cung cấp cho nhà máy KCN",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Tủ điện tổng MSB</strong> — cho nhà máy mới, trạm biến áp riêng. Sản xuất theo sơ đồ đơn tuyến, IEC 61439.",
+            "<strong>Tủ phân phối SDB/DB</strong> — cho phân xưởng, tầng văn phòng. Có sẵn hoặc sản xuất theo BOQ.",
+            "<strong>Tủ MCC</strong> — cho phân xưởng có nhiều động cơ (bơm, quạt, băng tải). Tích hợp VSD/Soft Starter.",
+            "<strong>Tủ ATS</strong> — cho nhà máy cần cấp điện liên tục (FDI, chế biến thực phẩm).",
+            "<strong>Tủ solar DC/AC</strong> — cho nhà máy KCN lắp điện mặt trời mái nhà.",
+            "<strong>Thang máng cáp HDG</strong> — cho tuyến cáp ngoài trời, mái xưởng solar.",
+            "<strong>Tủ điện bảo trì thay thế</strong> — cho nhà máy đang vận hành cần thay tủ cũ.",
+          ],
+        },
+      },
+      {
+        heading: "Quy trình đặt hàng cho nhà máy KCN — 24h nhận báo giá",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Gửi yêu cầu qua Zalo</strong> — sơ đồ đơn tuyến, BOQ, hoặc mô tả nhu cầu. Kỹ sư PTC phản hồi trong 2 giờ.",
+            "<strong>Kỹ sư PTC đến hiện trường khảo sát</strong> — cho dự án lớn (MSB > 1600A, KCN mới). Miễn phí trong Bình Dương/Đồng Nai.",
+            "<strong>Nhận báo giá kỹ thuật trong 24h</strong> — chi tiết theo tủ, kèm tiến độ và hãng thiết bị.",
+            "<strong>Phát hành bản vẽ Shop drawing</strong> — sau khi chốt, kỹ sư phát hành bản vẽ để phê duyệt trước khi sản xuất.",
+            "<strong>Sản xuất + Routine Test</strong> — 10-15 ngày cho MSB/MCC, 3-7 ngày cho DB/SDB.",
+            "<strong>Giao hàng + hỗ trợ lắp đặt</strong> — giao trong 24-48h, kỹ sư hỗ trợ đấu nối nếu cần.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Nhà máy tại KCN Bình Dương / Đồng Nai cần tủ điện?",
+          text: "Gửi yêu cầu qua Zalo cho Ban Kỹ thuật PTC — phản hồi trong 2 giờ, báo giá trong 24h, giao hàng 24-48h cho tủ có sẵn. Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương và Đồng Nai.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "cach-tinh-dong-ngan-mach-icw-tu-msb",
+    title: "Cách tính dòng ngắn mạch Icw cho tủ MSB: Công thức + Bảng tra + Ví dụ",
+    category: "Tính toán kỹ thuật",
+    readTime: "10 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-03-28",
+    dateModified: "2026-03-28",
+    quickAnswer: "Dòng ngắn mạch Icw của tủ MSB được tính theo công thức Isc = S / (√3 × U × Z%), trong đó S là công suất máy biến áp (kVA), U là điện áp hạ thế (400V), Z% là tổng impedance % của máy biến áp + cáp + lưới. Bài viết cung cấp công thức, bảng tra sẵn cho trạm 630-2500kVA, và 3 ví dụ tính toán thực tế cho nhà máy.",
+    summary: [
+      "Công thức cơ bản: Isc = S × 1000 / (√3 × U × Z%) — với S tính bằng VA, U tính bằng V, Z% là tổng impedance.",
+      "Bảng tra sẵn: trạm 630kVA → Isc ~18kA, 1600kVA → ~46kA, 2500kVA → ~72kA (Z=5%).",
+      "Icw thanh cái MSB phải ≥ Isc × 1.1 (hệ số an toàn) — chọn theo dải chuẩn 25/35/50/65/80/100 kA.",
+    ],
+    body: [
+      {
+        heading: "Icw là gì? Vì sao tính sai Icw = cháy tủ",
+        paragraphs: [
+          "Icw (Rated short-time withstand current) là dòng ngắn mạch mà thanh cái đồng của tủ MSB phải chịu được trong thời gian quy định (thường 1 giây) mà không bị biến dạng cơ học hoặc phá hủy nhiệt. Đây là <strong>thông số quan trọng nhất</strong> khi chọn MSB — quan trọng hơn cả dòng định mức In.",
+          "Khi ngắn mạch xảy ra (ví dụ: cáp pha-pha chạm nhau), dòng điện có thể đạt 20–100 lần dòng định mức trong vài mili-giây. Thanh cái phải chịu được <strong>lực điện động</strong> (electrodynamic force) và <strong>nhiệt lượng</strong> trong thời gian này. Nếu Icw < Isc thực tế → thanh cái uốn cong, hàn dính vào khung, cháy tủ. Đây là sự cố không thể sửa — phải thay toàn bộ tủ.",
+        ],
+      },
+      {
+        heading: "Công thức tính dòng ngắn mạch Isc",
+        paragraphs: [
+          "Dòng ngắn mạch đối xứng 3 pha tại đầu ra máy biến áp được tính theo công thức:",
+          "<strong>Isc = S / (√3 × U × Z%)</strong>",
+          "Trong đó:",
+          "<strong>S</strong> = công suất định mức máy biến áp (VA — lưu ý đổi kVA sang VA bằng cách × 1000)",
+          "<strong>U</strong> = điện áp hạ thế pha-pha (V — thường 400V)",
+          "<strong>Z%</strong> = tổng impedance % của nguồn (MBA + cáp + lưới)",
+          "<strong>√3</strong> = 1.732 (hệ số 3 pha)",
+          "Đối với tính toán nhanh, Z% thường lấy = impedance ngắn mạch của MBA (thường 4–6%, tra catalog) + impedance cáp (nhỏ, thường bỏ qua cho tính nhanh).",
+        ],
+      },
+      {
+        heading: "Bảng tra Isc theo công suất trạm biến áp phổ biến",
+        paragraphs: [
+          "Bảng dưới tính với U = 400V, Z% = 5% (giả định impedance MBA = 5%, bỏ qua cáp). Đây là <strong>ước tính nhanh</strong> — tính chính xác cần thêm impedance cáp từ MBA đến tủ:",
+        ],
+        table: {
+          headers: ["Công suất MBA", "Isc tính (Z=5%)", "Isc tính (Z=6%)", "Icw nên chọn", "ACB Icu nên chọn"],
+          rows: [
+            ["400 kVA", "~11.5 kA", "~9.6 kA", "25 kA / 1s", "≥ 25 kA"],
+            ["630 kVA", "~18.2 kA", "~15.1 kA", "25 kA / 1s", "≥ 36 kA"],
+            ["800 kVA", "~23.1 kA", "~19.2 kA", "35 kA / 1s", "≥ 36 kA"],
+            ["1.000 kVA", "~28.9 kA", "~24.1 kA", "35-42 kA / 1s", "≥ 50 kA"],
+            ["1.250 kVA", "~36.1 kA", "~30.1 kA", "42-50 kA / 1s", "≥ 50 kA"],
+            ["1.600 kVA", "~46.2 kA", "~38.5 kA", "50-65 kA / 1s", "≥ 65 kA"],
+            ["2.000 kVA", "~57.7 kA", "~48.1 kA", "65 kA / 1s", "≥ 65-85 kA"],
+            ["2.500 kVA", "~72.2 kA", "~60.1 kA", "80-100 kA / 1s", "≥ 100 kA"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Hệ số an toàn",
+          text: "Icw thanh cái nên chọn ≥ Isc × 1.1 (10% dư an toàn) để bù cho sai số tính toán và biến thiên lưới. Chọn theo dải chuẩn của nhà sản xuất: 25, 35, 42, 50, 65, 80, 100 kA. Không nên chọn Icw = Isc chính xác — không có dư an toàn.",
+        },
+      },
+      {
+        heading: "Ví dụ 1: Tính Icw cho nhà máy trạm 1600kVA",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Nhà máy có trạm biến áp 1600 kVA, 22kV/0.4kV, impedance ngắn mạch 6%. Cáp từ MBA đến MSB dài 5m, cáp XLPE 4×1×500mm². Tính Icw cho MSB.",
+          "<strong>Bước 1: Tính Isc MBA</strong>",
+          "Isc_MBA = 1.600.000 / (1.732 × 400 × 0.06) = 1.600.000 / 41.57 = ~38.5 kA",
+          "<strong>Bước 2: Tính giảm dòng do cáp</strong>",
+          "Impedance cáp XLPE 500mm² Cu ≈ 0.046 mΩ/m × 5m = 0.23 mΩ. Giảm Isc ~2-3% — có thể bỏ qua cho tính nhanh.",
+          "<strong>Bước 3: Chọn Icw</strong>",
+          "Isc thực tế ≈ 38 kA. Chọn Icw × 1.1 = 42 kA. Chọn theo dải chuẩn: <strong>Icw = 50 kA / 1s</strong> (có dư an toàn).",
+          "<strong>ACB tổng:</strong> Chọn Icu ≥ 65 kA (dải chuẩn Schneider/ABB/LS).",
+        ],
+      },
+      {
+        heading: "Ví dụ 2: Tính Icw cho nhà máy 2 máy biến áp song song",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Nhà máy lớn có 2 trạm 2000 kVA chạy song song (N-1 redundancy). Tính Icw cho MSB tổng.",
+          "<strong>Lưu ý quan trọng:</strong> Khi 2 MBA song song, dòng ngắn mạch <strong>gấp đôi</strong> (Isc tổng = Isc_MBA1 + Isc_MBA2) vì 2 nguồn cùng cấp dòng sự cố.",
+          "Isc_MBA1 = Isc_MBA2 = 2.000.000 / (1.732 × 400 × 0.05) = ~57.7 kA",
+          "Isc tổng = 57.7 × 2 = ~115 kA",
+          "<strong>Chọn Icw:</strong> Cần Icw ≥ 115 × 1.1 = 127 kA. Đây là dải rất cao — cần thiết kế đặc biệt: thanh cái đồng lớn hơn, busbar trunking, hoặc tách thành 2 MSB riêng (mỗi MSB nhận 1 MBA). PTC khuyến nghị <strong>tách 2 MSB</strong> + ATS chuyển đổi — giảm Icw xuống 65 kA cho mỗi MSB, dễ sản xuất và bảo trì.",
+        ],
+        callout: {
+          type: "warning",
+          title: "Cảnh báo: 2 MBA song song",
+          text: "Khi 2 MBA chạy song song, Icw thanh cái MSB tổng có thể vượt 100 kA — rất khó và đắt để sản xuất tủ chịu được. Giải pháp thực tế: tách 2 MSB riêng + ATS, hoặc dùng busbar trunking rated 100+ kA. Liên hệ PTC để được tư vấn cấu hình tối ưu.",
+        },
+      },
+      {
+        heading: "Ví dụ 3: Tính Icw cho tủ SDB cách MSB 50m",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Tủ SDB đặt cách MSB 50m, cáp XLPE 4×1×240mm² Cu. MSB có Isc = 50 kA. Tính Icw cho SDB.",
+          "<strong>Điểm khác biệt:</strong> Khoảng cách cáp dài làm giảm dòng ngắn mạch — impedance cáp giảm Isc tại SDB.",
+          "Impedance cáp XLPE 240mm² Cu ≈ 0.098 mΩ/m × 50m = 4.9 mΩ",
+          "Isc_SDB ≈ Isc_MSB × (Z_MSB / (Z_MSB + Z_cable)) — tính gần đúng:",
+          "Isc_SDB ≈ 50 × (5 / (5 + 4.9)) ≈ 25 kA",
+          "<strong>Chọn Icw SDB:</strong> 25 × 1.1 = 27.5 kA → chọn <strong>Icw = 35 kA / 1s</strong> (dải chuẩn).",
+          "Đây là lý do SDB có thể chọn Icw thấp hơn MSB — khoảng cách cáp giảm dòng ngắn mạch. Nhưng <strong>phải tính chính xác</strong> cho từng SDB, không giả định.",
+        ],
+      },
+      {
+        heading: "Bảng chọn tiết diện thanh cái đồng theo Icw",
+        paragraphs: [
+          "Sau khi có Icw, chọn tiết diện thanh cái đồng. Bảng dưới là tham khảo cho thanh cái Cu 99.9%, 1 giây, nhiệt độ tối đa 250°C:",
+        ],
+        table: {
+          headers: ["Icw / 1s", "Tiết diện đồng tối thiểu (mm²)", "Kích thước thanh cái tiêu chuẩn"],
+          rows: [
+            ["25 kA", "1 × 200", "30×6 mm hoặc 40×5 mm"],
+            ["35 kA", "1 × 300", "40×8 mm hoặc 50×6 mm"],
+            ["42 kA", "1 × 400", "50×8 mm hoặc 60×7 mm"],
+            ["50 kA", "1 × 500", "60×8 mm hoặc 80×6 mm"],
+            ["65 kA", "1 × 630 hoặc 2 × 400", "80×8 mm hoặc 2×50×8 mm"],
+            ["80 kA", "2 × 500", "2×60×8 mm hoặc 2×80×6 mm"],
+            ["100 kA", "2 × 630 hoặc 3 × 500", "2×80×8 mm hoặc 3×60×8 mm"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần tính Icw + chọn thanh cái cho dự án?",
+          text: "Gửi công suất trạm biến áp, sơ đồ đơn tuyến, và chiều dài cáp qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính Isc, chọn Icw, tính tiết diện thanh cái và gửi báo giá kỹ thuật trong 24h — không tính toán thêm cho khách hàng.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "roi-tu-mcc-dung-vsd-cho-bom-quat",
+    title: "ROI của tủ MCC dùng biến tần VSD: Tính tiết kiệm điện cho bơm và quạt công nghiệp",
+    category: "Tính toán kỹ thuật",
+    readTime: "9 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-04-02",
+    dateModified: "2026-04-02",
+    quickAnswer: "Tủ MCC dùng biến tần VSD cho bơm/quạt công nghiệp có thể tiết kiệm 20-50% điện năng so với dùng van tiết lưu hoặc damper, với ROI thường 8-18 tháng. Bài viết cung cấp công thức tính tiết kiệm theo luật affinity (P ∝ N³), bảng tính ROI cho bơm 30kW và 75kW, và 3 case thực tế từ dự án PTC.",
+    summary: [
+      "Luật affinity: Công suất bơm/quạt tỷ lệ với lập phương tốc độ (P ∝ N³) — giảm tốc 20% = giảm công suất 49%.",
+      "VSD vs van tiết lưu: VSD tiết kiệm 20-50% điện tùy tải, van tiết lưu chỉ giảm dòng nhưng motor vẫn chạy 100% tốc độ.",
+      "ROI điển hình: 8-18 tháng cho bơm/quạt > 15kW chạy liên tục; nhanh hơn nếu điện giá cao (FDI, KCN).",
+    ],
+    body: [
+      {
+        heading: "Vì sao VSD là khoản đầu tư có ROI nhanh nhất trong tủ MCC",
+        paragraphs: [
+          "Trong nhà máy công nghiệp, <strong>bơm và quạt</strong> chiếm 60–70% tổng tiêu thụ điện. Phần lớn các tải này chạy ở tốc độ cố định (50Hz) và điều chỉnh lưu lượng bằng <strong>van tiết lưu (bơm) hoặc damper (quạt)</strong> — tức là motor vẫn chạy 100% công suất, chỉ giảm lưu lượng bằng cách tạo sức cản. Đây là lãng phí điện khổng lồ.",
+          "Biến tần VSD (Variable Speed Drive) cho phép điều chỉnh tốc độ motor theo nhu cầu thực tế — giảm tốc khi cần ít lưu lượng. Nhờ <strong>luật affinity</strong> (công suất tỷ lệ với lập phương tốc độ), giảm tốc 20% = giảm công suất 49% — tiết kiệm điện khổng lồ. ROI thường 8–18 tháng, một trong những khoản đầu tư nhanh nhất trong M&E.",
+        ],
+      },
+      {
+        heading: "Luật affinity — cơ sở tính tiết kiệm VSD",
+        paragraphs: [
+          "Đối với bơm ly tâm và quạt ly tâm, 3 đại lượng tỷ lệ theo tốc độ motor (N):",
+          "<strong>Lưu lượng Q ∝ N</strong> (tuyến tính)",
+          "<strong>Áp suất H ∝ N²</strong> (bình phương)",
+          "<strong>Công suất P ∝ N³</strong> (lập phương)",
+          "Đây là <strong>luật affinity</strong> — cơ sở tính tiết kiệm VSD. Khi giảm tốc độ motor từ 100% xuống 80%, công suất giảm từ 100% xuống 80³ = 51.2% — tiết kiệm 48.8%.",
+          "Bảng tham khảo tiết kiệm theo tốc độ:",
+        ],
+        table: {
+          headers: ["Tốc độ motor", "Lưu lượng", "Công suất tiêu thụ", "Tiết kiệm so với 100%"],
+          rows: [
+            ["100% (50 Hz)", "100%", "100%", "0%"],
+            ["90% (45 Hz)", "90%", "72.9%", "27.1%"],
+            ["80% (40 Hz)", "80%", "51.2%", "48.8%"],
+            ["70% (35 Hz)", "70%", "34.3%", "65.7%"],
+            ["60% (30 Hz)", "60%", "21.6%", "78.4%"],
+            ["50% (25 Hz)", "50%", "12.5%", "87.5%"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Lưu ý: VSD vs van tiết lưu",
+          text: "Van tiết lưu/damper giảm lưu lượng nhưng motor vẫn chạy 100% tốc độ → công suất giảm rất ít (5-15% tùy đặc tính van). VSD giảm tốc độ motor trực tiếp → tiết kiệm theo luật N³. <strong>VSD luôn tiết kiệm hơn van tiết lưu 20-50%</strong> ở cùng lưu lượng cần.",
+        },
+      },
+      {
+        heading: "Công thức tính tiết kiệm điện VSD",
+        paragraphs: [
+          "Tiết kiệm điện năm = P_motor × T_chạy × (1 - (N_thực/N_100)³) × Giá_điện",
+          "Trong đó:",
+          "<strong>P_motor</strong> = công suất motor (kW)",
+          "<strong>T_chạy</strong> = số giờ chạy/năm (thường 6000-8000h cho nhà máy 3 ca)",
+          "<strong>N_thực/N_100</strong> = tỷ lệ tốc độ thực tế / tốc độ định mức",
+          "<strong>Giá_điện</strong> = giá điện trung bình (VN: ~2.500-3.500 VND/kWh tùy bậc)",
+        ],
+      },
+      {
+        heading: "Ví dụ 1: Bơm cấp nước 30kW chạy 70% tốc độ",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Bơm cấp nước 30kW, chạy 24/7 (8.000h/năm), tốc độ thực tế trung bình 70% (35Hz). Giá điện 3.000 VND/kWh.",
+          "<strong>Tính tiết kiệm:</strong>",
+          "Tiết kiệm = 30 × 8000 × (1 - 0.7³) × 3000 = 30 × 8000 × (1 - 0.343) × 3000",
+          "Tiết kiệm = 30 × 8000 × 0.657 × 3000 = <strong>473 triệu VND/năm</strong>",
+          "<strong>Chi phí VSD 30kW:</strong> ~25-35 triệu (ABB ACS580, Schneider ATV630).",
+          "<strong>ROI = 30 / 473 × 12 = ~0.76 tháng</strong> — cực nhanh (do bơm chạy 70% liên tục).",
+        ],
+      },
+      {
+        heading: "Ví dụ 2: Quạt HVAC 75kW chạy 80% tốc độ",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Quạt HVAC tòa nhà 75kW, chạy 16h/ngày (5.800h/năm), tốc độ trung bình 80% (40Hz). Giá điện 3.000 VND/kWh.",
+          "<strong>Tính tiết kiệm:</strong>",
+          "Tiết kiệm = 75 × 5800 × (1 - 0.8³) × 3000 = 75 × 5800 × 0.488 × 3000",
+          "Tiết kiệm = <strong>636 triệu VND/năm</strong>",
+          "<strong>Chi phí VSD 75kW:</strong> ~60-90 triệu (ABB ACS880, Schneider ATV930).",
+          "<strong>ROI = 75 / 636 × 12 = ~1.4 tháng</strong> — vẫn cực nhanh.",
+        ],
+        callout: {
+          type: "info",
+          title: "Tại sao ROI nhanh như vậy?",
+          text: "VSD có ROI nhanh vì (1) bơm/quạt công nghiệp chạy liên tục 6000-8000h/năm, (2) luật N³ cho phép tiết kiệm lớn ngay cả khi giảm tốc ít, (3) giá điện VN đang tăng. Đối với bơm/quạt > 15kW chạy liên tục, VSD gần như LUÔN có ROI < 24 tháng.",
+        },
+      },
+      {
+        heading: "Ví dụ 3: Bơm xử lý nước thải 55kW chạy 60% tốc độ",
+        paragraphs: [
+          "<strong>Đề bài:</strong> Bơm xử lý nước thải 55kW, chạy 24/7 (8.000h/năm), tốc độ trung bình 60% (30Hz) vì lưu lượng nước thải biến thiên. Giá điện 3.200 VND/kWh (bậc sản xuất).",
+          "<strong>Tính tiết kiệm:</strong>",
+          "Tiết kiệm = 55 × 8000 × (1 - 0.6³) × 3200 = 55 × 8000 × 0.784 × 3200",
+          "Tiết kiệm = <strong>1.101 tỷ VND/năm</strong>",
+          "<strong>Chi phí VSD 55kW:</strong> ~45-65 triệu.",
+          "<strong>ROI = 55 / 1101 × 12 = ~0.6 tháng</strong> — bơm chạy 60% liên tục cho tiết kiệm cực lớn.",
+        ],
+      },
+      {
+        heading: "Bảng tổng hợp ROI theo công suất và tốc độ",
+        table: {
+          headers: ["Motor", "Tốc độ TB", "Tiết kiệm/năm", "Chi phí VSD", "ROI (tháng)"],
+          rows: [
+            ["15 kW", "70%", "~237 triệu", "~15-20 triệu", "~0.9"],
+            ["30 kW", "70%", "~473 triệu", "~25-35 triệu", "~0.8"],
+            ["55 kW", "60%", "~1.101 tỷ", "~45-65 triệu", "~0.6"],
+            ["75 kW", "80%", "~636 triệu", "~60-90 triệu", "~1.4"],
+            ["110 kW", "75%", "~1.28 tỷ", "~90-130 triệu", "~1.1"],
+            ["160 kW", "70%", "~2.53 tỷ", "~150-220 triệu", "~0.9"],
+          ],
+        },
+        paragraphs: [
+          "<em>Lưu ý: Bảng tính giả định 8.000h/năm, giá điện 3.000 VND/kWh. ROI thực tế phụ thuộc tải thực, số giờ chạy, và giá điện cụ thể.</em>",
+        ],
+      },
+      {
+        heading: "3 lưu ý khi lắp VSD trong tủ MCC",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Tản nhiệt tủ:</strong> VSD tỏa nhiệt 2-5% công suất — tủ MCC có VSD cần quạt tản nhiệt + lọc bụi, hoặc đặt VSD riêng tủ có IP54.",
+            "<strong>Sóng hài (Harmonic):</strong> VSD tạo sóng hài trên lưới — cần cuộn kháng input (AC reactor) hoặc active filter nếu nhiều VSD. PTC luôn thêm cuộn kháng cho VSD > 22kW.",
+            "<strong>Cáp motor:</strong> VSD cần cáp motor đặc biệt (shielded cable) để giảm EMI — cáp thường gây nhiễu thiết bị điện tử xung quanh. Khoảng cách VSD-motor ≤ 50m khuyến nghị.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần tủ MCC tích hợp VSD cho bơm/quạt?",
+          text: "Gửi danh sách motor (công suất, tải, số giờ chạy) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính ROI, đề xuất VSD phù hợp (ABB/Schneider/Yaskawa), thiết kế tủ MCC có tản nhiệt + cuộn kháng, và gửi báo giá trong 24h.",
+        },
+      },
+    ],
+  },
 ];
 
