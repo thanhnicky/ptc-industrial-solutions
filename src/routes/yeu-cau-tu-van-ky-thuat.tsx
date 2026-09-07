@@ -12,7 +12,7 @@ import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Yêu cầu tư vấn kỹ thuật Tủ điện & Thang máng cáp | PTC";
 const DESC =
-  "Kết nối trực tiếp với đội ngũ kỹ sư điện & cơ khí PTC Switchboard để được tư vấn thiết kế, chọn Form tủ, tính toán thanh cái đồng và tối ưu tuyến cáp cho công trình.";
+  "Kết nối trực tiếp với đội ngũ kỹ sư điện & cơ khí PTC Switchboard để được tư vấn thiết kế, chọn Form tủ, tính toán thanh cái đồng và chọn quy cách thang máng cáp cho công trình.";
 
 export const Route = createFileRoute("/yeu-cau-tu-van-ky-thuat")({
   head: () => ({
@@ -37,7 +37,7 @@ function Page() {
 
       <PageHero
         title="Tư vấn giải pháp kỹ thuật"
-        subtitle="Đội ngũ kỹ sư giàu kinh nghiệm thực tế của PTC sẵn sàng cùng đội ngũ MEP của bạn làm rõ bài toán kỹ thuật từ giai đoạn thiết kế cơ sở."
+        subtitle="Đội ngũ kỹ sư PTC sẵn sàng làm việc với đội MEP của bạn để làm rõ bài toán kỹ thuật từ giai đoạn thiết kế cơ sở."
         image={IMAGES.plant}
       >
         <ZaloButton size="lg" location="hero-tu-van" label="Nhắn Zalo gặp Kỹ sư PTC" />
@@ -71,7 +71,7 @@ function Page() {
             <div className="space-y-6">
               <div className="rounded-lg border border-border bg-card p-6">
                 <h2 className="text-base font-bold text-ink">Kênh kết nối kỹ thuật trực tiếp:</h2>
-                <div className="mt-4 space-y-4 text-xs text-muted-foreground">
+                <div className="mt-4 space-y-4 text-sm text-muted-foreground">
                   <div>
                     <span className="font-semibold text-ink">Hotline CSKH:</span>
                     <p className="mt-0.5 text-sm font-bold text-primary">{CONTACT.hotline}</p>

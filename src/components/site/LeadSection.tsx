@@ -18,17 +18,17 @@ export function LeadSection({
       <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:items-start">
         <div>
           <SectionHeading eyebrow="Liên hệ nhanh" title={title} desc={intro} />
-          <dl className="space-y-4 text-[14.5px]">
+          <dl className="space-y-4 text-sm">
             <div>
-              <dt className="text-[12.5px] font-semibold tracking-wider text-muted-foreground uppercase font-mono">Hotline CSKH (24/7)</dt>
+              <dt className="text-xs font-semibold tracking-wider text-muted-foreground uppercase font-mono">Hotline CSKH (24/7)</dt>
               <dd className="mt-1 font-semibold text-ink tech-value">{CONTACT.hotline}</dd>
             </div>
             <div>
-              <dt className="text-[12.5px] font-semibold tracking-wider text-muted-foreground uppercase font-mono">Email</dt>
+              <dt className="text-xs font-semibold tracking-wider text-muted-foreground uppercase font-mono">Email</dt>
               <dd className="mt-1 font-semibold text-ink">{CONTACT.email}</dd>
             </div>
             <div>
-              <dt className="text-[12.5px] font-semibold tracking-wider text-muted-foreground uppercase font-mono">Nhà máy</dt>
+              <dt className="text-xs font-semibold tracking-wider text-muted-foreground uppercase font-mono">Nhà máy</dt>
               <dd className="mt-1 text-muted-foreground leading-relaxed">{CONTACT.factory}</dd>
             </div>
           </dl>

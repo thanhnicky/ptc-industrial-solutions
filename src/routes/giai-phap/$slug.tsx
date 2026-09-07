@@ -27,8 +27,8 @@ const SOLUTIONS_DATA: Record<
 > = {
   "tu-dien-cho-nha-may": {
     title: "Giải pháp Tủ điện hạ thế & Thang máng cáp cho Nhà máy, KCN | PTC",
-    h1: "Giải pháp Tủ điện & Thang máng cáp toàn diện cho Nhà máy sản xuất",
-    desc: "Giải pháp trọn gói Tủ MSB, tủ điều khiển MCC, tủ tụ bù và thang máng cáp cho nhà máy công nghiệp. Đảm bảo vận hành liên tục, an toàn và tối ưu chi phí đầu tư.",
+    h1: "Giải pháp tủ điện và thang máng cáp cho nhà máy sản xuất",
+    desc: "Giải pháp trọn gói Tủ MSB, tủ điều khiển MCC, tủ tụ bù và thang máng cáp cho nhà máy công nghiệp. Giúp nhà máy vận hành liên tục, an toàn và kiểm soát chi phí đầu tư.",
     heroSubtitle: "Một đầu mối đồng bộ trọn gói từ trạm biến áp hạ thế đến tủ phân phối máy móc và tuyến thang cáp cho nhà máy.",
     directAnswer: "PTC Switchboard cung cấp giải pháp tủ bảng điện hạ thế và hệ thống dẫn cáp trọn gói cho các nhà máy tại các khu công nghiệp. Thiết kế Form 2b/3b/4b theo chuẩn IEC 61439-1/2 giúp an toàn vận hành, thanh cái đồng tính toán chịu dòng ngắn mạch cao, đồng bộ cùng hệ thang máng cáp mạ kẽm nhúng nóng chịu môi trường công nghiệp.",
     bullets: [
@@ -50,9 +50,9 @@ const SOLUTIONS_DATA: Record<
   },
   "tu-dien-cho-nha-thau-me": {
     title: "Giải pháp Tủ điện & Thang máng cáp cho Tổng thầu Cơ Điện M&E | PTC",
-    h1: "Giải pháp Tủ điện & Thang máng cáp đồng hành cùng Nhà thầu M&E",
+    h1: "Giải pháp tủ điện và thang máng cáp cho nhà thầu M&E",
     desc: "Hỗ trợ nhà thầu M&E bóc tách BOQ, phát hành Shop drawing 2D/3D nhanh chóng, giao hàng cuốn chiếu đúng mốc tiến độ dự án.",
-    heroSubtitle: "Đồng hành cùng đội kỹ thuật của bạn từ khâu bóc tách sơ đồ đơn tuyến, shop drawing đến nghiệm thu bàn giao.",
+    heroSubtitle: "Hỗ trợ đội kỹ thuật của bạn từ khâu bóc tách sơ đồ đơn tuyến, shop drawing đến nghiệm thu bàn giao.",
     directAnswer: "PTC là đối tác sản xuất tin cậy của các tổng thầu cơ điện (M&E). Chúng tôi hỗ trợ bóc tách khối lượng từ sơ đồ nguyên lý, phối hợp làm rõ thông số kỹ thuật thiếu, phát hành bản vẽ bố trí Shop Drawing để trình duyệt và cam kết giao hàng cuốn chiếu theo từng giai đoạn thi công tại công trường.",
     bullets: [
       "Hỗ trợ kỹ thuật chuyên sâu: Bóc tách single-line, tối ưu chi phí thanh cái đồng và chọn hãng khí cụ theo spec mời thầu.",
@@ -94,9 +94,9 @@ const SOLUTIONS_DATA: Record<
   "tu-dien-cho-toa-nha": {
     title: "Giải pháp Tủ điện & Máng cáp cho Tòa nhà cao tầng & Bệnh viện | PTC",
     h1: "Hệ thống Tủ điện & Thang máng cáp trục Riser cho Tòa nhà cao tầng",
-    desc: "Giải pháp Tủ MSB Form 3b/4b, tủ chuyển nguồn tự động ATS, tủ DB tầng và hệ thang cáp trục Riser tối ưu không gian cho tòa nhà và bệnh viện.",
-    heroSubtitle: "Đảm bảo tính liên tục cấp điện, độ an toàn phòng cháy và thẩm mỹ cao cho hệ thống cơ điện tòa nhà.",
-    directAnswer: "PTC cung cấp hệ thống tủ điện phân phối nhiều cấp (MSB - ATS - DB tầng) và thang cáp trục Riser chuyên biệt cho các tòa nhà văn phòng, chung cư cao cấp, trung tâm thương mại và bệnh viện. Tủ được thiết kế nhỏ gọn, tối ưu kích thước để vừa vặn với không gian phòng kỹ thuật điện hạn chế.",
+    desc: "Giải pháp Tủ MSB Form 3b/4b, tủ chuyển nguồn tự động ATS, tủ DB tầng và hệ thang cáp trục Riser tiết kiệm không gian cho tòa nhà và bệnh viện.",
+    heroSubtitle: "Duy trì liên tục cấp điện, an toàn phòng cháy và thẩm mỹ cao cho hệ thống cơ điện tòa nhà.",
+    directAnswer: "PTC cung cấp hệ thống tủ điện phân phối nhiều cấp (MSB - ATS - DB tầng) và thang cáp trục Riser chuyên biệt cho các tòa nhà văn phòng, chung cư cao cấp, trung tâm thương mại và bệnh viện. Tủ được thiết kế nhỏ gọn để vừa phòng kỹ thuật điện hạn chế.",
     bullets: [
       "Tủ chuyển nguồn tự động ATS: Chuyển đổi lưới – máy phát trong vòng vài giây, đảm bảo phụ tải ưu tiên không mất điện.",
       "Thang cáp trục Riser thẳng đứng: Kết cấu chịu tải trọng cáp treo lớn, bậc thang đột lỗ dễ dàng buộc gá cáp.",
@@ -228,7 +228,7 @@ function Page() {
               {solution.painPoints.map((item, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h2 className="text-sm font-semibold text-primary">Vấn đề: {item.pain}</h2>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     <strong>Giải pháp PTC:</strong> {item.solution}
                   </p>
                 </div>
@@ -256,7 +256,7 @@ function Page() {
               {solution.faqs.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -269,7 +269,7 @@ function Page() {
 
       <LeadSection
         title="Nhận tư vấn giải pháp kỹ thuật cho dự án của bạn"
-        intro="Gửi bản vẽ hoặc yêu cầu kỹ thuật để kỹ sư PTC khảo sát và đưa ra phương án tối ưu."
+        intro="Gửi bản vẽ hoặc yêu cầu kỹ thuật để kỹ sư PTC khảo sát và đưa ra phương án phù hợp."
         sourcePage={`solution-${slug}`}
       />
     </>

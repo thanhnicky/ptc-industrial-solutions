@@ -60,7 +60,7 @@ function Page() {
             title="Nguyên tắc báo giá kỹ thuật tại PTC"
             bullets={[
               "Bóc tách theo đúng bản vẽ: Kỹ sư PTC rà soát từng ngăn lộ, tính toán độ phát nhiệt và khả năng chịu ngắn mạch.",
-              "Đề xuất tối ưu chi phí: Đưa ra các tùy chọn vật tư tương đương giúp nhà thầu tiết kiệm ngân sách mà vẫn đảm bảo tiêu chuẩn IEC 61439.",
+              "Đề xuất phương án tiết kiệm chi phí: Đưa ra các tùy chọn vật tư tương đương giúp nhà thầu tiết kiệm ngân sách mà vẫn đạt tiêu chuẩn IEC 61439.",
               "Phản hồi nhanh chóng: Gửi báo giá chi tiết kèm bảng bóc tách khối lượng và mốc tiến độ giao hàng.",
               "Cam kết thiết bị chính hãng: Đầy đủ chứng nhận CO/CQ từ nhà sản xuất khí cụ (Schneider, ABB, Mitsubishi, LS...).",
             ]}
@@ -70,7 +70,7 @@ function Page() {
             <div className="space-y-6">
               <div className="rounded-lg border border-border bg-card p-6">
                 <h2 className="text-base font-bold text-ink">Các hạng mục tủ điện PTC sản xuất:</h2>
-                <ul className="mt-4 space-y-2.5 text-xs text-muted-foreground">
+                <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                     <span>Tủ điện tổng MSB đến 6300A (Form 1 đến 4b)</span>

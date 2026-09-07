@@ -50,7 +50,7 @@ export function RelatedArticles({
             className="group flex flex-col justify-between rounded-lg border border-border bg-card p-6 transition-all duration-150 hover:border-primary/50 hover:shadow-2xs"
           >
             <div>
-              <div className="flex items-center gap-2 text-[12px] font-semibold text-primary font-mono uppercase tracking-wide">
+              <div className="flex items-center gap-2 text-xs font-semibold text-primary font-mono uppercase tracking-wide">
                 <BookOpen className="size-3" aria-hidden="true" />
                 <span>{article.category}</span>
                 <span className="text-muted-foreground/50">·</span>
@@ -59,11 +59,11 @@ export function RelatedArticles({
               <h4 className="mt-2.5 text-[15px] font-semibold leading-snug text-ink transition-colors group-hover:text-primary">
                 {article.title}
               </h4>
-              <p className="mt-2 text-[13.5px] leading-relaxed text-muted-foreground line-clamp-2">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-2">
                 {article.quickAnswer}
               </p>
             </div>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
               Đọc tiếp <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </span>
           </Link>

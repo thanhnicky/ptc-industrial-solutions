@@ -38,7 +38,7 @@ function Page() {
 
       <PageHero
         title="Về PTC Switchboard"
-        subtitle="Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp tại TP.HCM. Đồng hành cùng tổng thầu M&E, chủ đầu tư nhà máy và đơn vị EPC."
+        subtitle="Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp tại TP.HCM. Phục vụ tổng thầu M&E, chủ đầu tư nhà máy và đơn vị EPC."
         image={IMAGES.hero}
       >
         <ZaloButton size="lg" location="hero-gioi-thieu" />
@@ -127,7 +127,7 @@ function Page() {
                 <Factory className="size-6 shrink-0 text-primary" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold text-ink">Nhà máy ~ 3.000 m² khép kín</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     Sở hữu dây chuyền cắt đột CNC, buồng phun sơn tĩnh điện công nghiệp, khu vực gia công uốn thanh cái đồng và phòng kiểm tra thử nghiệm tại xưởng.
                   </p>
                 </div>
@@ -136,7 +136,7 @@ function Page() {
                 <ShieldCheck className="size-6 shrink-0 text-primary" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold text-ink">Chuẩn IEC 61439 & ISO 9001</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     Kiểm soát chất lượng nghiêm ngặt từ khâu bóc tách bản vẽ đến 100% Routine Test: đo cách điện, thử cao áp, kiểm tra liên tục mạch bảo vệ PE.
                   </p>
                 </div>
@@ -145,7 +145,7 @@ function Page() {
                 <Wrench className="size-6 shrink-0 text-primary" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold text-ink">Một đầu mối cho Tủ điện & Máng cáp</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     Khớp nối 100% giữa quy cách tủ điện và hệ thống thang máng cáp, loại bỏ xung đột giao diện vật tư tại công trường, đồng bộ mốc tiến độ giao hàng.
                   </p>
                 </div>
@@ -154,7 +154,7 @@ function Page() {
                 <Users className="size-6 shrink-0 text-primary" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold text-ink">Đội ngũ kỹ sư giàu kinh nghiệm</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     Đội ngũ nòng cốt kế thừa kinh nghiệm từ các dự án tiêu chuẩn khắt khe như LEGO VSIP 3, LG Electronics 17 MWp và showroom Lexus.
                   </p>
                 </div>
@@ -176,7 +176,7 @@ function Page() {
                   </span>
                   <div>
                     <h3 className="text-sm font-semibold text-ink">{step.title}</h3>
-                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{step.desc}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -186,7 +186,7 @@ function Page() {
           {/* Cam kết SLA Hậu Mãi */}
           <div className="rounded-lg border border-primary/20 bg-primary/[0.02] p-6">
             <h2 className="text-base font-semibold text-ink">Cam kết bảo hành & Hỗ trợ kỹ thuật (SLA)</h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-xs leading-relaxed text-muted-foreground">
+            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                 <span><strong>Phản hồi trong 2 giờ:</strong> Tiếp nhận thông tin sự cố kỹ thuật và đưa ra phương án xử lý sơ bộ qua điện thoại/Zalo.</span>
@@ -202,7 +202,7 @@ function Page() {
 
       <LeadSection
         title="Gửi bản vẽ hoặc BOQ để nhận tư vấn kỹ thuật từ PTC"
-        intro="Kỹ sư PTC sẵn sàng hỗ trợ bóc tách hồ sơ, tối ưu cấu hình và phát hành báo giá kỹ thuật nhanh chóng."
+        intro="Kỹ sư PTC sẵn sàng hỗ trợ bóc tách hồ sơ, chốt cấu hình và phát hành báo giá kỹ thuật nhanh chóng."
         sourcePage="gioi-thieu"
       />
     </>

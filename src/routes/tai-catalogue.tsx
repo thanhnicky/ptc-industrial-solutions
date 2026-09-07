@@ -72,7 +72,7 @@ function Page() {
                   <Download className="size-5 text-primary" aria-hidden="true" />
                   Nhận Catalogue bản cập nhật mới nhất qua Zalo
                 </h2>
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   Do tài liệu dung lượng lớn và thường xuyên cập nhật theo tiêu chuẩn mới, quý khách vui lòng nhắn Zalo để được gửi trực tiếp file PDF chất lượng cao:
                 </p>
                 <div className="mt-4">

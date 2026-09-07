@@ -149,7 +149,7 @@ function Page() {
           />
 
           {/* Nội dung chuyên sâu — render động từ article.body */}
-          <div className="prose prose-neutral max-w-none space-y-8 text-[15px] leading-relaxed text-muted-foreground">
+          <div className="prose prose-neutral max-w-none space-y-8">
             {article.body.map((section, idx) => (
               <div key={idx} className="space-y-4">
                 <h2 className="text-xl font-bold tracking-tight text-ink">{section.heading}</h2>
@@ -220,7 +220,7 @@ function Page() {
 
             <div className="rounded-lg border border-border/80 bg-muted/30 p-5 not-prose">
               <h3 className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">Tuyên bố miễn trừ trách nhiệm kỹ thuật (Disclaimer)</h3>
-              <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+              <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">
                 Các thông tin và hướng dẫn kỹ thuật trong bài viết được biên soạn nhằm mục đích tham khảo chung dựa trên các tiêu chuẩn hiện hành. Đối với từng dự án cụ thể, kỹ sư thiết kế cần đối chiếu với điều kiện thực tế của lưới điện và yêu cầu riêng của chủ đầu tư.
               </p>
             </div>
@@ -233,7 +233,7 @@ function Page() {
               {faqs.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>

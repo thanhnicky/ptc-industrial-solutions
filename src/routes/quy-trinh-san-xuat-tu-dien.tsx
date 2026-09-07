@@ -109,7 +109,7 @@ function Page() {
           {/* Chi tiết Routine Test theo IEC 61439-2 */}
           <div className="rounded-lg border border-border bg-card p-6">
             <h2 className="text-lg font-bold text-ink">Các hạng mục Routine Test bắt buộc trước khi xuất xưởng</h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-xs leading-relaxed text-muted-foreground">
+            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div className="rounded-md border border-border/80 p-4">
                 <div className="flex items-center gap-2 font-semibold text-ink">
                   <ShieldCheck className="size-4 text-primary" aria-hidden="true" />
@@ -148,7 +148,7 @@ function Page() {
               {FAQS.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>

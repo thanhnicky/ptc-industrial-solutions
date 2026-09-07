@@ -29,7 +29,7 @@ export const Route = createFileRoute("/thang-mang-cap/")({
 const PRODUCTS = [
   { name: "Thang cáp (Cable Ladder)", desc: "Dùng cho tuyến cáp trục chính, tải trọng lớn, thoáng nhiệt; bề rộng 100–1200mm." },
   { name: "Máng cáp (Cable Trunking)", desc: "Máng có nắp đậy, bảo vệ cáp khỏi bụi và va đập, phù hợp khu vực kỹ thuật và tòa nhà." },
-  { name: "Khay cáp (Cable Tray)", desc: "Khay đục lỗ thoát nhiệt, dễ rẽ nhánh, tối ưu chi phí cho tuyến cáp phân phối." },
+  { name: "Khay cáp (Cable Tray)", desc: "Khay đục lỗ thoát nhiệt, dễ rẽ nhánh, giúp tiết kiệm chi phí cho tuyến cáp phân phối." },
   { name: "Phụ kiện đồng bộ", desc: "Co ngang/đứng, tê, chữ thập, giảm, nắp đậy, thanh treo, ty ren và bulong liên kết." },
 ];
 

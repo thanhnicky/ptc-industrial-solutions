@@ -159,14 +159,14 @@ function Page() {
           {/* Quy trình đặt hàng theo bản vẽ */}
           <div className="rounded-lg border border-border bg-card p-6">
             <h2 className="text-base font-bold text-ink">Quy trình báo giá & sản xuất tại PTC</h2>
-            <ol className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
+            <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
               <li className="flex gap-2.5">
                 <span className="font-bold text-primary">1.</span>
                 <span><strong>Tiếp nhận hồ sơ:</strong> Quý khách gửi sơ đồ đơn tuyến (Single-line diagram) và bảng BOQ khối lượng.</span>
               </li>
               <li className="flex gap-2.5">
                 <span className="font-bold text-primary">2.</span>
-                <span><strong>Bóc tách & Tối ưu:</strong> Kỹ sư PTC rà soát thông số, tính toán Icw và phát hành báo giá kỹ thuật kèm tiến độ.</span>
+                <span><strong>Bóc tách và chốt cấu hình:</strong> Kỹ sư PTC rà soát thông số, tính toán Icw và phát hành báo giá kỹ thuật kèm tiến độ.</span>
               </li>
               <li className="flex gap-2.5">
                 <span className="font-bold text-primary">3.</span>
@@ -186,7 +186,7 @@ function Page() {
               {faqs.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -199,7 +199,7 @@ function Page() {
 
       <LeadSection
         title={`Yêu cầu báo giá kỹ thuật cho ${product.name}`}
-        intro="Gửi bản vẽ đơn tuyến hoặc thông số phụ tải để kỹ sư PTC tính toán cấu hình và gửi báo giá tối ưu."
+        intro="Gửi bản vẽ đơn tuyến hoặc thông số phụ tải để kỹ sư PTC tính toán cấu hình và gửi báo giá phù hợp."
         defaultNeed="tu-dien"
         sourcePage={`product-${product.slug}`}
       />

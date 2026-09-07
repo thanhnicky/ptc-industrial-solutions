@@ -70,7 +70,7 @@ function Page() {
             <div className="space-y-6">
               <div className="rounded-lg border border-border bg-card p-6">
                 <h2 className="text-base font-bold text-ink">Các dòng thang máng cáp sản xuất:</h2>
-                <ul className="mt-4 space-y-2.5 text-xs text-muted-foreground">
+                <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                     <span>Máng cáp (Cable Trunking) – Đáy kín bảo vệ tuyệt đối</span>

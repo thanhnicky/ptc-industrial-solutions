@@ -57,11 +57,11 @@ export function RelatedProducts({
               <h4 className="text-[15px] font-semibold text-ink transition-colors group-hover:text-primary">
                 {item.name}
               </h4>
-              <p className="mt-2 text-[13.5px] leading-relaxed text-muted-foreground line-clamp-3">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-3">
                 {item.shortDesc}
               </p>
             </div>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
               Xem chi tiết kỹ thuật <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </span>
           </Link>

@@ -52,7 +52,7 @@ function Page() {
               Gửi hồ sơ kỹ thuật để PTC bóc tách khối lượng và lập báo giá
             </h1>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Để nhận được phương án kỹ thuật tối ưu chi phí và báo giá chính xác, quý nhà thầu / chủ đầu tư có thể gửi trực tiếp file bản vẽ qua Zalo kỹ thuật hoặc điền form yêu cầu bên dưới.
+              Để nhận được phương án kỹ thuật phù hợp chi phí và báo giá chính xác, quý nhà thầu / chủ đầu tư có thể gửi trực tiếp file bản vẽ qua Zalo kỹ thuật hoặc điền form yêu cầu bên dưới.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ function Page() {
                   <Send className="size-5 text-primary" aria-hidden="true" />
                   Kênh gửi nhanh nhất: Nhắn Zalo
                 </h2>
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   Gửi file trực tiếp qua Zalo để kỹ sư PTC kiểm tra file CAD/PDF ngay lập tức và trao đổi làm rõ các chi tiết kỹ thuật:
                 </p>
                 <div className="mt-4">
@@ -84,7 +84,7 @@ function Page() {
 
               <div className="rounded-lg border border-border bg-card p-6">
                 <h3 className="text-sm font-semibold text-ink">Định dạng file hỗ trợ</h3>
-                <ul className="mt-3 space-y-2 text-xs text-muted-foreground">
+                <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <FileText className="size-4 text-primary" aria-hidden="true" />
                     <span>File bản vẽ: PDF, DWG, DXF, hình ảnh sơ đồ</span>

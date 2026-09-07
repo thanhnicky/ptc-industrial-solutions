@@ -56,7 +56,7 @@ function Page() {
 
       <PageHero
         title="Bảo hành & Hỗ trợ kỹ thuật"
-        subtitle="Cam kết đồng hành trọn đời dự án: Phản hồi kỹ thuật trong 2 giờ, hỗ trợ hiện trường trong 24–48 giờ, bàn giao trọn bộ hồ sơ nghiệm thu."
+        subtitle="Hỗ trợ dài hạn trong suốt vòng đời dự án: phản hồi kỹ thuật trong 2 giờ, hiện trường 24–48 giờ, bàn giao đầy đủ hồ sơ nghiệm thu."
         image={IMAGES.warehouse}
       >
         <ZaloButton size="lg" location="hero-bao-hanh" />
@@ -72,7 +72,7 @@ function Page() {
               Chính sách bảo hành và cam kết hỗ trợ kỹ thuật của PTC Switchboard
             </h1>
             <p className="text-base leading-relaxed text-muted-foreground">
-              PTC Switchboard cam kết trách nhiệm đồng hành cùng tổng thầu M&E và chủ đầu tư từ giai đoạn thiết kế, giao hàng, đấu nối đến vận hành ổn định lâu dài. Mọi yêu cầu hỗ trợ kỹ thuật đều được xử lý theo quy trình SLA rõ ràng.
+              PTC Switchboard phụ trách kỹ thuật từ thiết kế, giao hàng, đấu nối đến vận hành cho tổng thầu M&E và chủ đầu tư. Mọi yêu cầu hỗ trợ kỹ thuật đều được xử lý theo quy trình SLA rõ ràng.
             </p>
           </div>
 
@@ -91,21 +91,21 @@ function Page() {
             <div className="rounded-lg border border-border bg-card p-5">
               <Clock className="size-6 text-primary" aria-hidden="true" />
               <h2 className="mt-3 text-sm font-semibold text-ink">Phản hồi 2 giờ</h2>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Kênh tiếp nhận trực tiếp qua Hotline CSKH và Zalo kỹ sư phụ trách dự án, giải đáp thắc mắc đấu nối 24/7.
               </p>
             </div>
             <div className="rounded-lg border border-border bg-card p-5">
               <MapPin className="size-6 text-primary" aria-hidden="true" />
               <h2 className="mt-3 text-sm font-semibold text-ink">Hiện trường 24–48h</h2>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Cử kỹ sư giàu kinh nghiệm trực tiếp kiểm tra, phối hợp xử lý sự cố tại hiện trường dự án.
               </p>
             </div>
             <div className="rounded-lg border border-border bg-card p-5">
               <Wrench className="size-6 text-primary" aria-hidden="true" />
               <h2 className="mt-3 text-sm font-semibold text-ink">Hỗ trợ Commissioning</h2>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Tư vấn thử nghiệm liên động, kiểm tra cách điện và hỗ trợ đóng điện chạy thử an toàn.
               </p>
             </div>
@@ -121,7 +121,7 @@ function Page() {
                 </span>
                 <div>
                   <h3 className="text-sm font-semibold text-ink">Tiếp nhận thông tin sự cố</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Khách hàng gửi mã tủ, mô tả hiện tượng, hình ảnh/video qua Zalo hoặc Hotline <strong>{CONTACT.hotline}</strong>.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ function Page() {
                 </span>
                 <div>
                   <h3 className="text-sm font-semibold text-ink">Chẩn đoán và phản hồi sơ bộ (Trong 2 giờ)</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Kỹ sư PTC tra cứu hồ sơ hoàn công của tủ, phân tích nguyên nhân và hướng dẫn biện pháp an toàn/cách ly phụ tải.
                   </p>
                 </div>
@@ -145,7 +145,7 @@ function Page() {
                 </span>
                 <div>
                   <h3 className="text-sm font-semibold text-ink">Xử lý hiện trường (24–48 giờ)</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Kỹ sư kỹ thuật PTC có mặt tại công trình cùng thiết bị đo kiểm và linh kiện thay thế dự phòng để xử lý dứt điểm.
                   </p>
                 </div>
@@ -157,7 +157,7 @@ function Page() {
                 </span>
                 <div>
                   <h3 className="text-sm font-semibold text-ink">Lập biên bản & Bàn giao</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Kiểm tra lại toàn bộ chức năng sau khi khắc phục, lập biên bản xác nhận dịch vụ với đại diện ban quản lý dự án.
                   </p>
                 </div>
@@ -172,7 +172,7 @@ function Page() {
               {FAQS.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>

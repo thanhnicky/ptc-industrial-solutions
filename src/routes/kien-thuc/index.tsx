@@ -102,7 +102,7 @@ function Page() {
                 className="group flex flex-col justify-between rounded-lg border border-border/80 bg-card p-5 transition-all duration-200 hover:border-primary/50 hover:shadow-md"
               >
                 <div>
-                  <div className="flex items-center justify-between text-[11px] font-semibold text-primary">
+                  <div className="flex items-center justify-between text-xs font-semibold text-primary">
                     <span className="rounded bg-primary/10 px-2 py-0.5">{article.category}</span>
                     <span className="text-muted-foreground">{article.readTime}</span>
                   </div>
@@ -115,7 +115,7 @@ function Page() {
                 </div>
 
                 <div className="mt-5 border-t border-border/60 pt-3">
-                  <div className="flex items-center justify-between text-[11px] text-muted-foreground">
+                  <div className="flex items-center justify-between text-xs leading-relaxed text-muted-foreground">
                     <span className="flex items-center gap-1">
                       <UserCheck className="size-3 text-primary" aria-hidden="true" />
                       {article.author}

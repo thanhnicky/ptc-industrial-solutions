@@ -119,7 +119,7 @@ function Page() {
               {product.name} – Sản xuất theo quy cách & BOQ dự án
             </h1>
             <p className="text-base leading-relaxed text-muted-foreground">
-              <strong>{product.name}</strong> của PTC Switchboard là giải pháp dẫn hướng, phân phối và bảo vệ tuyến cáp điện lực & điều khiển tối ưu cho các công trình công nghiệp. Sản phẩm được đột dập CNC chính xác, chấn góc cứng vững, xử lý bề mặt chuyên sâu giúp chịu tải trọng lớn, chống võng và chống ăn mòn hiệu quả.
+              <strong>{product.name}</strong> của PTC Switchboard là giải pháp dẫn hướng, phân phối và bảo vệ tuyến cáp điện lực & điều khiển cho các công trình công nghiệp. Sản phẩm được đột dập CNC chính xác, chấn góc cứng vững, xử lý bề mặt chuyên sâu giúp chịu tải trọng lớn, chống võng và chống ăn mòn hiệu quả.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ function Page() {
           {/* Quy trình gửi BOQ */}
           <div className="rounded-lg border border-border bg-card p-6">
             <h2 className="text-base font-bold text-ink">Quy trình bóc tách BOQ thang máng cáp tại PTC</h2>
-            <ol className="mt-4 space-y-3 text-xs leading-relaxed text-muted-foreground">
+            <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
               <li className="flex gap-2.5">
                 <span className="font-bold text-primary">1.</span>
                 <span><strong>Gửi bảng khối lượng (BOQ):</strong> Danh mục chiều rộng, chiều cao, độ dày, bề mặt và số lượng phụ kiện co, tê, giảm.</span>
@@ -185,7 +185,7 @@ function Page() {
               {faqs.map((faq, idx) => (
                 <div key={idx} className="rounded-lg border border-border bg-card p-5">
                   <h3 className="text-sm font-semibold text-ink">{faq.question}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
             </div>

@@ -364,7 +364,7 @@ export const PROJECTS_AUTHENTIC = [
     name: "Dự án 960 kWp – Kho DPL, Quận 2, TP.HCM",
     client: "Chủ đầu tư kho DPL",
     scope: "Hệ thống điện mặt trời áp mái 960 kWp cho kho DPL tại Quận 2, TP.HCM.",
-    highlight: "Tối ưu hóa diện tích mái kho, đóng góp sản lượng điện ổn định cho vận hành kho bãi.",
+    highlight: "Tận dụng mái kho để tạo nguồn điện ổn định phục vụ vận hành kho.",
     tags: ["solar"],
   },
   {
@@ -455,7 +455,7 @@ export const PROCESS = [
   {
     step: "02",
     title: "Bóc tách và chốt cấu hình",
-    desc: "Rà soát dòng định mức, Icw, cấp bảo vệ IP, Form tủ, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án tối ưu chi phí mà vẫn đúng tiêu chuẩn.",
+    desc: "Rà soát dòng định mức, Icw, cấp bảo vệ IP, Form tủ, chủng loại thiết bị đóng cắt và tuyến cáp; đề xuất phương án phù hợp chi phí mà vẫn đúng tiêu chuẩn.",
   },
   {
     step: "03",
@@ -540,7 +540,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ĐMTMN Kho DPL – 960 kWp, Quận 2, TP.HCM",
-    desc: "Hệ thống điện mặt trời áp mái 960 kWp cho kho DPL tại Quận 2, TP.HCM. Tối ưu diện tích mái kho, đóng góp sản lượng điện ổn định cho vận hành kho bãi.",
+    desc: "Hệ thống điện mặt trời 960 kWp cho kho DPL, Quận 2, TP.HCM. Tận dụng mái kho, cung cấp điện ổn định phục vụ vận hành kho.",
     image: "warehouse",
     tags: ["solar"],
     scope: "Hệ thống điện mặt trời áp mái 960 kWp",
@@ -607,7 +607,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-10",
     dateModified: "2026-02-15",
-    quickAnswer: "Tủ điện công nghiệp là cụm thiết bị chứa khí cụ đóng cắt, bảo vệ, đo lường và điều khiển nguồn điện trong môi trường công nghiệp, được thiết kế và thử nghiệm theo tiêu chuẩn IEC 61439-1/2 và TCVN 7994 để đảm bảo an toàn vận hành liên tục cho nhà máy và tòa nhà.",
+    quickAnswer: "Tủ điện công nghiệp là cụm thiết bị chứa khí cụ đóng cắt, bảo vệ, đo lường và điều khiển nguồn điện trong môi trường công nghiệp, được thiết kế và thử nghiệm theo tiêu chuẩn IEC 61439-1/2 và TCVN 7994 để vận hành an toàn, liên tục cho nhà máy và tòa nhà.",
     summary: [
       "Bao gồm 3 khối chính: Vỏ tủ cơ khí (tôn cán nguội/inox sơn tĩnh điện), Hệ thanh cái đồng (Busbar) và Thiết bị đóng cắt bảo vệ (ACB, MCCB, MCB, Contactor, Relay).",
       "Phân chia theo cấp: Tủ điện tổng MSB -> Tủ phân phối SDB -> Tủ phân phối nhánh DB -> Tủ điều khiển phụ tải MCC/VSD.",
@@ -617,8 +617,8 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Tủ điện công nghiệp là gì? Định nghĩa theo góc nhìn kỹ sư thiết kế",
         paragraphs: [
-          "Tủ điện công nghiệp (Industrial Switchboard / Low-Voltage Switchgear Assembly) là một cụm thiết bị điện khép kín, bao gồm vỏ bọc cơ khí, hệ thống thanh cái dẫn điện (busbar), thiết bị đóng cắt (ACB, MCCB, MCB), thiết bảo vệ (relay, fuse), thiết bị đo lường (ammeter, voltmeter, energy meter) và thiết bị điều khiển (contactor, biến tần, PLC) — được lắp ráp, đấu nối và thử nghiệm trong điều kiện xưởng theo một quy trình thống nhất, nhằm phân phối và bảo vệ nguồn điện hạ thế (≤ 1000V AC) cho nhà máy, khu công nghiệp, tòa nhà và dự án điện mặt trời.",
-          "Theo tiêu chuẩn <strong>IEC 61439-1</strong> (Quy tắc chung) và <strong>IEC 61439-2</strong> (Tủ phân phối và điều khiển công nghiệp), tủ điện công nghiệp không đơn thuần là \"hộp chứa thiết bị\" mà là một <strong>hệ thống điện hoàn chỉnh</strong> — nhà sản xuất tủ (Assembly Manufacturer) chịu trách nhiệm về toàn bộ tính năng điện, cơ khí, nhiệt và an toàn của cụm tủ, không chỉ từng thiết bị lẻ bên trong.",
+          "Tủ điện công nghiệp (Industrial Switchboard / Low-Voltage Switchgear Assembly) là cụm thiết bị điện khép kín gồm vỏ cơ khí, thanh cái (busbar), thiết bị đóng cắt (ACB, MCCB, MCB), thiết bị bảo vệ (relay, fuse), thiết bị đo lường (ammeter, voltmeter, energy meter) và thiết bị điều khiển (contactor, biến tần, PLC). Cụm tủ được lắp ráp, đấu nối và thử nghiệm tại xưởng theo một quy trình thống nhất. Nhiệm vụ chính là phân phối và bảo vệ nguồn điện hạ thế (≤ 1000V AC) cho nhà máy, khu công nghiệp, tòa nhà và dự án điện mặt trời.",
+          "Theo <strong>IEC 61439-1</strong> (Quy tắc chung) và <strong>IEC 61439-2</strong> (Tủ phân phối và điều khiển công nghiệp), tủ điện công nghiệp là một <strong>hệ thống điện hoàn chỉnh</strong>, không chỉ là vỏ chứa thiết bị. Nhà sản xuất tủ (Assembly Manufacturer) chịu trách nhiệm về tính năng điện, cơ khí, nhiệt và an toàn của cả cụm, không phải từng thiết bị lẻ bên trong.",
           "Điều này có nghĩa: Khi bạn mua tủ điện từ PTC, PTC chịu trách nhiệm về việc ACB cắt đúng dòng ngắn mạch, thanh cái đồng chịu được lực điện động khi sự cố, vỏ tủ không gây nguy hiểm cho người vận hành, và toàn bộ tủ đã qua thử nghiệm 100% trước khi xuất xưởng. Đây là điểm khác biệt cốt lõi so với việc tự mua linh kiện và lắp ráp tại công trường.",
         ],
       },
@@ -756,7 +756,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "info",
           title: "Tại sao chọn dòng MSB lớn hơn dòng tính toán?",
-          text: "Dòng MSB luôn chọn cao hơn dòng tính toán 20–30% để: (1) có dư lượng khi mở rộng nhà máy, (2) giảm phát nhiệt thanh cái ở dòng vận hành liên tục, (3) ACB hoạt động ở vùng 60–80% In là tối ưu cho tuổi thọ tiếp điểm.",
+          text: "Dòng MSB luôn chọn cao hơn dòng tính toán 20–30% để: (1) có dư lượng khi mở rộng nhà máy, (2) giảm phát nhiệt thanh cái ở dòng vận hành liên tục, (3) ACB hoạt động ở vùng 60–80% In sẽ bền tiếp điểm hơn.",
         },
       },
       {
@@ -1046,7 +1046,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tư vấn phân cấp tủ điện cho dự án?",
-          text: "Gửi sơ đồ đơn tuyến hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất cấu trúc phân cấp MSB-SDB-DB tối ưu cho dự án của bạn, kèm tính toán selectivity và ước lượng chi phí.",
+          text: "Gửi sơ đồ đơn tuyến hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất cấu trúc phân cấp MSB-SDB-DB phù hợp cho dự án của bạn, kèm tính toán selectivity và ước lượng chi phí.",
         },
       },
     ],
@@ -1135,7 +1135,7 @@ export const KNOWLEDGE_ARTICLES = [
     summary: [
       "4 điều kiện bắt buộc để đóng hòa: Cùng điện áp, cùng tần số, cùng góc pha và cùng thứ tự pha.",
       "Bộ điều khiển hòa tự động (DeepSea, ComAp, Deif) liên tục đo lường và phát tín hiệu chỉnh ga/kích từ trước khi phát lệnh đóng máy cắt ACB.",
-      "Lợi ích: Tiết kiệm nhiên liệu khi non tải (tự động ngắt bớt tổ máy), đảm bảo cấp điện liên tục 100% không gián đoạn.",
+      "Lợi ích: Tiết kiệm nhiên liệu khi non tải (tự động ngắt bớt tổ máy), giúp chuyển nguồn gần như liên tục, hạn chế mất điện cho tải quan trọng.",
     ],
     body: [
       {
@@ -1335,7 +1335,7 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Phụ kiện thang máng cáp — không thể bỏ qua",
         paragraphs: [
-          "Một tuyến thang máng cáp hoàn chỉnh không chỉ có thẳng mà cần hệ phụ kiện đồng bộ để đi qua các khúc cua, rẽ nhánh, thay đổi tiết diện:",
+          "Tuyến thang máng cáp ngoài đoạn thẳng còn cần hệ phụ kiện để đi qua khúc cua, rẽ nhánh và thay đổi tiết diện:",
         ],
         list: {
           ordered: false,
@@ -1367,7 +1367,7 @@ export const KNOWLEDGE_ARTICLES = [
     dateModified: "2026-02-21",
     quickAnswer: "Chọn Thang cáp (Ladder) cho tuyến cáp điện lực nặng cần thoát nhiệt tối đa; Chọn Khay cáp (Tray) cho tuyến cáp phân phối vừa tản nhiệt vừa cần cố định cáp; Chọn Máng cáp (Trunking) khi cần bảo vệ kín 100% chống bụi bẩn, côn trùng và yêu cầu thẩm mỹ cao.",
     summary: [
-      "Thang cáp: Rỗng đáy, thanh bậc thang đỡ cáp, tải trọng lớn nhất, tản nhiệt tốt nhất, giá thành/kg tối ưu.",
+      "Thang cáp: Rỗng đáy, thanh bậc thang đỡ cáp, tải trọng lớn nhất, tản nhiệt tốt nhất, chi phí/kg hợp lý.",
       "Khay cáp: Đáy đục lỗ ô van thông gió, thích hợp cho cáp có đường kính trung bình và nhỏ.",
       "Máng cáp: Đáy kín liền khối, có nắp đậy, chống chuột cắn và chống nước nhỏ giọt từ trên trần.",
     ],
@@ -1398,7 +1398,7 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Khi nào chọn Thang cáp (Ladder)?",
         paragraphs: [
-          "Thang cáp là lựa chọn <strong>tối ưu cho tuyến cáp điện lực trục chính</strong> — cáp XLPE/PVC tiết diện lớn (95–400 mm²), cáp động lực nhà máy, cáp từ trạm biến áp đến MSB.",
+          "Thang cáp thường dùng cho <strong>tuyến cáp điện lực trục chính</strong> — cáp XLPE/PVC tiết diện lớn (95–400 mm²), cáp động lực nhà máy, cáp từ trạm biến áp đến MSB.",
           "Lý do: (1) tản nhiệt tốt nhất — cáp động lực sinh nhiệt lớn khi tải cao, cần thoát nhiệt để không giảm dòng tải; (2) tải trọng lớn — thang cáp chịu được hàng trăm kg cáp trên 1 nhịp; (3) dễ kéo cáp lớn qua thanh bậc, không bị đáy kín cản trở.",
           "Ứng dụng điển hình: trục riser tòa nhà, tuyến cáp trục nhà máy, mái xưởng solar (cáp DC từ panel đến combiner box).",
         ],
@@ -1613,7 +1613,7 @@ export const KNOWLEDGE_ARTICLES = [
           ordered: true,
           items: [
             "<strong>Tiếp nhận & Phân công (trong 2 giờ):</strong> Kỹ sư dự án tiếp nhận, phân công cho kỹ sư thiết kế phù hợp ngành (nhà máy / solar / tòa nhà).",
-            "<strong>Bóc tách & Tính toán (4–8 giờ):</strong> Rà soát thông số, tính Icw nếu chưa có, bóc tách vật tư, tính toán thanh cái, đề xuất cấu hình tối ưu.",
+            "<strong>Bóc tách & Tính toán (4–8 giờ):</strong> Rà soát thông số, tính Icw nếu chưa có, bóc tách vật tư, tính toán thanh cái, đề xuất cấu hình phù hợp.",
             "<strong>Làm rõ thông số thiếu (nếu có):</strong> Kỹ sư PTC chủ động gọi/Zalo hỏi bổ sung — không để khách hàng tự tìm.",
             "<strong>Phát hành báo giá (trong 24h):</strong> Báo giá chi tiết theo tủ, kèm tiến độ sản xuất, phương án hãng thiết bị, và ghi rõ điều kiện kỹ thuật.",
             "<strong>Theo dõi & Hỗ trợ kỹ thuật:</strong> Sau khi gửi báo giá, PTC tiếp tục hỗ trợ giải thích, điều chỉnh, và phối hợp với tư vấn thiết kế nếu cần.",
@@ -1734,11 +1734,11 @@ export const KNOWLEDGE_ARTICLES = [
     ],
     body: [
       {
-        heading: "Bối cảnh dự án — cột mốc năng lượng sạch tại KCN Phú Mỹ 1",
+        heading: "Dự án điện mặt trời Phúc Ý 999 kWp tại KCN Phú Mỹ 1",
         paragraphs: [
-          "Vào tháng 10 năm 2020, <strong>Powertech</strong> (tiền thân của PTC Switchboard ngày nay) đã thực hiện thành công dự án điện mặt trời <strong>Phúc Ý</strong>, đánh dấu một cột mốc quan trọng trong việc cung cấp giải pháp năng lượng sạch tại Khu công nghiệp Phú Mỹ 1, Bà Rịa – Vũng Tàu.",
-          "Với quy mô công suất <strong>999 kWp</strong>, hệ thống đóng góp sản lượng điện năng ổn định, góp phần tối ưu hóa hiệu quả kinh tế và bảo vệ môi trường cho khu vực. Hình thức đầu tư: doanh nghiệp đầu tư 100%, bán điện trực tiếp lên lưới quốc gia.",
-          "Đây là một trong những dự án solar rooftop quy mô lớn do Powertech thực hiện trong năm 2020 — minh chứng cho năng lực thiết kế, thi công và vận hành hệ thống điện mặt trời áp mái cho nhà máy công nghiệp.",
+          "Tháng 10/2020, <strong>Powertech</strong> (nay là PTC) hoàn thành dự án solar Phúc Ý 999 kWp tại KCN Phú Mỹ 1, Bà Rịa – Vũng Tàu. Chủ đầu tư là Công ty Cổ phần Điện mặt trời Sunword, Powertech làm tổng thầu EPC.",
+          "Hệ thống 999 kWp cung cấp điện ổn định, giúp nhà máy giảm chi phí điện và hạ phát thải. Hình thức đầu tư: doanh nghiệp đầu tư 100%, bán điện trực tiếp lên lưới quốc gia.",
+          "Đây là một trong những hệ thống áp mái quy mô lớn mà đội ngũ Powertech đã triển khai năm 2020, cho thấy kinh nghiệm thiết kế, thi công và vận hành tủ điện solar cho nhà máy công nghiệp.",
         ],
       },
       {
@@ -1759,32 +1759,32 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Cấu hình thiết bị kỹ thuật",
         paragraphs: [
-          "Hệ thống sử dụng các thiết bị đạt tiêu chuẩn quốc tế để đảm bảo hiệu suất chuyển đổi cao nhất:",
+          "Hệ thống dùng thiết bị đạt tiêu chuẩn quốc tế để đạt hiệu suất chuyển đổi cao:",
         ],
         list: {
           ordered: false,
           items: [
-            "<strong>Tấm pin:</strong> 2.245 tấm pin Longi 445Wp — công nghệ Mono Half-cells hiện đại, tối ưu hóa diện tích mái và hiệu suất.",
-            "<strong>Inverter:</strong> 08 bộ inverter hòa lưới Huawei 100kW – 3 pha — tối ưu hóa khả năng vận hành và giám sát từ xa.",
+            "<strong>Tấm pin:</strong> 2.245 tấm pin Longi 445Wp Mono Half-cells cho hiệu suất cao trên 1 m², phù hợp mái nhà máy diện tích hạn chế.",
+            "<strong>Inverter:</strong> 08 bộ inverter Huawei 100kW 3 pha, ổn định, hỗ trợ giám sát từ xa qua SmartLogger.",
             "<strong>Hệ thống tủ điện:</strong> tủ AC phân phối, tủ hòa lưới — thiết kế và sản xuất theo IEC 61439, phối hợp thông số inverter Huawei.",
-            "<strong>Hệ thống cáp + máng cáp:</strong> tuyến cáp DC từ panel đến inverter, cáp AC từ inverter đến tủ hòa lưới — máng cáp ngoài trời chịu UV.",
+            "<strong>Hệ thống cáp + máng cáp:</strong> tuyến cáp DC từ panel đến inverter, cáp AC từ inverter đến tủ hòa lưới, máng cáp ngoài trời chịu UV.",
           ],
         },
         callout: {
           type: "info",
           title: "Vì sao chọn Longi 445Wp + Huawei 100kW?",
-          text: "Longi 445Wp Mono Half-cells cho hiệu suất cao trên 1m² — tối ưu cho mái nhà máy có diện tích hạn chế. Huawei 100kW 3 pha là dòng inverter công nghiệp ổn định, có Monitoring SmartLogger theo dõi từ xa — phù hợp dự án bán điện lên lưới cần giám sát sản lượng liên tục.",
+          text: "Longi 445Wp Mono Half-cells cho hiệu suất cao trên 1 m², phù hợp mái nhà máy có diện tích hạn chế. Huawei 100kW 3 pha là dòng inverter công nghiệp ổn định, có SmartLogger theo dõi từ xa — phù hợp dự án bán điện lên lưới cần giám sát sản lượng liên tục.",
         },
       },
       {
         heading: "Quy trình thực hiện — từ thiết kế đến vận hành",
         paragraphs: [
-          "Dự án Phúc Ý được thực hiện theo quy trình bài bản của đội ngũ kỹ sư Powertech — từ khâu thiết kế kỹ thuật chính xác đến thi công chuẩn chỉ tại hiện trường:",
+          "Dự án Phúc Ý được thực hiện theo quy trình của đội ngũ Powertech, từ thiết kế kỹ thuật đến thi công tại hiện trường:",
         ],
         list: {
           ordered: true,
           items: [
-            "<strong>Khảo sát & Thiết kế:</strong> Đo đạc mái nhà máy, tính toán công suất tối ưu theo diện tích và hướng mái, thiết kế layout panel + tuyến cáp DC/AC.",
+            "<strong>Khảo sát & Thiết kế:</strong> Đo đạc mái nhà máy, tính toán công suất phù hợp với diện tích và hướng mái, thiết kế layout panel + tuyến cáp DC/AC.",
             "<strong>Cung cấp vật tư:</strong> Pin Longi 445Wp, inverter Huawei 100kW, tủ điện AC/ hòa lưới, máng cáp ngoài trời — tất cả có CO/CQ chính hãng.",
             "<strong>Thi công lắp đặt:</strong> Lắp khung giá panel trên mái, đi cáp DC trong máng cáp, lắp inverter và tủ AC — phối hợp với chủ đầu tư để không gián đoạn vận hành nhà máy.",
             "<strong>Đấu nối & Nghiệm thu:</strong> Test hệ thống, phối hợp với điện lực EVN đấu nối lên lưới, bàn giao hồ sơ hoàn công.",
@@ -1793,15 +1793,15 @@ export const KNOWLEDGE_ARTICLES = [
         },
       },
       {
-        heading: "Kết quả vận hành — hiệu suất ổn định sau bàn giao",
+        heading: "Kết quả vận hành sau bàn giao",
         paragraphs: [
-          "Dự án Phúc Ý hiện đang vận hành ổn định và đạt hiệu suất cao nhờ quy trình thực hiện bài bản của đội ngũ kỹ sư Powertech. Hệ thống đóng góp sản lượng điện ổn định cho KCN Phú Mỹ 1, góp phần tối ưu hóa chi phí điện cho chủ đầu tư Sunword.",
-          "Đội ngũ chuyên viên kỹ thuật Powertech (nay là PTC) thường xuyên giám sát hệ thống từ xa và kiểm tra thực tế định kỳ để đảm bảo \"sức khỏe\" mạng lưới điện luôn ở trạng thái tốt nhất cho khách hàng. Đây là cam kết hậu mãi mà PTC áp dụng cho mọi dự án solar — không bàn giao xong là xong.",
+          "Dự án Phúc Ý vận hành tốt. Hệ thống cung cấp điện ổn định cho KCN Phú Mỹ 1, giúp Sunword giảm chi phí điện năng.",
+          "Đội ngũ kỹ thuật Powertech (nay là PTC) giám sát từ xa và kiểm tra định kỳ để hệ thống vận hành ổn định lâu dài. PTC không coi việc bàn giao là kết thúc trách nhiệm.",
         ],
         callout: {
           type: "tip",
           title: "Cần tư vấn dự án điện mặt trời áp mái cho nhà máy?",
-          text: "Gửi thông số mái nhà máy (diện tích, hướng, loại tôn) và nhu cầu công suất qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính toán công suất tối ưu, đề xuất cấu hình pin + inverter + tủ điện, và gửi phương án kỹ thuật trong 24h. PTC kế thừa kinh nghiệm từ Powertech — đội ngũ đã thực hiện nhiều dự án solar quy mô MWp.",
+          text: "Gửi thông số mái nhà máy (diện tích, hướng, loại tôn) và nhu cầu công suất qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính toán công suất phù hợp, đề xuất cấu hình pin + inverter + tủ điện, và gửi phương án kỹ thuật trong 24h. PTC kế thừa kinh nghiệm từ Powertech — đội ngũ đã thực hiện nhiều dự án solar quy mô MWp.",
         },
       },
     ],
@@ -2189,7 +2189,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "warning",
           title: "Cảnh báo: 2 MBA song song",
-          text: "Khi 2 MBA chạy song song, Icw thanh cái MSB tổng có thể vượt 100 kA — rất khó và đắt để sản xuất tủ chịu được. Giải pháp thực tế: tách 2 MSB riêng + ATS, hoặc dùng busbar trunking rated 100+ kA. Liên hệ PTC để được tư vấn cấu hình tối ưu.",
+          text: "Khi 2 MBA chạy song song, Icw thanh cái MSB tổng có thể vượt 100 kA — rất khó và đắt để sản xuất tủ chịu được. Giải pháp thực tế: tách 2 MSB riêng + ATS, hoặc dùng busbar trunking rated 100+ kA. Liên hệ PTC để được tư vấn cấu hình phù hợp.",
         },
       },
       {

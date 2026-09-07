@@ -19,7 +19,7 @@ export function Footer() {
           <p className="text-[14px] leading-relaxed text-steel-foreground/80">
             <strong>{CONTACT.legalName}</strong> (Thương hiệu: {CONTACT.brand}) – Nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp theo tiêu chuẩn IEC 61439-1/2 và ISO 9001:2015. Nhà máy ~ 3.000 m² tại Linh Xuân, TP.HCM.
           </p>
-          <div className="space-y-1.5 text-[13px] text-steel-foreground/70">
+          <div className="space-y-1.5 text-sm text-steel-foreground/70">
             <p><strong>Mã số thuế:</strong> {CONTACT.taxCode}</p>
             <p><strong>Tiêu chuẩn:</strong> ISO 9001:2015 · IEC 61439-1/2 · QUATEST 3</p>
             <p><strong>SLA Hậu mãi:</strong> Phản hồi 2h · Hiện trường 24–48h</p>
@@ -112,15 +112,15 @@ export function Footer() {
           <h2 className="text-[13px] font-semibold tracking-wider text-steel-foreground/70 uppercase font-mono">Thông tin liên hệ</h2>
           <ul className="mt-4 space-y-3 text-[14px] text-steel-foreground/80">
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Nhà máy sản xuất (~ 3.000 m²)</span>
+              <span className="block text-xs font-medium text-steel-foreground/60 uppercase">Nhà máy sản xuất (~ 3.000 m²)</span>
               {CONTACT.factoryAddress}
             </li>
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Trụ sở công ty</span>
+              <span className="block text-xs font-medium text-steel-foreground/60 uppercase">Trụ sở công ty</span>
               {CONTACT.headOffice}
             </li>
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Hotline CSKH</span>
+              <span className="block text-xs font-medium text-steel-foreground/60 uppercase">Hotline CSKH</span>
               <a
                 className="font-semibold text-white hover:underline tech-value"
                 href={`tel:${CONTACT.hotlineRaw}`}
@@ -130,7 +130,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <span className="block text-[12px] font-medium text-steel-foreground/60 uppercase">Email chính thức</span>
+              <span className="block text-xs font-medium text-steel-foreground/60 uppercase">Email chính thức</span>
               <a
                 className="hover:underline text-steel-foreground/90"
                 href={`mailto:${CONTACT.email}`}
@@ -146,7 +146,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => track("zalo_click", { cta_location: "footer" })}
-              className="inline-flex min-h-[44px] items-center rounded-md border border-steel-foreground/30 px-4 text-[13px] font-semibold text-white transition-colors hover:bg-steel-foreground/15 hover:border-steel-foreground/60"
+              className="inline-flex min-h-[44px] items-center rounded-md border border-steel-foreground/30 px-4 text-sm font-semibold text-white transition-colors hover:bg-steel-foreground/15 hover:border-steel-foreground/60"
             >
               Nhắn Zalo gửi bản vẽ kỹ thuật
             </a>
@@ -155,7 +155,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-steel-foreground/10">
-        <div className="container-wide flex flex-wrap justify-between gap-3 py-6 text-[13px] text-steel-foreground/60">
+        <div className="container-wide flex flex-wrap justify-between gap-3 py-6 text-sm text-steel-foreground/60">
           <span>© 2026 {CONTACT.legalName}. Tất cả các quyền được bảo lưu.</span>
           <span>Website chính thức: https://tudienptc.vn · Nhà máy sản xuất tại TP.HCM</span>
         </div>
