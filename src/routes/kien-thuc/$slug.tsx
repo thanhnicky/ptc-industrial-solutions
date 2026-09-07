@@ -12,6 +12,14 @@ import { ArticleSchema, FAQSchema } from "@/components/seo/JsonLd";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
 
+interface BodySection {
+  heading: string;
+  paragraphs?: string[];
+  list?: { items: string[]; ordered?: boolean };
+  table?: { headers: string[]; rows: string[][] };
+  callout?: { type: "info" | "warning" | "tip"; title?: string; text: string };
+}
+
 interface ArticleType {
   slug: string;
   title: string;
@@ -23,6 +31,7 @@ interface ArticleType {
   dateModified: string;
   quickAnswer: string;
   summary: string[];
+  body: BodySection[];
 }
 
 export const Route = createFileRoute("/kien-thuc/$slug")({
@@ -145,24 +154,75 @@ function Page() {
             bullets={article.summary}
           />
 
-          {/* Nội dung chuyên sâu */}
-          <div className="prose prose-neutral max-w-none space-y-6 text-sm leading-relaxed text-muted-foreground">
-            <h2 className="text-lg font-bold text-ink">1. Bối cảnh kỹ thuật và tầm quan trọng trong hệ thống</h2>
-            <p>
-              Trong quá trình thiết kế và thi công hệ thống cơ điện (M&E) cho các công trình công nghiệp, việc nắm vững các quy định tiêu chuẩn và đặc tính kỹ thuật của từng loại thiết bị đóng vai trò quyết định đến độ an toàn, chi phí đầu tư ban đầu cũng như chi phí vận hành bảo trì lâu dài của nhà máy.
-            </p>
+          {/* Nội dung chuyên sâu — render động từ article.body */}
+          <div className="prose prose-neutral max-w-none space-y-8 text-[15px] leading-relaxed text-muted-foreground">
+            {article.body.map((section, idx) => (
+              <div key={idx} className="space-y-4">
+                <h2 className="text-xl font-bold tracking-tight text-ink">{section.heading}</h2>
 
-            <h2 className="text-lg font-bold text-ink">2. Phân tích chi tiết và các lưu ý thiết kế từ kỹ sư PTC</h2>
-            <p>
-              Theo tiêu chuẩn <strong>IEC 61439-1/2</strong> và <strong>TCVN 7994</strong>, các thông số dòng định mức (In), dòng cắt ngắn mạch (Icu/Ics) và dòng ngắn mạch chịu đựng trong thời gian ngắn (Icw) của hệ thanh cái đồng chính là những chỉ số cốt lõi không thể bỏ qua. Việc tính toán chuẩn xác tiết diện đồng điện phân giúp ngăn ngừa nguy cơ phát nhiệt quá mức và biến dạng thanh cái khi có sự cố ngắn mạch xảy ra trên lưới điện.
-            </p>
+                {section.paragraphs?.map((p, pi) => (
+                  <p key={pi} dangerouslySetInnerHTML={{ __html: p }} />
+                ))}
 
-            <h2 className="text-lg font-bold text-ink">3. Khuyến nghị ứng dụng thực tế cho nhà thầu và chủ đầu tư</h2>
-            <ul className="space-y-2 list-disc pl-5">
-              <li>Luôn yêu cầu nhà sản xuất cung cấp biên bản Routine Test xuất xưởng 100% trước khi nhận hàng.</li>
-              <li>Kiểm tra tính đồng bộ giữa kích thước tủ điện và hệ thống thang máng cáp để tránh xung đột không gian khi kéo cáp tại hiện trường.</li>
-              <li>Lựa chọn cấp bảo vệ vỏ tủ IP phù hợp với môi trường lắp đặt thực tế (IP31/IP42 cho phòng điện trong nhà, IP55/IP65 cho khu vực ngoài trời).</li>
-            </ul>
+                {section.list && (
+                  section.list.ordered ? (
+                    <ol className="space-y-2.5 list-decimal pl-5">
+                      {section.list.items.map((item, li) => (
+                        <li key={li} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ol>
+                  ) : (
+                    <ul className="space-y-2.5 list-disc pl-5">
+                      {section.list.items.map((item, li) => (
+                        <li key={li} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ul>
+                  )
+                )}
+
+                {section.table && (
+                  <div className="overflow-x-auto not-prose rounded-lg border border-border">
+                    <table className="w-full text-xs sm:text-sm">
+                      <thead>
+                        <tr className="border-b border-border bg-secondary/50">
+                          {section.table.headers.map((h, hi) => (
+                            <th key={hi} className="px-4 py-3 text-left font-semibold text-ink">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row, ri) => (
+                          <tr key={ri} className="border-b border-border last:border-b-0">
+                            {row.map((cell, ci) => (
+                              <td key={ci} className="px-4 py-3 text-muted-foreground" dangerouslySetInnerHTML={{ __html: cell }} />
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+
+                {section.callout && (
+                  <div
+                    className={`not-prose rounded-r-lg border-l-4 p-4 ${
+                      section.callout.type === "warning"
+                        ? "border-amber-500 bg-amber-50/50"
+                        : section.callout.type === "tip"
+                        ? "border-emerald-500 bg-emerald-50/50"
+                        : "border-primary bg-primary/5"
+                    }`}
+                  >
+                    {section.callout.title && (
+                      <p className="text-xs font-semibold tracking-wider uppercase text-ink">
+                        {section.callout.title}
+                      </p>
+                    )}
+                    <p className="mt-1 text-sm leading-relaxed text-ink" dangerouslySetInnerHTML={{ __html: section.callout.text }} />
+                  </div>
+                )}
+              </div>
+            ))}
 
             <div className="rounded-lg border border-border/80 bg-muted/30 p-5 not-prose">
               <h3 className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">Tuyên bố miễn trừ trách nhiệm kỹ thuật (Disclaimer)</h3>

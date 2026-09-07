@@ -46,7 +46,7 @@ export function RelatedArticles({
         {items.map((article) => (
           <Link
             key={article.slug}
-            to={`/kien-thuc/${article.slug}`}
+            to={`/kien-thuc/${article.slug}` as never}
             className="group flex flex-col justify-between rounded-lg border border-border bg-card p-6 transition-all duration-150 hover:border-primary/50 hover:shadow-2xs"
           >
             <div>
