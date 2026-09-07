@@ -21,7 +21,7 @@ export const CONTACT = {
   hotlineDisplay: "0836 97 77 99",
   
   // Email chính thức
-  email: "hi@tudienptc.vn",
+  email: "tudienptc.vn@gmail.com",
   
   // Zalo config: Lấy từ env VITE_ZALO_URL hoặc fallback chính thức
   zalo: import.meta.env.VITE_ZALO_URL || "https://zalo.me/0836977799",

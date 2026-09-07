@@ -8,7 +8,7 @@ import { CONTACT } from "@/lib/site";
 
 const TITLE = "Liên hệ PTC – hotline 0836 97 77 99, báo giá 24h";
 const DESC =
-  "Liên hệ Công ty Cổ phần Tủ bảng điện PTC: hotline 0836 97 77 99, Zalo, email hi@tudienptc.vn. Nhà máy tại Linh Xuân, TP.HCM.";
+  "Liên hệ Công ty Cổ phần Tủ bảng điện PTC: hotline 0836 97 77 99, Zalo, email tudienptc.vn@gmail.com. Nhà máy tại Linh Xuân, TP.HCM.";
 
 export const Route = createFileRoute("/lien-he")({
   head: () => ({
