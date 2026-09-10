@@ -11,6 +11,8 @@ import { KNOWLEDGE_ARTICLES } from "@/lib/site";
 import { ArticleSchema, FAQSchema } from "@/components/seo/JsonLd";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
+import { IcwCalculator } from "@/components/site/IcwCalculator";
+import { VsdCalculator } from "@/components/site/VsdCalculator";
 
 interface BodySection {
   heading: string;
@@ -225,6 +227,24 @@ function Page() {
               </p>
             </div>
           </div>
+
+          {/* Interactive Calculator — chỉ hiển thị cho bài có calculator */}
+          {article.slug === "cach-tinh-dong-ngan-mach-icw-tu-msb" && (
+            <div>
+              <SectionHeading eyebrow="Công cụ tương tác" title="Tính dòng ngắn mạch Icw trực tiếp" />
+              <div className="mt-4">
+                <IcwCalculator />
+              </div>
+            </div>
+          )}
+          {article.slug === "roi-tu-mcc-dung-vsd-cho-bom-quat" && (
+            <div>
+              <SectionHeading eyebrow="Công cụ tương tác" title="Tính ROI biến tần VSD trực tiếp" />
+              <div className="mt-4">
+                <VsdCalculator />
+              </div>
+            </div>
+          )}
 
           {/* FAQs */}
           <div>
