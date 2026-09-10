@@ -56,6 +56,7 @@ export function LeadForm({
       phone: String(data.get("phone") ?? "").trim(),
       email: String(data.get("email") ?? "").trim() || null,
       need: String(data.get("need") ?? defaultNeed),
+      project_stage: String(data.get("project_stage") ?? "").trim() || null,
       note: String(data.get("note") ?? "").trim() || null,
       source_page: sourcePage,
     };
@@ -92,6 +93,7 @@ export function LeadForm({
           "Số điện thoại": payload.phone,
           "Email khách": payload.email || "Không cung cấp",
           "Hạng mục quan tâm": needLabel,
+          "Giai đoạn": payload.project_stage || "Không cung cấp",
           "Ghi chú / Yêu cầu kỹ thuật": payload.note || "Không có",
           "Trang gửi yêu cầu": sourcePage,
           "Thời gian gửi": new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }),
@@ -200,6 +202,22 @@ export function LeadForm({
                 {n.label}
               </option>
             ))}
+          </select>
+        </div>
+        <div className="grid gap-2 sm:col-span-2">
+          <Label className="text-xs font-semibold tracking-wide text-ink uppercase" htmlFor="project_stage">Giai đoạn dự án</Label>
+          <select
+            id="project_stage"
+            name="project_stage"
+            required
+            defaultValue=""
+            className="h-12 w-full rounded-md border border-input bg-background px-3.5 text-[15px] text-ink shadow-2xs focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:outline-none transition-colors"
+          >
+            <option value="" disabled>Giai đoạn dự án *</option>
+            <option value="dang-thiet-ke">Đang thiết kế — cần tư vấn cấu hình</option>
+            <option value="dang-bidding">Đang bidding — cần báo giá</option>
+            <option value="sap-thi-cong">Sắp thi công — cần tủ gấp</option>
+            <option value="da-thi-cong">Đã thi công — cần thay thế/bổ sung</option>
           </select>
         </div>
         <div className="grid gap-2 sm:col-span-2">

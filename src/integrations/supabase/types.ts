@@ -24,6 +24,7 @@ export type Database = {
           need: string
           note: string | null
           phone: string
+          project_stage: string | null
           source_page: string | null
         }
         Insert: {
@@ -35,6 +36,7 @@ export type Database = {
           need?: string
           note?: string | null
           phone: string
+          project_stage?: string | null
           source_page?: string | null
         }
         Update: {
@@ -46,6 +48,7 @@ export type Database = {
           need?: string
           note?: string | null
           phone?: string
+          project_stage?: string | null
           source_page?: string | null
         }
         Relationships: []

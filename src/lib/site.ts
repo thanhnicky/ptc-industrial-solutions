@@ -607,7 +607,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-10",
     dateModified: "2026-02-15",
-    quickAnswer: "Tủ điện công nghiệp là cụm thiết bị chứa khí cụ đóng cắt, bảo vệ, đo lường và điều khiển nguồn điện trong môi trường công nghiệp, được thiết kế và thử nghiệm theo tiêu chuẩn IEC 61439-1/2 và TCVN 7994 để vận hành an toàn, liên tục cho nhà máy và tòa nhà.",
+    quickAnswer: "Tủ điện công nghiệp là cụm thiết bị khép kín gồm vỏ, thanh cái, thiết bị đóng cắt, bảo vệ, đo lường và điều khiển. Được lắp ráp và thử nghiệm theo IEC 61439-1/2 và TCVN 7994. Phân phối và bảo vệ nguồn điện hạ thế (≤ 1000V AC) cho nhà máy, KCN, tòa nhà và dự án điện mặt trời.",
     summary: [
       "Bao gồm 3 khối chính: Vỏ tủ cơ khí (tôn cán nguội/inox sơn tĩnh điện), Hệ thanh cái đồng (Busbar) và Thiết bị đóng cắt bảo vệ (ACB, MCCB, MCB, Contactor, Relay).",
       "Phân chia theo cấp: Tủ điện tổng MSB -> Tủ phân phối SDB -> Tủ phân phối nhánh DB -> Tủ điều khiển phụ tải MCC/VSD.",
@@ -722,7 +722,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-15",
     dateModified: "2026-02-18",
-    quickAnswer: "Để chọn tủ điện MSB đúng cho nhà máy, kỹ sư cần xác định: công suất trạm biến áp (kVA) để tính dòng định mức tổng (A), dòng cắt ngắn mạch trạm (kA) để tính dòng ngắn mạch chịu đựng Icw của thanh cái, và cấp cách ly Form (Form 1 đến 4b) phù hợp với mức độ an toàn liên tục của nhà máy.",
+    quickAnswer: "Để chọn tủ MSB đúng, cần xác định 3 thông số: (1) dòng định mức tổng (A) theo công suất trạm biến áp, (2) dòng ngắn mạch Icw (kA) theo SCA trạm, (3) cấp cách ly Form (1-4b) theo yêu cầu an toàn bảo trì. Icw phải ≥ SCA × 1.1.",
     summary: [
       "Dòng định mức tủ MSB: Tính toán theo công suất máy biến áp (VD: Trạm 1600kVA -> Chọn MSB dòng 2500A; Trạm 2500kVA -> Chọn MSB dòng 4000A).",
       "Dòng ngắn mạch Icw: Thanh cái đồng phải chịu được dòng ngắn mạch trong 1s hoặc 3s mà không bị biến dạng cơ học hoặc phá hủy nhiệt.",
@@ -865,7 +865,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-20",
     dateModified: "2026-02-20",
-    quickAnswer: "IEC 61439 là tiêu chuẩn quốc tế áp dụng cho cụm đóng cắt và điều khiển hạ thế (thay thế chuẩn cũ IEC 60439). Tiêu chuẩn quy định nghiêm ngặt trách nhiệm của Nhà sản xuất thiết kế gốc (Original Manufacturer) qua Type Test và Nhà sản xuất lắp ráp tủ (Assembly Manufacturer như PTC) qua 100% Routine Test trước khi xuất xưởng.",
+    quickAnswer: "IEC 61439 là tiêu chuẩn quốc tế cho cụm đóng cắt và điều khiển hạ thế (thay IEC 60439). Quy định: Nhà sản xuất thiết kế gốc (Original Manufacturer) làm Type Test, Nhà sản xuất lắp ráp (Assembly Manufacturer) làm 100% Routine Test trước khi xuất xưởng.",
     summary: [
       "Phân biệt IEC 61439-1 (Quy tắc chung) và IEC 61439-2 (Tủ phân phối và điều khiển công nghiệp).",
       "Routine Test bắt buộc 100% từng tủ: Kiểm tra liên tục mạch bảo vệ, đo cách điện (Insulation resistance), thử nghiệm điện áp xoay chiều chịu áp (Dielectric test) và kiểm tra chức năng đóng cắt.",
@@ -1131,7 +1131,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-08",
     dateModified: "2026-02-21",
-    quickAnswer: "Tủ hòa đồng bộ là hệ thống tủ điện tự động điều khiển việc ghép nối song song nhiều tổ máy phát điện với nhau (hoặc hòa máy phát với lưới điện) khi cần tăng công suất cấp nguồn dự phòng và tự động chia sẻ tải theo tỷ lệ công suất của từng máy.",
+    quickAnswer: "Tủ hòa đồng bộ là hệ thống tủ tự động ghép nối song song nhiều máy phát điện (hoặc máy phát với lưới) để: (1) tăng công suất nguồn dự phòng, (2) chia sẻ tải theo tỷ lệ công suất từng máy, (3) chuyển nguồn không gián đoạn cho tải quan trọng.",
     summary: [
       "4 điều kiện bắt buộc để đóng hòa: Cùng điện áp, cùng tần số, cùng góc pha và cùng thứ tự pha.",
       "Bộ điều khiển hòa tự động (DeepSea, ComAp, Deif) liên tục đo lường và phát tín hiệu chỉnh ga/kích từ trước khi phát lệnh đóng máy cắt ACB.",
@@ -1214,7 +1214,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-10",
     dateModified: "2026-02-21",
-    quickAnswer: "Tủ điện ngoài trời đòi hỏi cấp bảo vệ tối thiểu IP55 (chống bụi hạn chế thâm nhập và chống vòi phun nước áp lực) hoặc IP65 (chống bụi hoàn toàn và chống tia nước mạnh). Thiết kế của PTC trang bị vỏ 2 lớp cánh, mái dốc thoát nước, gioăng đúc PU và điện trở sấy nhiệt tự động chống đọng sương ẩm bên trong.",
+    quickAnswer: "Tủ điện ngoài trời cần IP tối thiểu IP55 (chống bụi + vòi phun) hoặc IP65 (chống bụi hoàn toàn + tia nước). Yêu cầu thêm: vỏ 2 lớp, mái dốc thoát nước, gioăng đúc PU, điện trở sấy chống đọng sương.",
     summary: [
       "Ý nghĩa IP55 vs IP65: Chữ số đầu (5-6) là cấp chống bụi/vật rắn; Chữ số sau (5) là cấp chống nước.",
       "Vật liệu chế tạo: Tôn thép cán nguội sơn tĩnh điện ngoài trời dòng polyester chịu tia UV, hoặc Inox 304/316 cho môi trường biển.",
@@ -1289,7 +1289,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-12",
     dateModified: "2026-02-21",
-    quickAnswer: "Thang máng cáp (Cable Management System) là kết cấu cơ khí dùng để đỡ, định hình và bảo vệ các tuyến dây cáp điện lực, cáp điều khiển và cáp viễn thông trong các tòa nhà, nhà máy công nghiệp và trạm điện.",
+    quickAnswer: "Thang máng cáp (Cable Management System) là hệ kết cấu cơ khí đỡ và bảo vệ tuyến cáp điện lực, cáp điều khiển và cáp viễn thông. Gồm 3 loại chính: thang cáp (ladder), khay cáp (tray) và máng cáp (trunking). Dùng trong nhà máy, tòa nhà và trạm điện.",
     summary: [
       "Bao gồm 3 dòng chính: Máng cáp (Trunking), Khay cáp (Tray) và Thang cáp (Ladder).",
       "Lợi ích so với luồn ống: Dễ dàng mở rộng, kiểm tra nhiệt độ cáp, tiết kiệm 40% thời gian thi công kéo cáp.",
@@ -1548,7 +1548,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-20",
     dateModified: "2026-02-21",
-    quickAnswer: "Để nhận báo giá kỹ thuật chính xác và nhanh chóng từ PTC, quý khách hàng/nhà thầu chỉ cần gửi: Sơ đồ nguyên lý đơn tuyến (Single-line diagram), Bảng tiên lượng khối lượng (BOQ), Chỉ định hãng thiết bị đóng cắt yêu cầu (nếu có), Cấp Form tủ / cấp IP và mốc tiến độ giao hàng mong muốn.",
+    quickAnswer: "Để nhận báo giá tủ điện chính xác, cần gửi 5 hồ sơ: (1) Sơ đồ đơn tuyến SLD, (2) Bảng khối lượng BOQ, (3) Hãng thiết bị chỉ định, (4) Cấp Form tủ / IP, (5) Mốc giao hàng. PTC báo giá trong 24-72h.",
     summary: [
       "1. Sơ đồ đơn tuyến: Rõ dòng định mức máy cắt chính, dòng các nhánh ra, cấu hình tụ bù.",
       "2. Bảng BOQ vật tư: Số lượng tủ, quy cách thang máng cáp (rộng x cao x dày x lớp hoàn thiện).",
@@ -1635,7 +1635,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-21",
     dateModified: "2026-02-21",
-    quickAnswer: "Khi nghiệm thu tủ điện hạ thế tại công trường, cần kiểm tra: đối chiếu bản vẽ hoàn công, kiểm tra siết lực bu-lông thanh cái bằng cờ lê lực (torque wrench), đo điện trở cách điện pha-pha và pha-vỏ (>= 1MΩ), kiểm tra liên tục tiếp địa PE, thử nghiệm tác động trip của rơ-le và kiểm tra hệ thống khóa liên động interlock an toàn.",
+    quickAnswer: "Nghiệm thu tủ điện hạ thế cần kiểm tra 6 hạng mục: (1) đối chiếu bản vẽ hoàn công, (2) siết lực bu-lông thanh cái bằng torque wrench, (3) đo cách điện pha-pha và pha-vỏ (≥ 1MΩ), (4) kiểm tra tiếp địa PE, (5) test trip rơ-le, (6) kiểm tra interlock an toàn.",
     summary: [
       "Kiểm tra ngoại quan: Sơn không trầy xước, nhãn tên tủ, biển cảnh báo nguy hiểm điện giật đầy đủ.",
       "Kiểm tra cơ khí: Cánh tủ đóng mở êm, khóa tủ chắc chắn, gioăng cao su áp sát kín khít.",
@@ -2023,7 +2023,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-03-22",
     dateModified: "2026-03-22",
-    quickAnswer: "Nhà máy PTC tại TP.HCM cung cấp tủ điện công nghiệp và thang máng cáp cho các KCN tại Bình Dương (VSIP, Mỹ Phước, Đồng An) và Đồng Nai (Long Đức, Amata, KCN Long Bình) với thời gian giao hàng 24-48h cho tủ DB/SDB và 10-15 ngày cho MSB/MCC sản xuất theo bản vẽ, hỗ trợ kỹ thuật hiện trường trong 24h.",
+    quickAnswer: "PTC cung cấp tủ điện và thang máng cáp cho KCN Bình Dương (VSIP, Mỹ Phước, Đồng An) và Đồng Nai (Long Đức, Amata, Long Bình). Thời gian giao: 24-48h cho tủ DB/SDB, 10-15 ngày cho MSB/MCC theo bản vẽ. Hỗ trợ hiện trường trong 24h.",
     summary: [
       "Phạm vi phục vụ: VSIP 1/2/3, Mỹ Phước 1/2/3, Đồng An, Kizuna (Bình Dương) + Long Đức, Amata, Long Bình, Biên Hòa (Đồng Nai).",
       "Thời gian giao: 24-48h cho tủ DB/SDB có sẵn, 10-15 ngày cho MSB/MCC sản xuất theo bản vẽ.",
@@ -2443,7 +2443,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Gửi BOQ ngay để nhận báo giá trong 24-72h",
-          text: "Gửi SLD + BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư rà soát thông số, bóc tách vật tư và gửi báo giá chi tiết kèm tiến độ sản xuất. Nếu thiếu Icw hoặc Form, PTC sẽ đề xuất giá trị phù hợp theo điều kiện thực tế.",
+          text: "Gửi SLD + BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư rà soát thông số, bóc tách vật tư và gửi báo giá chi tiết kèm tiến độ sản xuất. Nếu thiếu Icw hoặc Form, PTC sẽ đề xuất giá trị phù hợp theo điều kiện thực tế. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -2539,7 +2539,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tìm nhà sản xuất tủ điện tại TP.HCM?",
-          text: "Gửi SLD hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách BOQ, phát hành shop drawing và gửi báo giá trong 24-48h. Xưởng tại Linh Xuân, TP.HCM — hỗ trợ hiện trường trong 2-4h cho các KCN lân cận.",
+          text: "Gửi SLD hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách BOQ, phát hành shop drawing và gửi báo giá trong 24-48h. Xưởng tại Linh Xuân, TP.HCM — hỗ trợ hiện trường trong 2-4h cho các KCN lân cận. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -2647,7 +2647,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "EPC solar cần tủ DC/AC + tủ hòa lưới?",
-          text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong 24h. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp.",
+          text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong 24h. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -2730,7 +2730,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tủ điện cho nhà máy FDI?",
-          text: "Gửi specification (tiếng Anh hoặc tiếng Việt) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, phát hành shop drawing 3D, và gửi báo giá theo đúng spec FDI. PTC có kinh nghiệm sản xuất tủ theo tiêu chuẩn quốc tế từ đội ngũ Powertech.",
+          text: "Gửi specification (tiếng Anh hoặc tiếng Việt) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, phát hành shop drawing 3D, và gửi báo giá theo đúng spec FDI. PTC có kinh nghiệm sản xuất tủ theo tiêu chuẩn quốc tế từ đội ngũ Powertech. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -2835,7 +2835,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần báo giá tủ MSB?",
-          text: "Gửi SLD tủ MSB + thông số (dòng định mức, Icw hoặc thông số trạm biến áp, số lộ, hãng chỉ định) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư tính Icw, bóc tách vật tư và gửi báo giá chi tiết trong 24-48h.",
+          text: "Gửi SLD tủ MSB + thông số (dòng định mức, Icw hoặc thông số trạm biến áp, số lộ, hãng chỉ định) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư tính Icw, bóc tách vật tư và gửi báo giá chi tiết trong 24-48h. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
