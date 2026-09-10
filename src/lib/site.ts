@@ -884,12 +884,12 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "Tủ điện công nghiệp <strong>gần như luôn phải đặt sản xuất theo bản vẽ</strong>, vì mỗi dự án có sơ đồ đơn tuyến, phụ tải và yêu cầu hãng thiết bị khác nhau. Tủ \"sẵn\" chỉ phù hợp cho DB nhỏ (≤ 100A) trong dân dụng hoặc văn phòng.",
           "Đối với nhà máy, KCN, tòa nhà cao tầng, dự án solar — đặt sản xuất là bắt buộc. Lý do: (1) dòng định mức và Icw phải tính theo trạm biến áp cụ thể, (2) cấu hình tụ bù và ATS phụ thuộc phụ tải thực, (3) yêu cầu hồ sơ nghiệm thu (CO/CQ, Routine Test, As-built) chỉ có khi sản xuất theo dự án.",
-          "PTC nhận đặt sản xuất tủ điện từ bản vẽ hoặc BOQ — kỹ sư sẽ bóc tách, tính toán và gửi báo giá kỹ thuật trong 24h. Quy trình phản hồi nhanh giúp nhà thầu M&E và EPC solar không bị chậm tiến độ chờ báo giá.",
+          "PTC nhận đặt sản xuất tủ điện từ bản vẽ hoặc BOQ — kỹ sư sẽ bóc tách, tính toán và gửi báo giá kỹ thuật trong thời gian sớm nhất. Quy trình phản hồi nhanh giúp nhà thầu M&E và EPC solar không bị chậm tiến độ chờ báo giá.",
         ],
         callout: {
           type: "tip",
-          title: "Gửi bản vẽ ngay — nhận báo giá trong 24h",
-          text: "Quý kỹ sư / nhà thầu có thể gửi sơ đồ đơn tuyến hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, rà soát thông số thiếu, tính toán Icw và gửi báo giá kỹ thuật kèm tiến độ trong vòng 24 giờ làm việc.",
+          title: "Gửi bản vẽ ngay — nhận báo giá trong thời gian sớm nhất",
+          text: "Quý kỹ sư / nhà thầu có thể gửi sơ đồ đơn tuyến hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, rà soát thông số thiếu, tính toán Icw và gửi báo giá kỹ thuật kèm tiến độ trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1031,8 +1031,8 @@ export const KNOWLEDGE_ARTICLES = [
         },
         callout: {
           type: "tip",
-          title: "Gửi bản vẽ MSB qua Zalo — nhận báo giá 24h",
-          text: "Ban Kỹ thuật PTC tiếp nhận bản vẽ đơn tuyến hoặc BOQ qua Zalo, bóc tách thông số, tính toán Icw và gửi báo giá kỹ thuật kèm tiến độ trong 24 giờ. Nếu thông số thiếu, kỹ sư PTC sẽ chủ động liên hệ làm rõ — không để khách hàng tự bổ sung.",
+          title: "Gửi bản vẽ MSB qua Zalo — nhận báo giá trong thời gian sớm nhất",
+          text: "Ban Kỹ thuật PTC tiếp nhận bản vẽ đơn tuyến hoặc BOQ qua Zalo, bóc tách thông số, tính toán Icw và gửi báo giá kỹ thuật kèm tiến độ trong thời gian sớm nhất. Nếu thông số thiếu, kỹ sư PTC sẽ chủ động liên hệ làm rõ — không để khách hàng tự bổ sung.",
         },
       },
     ],
@@ -1298,7 +1298,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần thiết kế MCC cho phân xưởng?",
-          text: "Gửi danh sách motor (công suất, tải, số lượng) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất phương pháp khởi động, cấu hình ngăn, hãng thiết bị và gửi báo giá trong 24h.",
+          text: "Gửi danh sách motor (công suất, tải, số lượng) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất phương pháp khởi động, cấu hình ngăn, hãng thiết bị và gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1381,7 +1381,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần thiết kế tủ hòa đồng bộ?",
-          text: "Gửi danh sách máy phát (công suất kVA, hãng, số lượng) và yêu cầu chế độ (open/closed transition) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất controller, ACB, sơ đồ điều khiển và gửi báo giá trong 24h.",
+          text: "Gửi danh sách máy phát (công suất kVA, hãng, số lượng) và yêu cầu chế độ (open/closed transition) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất controller, ACB, sơ đồ điều khiển và gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1532,7 +1532,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Gửi bản vẽ tuyến cáp — PTC bóc tách BOQ miễn phí",
-          text: "Gửi bản vẽ kiến trúc hoặc tuyến cáp qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách toàn bộ thang/khay/máng + phụ kiện, đề xuất loại và lớp phủ phù hợp, gửi báo giá trong 24h.",
+          text: "Gửi bản vẽ kiến trúc hoặc tuyến cáp qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách toàn bộ thang/khay/máng + phụ kiện, đề xuất loại và lớp phủ phù hợp, gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1619,7 +1619,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần bóc tách thang máng cáp cho dự án?",
-          text: "Gửi bản vẽ tuyến cáp hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất loại thang/khay/máng, lớp phủ, phụ kiện và gửi báo giá trong 24h.",
+          text: "Gửi bản vẽ tuyến cáp hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất loại thang/khay/máng, lớp phủ, phụ kiện và gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1715,7 +1715,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần thang máng cáp mạ kẽm nhúng nóng cho dự án?",
-          text: "Gửi bản vẽ tuyến cáp hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, đề xuất độ dày tôn phù hợp cho HDG (≥ 1.2mm), tính toán tải trọng và gửi báo giá trong 24h.",
+          text: "Gửi bản vẽ tuyến cáp hoặc BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, đề xuất độ dày tôn phù hợp cho HDG (≥ 1.2mm), tính toán tải trọng và gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1728,7 +1728,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-20",
     dateModified: "2026-02-21",
-    quickAnswer: "Để nhận báo giá tủ điện chính xác, cần gửi 5 hồ sơ: (1) Sơ đồ đơn tuyến SLD, (2) Bảng khối lượng BOQ, (3) Hãng thiết bị chỉ định, (4) Cấp Form tủ / IP, (5) Mốc giao hàng. PTC báo giá trong 24-72h.",
+    quickAnswer: "Để nhận báo giá tủ điện chính xác, cần gửi 5 hồ sơ: (1) Sơ đồ đơn tuyến SLD, (2) Bảng khối lượng BOQ, (3) Hãng thiết bị chỉ định, (4) Cấp Form tủ / IP, (5) Mốc giao hàng. PTC báo giá trong thời gian sớm nhất.",
     summary: [
       "1. Sơ đồ đơn tuyến: Rõ dòng định mức máy cắt chính, dòng các nhánh ra, cấu hình tụ bù.",
       "2. Bảng BOQ vật tư: Số lượng tủ, quy cách thang máng cáp (rộng x cao x dày x lớp hoàn thiện).",
@@ -1739,7 +1739,7 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Vì sao gửi đúng hồ sơ quyết định chất lượng báo giá và tiến độ",
         paragraphs: [
-          "Trong dự án tủ điện công nghiệp, <strong>60% thời gian chờ báo giá</strong> không nằm ở việc tính toán — mà ở việc trao đổi qua lại để làm rõ thông số thiếu. Khi kỹ sư M&E gửi đầy đủ hồ sơ ngay từ đầu, PTC có thể bóc tách và phát hành báo giá kỹ thuật trong <strong>24 giờ</strong>. Khi thiếu thông số, thời gian kéo dài 3–7 ngày và có thể dẫn đến báo giá sai — gây biến giá khi chốt hợp đồng.",
+          "Trong dự án tủ điện công nghiệp, <strong>60% thời gian chờ báo giá</strong> không nằm ở việc tính toán — mà ở việc trao đổi qua lại để làm rõ thông số thiếu. Khi kỹ sư M&E gửi đầy đủ hồ sơ ngay từ đầu, PTC có thể bóc tách và phát hành báo giá kỹ thuật trong <strong>thời gian sớm nhất</strong>. Khi thiếu thông số, thời gian kéo dài 3–7 ngày và có thể dẫn đến báo giá sai — gây biến giá khi chốt hợp đồng.",
           "Bài viết này liệt kê đầy đủ hồ sơ và thông số cần gửi, theo kinh nghiệm thực hiện hàng trăm dự án của PTC — giúp nhà thầu M&E, EPC solar và chủ đầu tư rút ngắn thời gian nhận báo giá và tránh sai sót.",
         ],
       },
@@ -1785,7 +1785,7 @@ export const KNOWLEDGE_ARTICLES = [
         },
       },
       {
-        heading: "Quy trình PTC xử lý báo giá — 24 giờ làm việc",
+        heading: "Quy trình PTC xử lý báo giá",
         paragraphs: [
           "Sau khi nhận hồ sơ qua Zalo hoặc email, quy trình xử lý báo giá tại PTC:",
         ],
@@ -1795,14 +1795,14 @@ export const KNOWLEDGE_ARTICLES = [
             "<strong>Tiếp nhận & Phân công (trong 2 giờ):</strong> Kỹ sư dự án tiếp nhận, phân công cho kỹ sư thiết kế phù hợp ngành (nhà máy / solar / tòa nhà).",
             "<strong>Bóc tách & Tính toán (4–8 giờ):</strong> Rà soát thông số, tính Icw nếu chưa có, bóc tách vật tư, tính toán thanh cái, đề xuất cấu hình phù hợp.",
             "<strong>Làm rõ thông số thiếu (nếu có):</strong> Kỹ sư PTC chủ động gọi/Zalo hỏi bổ sung — không để khách hàng tự tìm.",
-            "<strong>Phát hành báo giá (trong 24h):</strong> Báo giá chi tiết theo tủ, kèm tiến độ sản xuất, phương án hãng thiết bị, và ghi rõ điều kiện kỹ thuật.",
+            "<strong>Phát hành báo giá (trong thời gian sớm nhất):</strong> Báo giá chi tiết theo tủ, kèm tiến độ sản xuất, phương án hãng thiết bị, và ghi rõ điều kiện kỹ thuật.",
             "<strong>Theo dõi & Hỗ trợ kỹ thuật:</strong> Sau khi gửi báo giá, PTC tiếp tục hỗ trợ giải thích, điều chỉnh, và phối hợp với tư vấn thiết kế nếu cần.",
           ],
         },
         callout: {
           type: "tip",
-          title: "Gửi bản vẽ / BOQ ngay — nhận báo giá 24h",
-          text: "Quý kỹ sư / nhà thầu có thể gửi sơ đồ đơn tuyến, BOQ hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Đội ngũ kỹ sư sẽ bóc tách, tính toán và gửi báo giá kỹ thuật kèm tiến độ trong 24 giờ làm việc.",
+          title: "Gửi bản vẽ / BOQ ngay — nhận báo giá trong thời gian sớm nhất",
+          text: "Quý kỹ sư / nhà thầu có thể gửi sơ đồ đơn tuyến, BOQ hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Đội ngũ kỹ sư sẽ bóc tách, tính toán và gửi báo giá kỹ thuật kèm tiến độ trong thời gian sớm nhất.",
         },
       },
     ],
@@ -1981,7 +1981,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tư vấn dự án điện mặt trời áp mái cho nhà máy?",
-          text: "Gửi thông số mái nhà máy (diện tích, hướng, loại tôn) và nhu cầu công suất qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính toán công suất phù hợp, đề xuất cấu hình pin + inverter + tủ điện, và gửi phương án kỹ thuật trong 24h. PTC kế thừa kinh nghiệm từ Powertech — đội ngũ đã thực hiện nhiều dự án solar quy mô MWp.",
+          text: "Gửi thông số mái nhà máy (diện tích, hướng, loại tôn) và nhu cầu công suất qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính toán công suất phù hợp, đề xuất cấu hình pin + inverter + tủ điện, và gửi phương án kỹ thuật trong thời gian sớm nhất. PTC kế thừa kinh nghiệm từ Powertech — đội ngũ đã thực hiện nhiều dự án solar quy mô MWp.",
         },
       },
     ],
@@ -2265,13 +2265,13 @@ export const KNOWLEDGE_ARTICLES = [
         },
       },
       {
-        heading: "Quy trình đặt hàng cho nhà máy KCN — 24h nhận báo giá",
+        heading: "Quy trình đặt hàng cho nhà máy KCN",
         list: {
           ordered: true,
           items: [
             "<strong>Gửi yêu cầu qua Zalo</strong> — sơ đồ đơn tuyến, BOQ, hoặc mô tả nhu cầu. Kỹ sư PTC phản hồi trong 2 giờ.",
             "<strong>Kỹ sư PTC đến hiện trường khảo sát</strong> — cho dự án lớn (MSB > 1600A, KCN mới). Miễn phí trong Bình Dương/Đồng Nai.",
-            "<strong>Nhận báo giá kỹ thuật trong 24h</strong> — chi tiết theo tủ, kèm tiến độ và hãng thiết bị.",
+            "<strong>Nhận báo giá kỹ thuật trong thời gian sớm nhất</strong> — chi tiết theo tủ, kèm tiến độ và hãng thiết bị.",
             "<strong>Phát hành bản vẽ Shop drawing</strong> — sau khi chốt, kỹ sư phát hành bản vẽ để phê duyệt trước khi sản xuất.",
             "<strong>Sản xuất + Routine Test</strong> — 10-15 ngày cho MSB/MCC, 3-7 ngày cho DB/SDB.",
             "<strong>Giao hàng + hỗ trợ lắp đặt</strong> — giao trong 24-48h, kỹ sư hỗ trợ đấu nối nếu cần.",
@@ -2280,7 +2280,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Nhà máy tại KCN Bình Dương / Đồng Nai cần tủ điện?",
-          text: "Gửi yêu cầu qua Zalo cho Ban Kỹ thuật PTC — phản hồi trong 2 giờ, báo giá trong 24h, giao hàng 24-48h cho tủ có sẵn. Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương và Đồng Nai.",
+          text: "Gửi yêu cầu qua Zalo cho Ban Kỹ thuật PTC — phản hồi trong 2 giờ, báo giá trong thời gian sớm nhất, giao hàng 24-48h cho tủ có sẵn. Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương và Đồng Nai.",
         },
       },
     ],
@@ -2404,7 +2404,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tính Icw + chọn thanh cái cho dự án?",
-          text: "Gửi công suất trạm biến áp, sơ đồ đơn tuyến, và chiều dài cáp qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính Isc, chọn Icw, tính tiết diện thanh cái và gửi báo giá kỹ thuật trong 24h — không tính toán thêm cho khách hàng.",
+          text: "Gửi công suất trạm biến áp, sơ đồ đơn tuyến, và chiều dài cáp qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính Isc, chọn Icw, tính tiết diện thanh cái và gửi báo giá kỹ thuật trong thời gian sớm nhất — không tính toán thêm cho khách hàng.",
         },
       },
     ],
@@ -2537,7 +2537,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tủ MCC tích hợp VSD cho bơm/quạt?",
-          text: "Gửi danh sách motor (công suất, tải, số giờ chạy) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính ROI, đề xuất VSD phù hợp (ABB/Schneider/Yaskawa), thiết kế tủ MCC có tản nhiệt + cuộn kháng, và gửi báo giá trong 24h.",
+          text: "Gửi danh sách motor (công suất, tải, số giờ chạy) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ tính ROI, đề xuất VSD phù hợp (ABB/Schneider/Yaskawa), thiết kế tủ MCC có tản nhiệt + cuộn kháng, và gửi báo giá trong thời gian sớm nhất.",
         },
       },
     ],
@@ -2550,9 +2550,9 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
-    quickAnswer: "Báo giá tủ điện công nghiệp theo BOQ gồm 5 bước: (1) nhận bản vẽ SLD + BOQ, (2) rà soát thông số thiếu, (3) bóc tách vật tư, (4) tính toán thanh cái + vỏ tủ, (5) gửi báo giá kèm tiến độ. Thời gian 24-72h tùy quy mô. Cần có: SLD, thông số phụ tải, Icw, cấp IP, Form tủ, yêu cầu hãng thiết bị.",
+    quickAnswer: "Báo giá tủ điện công nghiệp theo BOQ gồm 5 bước: (1) nhận bản vẽ SLD + BOQ, (2) rà soát thông số thiếu, (3) bóc tách vật tư, (4) tính toán thanh cái + vỏ tủ, (5) gửi báo giá kèm tiến độ. Thời gian tùy quy mô. Cần có: SLD, thông số phụ tải, Icw, cấp IP, Form tủ, yêu cầu hãng thiết bị.",
     summary: [
-      "Quy trình 5 bước: nhận hồ sơ → rà soát → bóc tách → tính toán → gửi báo giá, thời gian 24-72h.",
+      "Quy trình 5 bước: nhận hồ sơ → rà soát → bóc tách → tính toán → gửi báo giá, thời gian sớm nhất.",
       "Hồ sơ cần có: SLD, phụ tải, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định, mốc giao hàng.",
       "Yếu tố quyết định giá: vật tư đóng cắt 50-65%, thanh cái + vỏ 15-20%, nhân công + test 15-23%.",
     ],
@@ -2569,7 +2569,7 @@ export const KNOWLEDGE_ARTICLES = [
             "<strong>Rà soát thông số (2-8h):</strong> Kiểm tra dòng định mức, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định. Nếu thiếu, PTC đề xuất giá trị mặc định hoặc hỏi lại.",
             "<strong>Bóc tách vật tư (4-24h):</strong> Bóc tách từng ngăn lộ: ACB, MCCB, contactor, relay, thanh cái đồng, vỏ tủ, phụ kiện. Tính khối lượng vật tư chính xác theo SLD.",
             "<strong>Tính toán thanh cái + vỏ (8-48h):</strong> Tính tiết diện thanh cái theo Icw, chọn vật liệu vỏ (sơn tĩnh điện/Inox), xác định kích thước tủ theo số ngăn + Form.",
-            "<strong>Gửi báo giá (24-72h):</strong> Phát hành báo giá chi tiết kèm: bảng bóc tách vật tư, tiến độ sản xuất, hồ sơ kỹ thuật (CO/CQ, Routine Test).",
+            "<strong>Gửi báo giá (trong thời gian sớm nhất):</strong> Phát hành báo giá chi tiết kèm: bảng bóc tách vật tư, tiến độ sản xuất, hồ sơ kỹ thuật (CO/CQ, Routine Test).",
           ],
         },
       },
@@ -2598,10 +2598,10 @@ export const KNOWLEDGE_ARTICLES = [
         table: {
           headers: ["Quy mô", "Số tủ", "Thời gian báo giá"],
           rows: [
-            ["Tủ đơn (MSB hoặc MCC nhỏ)", "1-3 tủ", "24h"],
-            ["Hệ tủ MSB + MCC + DB", "4-10 tủ", "48h"],
-            ["Dự án nhà máy lớn", "10+ tủ", "72h"],
-            ["Tủ solar DC/AC + hòa lưới", "5-20 tủ", "48h"],
+            ["Tủ đơn (MSB hoặc MCC nhỏ)", "1-3 tủ", "Sớm nhất"],
+            ["Hệ tủ MSB + MCC + DB", "4-10 tủ", "Sớm nhất"],
+            ["Dự án nhà máy lớn", "10+ tủ", "Sớm nhất"],
+            ["Tủ solar DC/AC + hòa lưới", "5-20 tủ", "Sớm nhất"],
           ],
         },
       },
@@ -2622,7 +2622,7 @@ export const KNOWLEDGE_ARTICLES = [
         },
         callout: {
           type: "tip",
-          title: "Gửi BOQ ngay để nhận báo giá trong 24-72h",
+          title: "Gửi BOQ ngay để nhận báo giá trong thời gian sớm nhất",
           text: "Gửi SLD + BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư rà soát thông số, bóc tách vật tư và gửi báo giá chi tiết kèm tiến độ sản xuất. Nếu thiếu Icw hoặc Form, PTC sẽ đề xuất giá trị phù hợp theo điều kiện thực tế. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
@@ -2719,7 +2719,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "Cần tìm nhà sản xuất tủ điện tại TP.HCM?",
-          text: "Gửi SLD hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách BOQ, phát hành shop drawing và gửi báo giá trong 24-48h. Xưởng tại Linh Xuân, TP.HCM — hỗ trợ hiện trường trong 2-4h cho các KCN lân cận. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
+          text: "Gửi SLD hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách BOQ, phát hành shop drawing và gửi báo giá trong thời gian sớm nhất. Xưởng tại Linh Xuân, TP.HCM — hỗ trợ hiện trường trong 2-4h cho các KCN lân cận. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -2827,7 +2827,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "tip",
           title: "EPC solar cần tủ DC/AC + tủ hòa lưới?",
-          text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong 24h. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
+          text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong thời gian sớm nhất. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -3009,13 +3009,13 @@ export const KNOWLEDGE_ARTICLES = [
             "<strong>Nhận SLD + thông số:</strong> SLD tủ MSB, dòng định mức, Icw (hoặc thông số trạm biến áp để PTC tính), số lộ ra, hãng chỉ định, Form yêu cầu.",
             "<strong>Tính Icw + chọn thanh cái:</strong> PTC tính SCA nếu chưa có Icw, chọn tiết diện thanh cái đồng theo Icw.",
             "<strong>Bóc tách vật tư:</strong> ACB chính, MCCB per lộ, ammeter/voltmeter, relay, thanh cái, vỏ tủ.",
-            "<strong>Gửi báo giá (24-48h):</strong> Báo giá chi tiết kèm: bảng bóc tách, tiến độ sản xuất, hồ sơ kỹ thuật.",
+            "<strong>Gửi báo giá (trong thời gian sớm nhất):</strong> Báo giá chi tiết kèm: bảng bóc tách, tiến độ sản xuất, hồ sơ kỹ thuật.",
           ],
         },
         callout: {
           type: "tip",
           title: "Cần báo giá tủ MSB?",
-          text: "Gửi SLD tủ MSB + thông số (dòng định mức, Icw hoặc thông số trạm biến áp, số lộ, hãng chỉ định) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư tính Icw, bóc tách vật tư và gửi báo giá chi tiết trong 24-48h. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
+          text: "Gửi SLD tủ MSB + thông số (dòng định mức, Icw hoặc thông số trạm biến áp, số lộ, hãng chỉ định) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư tính Icw, bóc tách vật tư và gửi báo giá chi tiết trong thời gian sớm nhất. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
         },
       },
     ],
@@ -3032,7 +3032,7 @@ export const KNOWLEDGE_ARTICLES = [
     summary: [
       "12 hạng mục phụ kiện cần có trong BOQ thang máng cáp — thiếu 1 hạng mục phát sinh công trường.",
       "3 lỗi bóc tách phổ biến: quên co lên/xuống, thiếu ty treo, sai số lượng nắp đậy.",
-      "PTC bóc tách BOQ miễn phí — gửi bản vẽ tuyến cáp qua Zalo, nhận BOQ chi tiết trong 24h.",
+      "PTC bóc tách BOQ miễn phí — gửi bản vẽ tuyến cáp qua Zalo, nhận BOQ chi tiết trong thời gian sớm nhất.",
     ],
     body: [
       {
@@ -3127,13 +3127,13 @@ export const KNOWLEDGE_ARTICLES = [
             "Gửi bản vẽ tuyến cáp (PDF/DWG) qua Zalo.",
             "Kỹ sư PTC bóc tách 12 hạng mục phụ kiện theo checklist.",
             "Phát hành BOQ chi tiết Excel: từng hạng mục + số lượng + quy cách.",
-            "Gửi báo giá kèm BOQ trong 24h.",
+            "Gửi báo giá kèm BOQ trong thời gian sớm nhất.",
           ],
         },
         callout: {
           type: "tip",
           title: "Cần bóc tách BOQ thang máng cáp?",
-          text: "Gửi bản vẽ tuyến cáp (PDF/DWG) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách 12 hạng mục phụ kiện theo checklist, phát hành BOQ chi tiết Excel và gửi báo giá trong 24h. Kèm theo: <strong>Template BOQ thang máng cáp</strong> (Excel) — yêu cầu qua Zalo.",
+          text: "Gửi bản vẽ tuyến cáp (PDF/DWG) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách 12 hạng mục phụ kiện theo checklist, phát hành BOQ chi tiết Excel và gửi báo giá trong thời gian sớm nhất. Kèm theo: <strong>Template BOQ thang máng cáp</strong> (Excel) — yêu cầu qua Zalo.",
         },
       },
     ],
