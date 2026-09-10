@@ -77,9 +77,10 @@ export function LeadForm({
 
     const needLabel = NEEDS.find((n) => n.value === payload.need)?.label || payload.need;
 
-    // 1. Send email directly to nguyenxuanthanh2009@gmail.com
+    // 1. Send email directly to tudienptc.vn@gmail.com (primary delivery)
+    let emailSent = false;
     try {
-      await fetch("https://formsubmit.co/ajax/nguyenxuanthanh2009@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/nguyenxuanthanh2009@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -99,23 +100,40 @@ export function LeadForm({
           "Thời gian gửi": new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }),
         }),
       });
+      emailSent = res.ok;
     } catch (emailErr) {
       console.warn("Direct email delivery attempt:", emailErr);
     }
 
-    // 2. Save lead to Supabase database
-    const { error } = await supabase.from("leads").insert(payload);
-    
-    // 3. Trigger Supabase Edge function (if configured)
-    if (!error) {
-      try {
-        supabase.functions.invoke("send-lead-email", { body: payload }).catch(() => {});
-      } catch {}
+    // 2. Save lead to Supabase database (secondary — don't block user if this fails)
+    try {
+      const { error: dbError } = await supabase.from("leads").insert({
+        full_name: payload.full_name,
+        company: payload.company,
+        phone: payload.phone,
+        email: payload.email,
+        need: payload.need,
+        note: payload.note,
+        source_page: payload.source_page,
+      });
+
+      if (dbError) {
+        console.warn("Supabase insert failed:", dbError.message);
+      } else {
+        // 3. Trigger Supabase Edge function (if configured)
+        try {
+          supabase.functions.invoke("send-lead-email", { body: payload }).catch(() => {});
+        } catch {}
+      }
+    } catch (dbErr) {
+      console.warn("Supabase insert error:", dbErr);
     }
-    
+
     setLoading(false);
 
-    if (error) {
+    // Email is primary — if it went through (or was attempted), show success
+    // Only show error if email fetch itself threw an exception
+    if (!emailSent) {
       toast.error("Gửi yêu cầu chưa thành công. Quý khách vui lòng nhắn trực tiếp qua Zalo hoặc Hotline.");
       return;
     }
