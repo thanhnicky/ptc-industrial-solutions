@@ -2362,5 +2362,483 @@ export const KNOWLEDGE_ARTICLES = [
       },
     ],
   },
+  {
+    slug: "bao-gia-tu-dien-cong-nghiep-theo-boq",
+    title: "Báo giá tủ điện công nghiệp theo BOQ: Quy trình, thời gian và hồ sơ cần có",
+    category: "Báo giá & RFQ",
+    readTime: "7 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    quickAnswer: "Báo giá tủ điện công nghiệp theo BOQ gồm 5 bước: (1) nhận bản vẽ SLD + BOQ, (2) rà soát thông số thiếu, (3) bóc tách vật tư, (4) tính toán thanh cái + vỏ tủ, (5) gửi báo giá kèm tiến độ. Thời gian 24-72h tùy quy mô. Cần có: SLD, thông số phụ tải, Icw, cấp IP, Form tủ, yêu cầu hãng thiết bị.",
+    summary: [
+      "Quy trình 5 bước: nhận hồ sơ → rà soát → bóc tách → tính toán → gửi báo giá, thời gian 24-72h.",
+      "Hồ sơ cần có: SLD, phụ tải, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định, mốc giao hàng.",
+      "Yếu tố quyết định giá: vật tư đóng cắt 50-65%, thanh cái + vỏ 15-20%, nhân công + test 15-23%.",
+    ],
+    body: [
+      {
+        heading: "Quy trình báo giá tủ điện theo BOQ tại PTC",
+        paragraphs: [
+          "Khi chủ đầu tư hoặc nhà thầu M&E gửi bản vẽ sơ đồ đơn tuyến (SLD) kèm BOQ, PTC thực hiện báo giá theo quy trình 5 bước:",
+        ],
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Nhận hồ sơ (0-2h):</strong> Tiếp nhận SLD, BOQ, yêu cầu kỹ thuật qua Zalo hoặc email. Kỹ sư xác nhận đủ/thiếu thông tin.",
+            "<strong>Rà soát thông số (2-8h):</strong> Kiểm tra dòng định mức, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định. Nếu thiếu, PTC đề xuất giá trị mặc định hoặc hỏi lại.",
+            "<strong>Bóc tách vật tư (4-24h):</strong> Bóc tách từng ngăn lộ: ACB, MCCB, contactor, relay, thanh cái đồng, vỏ tủ, phụ kiện. Tính khối lượng vật tư chính xác theo SLD.",
+            "<strong>Tính toán thanh cái + vỏ (8-48h):</strong> Tính tiết diện thanh cái theo Icw, chọn vật liệu vỏ (sơn tĩnh điện/Inox), xác định kích thước tủ theo số ngăn + Form.",
+            "<strong>Gửi báo giá (24-72h):</strong> Phát hành báo giá chi tiết kèm: bảng bóc tách vật tư, tiến độ sản xuất, hồ sơ kỹ thuật (CO/CQ, Routine Test).",
+          ],
+        },
+      },
+      {
+        heading: "Hồ sơ cần có để báo giá nhanh và chính xác",
+        table: {
+          headers: ["Hồ sơ", "Bắt buộc", "Ghi chú"],
+          rows: [
+            ["Sơ đồ đơn tuyến (SLD)", "Có", "PDF hoặc DWG, thể hiện cấu trúc tủ"],
+            ["Danh sách phụ tải (Load Schedule)", "Có", "Dòng định mức từng lộ, công suất motor"],
+            ["Dòng ngắn mạch Icw", "Có", "Nếu chưa có, PTC tính theo SCA trạm biến áp"],
+            ["Cấp bảo vệ IP", "Có", "IP31/IP41/IP54/IP65 tùy môi trường"],
+            ["Form tủ (IEC 61439-3)", "Có", "Form 1/2b/3b/4a/4b"],
+            ["Hãng thiết bị chỉ định", "Không", "Nếu không chỉ định, PTC đề xuất 2-3 phương án"],
+            ["Mốc giao hàng", "Có", "Để PTC lên kế hoạch sản xuất"],
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Thiếu Icw hoặc Form tủ là nguyên nhân #1 báo giá sai",
+          text: "Nhiều nhà thầu gửi SLD nhưng không ghi Icw và Form. PTC phải dùng giá trị mặc định (Icw = 50kA, Form 2b) → báo giá có thể lệch 15-30% so với thực tế. Luôn ghi rõ Icw và Form trong BOQ.",
+        },
+      },
+      {
+        heading: "Thời gian báo giá theo quy mô tủ",
+        table: {
+          headers: ["Quy mô", "Số tủ", "Thời gian báo giá"],
+          rows: [
+            ["Tủ đơn (MSB hoặc MCC nhỏ)", "1-3 tủ", "24h"],
+            ["Hệ tủ MSB + MCC + DB", "4-10 tủ", "48h"],
+            ["Dự án nhà máy lớn", "10+ tủ", "72h"],
+            ["Tủ solar DC/AC + hòa lưới", "5-20 tủ", "48h"],
+          ],
+        },
+      },
+      {
+        heading: "Yếu tố quyết định giá tủ điện",
+        paragraphs: [
+          "Giá tủ điện công nghiệp được cấu thành từ 5 nhóm chi phí. Hiểu rõ giúp bạn so sánh báo giá công bằng giữa các nhà cung cấp:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Vật tư thiết bị đóng cắt (50-65%):</strong> ACB, MCCB, contactor, relay — hãng ABB/Schneider đắt hơn LS/Hyundai 20-40%.",
+            "<strong>Thanh cái đồng + vỏ tủ (15-20%):</strong> Tiết diện đồng tính theo Icw, vỏ Inox đắt hơn sơn tĩnh điện 2-3 lần.",
+            "<strong>Nhân công lắp ráp + đấu nối (10-15%):</strong> Xưởng có ISO 9001 + Routine Test 100% cao hơn xưởng tự lắp.",
+            "<strong>Thử nghiệm + hồ sơ (5-8%):</strong> Routine Test, biên bản test, CO/CQ.",
+            "<strong>Vận chuyển + bảo hành (5-10%):</strong> Tùy khoảng cách và điều kiện bảo hành.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Gửi BOQ ngay để nhận báo giá trong 24-72h",
+          text: "Gửi SLD + BOQ qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư rà soát thông số, bóc tách vật tư và gửi báo giá chi tiết kèm tiến độ sản xuất. Nếu thiếu Icw hoặc Form, PTC sẽ đề xuất giá trị phù hợp theo điều kiện thực tế.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "nha-san-xuat-tu-dien-cong-nghiep-tphcm",
+    title: "Nhà sản xuất tủ điện công nghiệp tại TP.HCM: Tiêu chí chọn đúng nhà cung cấp",
+    category: "Nhà sản xuất & RFQ",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    quickAnswer: "Nhà sản xuất tủ điện công nghiệp tại TP.HCM cần đáp ứng 6 tiêu chí: (1) xưởng có ISO 9001, (2) thiết kế theo IEC 61439, (3) Routine Test 100% tủ xuất xưởng, (4) CO/CQ thiết bị chính hãng, (5) khả năng bóc tách BOQ + shop drawing, (6) giao hàng cuốn chiếu đúng tiến độ. PTC Switchboard đáp ứng đầy đủ 6 tiêu chí tại xưởng Linh Xuân, TP.HCM.",
+    summary: [
+      "6 tiêu chí chọn nhà sản xuất: ISO 9001, IEC 61439, Routine Test, CO/CQ, bóc tách BOQ, giao cuốn chiếu.",
+      "Xưởng PTC tại Linh Xuân, TP.HCM — sản xuất tủ MSB, MCC, ATS, solar theo IEC 61439.",
+      "Lợi thế TP.HCM: gần KCN Bình Dương, Đồng Nai, Long Thành — giao hàng nhanh, hỗ trợ hiện trường kịp.",
+    ],
+    body: [
+      {
+        heading: "Vì sao chọn nhà sản xuất tại TP.HCM",
+        paragraphs: [
+          "TP.HCM là trung tâm công nghiệp phía Nam, tiếp giáp các KCN lớn tại Bình Dương, Đồng Nai, Long Thành. Chọn nhà sản xuất tủ điện tại TP.HCM giúp rút ngắn thời gian giao hàng và hỗ trợ kỹ thuật hiện trường nhanh — đặc biệt quan trọng khi dự án gấp.",
+          "Tuy nhiên, không phải xưởng nào cũng đạt tiêu chuẩn sản xuất tủ điện công nghiệp. Nhiều xưởng gia công nhỏ chỉ lắp ráp theo yêu cầu, không có quy trình thử nghiệm, không phát hành hồ sơ nghiệm thu. Dưới đây là 6 tiêu chí cốt lõi để chọn đúng nhà sản xuất.",
+        ],
+      },
+      {
+        heading: "6 tiêu chí chọn nhà sản xuất tủ điện công nghiệp",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>ISO 9001:</strong> Xưởng có chứng nhận hệ thống quản lý chất lượng ISO 9001. Đảm bảo quy trình sản xuất lặp lại được, không phụ thuộc tay nghề 1 người.",
+            "<strong>Thiết kế theo IEC 61439:</strong> Tủ được thiết kế Form, tính thanh cái, chọn thiết bị theo IEC 61439-1/2. Không chỉ lắp thiết bị vào vỏ.",
+            "<strong>Routine Test 100%:</strong> Mỗi tủ xuất xưởng qua dielectric test, kiểm tra PE continuity, kiểm tra polarity. Có biên bản test đi kèm.",
+            "<strong>CO/CQ thiết bị chính hãng:</strong> ACB, MCCB, contactor có CO/CQ từ nhà sản xuất (Schneider, ABB, LS, Mitsubishi). Không dùng hàng không rõ nguồn gốc.",
+            "<strong>Bóc tách BOQ + Shop drawing:</strong> Kỹ sư bóc tách sơ đồ đơn tuyến, phát hành shop drawing 2D/3D cho chủ đầu tư duyệt trước khi sản xuất.",
+            "<strong>Giao hàng cuốn chiếu:</strong> Lên kế hoạch sản xuất theo mốc thi công của công trường, giao từng đợt để không chặn tiến độ lắp đặt.",
+          ],
+        },
+      },
+      {
+        heading: "PTC Switchboard — nhà sản xuất tủ điện tại TP.HCM",
+        paragraphs: [
+          "PTC Switchboard là nhà sản xuất tủ điện hạ thế và hệ thống thang máng cáp công nghiệp, xưởng tại Linh Xuân, TP.HCM. PTC sản xuất theo IEC 61439, có ISO 9001, Routine Test 100% tủ xuất xưởng.",
+          "Các dòng tủ PTC sản xuất:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Tủ MSB</strong> (tủ phân phối tổng): ACB 1600A-6300A, Form 2b/3b/4b, Icw 25-100kA.",
+            "<strong>Tủ MCC</strong> (tủ điều khiển động cơ): MCCB + contactor + biến tần VSD, có tản nhiệt riêng.",
+            "<strong>Tủ ATS</strong> (chuyển nguồn tự động): DeepSea/ComAp/Deif, chuyển lưới-máy phát.",
+            "<strong>Tủ solar DC/AC</strong>: tủ DC combiner IP65, tủ AC phân phối, tủ hòa lưới theo thông số inverter.",
+            "<strong>Tủ ngoài trời IP55/IP65</strong>: vỏ Inox 304, chịu môi trường ngoài trời.",
+          ],
+        },
+      },
+      {
+        heading: "Lợi thế địa lý TP.HCM cho dự án KCN",
+        paragraphs: [
+          "Xưởng PTC tại Linh Xuân, TP.HCM cách các KCN lớn:",
+        ],
+        table: {
+          headers: ["Khu công nghiệp", "Khoảng cách", "Thời gian di chuyển"],
+          rows: [
+            ["KCN Sóng Thần, Bình Dương", "~15 km", "~30 phút"],
+            ["KCN Đồng An, Bình Dương", "~20 km", "~40 phút"],
+            ["KCN Long Bình, Đồng Nai", "~30 km", "~50 phút"],
+            ["KCN Long Thành, Đồng Nai", "~45 km", "~1 giờ"],
+            ["KCN Phú Mỹ, Bà Rịa", "~80 km", "~1.5 giờ"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Gần công trường = hỗ trợ nhanh",
+          text: "Khi có sự cố hoặc cần thay đổi kỹ thuật tại hiện trường, nhà sản xuất gần có mặt trong 2-4h. Xưởng xa cần 1-2 ngày. Với dự án gấp, đây là yếu tố quyết định.",
+        },
+      },
+      {
+        heading: "So sánh nhà sản xuất TP.HCM vs xưởng gia công nhỏ",
+        table: {
+          headers: ["Tiêu chí", "Nhà sản xuất TP.HCM (PTC)", "Xưởng gia công nhỏ"],
+          rows: [
+            ["ISO 9001", "Có", "Thường không"],
+            ["IEC 61439", "Thiết kế theo chuẩn", "Lắp theo yêu cầu, không tính Icw"],
+            ["Routine Test", "100% tủ, có biên bản", "Không hoặc test mẫu"],
+            ["CO/CQ thiết bị", "Đầy đủ chính hãng", "Không rõ nguồn gốc"],
+            ["Shop drawing", "Phát hành trước sản xuất", "Không"],
+            ["Hồ sơ nghiệm thu", "As-built + Routine Test + CO/CQ", "Thiếu"],
+            ["Bảo hành", "12-24 tháng, có SLA", "Không rõ ràng"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần tìm nhà sản xuất tủ điện tại TP.HCM?",
+          text: "Gửi SLD hoặc yêu cầu kỹ thuật qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư bóc tách BOQ, phát hành shop drawing và gửi báo giá trong 24-48h. Xưởng tại Linh Xuân, TP.HCM — hỗ trợ hiện trường trong 2-4h cho các KCN lân cận.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "tu-dien-cho-du-an-epc-solar",
+    title: "Tủ điện cho dự án EPC điện mặt trời: Yêu cầu kỹ thuật và quy cách tủ DC/AC",
+    category: "EPC & Solar",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    quickAnswer: "Tủ điện cho dự án EPC solar gồm 3 loại: tủ DC combiner (IP65, SPD Type 2, fuse per string), tủ AC phân phối (MCCB + đo lường), tủ hòa lưới (ACB + relay bảo vệ 27/59/81 + anti-islanding). Yêu cầu: đúng thông số inverter, cấp bảo vệ ngoài trời, hồ sơ đấu nối EVN. PTC kế thừa kinh nghiệm từ Powertech — đã thực hiện nhiều dự án solar quy mô MWp.",
+    summary: [
+      "3 loại tủ: DC combiner IP65, AC phân phối, tủ hòa lưới với relay bảo vệ + anti-islanding.",
+      "Yêu cầu EPC: đúng thông số inverter, SPD Type 2, fuse per string, hồ sơ đấu nối EVN.",
+      "PTC kế thừa kinh nghiệm Powertech — đã thực hiện Phúc Ý 999 kWp, Solarlink 1.250 kWp.",
+    ],
+    body: [
+      {
+        heading: "Tủ điện trong hệ thống solar rooftop — 3 loại chính",
+        paragraphs: [
+          "Hệ thống điện mặt trời áp mái cần 3 loại tủ điện, mỗi loại có yêu cầu kỹ thuật riêng:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Tủ DC combiner:</strong> Gom chuỗi panel (string) trước khi đưa vào inverter. Nằm ngoài trời trên mái → IP65 bắt buộc. Có SPD DC Type 2 chống sét lan truyền, fuse DC per string cô lập sự cố.",
+            "<strong>Tủ AC phân phối:</strong> Nhận đầu ra AC từ inverter, phân phối đến tủ hòa lưới. MCCB + đo lường sản lượng. Thường đặt trong phòng kỹ thuật hoặc ngoài trời IP54.",
+            "<strong>Tủ hòa lưới:</strong> Điểm đấu nối lên lưới EVN. ACB + relay bảo vệ điện áp/tần số (27/59/81) + anti-islanding. Phải đúng quy định kỹ thuật đấu nối lưới điện phân phối của EVN.",
+          ],
+        },
+      },
+      {
+        heading: "Yêu cầu kỹ thuật tủ DC combiner cho solar rooftop",
+        paragraphs: [
+          "Tủ DC combiner là điểm có tỷ lệ sự cố cao nhất trong solar rooftop. Các yêu cầu cốt lõi:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Cấp IP:</strong> IP65 ngoài trời (không dùng IP54 — không đủ chống mưa gió mùa).",
+            "<strong>SPD DC Type 2:</strong> Chống sét lan truyền trên tuyến cáp DC. Không có SPD → cháy tủ khi sét.",
+            "<strong>Fuse DC per string:</strong> Cô lập sự cố 1 string không ảnh hưởng các string khác.",
+            "<strong>Vỏ Inox 304:</strong> Chống UV > 25 năm. Sơn tĩnh điện bị rỉ sau 2-3 năm ngoài trời.",
+            "<strong>Điện trở sấy:</strong> Chống đọng sương bên trong tủ khi nhiệt độ thay đổi.",
+            "<strong>Điện áp DC:</strong> 1000V hoặc 1500V tùy inverter. Cách điện đúng cấp.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Sai lầm phổ biến: dùng tủ IP54 cho solar rooftop",
+          text: "Nhiều nhà thầu dùng tủ IP54 để tiết kiệm chi phí → nước vào tủ mùa mưa → chập DC → cháy tủ. Chi phí thay tủ + dừng hệ thống > chênh IP65 ban đầu. Luôn dùng IP65 cho tủ DC ngoài trời.",
+        },
+      },
+      {
+        heading: "Yêu cầu tủ hòa lưới — đấu nối EVN",
+        paragraphs: [
+          "Tủ hòa lưới là điểm giao tiếp với lưới quốc gia, phải đáp ứng quy định kỹ thuật đấu nối lưới điện phân phối của EVN:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Relay bảo vệ 27/59/81:</strong> Kém áp (27), quá áp (59), tần số (81) — ngắt hòa lưới khi lưới bất thường.",
+            "<strong>Anti-islanding:</strong> Ngắt hòa lưới khi lưới EVN mất điện, tránh nuôi ngược lưới.",
+            "<strong>ACB:</strong> Máy cắt chính, dòng định mức theo công suất inverter tổng.",
+            "<strong>Đo lường:</strong> Đồng hồ đo sản lượng điện bán lên lưới (kWh meter).",
+            "<strong>Liên động:</strong> ACB hòa lưới liên động với ACB máy phát (nếu có) để không đóng song song.",
+          ],
+        },
+      },
+      {
+        heading: "Kinh nghiệm thực tế từ dự án Powertech / PTC",
+        paragraphs: [
+          "Đội ngũ kỹ thuật PTC kế thừa kinh nghiệm từ Powertech — đã thực hiện nhiều dự án EPC solar quy mô MWp:",
+        ],
+        table: {
+          headers: ["Dự án", "Công suất", "Pin", "Inverter", "Năm"],
+          rows: [
+            ["Phúc Ý – KCN Phú Mỹ 1", "999 kWp", "2.245 tấm Longi 445Wp", "8 × Huawei 100kW", "10/2020"],
+            ["Solarlink – Ong Biển", "1.250 kWp", "2.499 tấm Longi 450Wp", "8 × Kehua 125kW", "12/2020"],
+            ["Kho DPL – Quận 2", "960 kWp", "—", "—", "—"],
+            ["Kho Hải Đức – Quận 2", "960 kWp", "—", "—", "—"],
+            ["Xưởng gạch Tuynel 2 – Gia Lai", "1.460 kWp", "—", "—", "—"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Thông tin dự án",
+          text: "Thông tin dự án trên được đối chiếu từ ptcswitchboard.vn — nguồn chính thức của Powertech / PTC. PTC kế thừa đội ngũ kỹ thuật từ Powertech, tiếp tục cung cấp tủ điện solar cho dự án EPC mới.",
+        },
+      },
+      {
+        heading: "Quy trình cung cấp tủ điện cho EPC solar",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Nhận thông số inverter + sơ đồ string:</strong> EPC gửi model inverter, số string, công suất từng string, yêu cầu đấu nối EVN.",
+            "<strong>Thiết kế tủ DC/AC:</strong> PTC thiết kế tủ DC combiner (số string/input, SPD, fuse), tủ AC, tủ hòa lưới theo thông số inverter.",
+            "<strong>Báo giá + tiến độ:</strong> Gửi báo giá chi tiết kèm tiến độ sản xuất. EPC duyệt → PTC sản xuất.",
+            "<strong>Sản xuất + Routine Test:</strong> Sản xuất tủ, Routine Test 100% (dielectric, PE continuity, polarity).",
+            "<strong>Giao hàng + hồ sơ:</strong> Giao tủ kèm CO/CQ, biên bản Routine Test, bản vẽ As-built. Hỗ trợ đấu nối hiện trường.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "EPC solar cần tủ DC/AC + tủ hòa lưới?",
+          text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong 24h. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "tu-dien-nha-may-fdi-tieu-chuan",
+    title: "Tủ điện cho nhà máy FDI: Tiêu chuẩn nghiệm thu và yêu cầu kỹ thuật",
+    category: "FDI & Tiêu chuẩn",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    quickAnswer: "Tủ điện cho nhà máy FDI (FDI factory) yêu cầu cao hơn nhà máy nội: (1) thiết bị chỉ định hãng quốc tế (Schneider, ABB, Siemens), (2) Form 3b/4b cho an toàn bảo trì, (3) Routine Test + Type Test theo IEC 61439, (4) hồ sơ đầy đủ tiếng Anh (CO/CQ, test report, As-built), (5) bảo hành 24 tháng. PTC có kinh nghiệm sản xuất tủ cho dự án FDI từ đội ngũ tiền thân Powertech.",
+    summary: [
+      "5 yêu cầu tủ điện FDI: hãng quốc tế, Form 3b/4b, Routine + Type Test, hồ sơ tiếng Anh, bảo hành 24 tháng.",
+      "Khác biệt FDI vs nội: chỉ định hãng, yêu cầu Type Test, shop drawing 3D, nghiệm thu đa giai đoạn.",
+      "PTC có kinh nghiệm từ đội ngũ Powertech — đã thực hiện dự án LEGO VSIP 3, LG Electronics 17 MWp.",
+    ],
+    body: [
+      {
+        heading: "Nhà máy FDI khác nhà máy nội ở đâu — về tủ điện",
+        paragraphs: [
+          "Nhà máy FDI (đầu tư nước ngoài) thường có yêu cầu kỹ thuật khắt khe hơn nhà máy nội, vì chủ đầu tư áp dụng tiêu chuẩn công ty toàn cầu. Các yêu cầu khác biệt chính:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Chỉ định hãng thiết bị:</strong> FDI thường yêu cầu Schneider, ABB, Siemens — không chấp nhận LS, Hyundai. Lý do: tiêu chuẩn toàn cầu, dễ thay thế quốc tế.",
+            "<strong>Form tủ cao:</strong> Form 3b hoặc 4b (cách ly hoàn toàn giữa thanh cái, thiết bị, cáp ra) để bảo trì an toàn. Nhà máy nội thường dùng Form 2b.",
+            "<strong>Type Test + Routine Test:</strong> FDI yêu cầu Type Test (thử nghiệm kiểu theo IEC 61439-1) ngoài Routine Test. Type Test do phòng thí nghiệm độc lập (KEMA, ASTA, QUATEST 3) thực hiện.",
+            "<strong>Hồ sơ tiếng Anh:</strong> CO/CQ, test report, As-built drawing, operation manual — tất cả bằng tiếng Anh.",
+            "<strong>Shop drawing 3D:</strong> Chủ đầu tư FDI thường yêu cầu shop drawing 3D (layout tủ, vị trí thiết bị, tuyến cáp) để duyệt trước khi sản xuất.",
+          ],
+        },
+      },
+      {
+        heading: "5 tiêu chuẩn nghiệm thu tủ điện FDI",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>IEC 61439-1/2:</strong> Tủ đạt yêu cầu thiết kế, tính toán thanh cái, chọn thiết bị theo IEC. Có Type Test report.",
+            "<strong>Form 3b/4b:</strong> Cách ly hoàn toàn giữa khoang thanh cái, khoang thiết bị, khoang cáp ra. Kỹ sư bảo trì từng ngăn lộ an toàn.",
+            "<strong>Routine Test 100%:</strong> Dielectric test, PE continuity, polarity, kiểm tra thao tác cơ khí. Có biên bản test cho từng tủ.",
+            "<strong>CO/CQ chính hãng:</strong> Thiết bị đóng cắt (ACB, MCCB, contactor) có CO/CQ từ nhà sản xuất. Không dùng hàng tương đương không rõ nguồn gốc.",
+            "<strong>Bảo hành 24 tháng:</strong> FDI thường yêu cầu bảo hành 24 tháng (vs 12 tháng nhà máy nội), có SLA phản hồi + sửa chữa.",
+          ],
+        },
+      },
+      {
+        heading: "Kinh nghiệm FDI của đội ngũ PTC / Powertech",
+        paragraphs: [
+          "Đội ngũ kỹ thuật PTC kế thừa kinh nghiệm từ Powertech — đã thực hiện các dự án FDI tiêu chuẩn cao:",
+        ],
+        table: {
+          headers: ["Dự án", "Loại", "Ghi chú"],
+          rows: [
+            ["LEGO – VSIP 3", "Tủ bảng điện hạ thế", "Nhà máy FDI, tiêu chuẩn quốc tế"],
+            ["LG Electronics – 17 MWp", "Tủ điện hạ thế solar", "Chủ đầu tư FDI, nghiệm thu khắt khe"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Ghi chú về dự án FDI",
+          text: "LEGO VSIP 3 và LG Electronics 17 MWp là kinh nghiệm thực hiện của đội ngũ kỹ sư nòng cốt PTC / tiền thân Powertech — không phải dự án chính thức dưới tên PTC. Thông tin được ghi rõ để đảm bảo minh bạch.",
+        },
+      },
+      {
+        heading: "Quy trình sản xuất tủ điện cho dự án FDI",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Nhận spec:</strong> Chủ đầu tư FDI gửi specification (thường bằng tiếng Anh) — hãng thiết bị, Form, Icw, IP, yêu cầu test.",
+            "<strong>Bóc tách + Shop drawing 3D:</strong> PTC bóc tách BOQ, phát hành shop drawing 3D (layout, vị trí thiết bị, tuyến cáp) để chủ đầu tư duyệt.",
+            "<strong>Sản xuất theo spec:</strong> Sản xuất tủ đúng hãng chỉ định, đúng Form, đúng Icw. Mỗi tủ đánh số serial riêng.",
+            "<strong>Routine Test + Type Test:</strong> Routine Test 100% tại xưởng. Type Test report từ phòng thí nghiệm độc lập (nếu yêu cầu).",
+            "<strong>Hồ sơ tiếng Anh:</strong> Phát hành CO/CQ, test report, As-built drawing, operation manual bằng tiếng Anh.",
+            "<strong>Nghiệm thu đa giai đoạn:</strong> FAT (Factory Acceptance Test) tại xưởng trước khi giao, SAT (Site Acceptance Test) tại công trường sau lắp đặt.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần tủ điện cho nhà máy FDI?",
+          text: "Gửi specification (tiếng Anh hoặc tiếng Việt) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, phát hành shop drawing 3D, và gửi báo giá theo đúng spec FDI. PTC có kinh nghiệm sản xuất tủ theo tiêu chuẩn quốc tế từ đội ngũ Powertech.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "bao-gia-tu-msb-theo-dong-ngan-mach",
+    title: "Báo giá tủ MSB: Cách tính chi phí theo Icw, Form và hãng thiết bị",
+    category: "Báo giá & RFQ",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    quickAnswer: "Giá tủ MSB phụ thuộc vào 3 yếu tố chính: (1) Icw (dòng ngắn mạch) — Icw 50kA rẻ hơn 100kA 30-50%, (2) Form tủ — Form 4b đắt hơn Form 2b 20-30%, (3) hãng thiết bị — Schneider/ABB đắt hơn LS/Hyundai 20-40%. Bài viết cung cấp bảng giá tham khảo theo Icw + Form + hãng, và quy trình báo giá MSB tại PTC.",
+    summary: [
+      "3 yếu tố quyết định giá MSB: Icw (50-100kA), Form (2b-4b), hãng thiết bị (Schneider vs LS).",
+      "Icw 100kA đắt hơn 50kA 30-50% — thanh cái đồng dày hơn, vỏ tủ lớn hơn.",
+      "Form 4b đắt hơn Form 2b 20-30% — thêm vách ngăn cách ly giữa các khoang.",
+    ],
+    body: [
+      {
+        heading: "3 yếu tố quyết định giá tủ MSB",
+        paragraphs: [
+          "Tủ MSB (Main Switchboard — tủ phân phối tổng) là tủ đầu vào nhận điện từ trạm biến áp, phân phối xuống các tủ DB/MCC. Giá tủ MSB biến động lớn tùy 3 yếu tố kỹ thuật:",
+        ],
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Icw (dòng ngắn mạch):</strong> Dòng ngắn mạch tại thanh cái tủ MSB. Icw 50kA → thanh cái đồng tiết diện vừa. Icw 100kA → thanh cái đồng dày gấp đôi, vỏ tủ lớn hơn, đắt hơn 30-50%.",
+            "<strong>Form tủ (IEC 61439-3):</strong> Form 2b (cách ly thanh cái + thiết bị) rẻ nhất. Form 3b (cách ly thêm per lộ) đắt hơn 10-15%. Form 4b (cách lý hoàn toàn + per lộ + cáp ra riêng) đắt nhất, chênh 20-30% so Form 2b.",
+            "<strong>Hãng thiết bị:</strong> ACB Schneider/ABB đắt hơn LS/Hyundai 20-40%. MCCB, contactor tương tự. Nếu chủ đầu tư không chỉ định hãng, PTC đề xuất 2-3 phương án để so sánh.",
+          ],
+        },
+      },
+      {
+        heading: "Bảng giá tham khảo tủ MSB theo Icw + Form",
+        paragraphs: [
+          "Bảng dưới là mức giá tham khảo cho tủ MSB 1 tủ chính (1600A-2500A), không gồm vận chuyển. Giá thực tế phụ thuộc SLD, hãng chỉ định, số lộ ra:",
+        ],
+        table: {
+          headers: ["Icw", "Form 2b", "Form 3b", "Form 4b"],
+          rows: [
+            ["25 kA", "45-65 triệu", "50-72 triệu", "55-80 triệu"],
+            ["50 kA", "60-85 triệu", "66-93 triệu", "72-102 triệu"],
+            ["65 kA", "75-105 triệu", "82-115 triệu", "90-128 triệu"],
+            ["100 kA", "95-135 triệu", "105-148 triệu", "115-165 triệu"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Giá trên là tham khảo",
+          text: "Giá thực tế phụ thuộc: số lộ ra, hãng ACB chỉ định, có tủ tụ bù kèm, có đo lường, có relay bảo vệ, vật liệu vỏ (sơn tĩnh điện vs Inox). Liên hệ PTC để nhận báo giá chính xác theo SLD.",
+        },
+      },
+      {
+        heading: "Cách tính Icw cho tủ MSB",
+        paragraphs: [
+          "Icw (dòng ngắn mạch định mức) là dòng ngắn mạch tối đa mà thanh cái tủ MSB chịu được trong 1 giây mà không hư hỏng. Icw tính từ:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>SCA (Short-Circuit Current) tại trạm biến áp:</strong> Phụ thuộc công suất MBA + impedance. MBA 1000kVA → SCA ~25kA. MBA 2000kVA → SCA ~40kA. 2 MBA song song → SCA có thể vượt 80kA.",
+            "<strong>Chọn Icw ≥ SCA × 1.1:</strong> Hệ số an toàn 10%. Ví dụ SCA = 45kA → chọn Icw = 50kA.",
+            "<strong>Dải Icw chuẩn:</strong> 25 / 35 / 50 / 65 / 80 / 100 kA. Chọn dải cao hơn gần nhất.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Chọn Icw thấp hơn SCA = cháy tủ",
+          text: "Nếu Icw < SCA thực tế, khi ngắn mạch xảy ra, thanh cái đồng bị lực điện động lớn → cong vênh → chạm vỏ → cháy tủ. Luôn chọn Icw ≥ SCA × 1.1. PTC tính SCA miễn phí nếu bạn gửi thông số trạm biến áp.",
+        },
+      },
+      {
+        heading: "So sánh giá theo hãng thiết bị",
+        table: {
+          headers: ["Hãng ACB", "Giá tương đối", "Ghi chú"],
+          rows: [
+            ["Schneider Electric", "100% (chuẩn)", "Phổ biến nhất cho FDI, CO/CQ đầy đủ"],
+            ["ABB", "95-105%", "Tương đương Schneider, phổ biến châu Âu"],
+            ["Mitsubishi Electric", "90-100%", "Phổ biến cho nhà máy Nhật"],
+            ["LS Electric", "70-80%", "Giá tốt, phổ biến nhà máy nội"],
+            ["Hyundai Electric", "70-80%", "Tương đương LS, phổ biến Hàn Quốc"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Không chỉ định hãng? PTC đề xuất 2-3 phương án",
+          text: "Nếu chủ đầu tư không chỉ định hãng, PTC gửi 2-3 phương án: (1) Schneider/ABB cho FDI, (2) LS/Hyundai cho nhà máy nội, (3) mix (ACB Schneider + MCCB LS) để cân bằng giá và chất lượng.",
+        },
+      },
+      {
+        heading: "Quy trình báo giá tủ MSB tại PTC",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Nhận SLD + thông số:</strong> SLD tủ MSB, dòng định mức, Icw (hoặc thông số trạm biến áp để PTC tính), số lộ ra, hãng chỉ định, Form yêu cầu.",
+            "<strong>Tính Icw + chọn thanh cái:</strong> PTC tính SCA nếu chưa có Icw, chọn tiết diện thanh cái đồng theo Icw.",
+            "<strong>Bóc tách vật tư:</strong> ACB chính, MCCB per lộ, ammeter/voltmeter, relay, thanh cái, vỏ tủ.",
+            "<strong>Gửi báo giá (24-48h):</strong> Báo giá chi tiết kèm: bảng bóc tách, tiến độ sản xuất, hồ sơ kỹ thuật.",
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Cần báo giá tủ MSB?",
+          text: "Gửi SLD tủ MSB + thông số (dòng định mức, Icw hoặc thông số trạm biến áp, số lộ, hãng chỉ định) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư tính Icw, bóc tách vật tư và gửi báo giá chi tiết trong 24-48h.",
+        },
+      },
+    ],
+  },
 ];
 
