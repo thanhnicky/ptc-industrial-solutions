@@ -22,6 +22,7 @@ interface CableProductType {
   thickness: string;
   finish: string;
   useCases: string[];
+  specs?: string[][];
 }
 
 export const Route = createFileRoute("/thang-mang-cap/$slug")({
@@ -74,7 +75,7 @@ function Page() {
   ];
 
   const tableHeaders = ["Thông số kỹ thuật", "Quy cách chế tạo tại xưởng PTC"];
-  const tableRows = [
+  const tableRows = product.specs ?? [
     ["Chiều rộng tiêu chuẩn (W)", product.width],
     ["Chiều cao thành máng (H)", product.height],
     ["Độ dày vật liệu (T)", product.thickness],
@@ -152,6 +153,13 @@ function Page() {
             <SectionHeading eyebrow="Bảng thông số" title="Quy cách chi tiết & Tùy chọn bề mặt" />
             <div className="mt-4">
               <TechnicalTable headers={tableHeaders} rows={tableRows} />
+            </div>
+            <div className="mt-4 flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm font-semibold text-ink">Cần bóc tách BOQ + shop drawing?</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">Gửi BOQ tuyến cáp qua Zalo — PTC bóc tách phụ kiện + gửi báo giá trong 24h.</p>
+              </div>
+              <ZaloButton size="sm" location={`shop-drawing-${product.slug}`} label="Yêu cầu bóc tách BOQ" />
             </div>
           </div>
 

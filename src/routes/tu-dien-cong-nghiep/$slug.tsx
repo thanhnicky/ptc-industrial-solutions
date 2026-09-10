@@ -22,6 +22,7 @@ interface ProductType {
   ip: string;
   form: string;
   useCases: string[];
+  specs?: string[][];
 }
 
 export const Route = createFileRoute("/tu-dien-cong-nghiep/$slug")({
@@ -74,7 +75,7 @@ function Page() {
   ];
 
   const tableHeaders = ["Thông số kỹ thuật", "Giá trị tiêu chuẩn / Tùy chọn"];
-  const tableRows = [
+  const tableRows = product.specs ?? [
     ["Tiêu chuẩn áp dụng", product.standard],
     ["Dòng điện định mức (In)", product.rating],
     ["Cấp bảo vệ vỏ tủ (IP)", product.ip],
@@ -153,6 +154,13 @@ function Page() {
             <SectionHeading eyebrow="Quy cách chi tiết" title="Bảng thông số kỹ thuật & Tùy chọn cấu hình" />
             <div className="mt-4">
               <TechnicalTable headers={tableHeaders} rows={tableRows} />
+            </div>
+            <div className="mt-4 flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm font-semibold text-ink">Cần shop drawing 2D/3D cho dự án?</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">Gửi SLD qua Zalo — PTC phát hành shop drawing trong 24-48h.</p>
+              </div>
+              <ZaloButton size="sm" location={`shop-drawing-${product.slug}`} label="Yêu cầu shop drawing" />
             </div>
           </div>
 
