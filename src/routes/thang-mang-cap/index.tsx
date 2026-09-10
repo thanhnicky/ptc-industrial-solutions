@@ -5,6 +5,7 @@ import { Section, SectionHeading } from "@/components/site/Section";
 import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Thang máng cáp mạ kẽm nhúng nóng, sơn tĩnh điện | PTC";
 const DESC =
@@ -36,6 +37,8 @@ const PRODUCTS = [
 function Page() {
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Thang máng cáp công nghiệp"
         subtitle="Sản xuất theo kích thước và lớp phủ bề mặt của từng dự án: mạ kẽm nhúng nóng, mạ kẽm điện phân, sơn tĩnh điện hoặc inox 304."

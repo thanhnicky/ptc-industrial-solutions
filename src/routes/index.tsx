@@ -16,6 +16,7 @@ import {
   TRUST_STRIP,
 } from "@/lib/site";
 import { Button } from "@/components/ui/button";
+import { WebSiteSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Tủ điện công nghiệp & thang máng cáp | PTC Switchboard";
 const DESC =
@@ -35,24 +36,6 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://tudienptc.vn/" }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: CONTACT.companyVi,
-          alternateName: CONTACT.brand,
-          telephone: CONTACT.hotline,
-          email: CONTACT.email,
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: CONTACT.headOffice,
-            addressCountry: "VN",
-          },
-        }),
-      },
-    ],
   }),
   component: Index,
 });
@@ -69,6 +52,7 @@ function Index() {
 
   return (
     <>
+      <WebSiteSchema />
       {/* 2. HERO */}
       <section className="relative overflow-hidden border-b border-border bg-background">
         <div className="hairline-grid pointer-events-none absolute inset-0 opacity-45" aria-hidden="true" />

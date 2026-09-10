@@ -24,6 +24,9 @@ export function Footer() {
             <p><strong>Tiêu chuẩn:</strong> ISO 9001:2015 · IEC 61439-1/2 · QUATEST 3</p>
             <p><strong>SLA Hậu mãi:</strong> Phản hồi 2h · Hiện trường 24–48h</p>
           </div>
+          <Link to={"/gioi-thieu-ptc" as never} className="inline-block text-[14px] font-medium text-steel-foreground/80 transition-colors hover:text-white">
+            Giới thiệu PTC
+          </Link>
         </div>
 
         <div>
@@ -64,6 +67,16 @@ export function Footer() {
                 Thang cáp mạ kẽm nhúng nóng
               </Link>
             </li>
+            <li>
+              <Link to={"/bao-gia-tu-dien-cong-nghiep" as never} className="transition-colors hover:text-white">
+                Báo giá tủ điện
+              </Link>
+            </li>
+            <li>
+              <Link to={"/bao-gia-thang-mang-cap" as never} className="transition-colors hover:text-white">
+                Báo giá thang máng cáp
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -86,6 +99,21 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link to={"/giai-phap/tu-dien-cho-toa-nha" as never} className="transition-colors hover:text-white">
+                Giải pháp tủ điện cho Toà nhà
+              </Link>
+            </li>
+            <li>
+              <Link to={"/giai-phap/thang-mang-cap-cho-nha-xuong" as never} className="transition-colors hover:text-white">
+                Giải pháp thang máng cáp cho Nhà xưởng
+              </Link>
+            </li>
+            <li>
+              <Link to={"/giai-phap/gia-cong-theo-ban-ve-va-boq" as never} className="transition-colors hover:text-white">
+                Gia công theo bản vẽ &amp; BOQ
+              </Link>
+            </li>
+            <li>
               <Link to={"/quy-trinh-san-xuat-tu-dien" as never} className="transition-colors hover:text-white">
                 Quy trình sản xuất 7 bước
               </Link>
@@ -103,6 +131,16 @@ export function Footer() {
             <li>
               <Link to={"/kien-thuc" as never} className="transition-colors hover:text-white">
                 Thư viện kiến thức kỹ thuật
+              </Link>
+            </li>
+            <li>
+              <Link to={"/tai-catalogue" as never} className="transition-colors hover:text-white">
+                Tải catalogue
+              </Link>
+            </li>
+            <li>
+              <Link to={"/yeu-cau-tu-van-ky-thuat" as never} className="transition-colors hover:text-white">
+                Yêu cầu tư vấn kỹ thuật
               </Link>
             </li>
           </ul>

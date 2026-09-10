@@ -150,6 +150,15 @@ function Page() {
             bullets={article.summary}
           />
 
+          {/* Mid-article CTA — capture lead trước khi reader rời đi */}
+          <div className="not-prose flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold text-ink">Cần áp dụng vào dự án cụ thể?</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">Gửi SLD/BOQ qua Zalo — Kỹ sư PTC phản hồi trong 24h.</p>
+            </div>
+            <ZaloButton size="sm" location={`mid-article-${article.slug}`} label="Nhắn Zalo kỹ thuật" />
+          </div>
+
           {/* Nội dung chuyên sâu — render động từ article.body */}
           <div className="prose prose-neutral max-w-none space-y-8">
             {article.body.map((section, idx) => (

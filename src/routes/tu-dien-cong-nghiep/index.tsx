@@ -5,6 +5,7 @@ import { Section, SectionHeading } from "@/components/site/Section";
 import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Tủ điện công nghiệp – MSB, MCC, ATS, tủ solar | PTC";
 const DESC =
@@ -47,6 +48,8 @@ const PROCESS = [
 function Page() {
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Tủ điện công nghiệp hạ thế"
         subtitle="Thiết kế, sản xuất và thử nghiệm tủ bảng điện hạ thế theo IEC 61439-1&2 và TCVN 7994-1:2009 cho nhà máy, khu công nghiệp, tòa nhà và dự án điện mặt trời."

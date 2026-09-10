@@ -5,6 +5,7 @@ import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import { CONTACT } from "@/lib/site";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Năng lực sản xuất – nhà máy ~ 3.000m² tại TP.HCM | PTC";
 const DESC =
@@ -43,6 +44,8 @@ const STATS = [
 function Page() {
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Năng lực sản xuất"
         subtitle={`Nhà máy PTC tại ${CONTACT.factory} – khép kín từ gia công cơ khí, sơn tĩnh điện đến lắp ráp và thử nghiệm.`}

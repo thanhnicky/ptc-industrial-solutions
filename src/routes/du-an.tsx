@@ -8,6 +8,7 @@ import { ZaloButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import { PROJECTS, PROJECT_FILTERS } from "@/lib/site";
 import { track } from "@/lib/analytics";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Dự án tiêu biểu – tủ điện & thang máng cáp | PTC";
 const DESC =
@@ -35,6 +36,8 @@ function Page() {
 
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Dự án tiêu biểu"
         subtitle="Tủ điện và thang máng cáp PTC đang vận hành tại các nhà máy, khu công nghiệp và hệ điện mặt trời trên cả nước."

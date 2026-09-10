@@ -5,6 +5,7 @@ import { Section, SectionHeading } from "@/components/site/Section";
 import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Tiêu chuẩn & chất lượng – ISO 9001:2015, IEC 61439 | PTC";
 const DESC =
@@ -45,6 +46,8 @@ const TESTS = [
 function Page() {
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Tiêu chuẩn & chất lượng"
         subtitle="Chất lượng thật được chứng minh bằng tiêu chuẩn áp dụng, quy trình kiểm soát và hồ sơ nghiệm thu minh bạch."

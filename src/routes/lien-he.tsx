@@ -5,6 +5,7 @@ import { LeadForm } from "@/components/site/LeadForm";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
 import { CONTACT } from "@/lib/site";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Liên hệ PTC – hotline 0836 97 77 99, báo giá 24h";
 const DESC =
@@ -29,6 +30,8 @@ export const Route = createFileRoute("/lien-he")({
 function Page() {
   return (
     <>
+      <OrganizationSchema />
+
       <PageHero
         title="Liên hệ PTC"
         subtitle="Gọi hotline hoặc nhắn Zalo để được kỹ sư PTC tư vấn ngay. Yêu cầu báo giá gửi qua form sẽ được phản hồi trong vòng 24h."

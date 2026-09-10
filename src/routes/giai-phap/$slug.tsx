@@ -7,7 +7,7 @@ import { QuickSummary } from "@/components/site/QuickSummary";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { LeadSection } from "@/components/site/LeadSection";
 import { IMAGES } from "@/components/site/images";
-import { OrganizationSchema, FAQSchema } from "@/components/seo/JsonLd";
+import { OrganizationSchema, FAQSchema, ServiceSchema } from "@/components/seo/JsonLd";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
 
@@ -187,6 +187,12 @@ function Page() {
   return (
     <>
       <OrganizationSchema />
+      <ServiceSchema
+        name={solution.h1}
+        description={solution.heroSubtitle}
+        url={`/giai-phap/${slug}`}
+        serviceType="Thiết kế, sản xuất và lắp đặt tủ điện công nghiệp"
+      />
       <FAQSchema items={solution.faqs} />
 
       <PageHero

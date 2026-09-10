@@ -272,3 +272,46 @@ export function ArticleSchema({
     />
   );
 }
+
+interface ServiceSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  serviceType: string;
+  provider?: string;
+  areaServed?: string;
+}
+
+export function ServiceSchema({
+  name,
+  description,
+  url,
+  serviceType,
+  provider = "PTC Switchboard",
+  areaServed = "Vietnam",
+}: ServiceSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    url: url.startsWith("http") ? url : `${SITE_URL}${url}`,
+    serviceType,
+    provider: {
+      "@type": "Organization",
+      name: provider,
+      url: SITE_URL,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: areaServed,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
