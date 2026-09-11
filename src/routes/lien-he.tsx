@@ -20,9 +20,9 @@ export const Route = createFileRoute("/lien-he")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/lien-he" },
+      { property: "og:url", content: "https://www.tudienptc.vn/lien-he" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/lien-he" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/lien-he" }],
   }),
   component: Page,
 });

@@ -66,7 +66,7 @@ export function getOrganizationSchema() {
     ],
     sameAs: [
       CONTACT.zalo,
-      "https://tudienptc.vn",
+      "https://www.tudienptc.vn",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",

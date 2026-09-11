@@ -22,9 +22,9 @@ export const Route = createFileRoute("/tai-catalogue")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/tai-catalogue" },
+      { property: "og:url", content: "https://www.tudienptc.vn/tai-catalogue" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/tai-catalogue" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/tai-catalogue" }],
   }),
   component: Page,
 });

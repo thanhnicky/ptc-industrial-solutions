@@ -23,9 +23,9 @@ export const Route = createFileRoute("/yeu-cau-tu-van-ky-thuat")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/yeu-cau-tu-van-ky-thuat" },
+      { property: "og:url", content: "https://www.tudienptc.vn/yeu-cau-tu-van-ky-thuat" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/yeu-cau-tu-van-ky-thuat" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/yeu-cau-tu-van-ky-thuat" }],
   }),
   component: Page,
 });

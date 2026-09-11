@@ -173,9 +173,9 @@ export const Route = createFileRoute("/giai-phap/$slug")({
         { property: "og:description", content: data.desc },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
-        { property: "og:url", content: `https://tudienptc.vn/giai-phap/${loaderData?.slug}` },
+        { property: "og:url", content: `https://www.tudienptc.vn/giai-phap/${loaderData?.slug}` },
       ],
-      links: [{ rel: "canonical", href: `https://tudienptc.vn/giai-phap/${loaderData?.slug}` }],
+      links: [{ rel: "canonical", href: `https://www.tudienptc.vn/giai-phap/${loaderData?.slug}` }],
     };
   },
   component: Page,

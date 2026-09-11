@@ -12,4 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
-Sitemap: https://tudienptc.vn/sitemap.xml
+Sitemap: https://www.tudienptc.vn/sitemap.xml

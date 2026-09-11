@@ -20,9 +20,9 @@ export const Route = createFileRoute("/nang-luc-san-xuat")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/nang-luc-san-xuat" },
+      { property: "og:url", content: "https://www.tudienptc.vn/nang-luc-san-xuat" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/nang-luc-san-xuat" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/nang-luc-san-xuat" }],
   }),
   component: Page,
 });

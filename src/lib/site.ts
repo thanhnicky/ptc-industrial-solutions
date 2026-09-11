@@ -1,9 +1,9 @@
 /**
  * BRAND & SITE CONFIGURATION — CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC
- * Domain chính thức: https://tudienptc.vn
+ * Domain chính thức: https://www.tudienptc.vn
  */
 
-export const SITE_URL = "https://tudienptc.vn";
+export const SITE_URL = "https://www.tudienptc.vn";
 
 export const CONTACT = {
   legalName: "CÔNG TY CỔ PHẦN TỦ BẢNG ĐIỆN PTC",

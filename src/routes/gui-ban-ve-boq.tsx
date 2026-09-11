@@ -23,9 +23,9 @@ export const Route = createFileRoute("/gui-ban-ve-boq")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/gui-ban-ve-boq" },
+      { property: "og:url", content: "https://www.tudienptc.vn/gui-ban-ve-boq" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/gui-ban-ve-boq" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/gui-ban-ve-boq" }],
   }),
   component: Page,
 });

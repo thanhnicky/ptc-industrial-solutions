@@ -20,9 +20,9 @@ export const Route = createFileRoute("/tu-dien-cong-nghiep/")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/tu-dien-cong-nghiep" },
+      { property: "og:url", content: "https://www.tudienptc.vn/tu-dien-cong-nghiep" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/tu-dien-cong-nghiep" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/tu-dien-cong-nghiep" }],
   }),
   component: Page,
 });

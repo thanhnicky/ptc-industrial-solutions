@@ -100,13 +100,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "PTC Switchboard" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "vi_VN" },
-      { property: "og:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
-      { property: "og:image:secure_url", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { property: "og:image", content: "https://www.tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { property: "og:image:secure_url", content: "https://www.tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard tại TP.HCM" },
       // Twitter Card
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
+      { name: "twitter:image", content: "https://www.tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { name: "twitter:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard tại TP.HCM" },
     ],
     scripts: [
@@ -116,7 +116,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     links: [
-      { rel: "canonical", href: "https://tudienptc.vn" },
+      { rel: "canonical", href: "https://www.tudienptc.vn" },
       {
         rel: "stylesheet",
         href: appCss,

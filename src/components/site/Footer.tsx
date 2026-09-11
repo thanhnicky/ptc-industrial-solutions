@@ -195,7 +195,7 @@ export function Footer() {
       <div className="border-t border-steel-foreground/10">
         <div className="container-wide flex flex-wrap justify-between gap-3 py-6 text-sm text-steel-foreground/60">
           <span>© 2026 {CONTACT.legalName}. Tất cả các quyền được bảo lưu.</span>
-          <span>Website chính thức: https://tudienptc.vn · Nhà máy sản xuất tại TP.HCM</span>
+          <span>Website chính thức: https://www.tudienptc.vn · Nhà máy sản xuất tại TP.HCM</span>
         </div>
       </div>
     </footer>

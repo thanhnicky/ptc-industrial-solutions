@@ -42,9 +42,9 @@ export const Route = createFileRoute("/quy-trinh-san-xuat-tu-dien")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://tudienptc.vn/quy-trinh-san-xuat-tu-dien" },
+      { property: "og:url", content: "https://www.tudienptc.vn/quy-trinh-san-xuat-tu-dien" },
     ],
-    links: [{ rel: "canonical", href: "https://tudienptc.vn/quy-trinh-san-xuat-tu-dien" }],
+    links: [{ rel: "canonical", href: "https://www.tudienptc.vn/quy-trinh-san-xuat-tu-dien" }],
   }),
   component: Page,
 });

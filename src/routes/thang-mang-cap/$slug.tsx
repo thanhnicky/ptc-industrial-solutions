@@ -48,9 +48,9 @@ export const Route = createFileRoute("/thang-mang-cap/$slug")({
         { property: "og:description", content: desc },
         { property: "og:type", content: "product" },
         { name: "twitter:card", content: "summary_large_image" },
-        { property: "og:url", content: `https://tudienptc.vn/thang-mang-cap/${product.slug}` },
+        { property: "og:url", content: `https://www.tudienptc.vn/thang-mang-cap/${product.slug}` },
       ],
-      links: [{ rel: "canonical", href: `https://tudienptc.vn/thang-mang-cap/${product.slug}` }],
+      links: [{ rel: "canonical", href: `https://www.tudienptc.vn/thang-mang-cap/${product.slug}` }],
     };
   },
   component: Page,
