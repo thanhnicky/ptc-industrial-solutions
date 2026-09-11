@@ -93,6 +93,8 @@ function Index() {
                 alt="Nhà máy sản xuất tủ điện PTC tại TP.HCM"
                 width={1400}
                 height={1000}
+                loading="eager"
+                fetchPriority="high"
                 className="col-span-5 row-span-3 h-full w-full object-cover"
               />
               <img

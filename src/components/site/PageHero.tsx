@@ -18,8 +18,10 @@ export function PageHero({
         src={image}
         alt=""
         aria-hidden="true"
+        width={1920}
+        height={600}
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
-        loading="lazy"
+        loading="eager"
       />
       <div className="hairline-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       <div className="container-page py-14 sm:py-16 md:py-20 lg:py-24">
