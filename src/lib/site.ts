@@ -3138,5 +3138,220 @@ export const KNOWLEDGE_ARTICLES = [
       },
     ],
   },
+  {
+    slug: "tham-dinh-shop-drawing-tu-dien-ha-the",
+    title:
+      "Thẩm định Shop Drawing tủ điện hạ thế: Checklist rà soát SLD, thanh cái và Icw trước khi duyệt",
+    category: "Tính toán kỹ thuật",
+    readTime: "9 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    quickAnswer:
+      "Thẩm định Shop Drawing tủ điện hạ thế là đối chiếu bản vẽ nhà sản xuất với thiết kế được duyệt theo 5 nhóm: (1) sơ đồ đơn tuyến SLD — In, Icu/Ics, số cực, CT; (2) thanh cái — tiết diện, Icw/thời gian, N và PE; (3) cấu trúc vỏ — Form, IP, kích thước, hướng cáp vào; (4) mạch nhị thứ — interlock, ATS, tụ bù; (5) danh mục thiết bị và hãng. Sai ở bước này sẽ thành lỗi sản xuất không sửa được.",
+    summary: [
+      'Shop Drawing là "hợp đồng kỹ thuật" giữa nhà thầu M&E và nhà sản xuất tủ — duyệt sai là sản xuất sai, phát hiện tại công trường thì đã muộn.',
+      "5 nhóm cần rà soát: SLD, hệ thanh cái (Icw, N, PE), vỏ tủ (Form, IP, kích thước), mạch điều khiển/interlock, danh mục thiết bị (BOM).",
+      "8 lỗi phổ biến nhất: Icu MCCB nhánh thấp hơn dòng ngắn mạch tại điểm lắp, Icw thanh cái không ghi thời gian, 3P/4P không thống nhất, thiếu khóa liên động ACB nguồn lưới – máy phát, tủ không vừa phòng điện…",
+    ],
+    body: [
+      {
+        heading: "Shop Drawing tủ điện là gì và vì sao phải thẩm định kỹ?",
+        paragraphs: [
+          "Shop Drawing (bản vẽ chế tạo) là bộ bản vẽ do nhà sản xuất tủ phát hành dựa trên thiết kế kỹ thuật của tư vấn — thể hiện chính xác tủ sẽ được chế tạo như thế nào: bố trí thiết bị, kích thước vỏ, hệ thanh cái, sơ đồ mạch động lực và điều khiển, danh mục vật tư. Sau khi chủ đầu tư/tư vấn ký duyệt, Shop Drawing trở thành căn cứ để sản xuất, Routine Test và nghiệm thu.",
+          "Thiết kế kỹ thuật thường chỉ có sơ đồ đơn tuyến (Single-Line Diagram – SLD) và chỉ dẫn kỹ thuật. Khi chuyển thành Shop Drawing, nhà sản xuất phải <strong>cụ thể hóa hàng trăm thông số</strong> mà bản thiết kế không ghi: tiết diện thanh cái, khoảng cách đỡ thanh cái, tỷ số CT, cấu hình khóa liên động, vị trí đầu cáp… Đây là nơi sai sót phát sinh nhiều nhất.",
+          "Chi phí sửa lỗi tăng theo cấp số nhân theo từng giai đoạn: sửa trên bản vẽ gần như không tốn chi phí, sửa khi đang gia công cơ khí mất vài ngày, còn sửa khi tủ đã về công trường có thể phải <strong>tháo về xưởng, chậm tiến độ cả block thi công</strong>.",
+        ],
+      },
+      {
+        heading: "Bộ hồ sơ Shop Drawing tủ điện đầy đủ gồm những gì?",
+        paragraphs: [
+          "Trước khi rà soát nội dung, hãy kiểm tra bộ hồ sơ đã đủ thành phần chưa. Một bộ Shop Drawing tủ hạ thế đạt yêu cầu thường gồm:",
+        ],
+        table: {
+          headers: ["Thành phần", "Nội dung cần thể hiện", "Ai cần soát kỹ"],
+          rows: [
+            [
+              "<strong>Sơ đồ đơn tuyến (SLD)</strong>",
+              "In, Icu/Ics, số cực, CT, đồng hồ, tiết diện cáp vào/ra, tên lộ",
+              "Kỹ sư thiết kế điện",
+            ],
+            [
+              "<strong>Mặt bằng bố trí (General Arrangement)</strong>",
+              "Mặt đứng, mặt bằng, mặt cắt, kích thước W×D×H, khối lượng",
+              "Kỹ sư M&E hiện trường",
+            ],
+            [
+              "<strong>Bố trí thanh cái (Busbar Arrangement)</strong>",
+              "Tiết diện, số thanh/pha, vị trí N, PE, thanh cái đứng/ngang",
+              "Kỹ sư thiết kế điện",
+            ],
+            [
+              "<strong>Sơ đồ nguyên lý điều khiển (Schematic)</strong>",
+              "ATS, interlock, tụ bù, đo lường, tín hiệu BMS/SCADA",
+              "Kỹ sư điều khiển / BMS",
+            ],
+            [
+              "<strong>Danh mục vật tư (BOM)</strong>",
+              "Mã thiết bị, hãng, xuất xứ, số lượng",
+              "Dự toán / QS, chủ đầu tư",
+            ],
+            [
+              "<strong>Bảng tên & nhãn (Labeling)</strong>",
+              "Tên tủ, tên lộ, cảnh báo, ngôn ngữ (Việt/Anh)",
+              "Vận hành / FDI",
+            ],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Mẹo quản lý phiên bản",
+          text: "Yêu cầu nhà sản xuất đánh số Revision (Rev.0, Rev.1…) và khoanh vùng (cloud) phần thay đổi trên mỗi lần phát hành. Không duyệt bản vẽ không có số Revision — đây là nguyên nhân phổ biến khiến xưởng sản xuất theo bản cũ.",
+        },
+      },
+      {
+        heading: "Bước 1: Rà soát sơ đồ đơn tuyến (SLD) — đối chiếu từng lộ",
+        paragraphs: [
+          "Đặt SLD của Shop Drawing cạnh SLD thiết kế và đối chiếu <strong>từng lộ ra</strong>, không chỉ lộ tổng. Các thông số bắt buộc phải khớp hoặc có giải trình:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Dòng định mức In và dải chỉnh định (Ir, Isd, Ii):</strong> Thiết bị đúng In nhưng bộ trip không chỉnh được (fixed) có thể không phối hợp chọn lọc (selectivity) với tầng dưới.",
+            "<strong>Dòng cắt ngắn mạch Icu / Ics:</strong> Icu của mỗi CB phải ≥ dòng ngắn mạch dự kiến <em>tại điểm lắp đặt</em>. Lỗi hay gặp: lộ tổng chọn đúng, nhưng MCCB nhánh trong cùng tủ MSB lại chọn Icu thấp như tủ DB.",
+            "<strong>Số cực 3P / 4P:</strong> Phải thống nhất với sơ đồ nối đất (TN-S, TN-C-S). Hệ có máy phát dự phòng chuyển nguồn qua ATS thường yêu cầu đóng cắt cả dây trung tính (4P).",
+            "<strong>Biến dòng CT:</strong> Tỷ số CT phù hợp In của lộ, cấp chính xác đúng mục đích (đo lường hay bảo vệ), đủ CT cho đồng hồ đa năng, công tơ và relay.",
+            "<strong>Tiết diện và số sợi cáp vào/ra:</strong> Quyết định kích thước đầu cosse, số lỗ bắt cáp trên thanh cái và khoảng không gian đấu cáp trong tủ.",
+            "<strong>Hệ số đồng thời định mức (RDF):</strong> Tổng In các lộ ra luôn lớn hơn In lộ tổng. Cần kiểm tra hệ số đồng thời áp dụng có phù hợp với thực tế vận hành và được nhà sản xuất cam kết theo IEC 61439-2.",
+          ],
+        },
+      },
+      {
+        heading: "Bước 2: Kiểm tra hệ thanh cái — Icw, trung tính và PE",
+        paragraphs: [
+          "Hệ thanh cái là phần không thể thay thế sau khi tủ hoàn thiện, nên cần soát kỹ nhất. Ba thông số trọng tâm:",
+        ],
+        list: {
+          ordered: true,
+          items: [
+            '<strong>Dòng chịu ngắn mạch ngắn hạn Icw và thời gian:</strong> Bản vẽ phải ghi rõ dạng <em>xx kA / 1s</em> (hoặc 3s). Icw không kèm thời gian là chưa đủ cơ sở nghiệm thu. Icw phải ≥ dòng ngắn mạch dự kiến tại thanh cái, có hệ số dự phòng — xem cách tính tại bài <a href="/kien-thuc/cach-tinh-dong-ngan-mach-icw-tu-msb" class="text-primary font-medium">tính dòng ngắn mạch Icw cho tủ MSB</a>.',
+            "<strong>Tiết diện và bố trí thanh cái:</strong> Số thanh/pha, kích thước (VD: 2×100×10 mm), khoảng cách giá đỡ. Thanh cái phải được chứng minh qua Type Test hoặc Design Verification theo IEC 61439 về tăng nhiệt và chịu ngắn mạch — yêu cầu nhà sản xuất nêu rõ căn cứ.",
+            "<strong>Thanh cái trung tính N và tiếp địa PE:</strong> Với nhà máy nhiều tải phi tuyến (biến tần, UPS, đèn LED), dòng hài bậc 3 cộng dồn trên dây N — cân nhắc N bằng 100% tiết diện pha. Tiết diện PE tham khảo IEC 60364-5-54: pha ≤ 16 mm² → PE bằng pha; 16–35 mm² → PE 16 mm²; > 35 mm² → PE bằng 1/2 pha.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Dấu hiệu cảnh báo trên bản vẽ thanh cái",
+          text: "Thanh cái ghi Icw cao (VD: 65 kA) nhưng khoảng cách giá đỡ lớn, dùng giá đỡ không rõ hãng, hoặc không có tài liệu chứng minh thiết kế. Lực điện động khi ngắn mạch tỷ lệ với bình phương dòng điện — giá đỡ không đủ bền sẽ làm thanh cái cong vênh dù tiết diện đủ.",
+        },
+      },
+      {
+        heading: "Bước 3: Rà soát vỏ tủ — Form, IP, kích thước và hướng cáp",
+        paragraphs: [
+          "Đây là phần kỹ sư hiện trường cần soát cùng mặt bằng phòng điện thực tế, không chỉ đối chiếu chỉ dẫn kỹ thuật:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            '<strong>Form phân tách:</strong> Chỉ dẫn yêu cầu Form 3b nhưng bản vẽ thể hiện các lộ ra chung một ngăn đấu cáp là không đạt. Xem lại cách chọn Form tại bài <a href="/kien-thuc/cach-chon-tu-dien-msb" class="text-primary font-medium">cách chọn tủ điện tổng MSB</a>.',
+            "<strong>Cấp bảo vệ IP:</strong> Đúng với môi trường lắp đặt (phòng điện khô, khu sản xuất ẩm, ngoài trời). Lưu ý IP thực tế giảm nếu bố trí quạt thông gió, lỗ thoát nhiệt không có lưới lọc.",
+            "<strong>Kích thước & khối lượng:</strong> Tổng chiều dài dãy tủ cộng hành lang thao tác trước/sau phải vừa phòng điện; chiều cao vừa cửa ra vào và tải trọng sàn; kích thước từng khối vận chuyển vừa lối vào.",
+            "<strong>Hướng cáp vào/ra (top/bottom entry):</strong> Khớp với mương cáp, thang cáp thực tế. Sai hướng cáp là lỗi phải sửa vỏ tủ tại công trường — tốn kém và ảnh hưởng IP.",
+            "<strong>Màu sơn, độ dày tôn, chân đế (plinth):</strong> Theo chỉ dẫn kỹ thuật (VD: RAL 7035, tôn 2.0 mm, chân đế 100 mm).",
+          ],
+        },
+      },
+      {
+        heading: "Bước 4: Kiểm tra mạch điều khiển, khóa liên động và tụ bù",
+        paragraphs: [
+          "Sơ đồ nhị thứ thường bị duyệt lướt vì nhiều trang, nhưng đây lại là nơi gây sự cố vận hành nhiều nhất:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Khóa liên động (interlock) nguồn lưới – máy phát:</strong> Phải có cả khóa cơ khí và khóa điện giữa các ACB nguồn để không bao giờ đóng song song hai nguồn (trừ khi thiết kế hòa đồng bộ).",
+            "<strong>Logic ATS:</strong> Thời gian trễ chuyển nguồn, điều kiện trở về lưới, chế độ Auto/Manual, tín hiệu khởi động máy phát.",
+            "<strong>Tụ bù:</strong> Số cấp và dung lượng kVAr theo thiết kế; bộ điều khiển tụ bù; nhà máy nhiều biến tần cần cuộn kháng lọc sóng hài (detuned reactor) để tránh cộng hưởng.",
+            "<strong>Tín hiệu kết nối BMS/SCADA:</strong> Tiếp điểm trạng thái, cảnh báo trip, giao thức truyền thông (Modbus RTU/TCP) đúng yêu cầu hệ thống giám sát.",
+          ],
+        },
+      },
+      {
+        heading: "8 lỗi thường gặp trong Shop Drawing tủ điện hạ thế",
+        table: {
+          headers: ["#", "Lỗi", "Hậu quả", "Cách phát hiện"],
+          rows: [
+            [
+              "1",
+              "Icu MCCB nhánh &lt; dòng ngắn mạch tại tủ",
+              "CB không cắt được sự cố, cháy nổ thiết bị",
+              "Đối chiếu Icu từng lộ với kết quả tính ngắn mạch",
+            ],
+            [
+              "2",
+              "Icw thanh cái không ghi thời gian",
+              "Không có căn cứ nghiệm thu, rủi ro biến dạng thanh cái",
+              "Yêu cầu ghi rõ kA / 1s hoặc 3s",
+            ],
+            [
+              "3",
+              "3P/4P không thống nhất SLD và BOM",
+              "Đặt sai thiết bị, chậm tiến độ",
+              "Đối chiếu SLD – BOM từng lộ",
+            ],
+            [
+              "4",
+              "Thiếu khóa liên động cơ khí giữa ACB nguồn",
+              "Nguy cơ hòa song song lưới – máy phát",
+              "Soát sơ đồ nhị thứ và BOM phụ kiện ACB",
+            ],
+            [
+              "5",
+              "Form thể hiện thấp hơn chỉ dẫn kỹ thuật",
+              "Không đạt nghiệm thu, mất an toàn bảo trì",
+              "Soát mặt cắt ngăn tủ",
+            ],
+            [
+              "6",
+              "Dãy tủ không vừa phòng điện / cửa ra vào",
+              "Phải sửa vỏ hoặc phá tường tại công trường",
+              "Chồng bản vẽ GA lên mặt bằng kiến trúc",
+            ],
+            [
+              "7",
+              "Hướng cáp vào không khớp mương/thang cáp",
+              "Sửa vỏ tủ tại hiện trường, giảm IP",
+              "Đối chiếu bản vẽ hệ dẫn cáp",
+            ],
+            [
+              "8",
+              "Tỷ số CT không phù hợp In lộ",
+              "Đo lường sai, relay tác động sai",
+              "Kiểm tra bảng CT trên SLD",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Quy trình duyệt Shop Drawing hiệu quả giữa nhà thầu và nhà sản xuất",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Chốt dữ liệu đầu vào:</strong> SLD thiết kế, chỉ dẫn kỹ thuật, kết quả tính ngắn mạch, mặt bằng phòng điện, danh sách hãng thiết bị được phép.",
+            "<strong>Nhà sản xuất phát hành Rev.0</strong> kèm bảng giải trình sai khác so với thiết kế (nếu có).",
+            "<strong>Rà soát theo checklist 5 nhóm</strong> ở trên, ghi nhận xét trực tiếp trên bản vẽ (markup) hoặc bảng comment có đánh số.",
+            "<strong>Nhà sản xuất phản hồi từng comment</strong> và phát hành Rev.1, khoanh vùng phần thay đổi.",
+            '<strong>Ký duyệt "Approved" hoặc "Approved with comments"</strong> — chỉ bản đã duyệt mới được đưa vào sản xuất.',
+            '<strong>Lưu bản duyệt làm căn cứ Routine Test và nghiệm thu</strong> — xem thêm <a href="/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the" class="text-primary font-medium">checklist nghiệm thu tủ điện hạ thế</a>.',
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Gửi SLD để PTC rà soát trước khi phát hành Shop Drawing",
+          text: 'Quý kỹ sư có thể gửi SLD, chỉ dẫn kỹ thuật và mặt bằng phòng điện qua Zalo hoặc trang <a href="/gui-ban-ve-boq" class="text-primary font-medium">gửi bản vẽ / BOQ</a>. Ban Kỹ thuật PTC sẽ rà soát thông số thiếu, kiểm tra Icu/Icw theo dòng ngắn mạch và phát hành Shop Drawing kèm bảng giải trình sai khác.',
+        },
+      },
+    ],
+  },
 ];
 
