@@ -20,7 +20,7 @@ import { WebSiteSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Tủ điện công nghiệp & thang máng cáp | PTC Switchboard";
 const DESC =
-  "PTC sản xuất tủ điện hạ thế (MSB, MDB, DB, ATS, MCC, VSD) và thang máng cáp theo IEC 61439, ISO 9001:2015. Nhà máy ~ 3.000 m² tại TP.HCM, báo giá kỹ thuật trong 24h.";
+  "PTC sản xuất tủ điện hạ thế (MSB, MDB, DB, ATS, MCC, VSD) và thang máng cáp theo IEC 61439, ISO 9001:2015. Nhà máy ~ 3.000 m² tại TP.HCM, báo giá kỹ thuật theo SLD/BOQ.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -311,7 +311,7 @@ function Index() {
             <div>
               <Eyebrow>Quy trình làm việc</Eyebrow>
               <h2 className="mt-4 max-w-xl text-2xl font-bold leading-snug md:text-[2.15rem] tracking-tight">
-                Từ bản vẽ và BOQ đến báo giá kỹ thuật trong 24h
+                Từ bản vẽ và BOQ đến báo giá kỹ thuật chi tiết
               </h2>
             </div>
             <ZaloButton label="Nhắn Zalo gửi bản vẽ" size="lg" location="process" />

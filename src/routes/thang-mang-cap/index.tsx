@@ -101,7 +101,7 @@ function Page() {
 
       <LeadSection
         title="Gửi bản vẽ – nhận báo giá thang máng cáp"
-        intro="Gửi khối lượng hoặc bản vẽ tuyến cáp, kỹ sư PTC sẽ bóc tách và báo giá trong 24h."
+        intro="Gửi khối lượng hoặc bản vẽ tuyến cáp, kỹ sư PTC sẽ bóc tách khối lượng và gửi báo giá."
         defaultNeed="thang-mang-cap"
         sourcePage="thang-mang-cap"
       />

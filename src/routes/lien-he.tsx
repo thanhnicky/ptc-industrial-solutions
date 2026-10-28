@@ -7,7 +7,7 @@ import { IMAGES } from "@/components/site/images";
 import { CONTACT } from "@/lib/site";
 import { OrganizationSchema } from "@/components/seo/JsonLd";
 
-const TITLE = "Liên hệ PTC – hotline 0836 97 77 99, báo giá 24h";
+const TITLE = "Liên hệ PTC – hotline 0836 97 77 99, nhận báo giá tủ điện";
 const DESC =
   "Liên hệ Công ty Cổ phần Tủ bảng điện PTC: hotline 0836 97 77 99, Zalo, email tudienptc.vn@gmail.com. Nhà máy tại Linh Xuân, TP.HCM.";
 

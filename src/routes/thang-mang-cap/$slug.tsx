@@ -157,7 +157,7 @@ function Page() {
             <div className="mt-4 flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-sm font-semibold text-ink">Cần bóc tách BOQ + shop drawing?</p>
-                <p className="mt-0.5 text-xs text-muted-foreground">Gửi BOQ tuyến cáp qua Zalo — PTC bóc tách phụ kiện + gửi báo giá trong 24h.</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">Gửi BOQ tuyến cáp qua Zalo — PTC bóc tách phụ kiện và gửi báo giá.</p>
               </div>
               <ZaloButton size="sm" location={`shop-drawing-${product.slug}`} label="Yêu cầu bóc tách BOQ" />
             </div>

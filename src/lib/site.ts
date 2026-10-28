@@ -3172,7 +3172,7 @@ export const KNOWLEDGE_ARTICLES = [
           items: [
             "<strong>Nhận hồ sơ (0-2h):</strong> Tiếp nhận SLD, BOQ, yêu cầu kỹ thuật qua Zalo hoặc email. Kỹ sư xác nhận đủ/thiếu thông tin.",
             "<strong>Rà soát thông số (2-8h):</strong> Kiểm tra dòng định mức, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định. Nếu thiếu, PTC đề xuất giá trị mặc định hoặc hỏi lại.",
-            "<strong>Bóc tách vật tư (4-24h):</strong> Bóc tách từng ngăn lộ: ACB, MCCB, contactor, relay, thanh cái đồng, vỏ tủ, phụ kiện. Tính khối lượng vật tư chính xác theo SLD.",
+            "<strong>Bóc tách vật tư:</strong> Bóc tách từng ngăn lộ: ACB, MCCB, contactor, relay, thanh cái đồng, vỏ tủ, phụ kiện. Tính khối lượng vật tư chính xác theo SLD.",
             "<strong>Tính toán thanh cái + vỏ (8-48h):</strong> Tính tiết diện thanh cái theo Icw, chọn vật liệu vỏ (sơn tĩnh điện/Inox), xác định kích thước tủ theo số ngăn + Form.",
             "<strong>Gửi báo giá (trong thời gian sớm nhất):</strong> Phát hành báo giá chi tiết kèm: bảng bóc tách vật tư, tiến độ sản xuất, hồ sơ kỹ thuật (CO/CQ, Routine Test).",
           ],
@@ -3773,10 +3773,10 @@ export const KNOWLEDGE_ARTICLES = [
     slug: "bao-gia-tu-msb-theo-dong-ngan-mach",
     title: "Báo giá tủ MSB: Cách tính chi phí theo Icw, Form và hãng thiết bị",
     category: "Báo giá & RFQ",
-    readTime: "8 phút",
+    readTime: "11 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2026-09-10",
-    dateModified: "2026-09-10",
+    dateModified: "2026-10-27",
     quickAnswer: "Giá tủ MSB phụ thuộc vào 3 yếu tố chính: (1) Icw (dòng ngắn mạch) — Icw 50kA rẻ hơn 100kA 30-50%, (2) Form tủ — Form 4b đắt hơn Form 2b 20-30%, (3) hãng thiết bị — Schneider/ABB đắt hơn LS/Hyundai 20-40%. Bài viết cung cấp bảng giá tham khảo theo Icw + Form + hãng, và quy trình báo giá MSB tại PTC.",
     summary: [
       "3 yếu tố quyết định giá MSB: Icw (50-100kA), Form (2b-4b), hãng thiết bị (Schneider vs LS).",
@@ -3793,15 +3793,15 @@ export const KNOWLEDGE_ARTICLES = [
           ordered: true,
           items: [
             "<strong>Icw (dòng ngắn mạch):</strong> Dòng ngắn mạch tại thanh cái tủ MSB. Icw 50kA → thanh cái đồng tiết diện vừa. Icw 100kA → thanh cái đồng dày gấp đôi, vỏ tủ lớn hơn, đắt hơn 30-50%.",
-            "<strong>Form tủ (IEC 61439-3):</strong> Form 2b (cách ly thanh cái + thiết bị) rẻ nhất. Form 3b (cách ly thêm per lộ) đắt hơn 10-15%. Form 4b (cách lý hoàn toàn + per lộ + cáp ra riêng) đắt nhất, chênh 20-30% so Form 2b.",
+            "<strong>Form tủ (IEC 61439-2, xem <a href=\"/kien-thuc/so-sanh-form-tu-dien-form-1-2b-3b-4b\" class=\"text-primary font-medium\">so sánh Form 1, 2b, 3b, 4b</a>):</strong> Form 2b (cách ly thanh cái + thiết bị) rẻ nhất. Form 3b (cách ly thêm per lộ) đắt hơn 10-15%. Form 4b (cách ly hoàn toàn + per lộ + cáp ra riêng) đắt nhất, chênh 20-30% so Form 2b.",
             "<strong>Hãng thiết bị:</strong> ACB Schneider/ABB đắt hơn LS/Hyundai 20-40%. MCCB, contactor tương tự. Nếu chủ đầu tư không chỉ định hãng, PTC đề xuất 2-3 phương án để so sánh.",
           ],
         },
       },
       {
-        heading: "Bảng giá tham khảo tủ MSB theo Icw + Form",
+        heading: "Khoảng giá tham khảo tủ MSB theo Icw + Form",
         paragraphs: [
-          "Bảng dưới là mức giá tham khảo cho tủ MSB 1 tủ chính (1600A-2500A), không gồm vận chuyển. Giá thực tế phụ thuộc SLD, hãng chỉ định, số lộ ra:",
+          "Bảng dưới là <strong>khoảng giá tham khảo</strong> cho tủ MSB 1 tủ chính (1600A-2500A), chưa gồm vận chuyển. Đây không phải báo giá. Giá thực tế chỉ xác định được sau khi bóc tách theo SLD/BOQ của dự án, và thay đổi theo giá đồng, giá thiết bị tại thời điểm báo giá:",
         ],
         table: {
           headers: ["Icw", "Form 2b", "Form 3b", "Form 4b"],
@@ -3853,6 +3853,70 @@ export const KNOWLEDGE_ARTICLES = [
           type: "info",
           title: "Không chỉ định hãng? PTC đề xuất 2-3 phương án",
           text: "Nếu chủ đầu tư không chỉ định hãng, PTC gửi 2-3 phương án: (1) Schneider/ABB cho FDI, (2) LS/Hyundai cho nhà máy nội, (3) mix (ACB Schneider + MCCB LS) để cân bằng giá và chất lượng.",
+        },
+      },
+      {
+        heading: "Các yếu tố khác làm giá tủ tăng hoặc giảm",
+        paragraphs: ["Ngoài Icw, Form và hãng thiết bị, các yếu tố dưới đây làm 2 tủ cùng dòng định mức có thể chênh giá đáng kể:"],
+        table: {
+          headers: ["Yếu tố", "Giá tăng khi", "Cần ghi rõ trong yêu cầu báo giá"],
+          rows: [
+            [
+              "Dòng định mức, thanh cái đồng",
+              "Dòng lớn, thanh cái nhiều lớp, đồng mạ thiếc",
+              "Dòng định mức, Icw, vật liệu và xử lý bề mặt thanh cái",
+            ],
+            ["Số lộ ra, loại thiết bị", "Nhiều lộ, nhiều ACB thay vì MCCB", "Danh sách lộ ra theo SLD, dòng cắt Icu/Ics yêu cầu"],
+            ["Kiểu lắp thiết bị", "Ngăn kéo (withdrawable) thay vì lắp cố định", "Kiểu lắp cho từng nhóm lộ"],
+            ["Vỏ tủ, cấp IP", "IP54 trở lên, inox, độ dày tôn lớn, màu sơn đặc biệt", "Cấp IP, vật liệu, độ dày tôn, mã màu"],
+            [
+              "Đo lường, bảo vệ, truyền thông",
+              "Đồng hồ đa năng, rơ le bảo vệ, kết nối BMS/SCADA",
+              "Danh sách thiết bị đo, rơ le, giao thức truyền thông",
+            ],
+            ["Tủ đi kèm", "Có thêm tủ tụ bù, ATS, tủ máy phát", "Phạm vi tủ trong gói báo giá"],
+            [
+              "Thử nghiệm, hồ sơ",
+              "Thử nghiệm chứng kiến (FAT), thử nghiệm bên thứ ba, hồ sơ theo mẫu riêng",
+              "Yêu cầu thử nghiệm và danh mục hồ sơ bàn giao",
+            ],
+            ["Tiến độ", "Yêu cầu giao gấp, giao nhiều đợt", "Tiến độ mong muốn và số đợt giao"],
+          ],
+        },
+      },
+      {
+        heading: "Checklist chi phí ẩn cần hỏi trước khi chốt báo giá",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Vận chuyển, cẩu hạ:</strong> giá đã gồm vận chuyển tới công trình, cẩu hạ, đưa tủ vào phòng điện chưa?",
+            "<strong>Lắp đặt, đấu nối:</strong> có gồm định vị tủ, nối thanh cái giữa các cột tủ giao rời, đấu nối cáp tại hiện trường không?",
+            "<strong>Bệ tủ, phụ kiện:</strong> đế tủ, khung bệ, đầu cốt, ốc siết cáp, nắp che cáp đã tính chưa?",
+            "<strong>Thử nghiệm:</strong> Routine Test có sẵn; thử nghiệm chứng kiến cùng chủ đầu tư, thử nghiệm bên thứ ba có tính thêm không?",
+            "<strong>Hồ sơ:</strong> CO/CQ thiết bị, biên bản thử nghiệm, bản vẽ hoàn công đã gồm trong giá chưa?",
+            "<strong>Hiệu lực và điều chỉnh giá:</strong> báo giá có hiệu lực bao lâu; giá có điều chỉnh khi giá đồng hoặc giá thiết bị thay đổi không?",
+            "<strong>Thay đổi thiết kế:</strong> thay đổi sau khi duyệt Shop Drawing được tính phí thế nào?",
+            "<strong>Giao theo đợt, lưu kho:</strong> nếu giao theo block thi công, điều kiện lưu tủ tại xưởng ra sao?",
+            "<strong>Bảo hành:</strong> thời gian và phạm vi bảo hành cho vỏ tủ và cho thiết bị (theo chính sách của hãng).",
+          ],
+        },
+      },
+      {
+        heading: "Cách đọc và so sánh 2 bảng báo giá tủ điện",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>So sánh trên cùng một cấu hình:</strong> 2 báo giá phải dựa trên cùng SLD, cùng số lộ, cùng Form và IP. Khác cấu hình thì không so được giá.",
+            "<strong>Đối chiếu mã thiết bị, không chỉ dòng định mức:</strong> \"ACB 2500A\" của 2 dòng sản phẩm có thể khác nhau về dòng cắt Icu/Ics, bộ bảo vệ và phụ kiện.",
+            "<strong>Kiểm tra thanh cái và vỏ tủ:</strong> Icw, tiết diện thanh cái, độ dày tôn, loại sơn hoặc inox.",
+            "<strong>Kiểm tra phạm vi:</strong> vận chuyển, lắp đặt, thử nghiệm, hồ sơ nằm trong hay ngoài giá (dùng checklist ở trên).",
+            "<strong>Đọc điều kiện thương mại:</strong> hiệu lực báo giá, điều kiện thanh toán, tiến độ tính từ ngày duyệt Shop Drawing, bảo hành.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Báo giá thấp bất thường",
+          text: "Chênh lệch lớn giữa 2 báo giá cùng cấu hình thường do khác dòng thiết bị, thanh cái nhỏ hơn, tôn mỏng hơn, hoặc thiếu hạng mục trong phạm vi. Hãy yêu cầu bảng bóc tách chi tiết từng ngăn để đối chiếu.",
         },
       },
       {

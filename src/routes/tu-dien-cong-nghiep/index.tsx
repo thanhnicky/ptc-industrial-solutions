@@ -125,7 +125,7 @@ function Page() {
       </Section>
 
       <LeadSection
-        title="Nhận báo giá tủ điện trong 24h"
+        title="Nhận báo giá tủ điện theo SLD/BOQ"
         defaultNeed="tu-dien"
         sourcePage="tu-dien-cong-nghiep"
       />
