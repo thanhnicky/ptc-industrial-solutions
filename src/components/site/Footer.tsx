@@ -114,6 +114,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link to={"/giai-phap/phoi-hop-tien-do-giao-tu-theo-block" as never} className="transition-colors hover:text-white">
+                Phối hợp tiến độ giao tủ
+              </Link>
+            </li>
+            <li>
               <Link to={"/quy-trinh-san-xuat-tu-dien" as never} className="transition-colors hover:text-white">
                 Quy trình sản xuất 7 bước
               </Link>
