@@ -1418,7 +1418,7 @@ export const KNOWLEDGE_ARTICLES = [
           rows: [
             ["IP31", "Vật rắn > 2.5mm", "Nước nhỏ giọt thẳng đứng", "Tủ trong nhà, phòng điện khô"],
             ["IP42", "Vật rắn > 1mm", "Nước nhỏ giọt nghiêng 15°", "Tủ trong nhà, khu vực có bụi nhẹ"],
-            ["IP54", "Bụi hạn chế", "Vòi phun nước mọi hướng", "Tủ ngoài nhà có mái che"],
+            ["IP54", "Bụi hạn chế", "Nước bắn tóe mọi hướng", "Tủ ngoài nhà có mái che"],
             ["IP55", "Bụi hạn chế", "Vòi phun nước áp lực", "Tủ ngoài trời tiêu chuẩn"],
             ["IP65", "Bụi hoàn toàn", "Tia nước mạnh mọi hướng", "Tủ ngoài trời, rửa được bằng vòi"],
             ["IP66", "Bụi hoàn toàn", "Sóng nước mạnh", "Tủ ngoài trời ven biển, cảng"],
@@ -1457,6 +1457,133 @@ export const KNOWLEDGE_ARTICLES = [
           type: "tip",
           title: "Cần tư vấn tủ ngoài trời cho môi trường đặc thù?",
           text: "Gửi yêu cầu kỹ thuật và mô tả môi trường lắp đặt (ven biển / hóa chất / thực phẩm / đô thị) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ đề xuất cấp IP, vật liệu, lớp phủ và hệ thống chống đọng sương phù hợp.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54",
+    title: "So sánh cấp bảo vệ IP31, IP42, IP54 cho tủ điện trong nhà: Chọn đúng theo môi trường nhà xưởng",
+    category: "Vỏ tủ cơ khí",
+    readTime: "7 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    quickAnswer: "IP31 dùng cho phòng điện khô, sạch, có điều hòa. IP42 dùng cho phòng kỹ thuật hoặc hành lang có bụi nhẹ, có thể có nước nhỏ giọt. IP54 dùng cho xưởng nhiều bụi (dệt sợi, gỗ, cơ khí, xi măng) hoặc khu ẩm có nước bắn tóe. Khu rửa sàn bằng vòi nước và tủ ngoài trời cần IP55/IP65 trở lên. IP càng cao thì tủ càng kín, khó tản nhiệt, nên với IP54 phải tính lại độ tăng nhiệt và dùng quạt có lọc bụi đạt cùng cấp IP.",
+    summary: [
+      "Chữ số đầu của mã IP là cấp chống vật rắn/bụi (3: > 2,5 mm, 4: > 1 mm, 5: chống bụi), chữ số sau là cấp chống nước (1: nhỏ giọt, 2: nhỏ giọt nghiêng 15°, 4: bắn tóe).",
+      "Chọn IP theo môi trường tại vị trí đặt tủ, không theo loại tủ: cùng một tủ MSB có thể là IP31 trong phòng điện nhưng phải IP54 ngoài xưởng.",
+      "Nâng IP sẽ tăng chi phí gioăng, quạt lọc và có thể phải tăng kích thước vỏ để giải nhiệt. Không nên chọn IP54 'cho chắc' khi tủ đặt trong phòng điện khô.",
+    ],
+    body: [
+      {
+        heading: "Mã IP là gì? Cách đọc 2 chữ số theo IEC 60529",
+        paragraphs: [
+          "Cấp bảo vệ IP (Ingress Protection) theo IEC 60529 (TCVN 4255) thể hiện mức độ vỏ tủ ngăn vật rắn, bụi và nước xâm nhập. <strong>Chữ số thứ nhất</strong> là cấp chống vật rắn và bụi, <strong>chữ số thứ hai</strong> là cấp chống nước. Chữ <em>X</em> nghĩa là cấp đó không được công bố, ví dụ IPX4 hoặc IP4X.",
+        ],
+        table: {
+          headers: ["Chữ số", "Chống vật rắn / bụi (số thứ nhất)", "Chống nước (số thứ hai)"],
+          rows: [
+            ["1", "Vật > 50 mm (mu bàn tay)", "Nước nhỏ giọt thẳng đứng"],
+            ["2", "Vật > 12,5 mm (ngón tay)", "Nước nhỏ giọt khi vỏ nghiêng 15°"],
+            ["3", "Vật > 2,5 mm (dụng cụ, dây cứng)", "Nước phun mưa (đến 60° so với phương thẳng đứng)"],
+            ["4", "Vật > 1 mm (dây nhỏ)", "Nước bắn tóe từ mọi hướng"],
+            ["5", "Chống bụi (bụi lọt vào không ảnh hưởng vận hành)", "Tia nước từ vòi phun mọi hướng"],
+            ["6", "Kín bụi hoàn toàn", "Tia nước mạnh"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "IP không bao gồm chống va đập",
+          text: "Khả năng chịu va đập cơ học được đánh giá bằng mã IK theo IEC 62262 (ví dụ IK08, IK10), không nằm trong mã IP. Ở khu vực có xe nâng, xe đẩy, hãy ghi rõ cả mã IK trong yêu cầu kỹ thuật.",
+        },
+      },
+      {
+        heading: "So sánh nhanh IP31, IP42, IP43 và IP54 cho tủ điện trong nhà",
+        table: {
+          headers: ["Tiêu chí", "IP31", "IP42", "IP43", "IP54"],
+          rows: [
+            ["Chống vật rắn", "> 2,5 mm", "> 1 mm", "> 1 mm", "Chống bụi"],
+            ["Chống nước", "Nhỏ giọt thẳng đứng", "Nhỏ giọt nghiêng 15°", "Phun mưa", "Bắn tóe mọi hướng"],
+            ["Thông gió", "Khe thoáng hở, tản nhiệt tốt", "Khe thoáng có che chắn", "Khe thoáng có che chắn, chống mưa xiên", "Gioăng kín, quạt/khe có lọc bụi IP54"],
+            ["Môi trường phù hợp", "Phòng điện khô, sạch, có điều hòa", "Phòng kỹ thuật, hành lang, bụi nhẹ", "Khu có mái che nhưng có thể bị nước tạt", "Xưởng nhiều bụi, khu ẩm, nước bắn"],
+            ["Chi phí vỏ tương đối", "Thấp nhất", "Thấp", "Trung bình", "Cao hơn (gioăng, lọc, có thể tăng kích thước)"],
+          ],
+        },
+        paragraphs: [
+          "IP43 có trong một số thiết kế (trạm kiosk, khu có mái che) nhưng ít được dùng cho tủ trong nhà. Trên thực tế, tủ trong nhà thường được chọn theo 3 mốc là IP31, IP42 và IP54.",
+        ],
+      },
+      {
+        heading: "Chọn cấp IP theo môi trường nhà xưởng",
+        table: {
+          headers: ["Vị trí / ngành", "Đặc điểm môi trường", "Cấp IP khuyến nghị"],
+          rows: [
+            ["Phòng điện tổng, phòng MSB có điều hòa", "Khô, sạch, có kiểm soát ra vào", "IP31"],
+            ["Phòng kỹ thuật tầng, hành lang kỹ thuật, tòa văn phòng", "Bụi nhẹ, có thể nhỏ giọt từ ống trên trần", "IP42"],
+            ["Xưởng lắp ráp điện tử, kho thành phẩm", "Bụi nhẹ, không có nước", "IP42"],
+            ["Xưởng cơ khí, gia công kim loại", "Bụi kim loại, dầu bắn", "IP54"],
+            ["Dệt may, sợi, chế biến gỗ", "Bụi xơ, mùn cưa dễ cháy bám vào thiết bị", "IP54"],
+            ["Xi măng, thức ăn chăn nuôi, bột", "Bụi mịn mật độ cao", "IP54 (cân nhắc IP65)"],
+            ["Tầng hầm, trạm bơm, khu ẩm", "Độ ẩm cao, có thể bị nước bắn", "IP54 + điện trở sấy"],
+            ["Thực phẩm, đồ uống, thủy sản – khu rửa sàn bằng vòi", "Phun rửa trực tiếp, hóa chất vệ sinh", "IP65/IP66, vỏ inox"],
+            ["Ngoài trời, mái solar", "Mưa, nắng, đọng sương", "IP55/IP65 (xem bài tủ ngoài trời)"],
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Khu vực có bụi hoặc khí dễ nổ nằm ngoài phạm vi mã IP",
+          text: "Kho sơn, kho dung môi, silo bột và khu xử lý khí gas cần thiết bị phòng nổ (Ex) theo IEC 60079 và phân vùng nguy hiểm. Tủ IP54 hoặc IP65 thông thường không thay thế được tủ phòng nổ.",
+        },
+      },
+      {
+        heading: "Đánh đổi khi nâng IP: tản nhiệt và độ tăng nhiệt",
+        paragraphs: [
+          "Tủ càng kín thì nhiệt từ thanh cái, MCCB/ACB, biến tần, tụ bù càng khó thoát ra ngoài. Theo IEC 61439, nhà sản xuất phải kiểm chứng độ tăng nhiệt cho đúng cấu hình vỏ thực tế. Vì vậy cùng một tủ, khi nâng từ IP31 lên IP54 có thể phải giảm dòng định mức của thiết bị, tăng kích thước vỏ hoặc bổ sung quạt.",
+          "Với tủ IP54 có tải nhiệt lớn (tủ MCC, tủ biến tần, tủ tụ bù), giải pháp thường dùng là <strong>quạt hút và cửa gió có lưới lọc đạt IP54</strong>, điều khiển bằng thermostat. Ở môi trường bụi nặng hoặc nóng, có thể dùng thêm điều hòa tủ hoặc bộ trao đổi nhiệt. Với tủ biến tần, xem thêm bài <a href=\"/kien-thuc/roi-tu-mcc-dung-vsd-cho-bom-quat\" class=\"text-primary font-medium\">tính ROI tủ MCC dùng VSD</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Lưới lọc bụi cần được bảo trì",
+          text: "Lưới lọc bị bám bụi làm lưu lượng gió giảm mạnh và tủ nóng dần. Ở xưởng dệt hoặc xưởng gỗ, nên đưa việc vệ sinh hoặc thay lưới lọc vào lịch bảo trì định kỳ.",
+        },
+      },
+      {
+        heading: "Những chi tiết làm tủ không đạt IP như đã công bố",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Lỗ đi cáp không bịt kín:</strong> Mã IP chỉ còn đúng khi lỗ chờ cáp dùng ốc siết cáp (cable gland) hoặc tấm đáy kín đạt cùng cấp IP. Lỗ khoét thủ công tại công trường thường làm tủ mất IP54.",
+            "<strong>Thiết bị gắn trên cửa:</strong> Đồng hồ, đèn báo, nút nhấn, màn hình HMI và quạt phải có cấp IP mặt trước không thấp hơn IP của tủ.",
+            "<strong>Gioăng cửa và khóa:</strong> IP54 cần gioăng liền khép kín và khóa ép đều. Gioăng dán rời dễ bong sau vài lần mở cửa.",
+            "<strong>Ghép tủ nhiều ngăn:</strong> Mối ghép giữa các ngăn và với bệ tủ phải có gioăng. Mặt đáy hở đặt trên mương cáp sẽ là đường cho bụi và hơi ẩm vào tủ.",
+            "<strong>Mở cửa khi vận hành:</strong> IP được thử khi cửa đóng. Khi mở cửa, phần mang điện vẫn phải được che chắn tối thiểu IPXXB (không chạm được bằng ngón tay) bằng tấm che hoặc mặt nạ.",
+          ],
+        },
+      },
+      {
+        heading: "Ghi cấp IP trong hồ sơ thiết kế và Shop Drawing",
+        paragraphs: [
+          "Khi lập yêu cầu kỹ thuật hoặc duyệt Shop Drawing, nên ghi cấp IP theo <strong>từng tủ và vị trí lắp đặt</strong>, không chỉ ghi chung một cấp IP cho cả dự án. Kèm theo nên ghi mã IK nếu có nguy cơ va đập, cách thông gió (tự nhiên/quạt lọc/điều hòa) và hướng cáp vào để nhà sản xuất chọn đúng tấm đáy và ốc siết cáp.",
+          "Tham khảo thêm: <a href=\"/kien-thuc/tu-dien-ngoai-troi-ip55-ip65\" class=\"text-primary font-medium\">tủ điện ngoài trời IP55/IP65 và chống đọng sương</a> và <a href=\"/kien-thuc/cach-chon-tu-dien-msb\" class=\"text-primary font-medium\">cách chọn tủ điện MSB</a>.",
+        ],
+      },
+      {
+        heading: "Dải cấp IP của các dòng tủ PTC",
+        table: {
+          headers: ["Dòng tủ", "Cấp IP sản xuất", "Ghi chú"],
+          rows: [
+            ["<a href=\"/tu-dien-cong-nghiep/tu-dien-tong-msb\" class=\"text-primary font-medium\">Tủ điện tổng MSB</a>", "IP31 – IP54", "Thường IP31/IP42 trong phòng điện"],
+            ["<a href=\"/tu-dien-cong-nghiep/tu-phan-phoi-sdb\" class=\"text-primary font-medium\">Tủ phân phối SDB</a>", "IP31 – IP54", "IP54 khi đặt trong xưởng sản xuất"],
+            ["<a href=\"/tu-dien-cong-nghiep/tu-mcc\" class=\"text-primary font-medium\">Tủ MCC</a>", "IP42 – IP55", "Tính tản nhiệt khi dùng khởi động mềm/biến tần"],
+            ["<a href=\"/tu-dien-cong-nghiep/tu-bien-tan-vsd\" class=\"text-primary font-medium\">Tủ biến tần VSD</a>", "IP42 – IP54", "Quạt tản nhiệt có lọc bụi"],
+            ["<a href=\"/tu-dien-cong-nghiep/tu-dien-ngoai-troi\" class=\"text-primary font-medium\">Tủ điện ngoài trời</a>", "IP55, IP65", "Vỏ 2 lớp, điện trở sấy chống đọng sương"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Chưa chắc nên chọn IP nào?",
+          text: "<a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">Gửi SLD/BOQ cho PTC</a> kèm mô tả vị trí đặt tủ (phòng điện, xưởng, khu ẩm, khu rửa). Kỹ sư PTC sẽ đề xuất cấp IP, cách tản nhiệt và vật liệu vỏ phù hợp trước khi báo giá.",
         },
       },
     ],
