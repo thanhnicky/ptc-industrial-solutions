@@ -1625,6 +1625,142 @@ export const KNOWLEDGE_ARTICLES = [
     ],
   },
   {
+    slug: "chon-kich-thuoc-thang-mang-cap-he-so-lap-day",
+    title: "Cách chọn kích thước thang máng cáp theo hệ số lấp đầy: Công thức, bảng tra và công cụ tính nhanh",
+    category: "Thang máng cáp & BOQ",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    quickAnswer: "Chiều rộng máng cáp W tính theo công thức W ≥ Σ(n·π·d²/4) × (1 + dự phòng) ÷ (K × H), trong đó d là đường kính ngoài cáp, K là hệ số lấp đầy cho phép (thường 40–50%, máng kín hay lấy 45%) và H là chiều cao thành. Riêng cáp lực tiết diện lớn đi trên thang cáp thì xếp 1 lớp, chiều rộng tính theo tổng đường kính cáp cộng khe hở tản nhiệt chứ không theo % lấp đầy. Sau đó luôn kiểm tra tải trọng và nhịp đỡ.",
+    summary: [
+      "Hệ số lấp đầy 40–50% là quy ước thiết kế/spec dự án — IEC 61537 không quy định con số này, tiêu chuẩn đó chỉ thử tải và đặc tính hệ thống.",
+      "Cáp lực lớn trên thang cáp: xếp 1 lớp, chiều rộng ≥ tổng đường kính + khe hở; xếp chồng sẽ phải giảm dòng cho phép của cáp.",
+      "Luôn cộng 20–25% dự phòng mở rộng và kiểm tra tải trọng theo nhịp đỡ trước khi chốt kích thước.",
+    ],
+    body: [
+      {
+        heading: "Vì sao chọn sai kích thước thang máng cáp gây tốn kém?",
+        paragraphs: [
+          "Kích thước thang máng cáp thường được chốt sớm ở giai đoạn thiết kế, nhưng sai lệch chỉ lộ ra khi kéo cáp. <strong>Máng quá nhỏ</strong> khiến cáp bị xếp chồng nhiều lớp, nóng hơn, phải giảm dòng cho phép hoặc tăng tiết diện cáp; không còn chỗ cho tuyến cáp bổ sung khi nhà máy mở rộng dây chuyền. <strong>Máng quá lớn</strong> làm tăng khối lượng thép, chi phí mạ, giá đỡ và chiếm không gian trần kỹ thuật vốn đã chật với ống gió, PCCC.",
+          "Lưu ý phạm vi: <em>sụt áp</em> là bài toán chọn tiết diện cáp, không quyết định kích thước máng. Quy trình đúng là chọn cáp trước (theo dòng tải, sụt áp, ngắn mạch), có đường kính ngoài cáp rồi mới tính máng — và nếu máng bắt buộc xếp chồng cáp thì phải quay lại kiểm tra hệ số suy giảm dòng của cáp.",
+        ],
+      },
+      {
+        heading: "4 yếu tố quyết định kích thước thang máng cáp",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Tổng tiết diện ngoài của cáp:</strong> Tính theo <em>đường kính ngoài</em> (gồm vỏ bọc) lấy từ catalogue nhà sản xuất cáp, không dùng tiết diện lõi đồng (mm² danh định).",
+            "<strong>Cách xếp cáp:</strong> Cáp điều khiển, tín hiệu, cáp lực nhỏ có thể xếp nhiều lớp và tính theo hệ số lấp đầy. Cáp lực tiết diện lớn trên thang cáp nên xếp 1 lớp, có hoặc không có khe hở tản nhiệt.",
+            "<strong>Dự phòng mở rộng:</strong> Spec dự án thường yêu cầu chừa 20–25% không gian trống cho tuyến cáp tương lai.",
+            "<strong>Tải trọng và nhịp đỡ:</strong> Khối lượng cáp (kg/m) phải nhỏ hơn tải trọng làm việc an toàn của thang/khay ở nhịp đỡ thực tế. Đây là phần quyết định độ dày tôn và khoảng cách ty treo.",
+          ],
+        },
+      },
+      {
+        heading: "Hệ số lấp đầy (filling factor) là gì và nên lấy bao nhiêu?",
+        paragraphs: [
+          "Hệ số lấp đầy K là tỷ lệ giữa tổng tiết diện ngoài của cáp và tiết diện hữu ích của máng (rộng × cao). Chừa phần trống giúp không khí lưu thông, dễ kéo cáp, dễ bảo trì và có chỗ cho cáp bổ sung.",
+        ],
+        table: {
+          headers: ["Loại hệ dẫn cáp", "Ứng dụng điển hình", "Cách tính kích thước", "Ngưỡng thường dùng"],
+          rows: [
+            ["Máng cáp kín (trunking)", "Cáp điều khiển, tín hiệu, cáp lực nhỏ trong nhà", "Theo hệ số lấp đầy", "K ≤ 40–45% (hướng dẫn IET theo BS 7671 dùng 45%)"],
+            ["Khay cáp đục lỗ (tray)", "Cáp lực nhánh, cáp động lực vừa", "Theo hệ số lấp đầy, hạn chế số lớp", "K ≤ 40–50% theo spec dự án"],
+            ["Thang cáp (ladder) – cáp nhỏ", "Nhiều cáp điều khiển/tín hiệu", "Theo hệ số lấp đầy", "K ≤ 50%"],
+            ["Thang cáp (ladder) – cáp lực lớn", "Cáp trục chính từ MSB, cáp 1 lõi ≥ 95mm²", "Xếp 1 lớp: tổng đường kính + khe hở", "Không tính theo %"],
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "\"50%\" không phải con số của IEC 61537",
+          text: "IEC 61537 quy định yêu cầu và thử nghiệm cho hệ thống thang/khay cáp (tải trọng làm việc an toàn, độ võng, liên tục điện, chống ăn mòn) — không quy định hệ số lấp đầy. Ngưỡng 40–50% đến từ hướng dẫn lắp đặt (ví dụ hướng dẫn IET theo BS 7671, NEC Article 392) hoặc chỉ dẫn kỹ thuật của tư vấn. Khi duyệt hồ sơ, hãy dẫn đúng nguồn trong spec dự án.",
+        },
+      },
+      {
+        heading: "Công thức tính chiều rộng máng cáp theo hệ số lấp đầy",
+        paragraphs: [
+          "<strong>Bước 1 — Tổng tiết diện cáp:</strong> A = Σ n × π × d² / 4 (n: số sợi mỗi loại, d: đường kính ngoài, mm).",
+          "<strong>Bước 2 — Chiều rộng tối thiểu:</strong> W ≥ A × (1 + dự phòng) ÷ (K × H), với H là chiều cao thành máng (50 / 75 / 100 / 150 mm).",
+          "<strong>Bước 3 — Làm tròn lên kích thước tiêu chuẩn:</strong> 100, 150, 200, 300, 400, 500, 600, 800 mm… và kiểm tra lại hệ số lấp đầy thực tế.",
+          "<strong>Ví dụ:</strong> Tuyến máng kín đi 20 sợi cáp 4×16 mm² (d ≈ 21 mm) và 10 sợi 4×25 mm² (d ≈ 25 mm). A = 20 × 346 + 10 × 491 ≈ 11.836 mm². Chọn K = 45%, dự phòng 20%, H = 100 mm → W ≥ 11.836 × 1,2 ÷ (0,45 × 100) ≈ 316 mm → chọn <strong>máng 400×100</strong>. Lấp đầy thực tế hiện tại ≈ 30%, sau khi dùng hết dự phòng ≈ 36%.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Tách cáp lực và cáp tín hiệu",
+          text: "Không tính chung cáp lực và cáp tín hiệu/điều khiển vào một khoang. Dùng 2 tuyến riêng hoặc máng có vách ngăn, rồi tính hệ số lấp đầy cho từng khoang.",
+        },
+      },
+      {
+        heading: "Cáp lực lớn trên thang cáp: xếp 1 lớp và khe hở tản nhiệt",
+        paragraphs: [
+          "Với cáp trục chính từ tủ MSB (cáp 1 lõi 120–400 mm², cáp nhiều lõi lớn), dòng cho phép của cáp phụ thuộc mạnh vào cách lắp đặt. Theo IEC 60364-5-52 (TCVN 7447-5-52), cáp trên thang/khay đục lỗ thuộc phương pháp lắp đặt E (cáp nhiều lõi) và F/G (cáp 1 lõi); khi nhiều mạch đặt cạnh nhau phải nhân hệ số suy giảm nhóm theo bảng ở Phụ lục B. Xếp chồng nhiều lớp làm hệ số này giảm thêm.",
+          "Vì vậy cáp lực lớn nên xếp <strong>1 lớp</strong>: chiều rộng thang ≥ (tổng đường kính cáp + khe hở) × (1 + dự phòng). Khe hở bằng 1 đường kính cáp giúp giảm suy giảm nhóm; theo ghi chú của IEC 60364-5-52, khi khoảng hở ngang giữa các cáp lớn hơn 2 lần đường kính thì không cần áp hệ số suy giảm nhóm. NEC Article 392 cũng có nguyên tắc tương tự: cáp từ 4/0 AWG trở lên trên thang cáp phải đi 1 lớp và tổng đường kính không vượt chiều rộng thang.",
+          "<strong>Ví dụ:</strong> 12 sợi cáp 1×240 mm² (d ≈ 27 mm), dự phòng 20%. Xếp sát: (12 × 27) × 1,2 ≈ 389 mm → <strong>thang 400</strong>. Cách nhau 1D: (12 × 27 + 11 × 27) × 1,2 ≈ 745 mm → <strong>thang 800</strong>. Thang rộng hơn nhưng có thể giúp không phải tăng tiết diện cáp — cần so sánh tổng chi phí cáp + thang.",
+        ],
+      },
+      {
+        heading: "Bảng tra nhanh chiều rộng thang cáp cho cáp lực xếp 1 lớp",
+        table: {
+          headers: ["Tuyến cáp", "Đường kính ngoài ~ (mm)", "Xếp sát (+20% dự phòng)", "Cách 1D (+20% dự phòng)"],
+          rows: [
+            ["8 × 1×240 mm²", "27", "300", "500"],
+            ["12 × 1×240 mm²", "27", "400", "800"],
+            ["12 × 1×300 mm²", "30", "500", "1000"],
+            ["6 × 4×95 mm²", "41", "300", "600"],
+            ["10 × 4×50 mm²", "32", "400", "800"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Đường kính cáp chỉ mang tính tham khảo",
+          text: "Đường kính ngoài trong bảng là giá trị điển hình cho cáp Cu/XLPE/PVC 0,6/1kV. Mỗi hãng cáp (và cáp có giáp, cáp chống cháy) có đường kính khác nhau — luôn lấy theo catalogue của cáp được duyệt cho dự án.",
+        },
+      },
+      {
+        heading: "Công cụ tính nhanh kích thước thang máng cáp",
+        paragraphs: [
+          "Dùng công cụ bên dưới bài viết: nhập đường kính ngoài và số sợi của từng loại cáp, chọn loại hệ dẫn cáp, chiều cao thành, hệ số lấp đầy và dự phòng. Với thang cáp, công cụ so sánh cả 2 điều kiện (hệ số lấp đầy và xếp 1 lớp) rồi chọn điều kiện bất lợi hơn.",
+        ],
+      },
+      {
+        heading: "Kiểm tra tải trọng và nhịp đỡ — bước hay bị bỏ qua",
+        paragraphs: [
+          "Chiều rộng đủ chưa có nghĩa là thang chịu được tải. Tổng khối lượng cáp (kg/m, cộng từ catalogue cáp) phải nhỏ hơn tải trọng làm việc an toàn (SWL) của thang/khay ở nhịp đỡ thực tế, được nhà sản xuất công bố theo thử nghiệm IEC 61537. Khi tải lớn, có thể tăng độ dày tôn, tăng chiều cao thành, rút ngắn nhịp đỡ (thường 1,5–2 m) hoặc chia tuyến.",
+          "Ngoài tải cáp, cần tính thêm tải tập trung khi thi công/bảo trì, tải gió với tuyến ngoài trời (mái solar) và lựa chọn lớp phủ phù hợp môi trường — xem <a href=\"/kien-thuc/ma-kem-nhung-nong-va-ma-kem-dien-phan\" class=\"text-primary font-medium\">so sánh mạ kẽm nhúng nóng và mạ kẽm điện phân</a>.",
+        ],
+      },
+      {
+        heading: "Checklist trước khi chốt kích thước thang máng cáp",
+        list: {
+          ordered: true,
+          items: [
+            "Đã có danh sách cáp theo từng đoạn tuyến (cable schedule) với đường kính ngoài theo catalogue.",
+            "Đã tách tuyến cáp lực và cáp điều khiển/tín hiệu (hoặc có vách ngăn).",
+            "Đã chọn đúng loại: <a href=\"/kien-thuc/phan-biet-thang-cap-khay-cap-mang-cap\" class=\"text-primary font-medium\">thang cáp, khay cáp hay máng cáp</a> theo môi trường và loại cáp.",
+            "Hệ số lấp đầy và dự phòng khớp với chỉ dẫn kỹ thuật của dự án.",
+            "Cáp lực lớn xếp 1 lớp; nếu xếp chồng, đã kiểm tra lại hệ số suy giảm dòng của cáp.",
+            "Đã kiểm tra tải trọng theo nhịp đỡ, độ dày tôn và vị trí ty treo.",
+            "Bán kính uốn tại co/tê đủ cho cáp lớn nhất trên tuyến.",
+            "Đã bóc tách đủ phụ kiện theo <a href=\"/kien-thuc/boc-tach-boq-thang-mang-cap-khong-thieu-phu-kien\" class=\"text-primary font-medium\">checklist BOQ 12 hạng mục</a>.",
+          ],
+        },
+      },
+      {
+        heading: "PTC hỗ trợ tính kích thước và bóc tách thang máng cáp",
+        paragraphs: [
+          "PTC sản xuất <a href=\"/thang-mang-cap/thang-cap\" class=\"text-primary font-medium\">thang cáp</a>, <a href=\"/thang-mang-cap/khay-cap\" class=\"text-primary font-medium\">khay cáp</a> và <a href=\"/thang-mang-cap/mang-cap\" class=\"text-primary font-medium\">máng cáp</a> theo kích thước BOQ. Gửi bản vẽ tuyến cáp và cable schedule, kỹ sư PTC sẽ kiểm tra kích thước theo hệ số lấp đầy, tải trọng nhịp đỡ và phát hành BOQ kèm báo giá.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Cần kiểm tra kích thước tuyến cáp cho dự án?",
+          text: "<a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">Gửi bản vẽ/BOQ cho PTC</a> hoặc gửi qua Zalo. Ban Kỹ thuật PTC sẽ rà soát kích thước, độ dày, lớp phủ và phụ kiện trước khi báo giá.",
+        },
+      },
+    ],
+  },
+  {
     slug: "ma-kem-nhung-nong-va-ma-kem-dien-phan",
     title: "Phân biệt mạ kẽm nhúng nóng và mạ kẽm điện phân cho thang máng cáp nhà xưởng",
     category: "Vật liệu & Xử lý bề mặt",

@@ -13,6 +13,7 @@ import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
 import { IcwCalculator } from "@/components/site/IcwCalculator";
 import { VsdCalculator } from "@/components/site/VsdCalculator";
+import { CableTrayCalculator } from "@/components/site/CableTrayCalculator";
 
 interface BodySection {
   heading: string;
@@ -251,6 +252,14 @@ function Page() {
               <SectionHeading eyebrow="Công cụ tương tác" title="Tính ROI biến tần VSD trực tiếp" />
               <div className="mt-4">
                 <VsdCalculator />
+              </div>
+            </div>
+          )}
+          {article.slug === "chon-kich-thuoc-thang-mang-cap-he-so-lap-day" && (
+            <div>
+              <SectionHeading eyebrow="Công cụ tương tác" title="Tính kích thước thang máng cáp" />
+              <div className="mt-4">
+                <CableTrayCalculator />
               </div>
             </div>
           )}
