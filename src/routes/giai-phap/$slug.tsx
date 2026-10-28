@@ -23,6 +23,7 @@ const SOLUTIONS_DATA: Record<
     painPoints: { pain: string; solution: string }[];
     recommendedProducts: string[];
     faqs: { question: string; answer: string }[];
+    cover?: { src: string; og: string; alt: string; caption?: string };
   }
 > = {
   "tu-dien-cho-nha-may": {
@@ -144,6 +145,12 @@ const SOLUTIONS_DATA: Record<
       "Cập nhật tiến độ sản xuất định kỳ: Tổng thầu nắm trạng thái từng tủ trong danh mục, phát hiện rủi ro chậm từ sớm.",
       "Đồng bộ tủ điện và thang máng cáp: Thang máng cáp có thể giao trước để công trường kéo cáp, tủ giao theo đợt đóng điện.",
     ],
+    cover: {
+      src: "/images/giai-phap/phoi-hop-tien-do-giao-tu-theo-block.svg",
+      og: "/images/giai-phap/phoi-hop-tien-do-giao-tu-theo-block.png",
+      alt: "Biểu đồ tiến độ giao tủ điện theo block A, B, C: duyệt Shop Drawing, sản xuất, Routine Test, giao tủ và mốc đóng điện; thang máng cáp giao trước",
+      caption: "Lịch giao tủ theo block được lập ngược từ mốc đóng điện của từng khu vực.",
+    },
     painPoints: [
       { pain: "Công trường đã kéo cáp xong nhưng tủ điện chưa về, không đấu nối và đóng điện được", solution: "Lịch giao tủ được lập ngược từ mốc đóng điện của từng block, tủ cho block cần đóng điện trước được sản xuất trước." },
       { pain: "Tủ về quá sớm, phòng điện chưa hoàn thiện, phải lưu kho ngoài công trường, dễ ẩm và va đập", solution: "Giao theo đợt khi mặt bằng sẵn sàng. Tủ hoàn thiện có thể lưu tại xưởng PTC cho tới đợt giao." },
@@ -200,6 +207,18 @@ export const Route = createFileRoute("/giai-phap/$slug")({
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "og:url", content: `https://www.tudienptc.vn/giai-phap/${loaderData?.slug}` },
+        ...(data.cover
+          ? [
+              { property: "og:image", content: `https://www.tudienptc.vn${data.cover.og}` },
+              { property: "og:image:secure_url", content: `https://www.tudienptc.vn${data.cover.og}` },
+              { property: "og:image:type", content: "image/png" },
+              { property: "og:image:width", content: "1200" },
+              { property: "og:image:height", content: "630" },
+              { property: "og:image:alt", content: data.cover.alt },
+              { name: "twitter:image", content: `https://www.tudienptc.vn${data.cover.og}` },
+              { name: "twitter:image:alt", content: data.cover.alt },
+            ]
+          : []),
       ],
       links: [{ rel: "canonical", href: `https://www.tudienptc.vn/giai-phap/${loaderData?.slug}` }],
     };
@@ -247,6 +266,25 @@ function Page() {
               {solution.directAnswer}
             </p>
           </div>
+
+          {solution.cover && (
+            <figure className="not-prose overflow-hidden rounded-lg border border-border bg-card">
+              <img
+                src={solution.cover.src}
+                alt={solution.cover.alt}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full"
+              />
+              {solution.cover.caption && (
+                <figcaption className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
+                  {solution.cover.caption}
+                </figcaption>
+              )}
+            </figure>
+          )}
 
           <QuickSummary
             title="Lợi ích cốt lõi của giải pháp"

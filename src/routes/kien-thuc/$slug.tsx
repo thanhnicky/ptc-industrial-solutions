@@ -34,6 +34,7 @@ interface ArticleType {
   quickAnswer: string;
   summary: string[];
   body: BodySection[];
+  cover?: { src: string; og: string; alt: string; caption?: string };
 }
 
 export const Route = createFileRoute("/kien-thuc/$slug")({
@@ -63,6 +64,18 @@ export const Route = createFileRoute("/kien-thuc/$slug")({
         { property: "article:published_time", content: article.datePublished },
         { property: "article:modified_time", content: article.dateModified },
         { property: "article:author", content: article.author },
+        ...(article.cover
+          ? [
+              { property: "og:image", content: `https://www.tudienptc.vn${article.cover.og}` },
+              { property: "og:image:secure_url", content: `https://www.tudienptc.vn${article.cover.og}` },
+              { property: "og:image:type", content: "image/png" },
+              { property: "og:image:width", content: "1200" },
+              { property: "og:image:height", content: "630" },
+              { property: "og:image:alt", content: article.cover.alt },
+              { name: "twitter:image", content: `https://www.tudienptc.vn${article.cover.og}` },
+              { name: "twitter:image:alt", content: article.cover.alt },
+            ]
+          : []),
       ],
       links: [{ rel: "canonical", href: `https://www.tudienptc.vn/kien-thuc/${article.slug}` }],
     };
@@ -93,7 +106,7 @@ function Page() {
         datePublished={article.datePublished}
         dateModified={article.dateModified}
         authorName={article.author}
-        image="/logo-ptc.png"
+        image={article.cover?.og ?? "/logo-ptc.png"}
       />
       <FAQSchema items={faqs} />
 
@@ -145,6 +158,25 @@ function Page() {
               <p className="mt-1">{article.quickAnswer}</p>
             </div>
           </div>
+
+          {article.cover && (
+            <figure className="not-prose overflow-hidden rounded-lg border border-border bg-card">
+              <img
+                src={article.cover.src}
+                alt={article.cover.alt}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full"
+              />
+              {article.cover.caption && (
+                <figcaption className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
+                  {article.cover.caption}
+                </figcaption>
+              )}
+            </figure>
+          )}
 
           <QuickSummary
             title="Tóm tắt nhanh các điểm quan trọng"

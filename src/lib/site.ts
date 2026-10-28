@@ -1045,6 +1045,12 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-20",
     dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/tieu-chuan-iec-61439-la-gi.svg",
+      og: "/images/kien-thuc/tieu-chuan-iec-61439-la-gi.png",
+      alt: "Sơ đồ hai lớp kiểm chứng theo IEC 61439: Design Verification cho thiết kế hệ tủ và Routine Test cho từng tủ, dẫn tới bộ hồ sơ hoàn công",
+      caption: "Design Verification, Routine Test và bộ hồ sơ hoàn công theo IEC 61439.",
+    },
     quickAnswer: "IEC 61439 là tiêu chuẩn quốc tế cho cụm đóng cắt và điều khiển hạ thế (thay IEC 60439). Có 2 lớp kiểm chứng: Design Verification (Type Test) do nhà sản xuất gốc của hệ tủ thực hiện 1 lần cho mỗi thiết kế, gồm 13 đặc tính; Routine Test do nhà lắp ráp thực hiện trên 100% tủ trước khi xuất xưởng, gồm 10 hạng mục theo Mục 11 IEC 61439-1. Hồ sơ hoàn công cần có biên bản Routine Test, bằng chứng Design Verification, bản vẽ As-built và CO/CQ thiết bị.",
     summary: [
       "Phân biệt IEC 61439-1 (Quy tắc chung) và IEC 61439-2 (Tủ phân phối và điều khiển công nghiệp).",
@@ -1512,6 +1518,12 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-10-27",
     dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54.svg",
+      og: "/images/kien-thuc/so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54.png",
+      alt: "Bảng so sánh cấp bảo vệ IP31, IP42, IP54 và IP55/IP65 cho tủ điện: ý nghĩa từng chữ số và môi trường lắp đặt phù hợp",
+      caption: "So sánh nhanh ý nghĩa và môi trường dùng của các cấp IP thường gặp.",
+    },
     quickAnswer: "IP31 dùng cho phòng điện khô, sạch, có điều hòa. IP42 dùng cho phòng kỹ thuật hoặc hành lang có bụi nhẹ, có thể có nước nhỏ giọt. IP54 dùng cho xưởng nhiều bụi (dệt sợi, gỗ, cơ khí, xi măng) hoặc khu ẩm có nước bắn tóe. Khu rửa sàn bằng vòi nước và tủ ngoài trời cần IP55/IP65 trở lên. IP càng cao thì tủ càng kín, khó tản nhiệt, nên với IP54 phải tính lại độ tăng nhiệt và dùng quạt có lọc bụi đạt cùng cấp IP.",
     summary: [
       "Chữ số đầu của mã IP là cấp chống vật rắn/bụi (3: > 2,5 mm, 4: > 1 mm, 5: chống bụi), chữ số sau là cấp chống nước (1: nhỏ giọt, 2: nhỏ giọt nghiêng 15°, 4: bắn tóe).",
@@ -1802,6 +1814,12 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-10-27",
     dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/chon-kich-thuoc-thang-mang-cap-he-so-lap-day.svg",
+      og: "/images/kien-thuc/chon-kich-thuoc-thang-mang-cap-he-so-lap-day.png",
+      alt: "Mặt cắt máng cáp với bề rộng W, chiều cao H, công thức chọn kích thước theo hệ số lấp đầy K và công thức xếp một lớp cho thang cáp",
+      caption: "Công thức chọn bề rộng máng/khay theo hệ số lấp đầy và thang cáp theo cách xếp một lớp.",
+    },
     quickAnswer: "Chiều rộng máng cáp W tính theo công thức W ≥ Σ(n·π·d²/4) × (1 + dự phòng) ÷ (K × H), trong đó d là đường kính ngoài cáp, K là hệ số lấp đầy cho phép (thường 40–50%, máng kín hay lấy 45%) và H là chiều cao thành. Riêng cáp lực tiết diện lớn đi trên thang cáp thì xếp 1 lớp, chiều rộng tính theo tổng đường kính cáp cộng khe hở tản nhiệt chứ không theo % lấp đầy. Sau đó luôn kiểm tra tải trọng và nhịp đỡ.",
     summary: [
       "Hệ số lấp đầy 40–50% là quy ước thiết kế/spec dự án — IEC 61537 không quy định con số này, tiêu chuẩn đó chỉ thử tải và đặc tính hệ thống.",
@@ -2212,6 +2230,12 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-10-27",
     dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/cai-tao-he-thong-dien-nha-may-khong-dung-san-xuat.svg",
+      og: "/images/kien-thuc/cai-tao-he-thong-dien-nha-may-khong-dung-san-xuat.png",
+      alt: "5 bước cải tạo hệ thống điện nhà máy không dừng sản xuất và sơ đồ chuyển tải qua tủ MSB mới lắp song song với nguồn tạm",
+      caption: "Quy trình 5 bước và phương án chuyển tải từng lộ sang tủ mới.",
+    },
     quickAnswer: "Muốn cải tạo hoặc thay tủ MSB mà không dừng sản xuất, cần: (1) khảo sát và đo tải thực tế, (2) phân loại tải theo mức độ được phép gián đoạn, (3) chọn phương án chuyển tải: thi công cuốn chiếu trong giờ nghỉ, dùng nguồn tạm (máy phát + tủ ATS tạm), hoặc lắp tủ mới song song rồi chuyển từng lộ, (4) lập kế hoạch cutover chi tiết theo từng bước và có phương án quay lui, (5) thực hiện cắt điện an toàn LOTO, thử nghiệm và kiểm tra thứ tự pha trước khi đóng điện lại.",
     summary: [
       "Không dừng sản xuất toàn nhà máy không có nghĩa là không cắt điện: mỗi lộ vẫn bị cắt trong khung chuyển tải ngắn, đã được lên lịch trước với sản xuất.",
@@ -3562,6 +3586,12 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-10-27",
     dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/tham-dinh-shop-drawing-tu-dien-ha-the.svg",
+      og: "/images/kien-thuc/tham-dinh-shop-drawing-tu-dien-ha-the.png",
+      alt: "Sơ đồ đơn tuyến tủ điện hạ thế với 8 điểm cần kiểm tra khi thẩm định Shop Drawing: ACB tổng, CT, thanh cái, lộ ra MCCB, N/PE, Form và IP, điều khiển, đầu cáp",
+      caption: "8 điểm rà soát trên SLD khi thẩm định Shop Drawing tủ điện hạ thế.",
+    },
     quickAnswer:
       "Thẩm định Shop Drawing tủ điện hạ thế là đối chiếu bản vẽ nhà sản xuất với thiết kế được duyệt theo 5 nhóm: (1) sơ đồ đơn tuyến SLD — In, Icu/Ics, số cực, CT; (2) thanh cái — tiết diện, Icw/thời gian, N và PE; (3) cấu trúc vỏ — Form, IP, kích thước, hướng cáp vào; (4) mạch nhị thứ — interlock, ATS, tụ bù; (5) danh mục thiết bị và hãng. Sai ở bước này sẽ thành lỗi sản xuất không sửa được.",
     summary: [
