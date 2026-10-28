@@ -965,7 +965,7 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Bước 3: Chọn cấp phân tách Form tủ theo yêu cầu an toàn bảo trì",
         paragraphs: [
-          "Form tủ (Form of separation) quy định mức độ cách ly vật lý giữa thanh cái chính và các ngăn thiết bị, ảnh hưởng trực tiếp đến <strong>an toàn khi bảo trì tủ đang có điện</strong>. IEC 61439-1 định nghĩa 4 cấp Form chính:",
+          "Form tủ (Form of separation) quy định mức độ cách ly vật lý giữa thanh cái chính và các ngăn thiết bị, ảnh hưởng trực tiếp đến <strong>an toàn khi bảo trì tủ đang có điện</strong>. IEC 61439-2 định nghĩa các cấp Form chính, so sánh chi tiết trong bài <a href=\"/kien-thuc/so-sanh-form-tu-dien-form-1-2b-3b-4b\" class=\"text-primary font-medium\">Form 1, 2b, 3b, 4b</a>:",
         ],
         table: {
           headers: ["Form", "Phân tách", "Ứng dụng", "Khuyến nghị"],
@@ -1639,6 +1639,172 @@ export const KNOWLEDGE_ARTICLES = [
           type: "tip",
           title: "Chưa chắc nên chọn IP nào?",
           text: "<a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">Gửi SLD/BOQ cho PTC</a> kèm mô tả vị trí đặt tủ (phòng điện, xưởng, khu ẩm, khu rửa). Kỹ sư PTC sẽ đề xuất cấp IP, cách tản nhiệt và vật liệu vỏ phù hợp trước khi báo giá.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "so-sanh-form-tu-dien-form-1-2b-3b-4b",
+    title: "Form tủ điện là gì? So sánh Form 1, 2b, 3b, 4b theo IEC 61439-2 và cách chọn",
+    category: "Vỏ tủ cơ khí",
+    readTime: "8 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/so-sanh-form-tu-dien-form-1-2b-3b-4b.svg",
+      og: "/images/kien-thuc/so-sanh-form-tu-dien-form-1-2b-3b-4b.png",
+      alt: "Sơ đồ mặt cắt 4 cấp phân tách tủ điện Form 1, Form 2b, Form 3b, Form 4b: vị trí vách ngăn giữa thanh cái, thiết bị ACB/MCCB và đầu cáp ra",
+      caption: "Vách ngăn (đường đậm) trong từng Form: càng lên cao, thanh cái, từng thiết bị và từng đầu cáp càng được cách ly riêng.",
+    },
+    quickAnswer: "Form tủ điện (Form of internal separation) theo IEC 61439-2 quy định tủ được chia ngăn bên trong tới mức nào giữa thanh cái, các thiết bị đóng cắt (đơn vị chức năng) và đầu cáp ra. Form 1 không có vách ngăn. Form 2b tách thanh cái khỏi thiết bị và đầu cáp. Form 3b tách thêm từng thiết bị với nhau và tách đầu cáp khỏi thiết bị. Form 4b đưa đầu cáp của từng lộ vào ngăn riêng. Form càng cao thì sự cố ở một lộ càng khó lan sang lộ khác và bảo trì càng an toàn, nhưng tủ to và đắt hơn. Thông thường DB nhỏ dùng Form 1, SDB/MSB tòa nhà dùng Form 2b, MSB nhà máy chạy liên tục và tủ MCC dùng Form 3b, data center và bệnh viện dùng Form 4b.",
+    summary: [
+      "Form chỉ nói về vách ngăn bên trong tủ giữa 3 vùng: thanh cái, thiết bị và đầu cáp. Form không thay thế cấp IP của vỏ tủ, kiểu ngăn kéo hay khả năng chịu hồ quang nội bộ.",
+      "Chữ 'a' và 'b' chỉ khác nhau ở đầu cáp: 'b' là đầu cáp được tách khỏi thanh cái (Form 2b, 3b) hoặc nằm ở ngăn riêng, không chung ngăn với thiết bị (Form 4b).",
+      "Chọn Form theo yêu cầu vận hành: lộ nào cần bảo trì khi các lộ khác vẫn chạy. Chọn Form 4b 'cho chắc' làm tủ to hơn, đắt hơn, có thể không vừa phòng điện.",
+    ],
+    body: [
+      {
+        heading: "Form tủ điện là gì? 3 vùng cần phân tách",
+        paragraphs: [
+          "Form (Form of internal separation) là cách IEC 61439-2 phân loại mức độ chia ngăn bên trong một tủ điện hạ thế. Tiêu chuẩn chia tủ thành 3 vùng: <strong>thanh cái chính</strong>, <strong>đơn vị chức năng</strong> (ACB, MCCB, khởi động từ cùng phụ kiện của từng lộ) và <strong>đầu nối cáp ra</strong> (cầu đấu hoặc đầu cốt của từng lộ). Form cho biết vùng nào được ngăn với vùng nào bằng vách ngăn, tấm chắn kim loại hoặc vật liệu cách điện, hoặc bằng vỏ cách điện của chính thiết bị.",
+          "Vách ngăn giữa các ngăn phải đạt tối thiểu IPXXB (không chạm được ngón tay vào phần mang điện), trừ khi bên mua và nhà sản xuất có thỏa thuận khác. Mục đích là hạn chế người vận hành chạm vào phần mang điện của ngăn bên cạnh, và hạn chế dị vật hoặc sự cố ở một lộ lan sang lộ khác.",
+        ],
+        callout: {
+          type: "info",
+          title: "Form 1–4 lấy theo IEC 61439-2, không phải IEC 61439-1",
+          text: "IEC 61439-1 là quy định chung cho mọi tủ hạ thế. Các Form 1, 2a, 2b, 3a, 3b, 4a, 4b được định nghĩa trong IEC 61439-2, phần dành cho tủ phân phối và điều khiển công suất (PSC-assembly) như MSB, SDB, MCC. Khi ghi spec, nên ghi rõ \"Form 3b theo IEC 61439-2\".",
+        },
+      },
+      {
+        heading: "Bảng so sánh Form 1, 2a, 2b, 3a, 3b, 4a, 4b",
+        paragraphs: [
+          "Bảng dưới tóm tắt Form theo 5 câu hỏi: vùng nào đã được ngăn với vùng nào. \"Có\" là đã có vách ngăn hoặc tấm chắn giữa 2 vùng.",
+        ],
+        table: {
+          headers: [
+            "Form",
+            "Thanh cái tách khỏi thiết bị",
+            "Các thiết bị tách nhau",
+            "Đầu cáp tách khỏi thanh cái",
+            "Đầu cáp tách khỏi thiết bị",
+            "Đầu cáp các lộ tách nhau",
+          ],
+          rows: [
+            ["Form 1", "Không", "Không", "Không", "Không", "Không"],
+            ["Form 2a", "Có", "Không", "Không", "Không", "Không"],
+            ["Form 2b", "Có", "Không", "Có", "Không", "Không"],
+            ["Form 3a", "Có", "Có", "Không", "Có", "Không"],
+            ["Form 3b", "Có", "Có", "Có", "Có", "Không"],
+            ["Form 4a", "Có", "Có", "Có", "Chung ngăn với thiết bị của chính lộ đó", "Có"],
+            ["Form 4b", "Có", "Có", "Có", "Có (ngăn đầu cáp riêng)", "Có"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Cách nhớ nhanh",
+          text: "Số 2: che thanh cái. Số 3: thêm ngăn riêng cho từng thiết bị. Số 4: thêm ngăn riêng cho đầu cáp từng lộ. Chữ b: đầu cáp được tách khỏi thanh cái (Form 2, 3) hoặc nằm ngoài ngăn thiết bị (Form 4).",
+        },
+      },
+      {
+        heading: "Form 2b, 3b, 4b khác nhau thế nào khi vận hành thực tế",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Form 2b:</strong> thanh cái đã được che, nhưng các ACB/MCCB nằm chung một khoang. Muốn đấu lại cáp hoặc thay một MCCB, người làm việc vẫn ở gần phần mang điện của các lộ khác, nên thường phải cắt điện cả tủ hoặc cả cột tủ.",
+            "<strong>Form 3b:</strong> mỗi thiết bị có ngăn riêng, đầu cáp nằm ở khoang cáp tách khỏi thiết bị và thanh cái. Sự cố ở một lộ ít lan sang lộ bên cạnh. Có thể lên kế hoạch bảo trì từng lộ, áp dụng quy trình an toàn phù hợp, mà các lộ khác vẫn vận hành.",
+            "<strong>Form 4b:</strong> đầu cáp của mỗi lộ cũng có ngăn riêng. Khi đấu nối hoặc kiểm tra cáp một lộ, người làm việc không tiếp cận đầu cáp của lộ khác. Đây là cấp hay được chỉ định cho data center, bệnh viện và các dự án FDI có spec khắt khe.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Form 4b không có nghĩa là được làm việc khi tủ đang mang điện",
+          text: "Form chỉ giảm rủi ro tiếp xúc và lan sự cố. Có được thao tác trên một ngăn khi các ngăn khác vẫn có điện hay không là do quy trình an toàn của chủ đầu tư quyết định: cắt điện, khóa thẻ LOTO, thử không điện, dùng bảo hộ. Form 4b không thay thế các bước này.",
+        },
+      },
+      {
+        heading: "Form khác với IP, kiểu ngăn kéo và chống hồ quang nội bộ",
+        paragraphs: [
+          "Bốn thông số này thường bị gộp chung trong hồ sơ mời thầu nhưng là các yêu cầu độc lập. Cần ghi riêng từng thông số:",
+        ],
+        table: {
+          headers: ["Thông số", "Trả lời câu hỏi", "Ví dụ ghi spec"],
+          rows: [
+            ["Form (IEC 61439-2)", "Bên trong tủ được chia ngăn tới mức nào", "Form 3b"],
+            ["Cấp IP của vỏ (IEC 60529)", "Vỏ ngoài chống bụi, nước tới mức nào", "IP42 trong phòng điện, IP54 ngoài xưởng"],
+            [
+              "Kiểu đơn vị chức năng",
+              "Thiết bị lắp cố định, tháo lắp hay ngăn kéo rút ra được",
+              "MCCB cố định, ngăn kéo cho lộ động cơ quan trọng",
+            ],
+            [
+              "Chịu hồ quang nội bộ (IEC TR 61641)",
+              "Tủ đã được thử nghiệm hồ quang nội bộ hay chưa",
+              "Nếu cần, ghi rõ dòng và thời gian thử",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Chọn Form theo loại tủ và loại công trình",
+        paragraphs: [
+          "Đây là mức khuyến nghị phổ biến. Form cuối cùng nên theo yêu cầu của tư vấn thiết kế và chủ đầu tư. Cách chọn Form cùng các thông số khác của MSB có trong bài <a href=\"/kien-thuc/cach-chon-tu-dien-msb\" class=\"text-primary font-medium\">cách chọn tủ điện tổng MSB cho nhà máy</a>.",
+        ],
+        table: {
+          headers: ["Loại tủ / công trình", "Form thường chọn", "Lý do"],
+          rows: [
+            ["DB tầng, tủ chiếu sáng, tủ phụ trợ", "Form 1 hoặc 2a", "Tải nhỏ, cắt điện cả tủ khi bảo trì vẫn chấp nhận được"],
+            ["SDB, MSB tòa nhà văn phòng, chung cư", "Form 2b", "Thanh cái được che, đấu cáp an toàn hơn, chi phí hợp lý"],
+            ["MSB nhà máy sản xuất liên tục", "Form 3b", "Sự cố hoặc bảo trì một lộ ít ảnh hưởng các lộ đang chạy"],
+            ["Tủ MCC", "Form 3b, thường kèm ngăn kéo cho động cơ quan trọng", "Thay nhanh khởi động từ, cô lập sự cố từng động cơ"],
+            ["Data center, bệnh viện, FDI có spec khắt khe", "Form 4b", "Cô lập tối đa từng lộ, kể cả đầu cáp"],
+          ],
+        },
+      },
+      {
+        heading: "Form cao hơn ảnh hưởng gì đến kích thước và chi phí tủ",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Thêm vách ngăn và chi tiết cơ khí:</strong> mỗi cấp Form thêm vách ngăn, tấm chắn và cửa ngăn, nên vật tư vỏ và giờ công lắp ráp tăng.",
+            "<strong>Tủ rộng và sâu hơn:</strong> Form 3b, 4b cần khoang cáp riêng đủ rộng để uốn và đấu cáp lực lớn, nên mặt bằng tủ tăng. Cần kiểm tra lại kích thước phòng điện và lối thao tác.",
+            "<strong>Tản nhiệt khó hơn:</strong> nhiều ngăn kín làm không khí lưu thông kém. Có thể phải tính lại độ tăng nhiệt, giảm tải định mức thiết bị hoặc tăng thông gió.",
+            "<strong>Thời gian thiết kế và sản xuất dài hơn:</strong> mặt cắt ngăn, vị trí đầu cáp và hướng cáp vào phải được duyệt kỹ trên Shop Drawing trước khi gia công.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Đừng chọn Form 4b \"cho chắc\"",
+          text: "Với DB tầng hoặc tủ phụ trợ chỉ vài lộ, chọn Form 4b làm tủ to và đắt hơn nhiều mà gần như không thêm lợi ích vận hành. Nên chọn Form theo từng loại tủ trong SLD, không áp một Form cho toàn bộ dự án.",
+        },
+      },
+      {
+        heading: "Ghi Form trong hồ sơ mời thầu và Shop Drawing thế nào cho đúng",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Ghi đủ chữ a/b:</strong> \"Form 4\" chưa đủ. Form 4a và 4b khác nhau về vị trí đầu cáp, nên khác cả kích thước và giá.",
+            "<strong>Làm rõ \"Type\" nếu spec theo tiêu chuẩn Anh:</strong> một số spec theo BS EN 61439-2 ghi thêm \"Type 1…7\" sau Form, quy định cách tách (bằng vỏ bọc cách điện hay vách ngăn rắn). Cần hỏi tư vấn để ghi đúng Type yêu cầu.",
+            "<strong>Ghi vật liệu vách ngăn và cấp bảo vệ giữa các ngăn:</strong> vách kim loại hay cách điện, tối thiểu IPXXB hay cao hơn.",
+            "<strong>Ghi kiểu đơn vị chức năng:</strong> lắp cố định, tháo lắp hay ngăn kéo, cho từng nhóm lộ.",
+            "<strong>Yêu cầu Shop Drawing thể hiện mặt cắt ngăn:</strong> vị trí vách ngăn, khoang cáp, hướng cáp vào (trên/dưới) và khoảng trống đấu cáp. Xem thêm <a href=\"/kien-thuc/tham-dinh-shop-drawing-tu-dien-ha-the\" class=\"text-primary font-medium\">hướng dẫn thẩm định Shop Drawing tủ điện hạ thế</a>.",
+          ],
+        },
+      },
+      {
+        heading: "3 hiểu lầm thường gặp về Form tủ điện",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>\"Form càng cao thì IP càng cao\":</strong> sai. Form là vách ngăn bên trong, IP là độ kín của vỏ ngoài. Cấp IP chọn theo môi trường đặt tủ, xem bài <a href=\"/kien-thuc/so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54\" class=\"text-primary font-medium\">so sánh IP31, IP42, IP54</a> và bài <a href=\"/kien-thuc/tu-dien-ngoai-troi-ip55-ip65\" class=\"text-primary font-medium\">tủ điện ngoài trời IP55/IP65</a>.",
+            "<strong>\"Có ngăn kéo là Form 4\":</strong> sai. Ngăn kéo là kiểu lắp thiết bị. Tủ ngăn kéo vẫn có thể là Form 3b nếu đầu cáp các lộ dùng chung khoang cáp.",
+            "<strong>\"Form là thông số của nhà sản xuất tự chọn\":</strong> Form phải được kiểm chứng cùng thiết kế hệ tủ theo IEC 61439 (độ tăng nhiệt, cấp bảo vệ giữa các ngăn). Xem thêm <a href=\"/kien-thuc/tieu-chuan-iec-61439-la-gi\" class=\"text-primary font-medium\">Design Verification và Routine Test theo IEC 61439</a>.",
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Chưa chắc nên chọn Form nào?",
+          text: "Gửi SLD hoặc BOQ cho PTC qua trang <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ/BOQ</a>. Kỹ sư PTC sẽ đề xuất Form cho từng tủ theo yêu cầu vận hành và mặt bằng phòng điện, kèm phương án giá để so sánh.",
         },
       },
     ],
