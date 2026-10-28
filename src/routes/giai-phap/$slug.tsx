@@ -131,6 +131,32 @@ const SOLUTIONS_DATA: Record<
       { question: "Khoảng cách giá treo thang máng cáp tiêu chuẩn là bao nhiêu?", answer: "Khoảng cách giá treo/quang treo tiêu chuẩn khuyến nghị là từ 1.5m đến 2.0m để đảm bảo độ võng nằm trong giới hạn an toàn kỹ thuật cho phép." },
     ],
   },
+  "phoi-hop-tien-do-giao-tu-theo-block": {
+    title: "Phối hợp tiến độ giao tủ điện theo block thi công cho Tổng thầu M&E | PTC",
+    h1: "Phối hợp tiến độ giao tủ điện theo từng block thi công",
+    desc: "Quy trình PTC phối hợp với tổng thầu M&E: lập lịch giao tủ điện và thang máng cáp theo block, tầng, giai đoạn thi công, cập nhật tiến độ sản xuất định kỳ để tránh lệch pha giữa công trường và nhà máy.",
+    heroSubtitle: "Tủ về đúng lúc công trường cần, không về sớm chiếm mặt bằng, không về muộn làm chậm đóng điện.",
+    directAnswer: "PTC lập lịch sản xuất và giao tủ điện theo đúng trình tự thi công của từng dự án: chia đợt giao theo block, tầng hoặc giai đoạn đóng điện, ưu tiên các tủ nằm trên đường găng (MSB, tủ cấp nguồn tạm, tủ cho khu cần đóng điện sớm). Thời gian sản xuất phụ thuộc quy mô, thiết bị và thời điểm duyệt Shop Drawing của từng dự án, nên PTC xác nhận lịch giao cụ thể sau khi có danh mục tủ và tiến độ tổng của tổng thầu.",
+    bullets: [
+      "Chia đợt giao theo block/tầng/giai đoạn: Danh mục tủ được nhóm theo trình tự công trường cần, không sản xuất dàn trải.",
+      "Ưu tiên tủ trên đường găng: MSB, tủ cấp nguồn thi công, tủ cho khu vực đóng điện thử sớm được lên lịch trước.",
+      "Đặt thiết bị dài ngày từ sớm: ACB, MCCB khung lớn, biến tần, thiết bị nhập khẩu được đặt hàng ngay khi chốt cấu hình.",
+      "Cập nhật tiến độ sản xuất định kỳ: Tổng thầu nắm trạng thái từng tủ trong danh mục, phát hiện rủi ro chậm từ sớm.",
+      "Đồng bộ tủ điện và thang máng cáp: Thang máng cáp có thể giao trước để công trường kéo cáp, tủ giao theo đợt đóng điện.",
+    ],
+    painPoints: [
+      { pain: "Công trường đã kéo cáp xong nhưng tủ điện chưa về, không đấu nối và đóng điện được", solution: "Lịch giao tủ được lập ngược từ mốc đóng điện của từng block, tủ cho block cần đóng điện trước được sản xuất trước." },
+      { pain: "Tủ về quá sớm, phòng điện chưa hoàn thiện, phải lưu kho ngoài công trường, dễ ẩm và va đập", solution: "Giao theo đợt khi mặt bằng sẵn sàng. Tủ hoàn thiện có thể lưu tại xưởng PTC cho tới đợt giao." },
+      { pain: "Shop Drawing duyệt chậm hoặc thay đổi thiết kế giữa chừng làm vỡ tiến độ", solution: "Tách duyệt Shop Drawing theo đợt, chốt trước các tủ của block đầu. Thay đổi được đánh giá ảnh hưởng tới lịch giao trước khi triển khai." },
+      { pain: "Không biết tủ đang ở công đoạn nào, chỉ biết khi đã trễ", solution: "PTC cập nhật trạng thái từng tủ (đặt thiết bị, gia công vỏ, lắp ráp, Routine Test, sẵn sàng giao) cho tổng thầu theo định kỳ." },
+    ],
+    recommendedProducts: ["Tủ điện tổng MSB", "Tủ phân phối DB / SDB", "Tủ điều khiển MCC", "Thang máng cáp mạ kẽm nhúng nóng"],
+    faqs: [
+      { question: "Thời gian sản xuất tủ điện của PTC là bao lâu?", answer: "Tùy dự án: phụ thuộc số lượng tủ, dòng định mức, cấu hình Form, thiết bị có sẵn hay phải nhập, và thời điểm duyệt Shop Drawing. PTC xác nhận lịch giao cụ thể cho từng đợt sau khi nhận danh mục tủ và tiến độ tổng của dự án." },
+      { question: "PTC có giao tủ theo nhiều đợt cho một dự án không?", answer: "Có. PTC chia đợt giao theo block, tầng hoặc giai đoạn đóng điện theo yêu cầu của tổng thầu, thay vì giao toàn bộ một lần." },
+      { question: "Tổng thầu cần cung cấp gì để PTC lập lịch giao tủ?", answer: "Danh mục tủ hoặc SLD/BOQ, tiến độ tổng của dự án với các mốc đóng điện từng block, và đầu mối kỹ thuật để duyệt Shop Drawing. Bạn có thể gửi qua trang Gửi bản vẽ/BOQ." },
+    ],
+  },
   "gia-cong-theo-ban-ve-va-boq": {
     title: "Gia công Tủ điện & Thang máng cáp theo Bản vẽ và BOQ yêu cầu | PTC",
     h1: "Dịch vụ Gia công Tủ điện & Thang máng cáp theo Bản vẽ & BOQ",
