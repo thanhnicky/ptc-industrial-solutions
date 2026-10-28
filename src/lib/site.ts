@@ -3336,7 +3336,7 @@ export const KNOWLEDGE_ARTICLES = [
     readTime: "8 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2026-09-10",
-    dateModified: "2026-09-10",
+    dateModified: "2026-10-27",
     quickAnswer: "Tủ điện cho dự án EPC solar gồm 3 loại: tủ DC combiner (IP65, SPD Type 2, fuse per string), tủ AC phân phối (MCCB + đo lường), tủ hòa lưới (ACB + relay bảo vệ 27/59/81 + anti-islanding). Yêu cầu: đúng thông số inverter, cấp bảo vệ ngoài trời, hồ sơ đấu nối EVN. PTC kế thừa kinh nghiệm từ Powertech — đã thực hiện nhiều dự án solar quy mô MWp.",
     summary: [
       "3 loại tủ: DC combiner IP65, AC phân phối, tủ hòa lưới với relay bảo vệ + anti-islanding.",
@@ -3366,35 +3366,42 @@ export const KNOWLEDGE_ARTICLES = [
         list: {
           ordered: false,
           items: [
-            "<strong>Cấp IP:</strong> IP65 ngoài trời (không dùng IP54 — không đủ chống mưa gió mùa).",
-            "<strong>SPD DC Type 2:</strong> Chống sét lan truyền trên tuyến cáp DC. Không có SPD → cháy tủ khi sét.",
-            "<strong>Fuse DC per string:</strong> Cô lập sự cố 1 string không ảnh hưởng các string khác.",
-            "<strong>Vỏ Inox 304:</strong> Chống UV > 25 năm. Sơn tĩnh điện bị rỉ sau 2-3 năm ngoài trời.",
+            "<strong>Cấp IP:</strong> IP65 cho tủ đặt lộ thiên trên mái, chịu mưa hắt và nắng trực tiếp. IP54 chỉ nên dùng khi tủ có mái che hoặc đặt trong phòng kỹ thuật.",
+            "<strong>SPD DC:</strong> Type 2 cho đa số mái nhà xưởng. Dùng Type 1 hoặc Type 1+2 khi công trình có hệ thống chống sét trực tiếp mà không giữ được khoảng cách cách ly với dàn pin (IEC 60364-7-712, IEC 61643-32). Nhiều inverter string đã tích hợp SPD DC Type 2, cần xem datasheet để không lắp trùng hoặc lắp thiếu.",
+            "<strong>Fuse gPV cho từng string:</strong> Cần khi dòng ngược từ các string song song còn lại vượt giá trị cầu chì tối đa của module (IEC 62548), thường là từ 3 string song song trở lên. Dòng định mức fuse trong khoảng 1,5–2,4 lần Isc của module và không vượt giá trị cầu chì tối đa trên datasheet module.",
+            "<strong>Vật liệu vỏ:</strong> Inox 304, thép mạ kẽm sơn tĩnh điện loại ngoài trời, hoặc vỏ composite/polycarbonate chống UV. Khu ven biển hoặc có hóa chất nên dùng inox 316 hoặc composite.",
             "<strong>Điện trở sấy:</strong> Chống đọng sương bên trong tủ khi nhiệt độ thay đổi.",
             "<strong>Điện áp DC:</strong> 1000V hoặc 1500V tùy inverter. Cách điện đúng cấp.",
           ],
         },
         callout: {
           type: "warning",
-          title: "Sai lầm phổ biến: dùng tủ IP54 cho solar rooftop",
-          text: "Nhiều nhà thầu dùng tủ IP54 để tiết kiệm chi phí → nước vào tủ mùa mưa → chập DC → cháy tủ. Chi phí thay tủ + dừng hệ thống > chênh IP65 ban đầu. Luôn dùng IP65 cho tủ DC ngoài trời.",
+          title: "Sai lầm phổ biến: đặt tủ IP54 lộ thiên trên mái",
+          text: "Tủ IP54 chỉ chống nước bắn tóe. Đặt lộ thiên trên mái, mưa hắt theo gió và hơi ẩm ngưng tụ có thể lọt vào tủ, gây phóng điện DC. Tủ DC đặt ngoài trời không có mái che nên dùng IP65, kèm gioăng và ốc siết cáp đạt cùng cấp IP.",
         },
       },
       {
         heading: "Yêu cầu tủ hòa lưới — đấu nối EVN",
         paragraphs: [
-          "Tủ hòa lưới là điểm giao tiếp với lưới quốc gia, phải đáp ứng quy định kỹ thuật đấu nối lưới điện phân phối của EVN:",
+          "Tủ hòa lưới là điểm giao tiếp với lưới quốc gia. Tủ phải đáp ứng Thông tư 05/2025/TT-BCT về hệ thống phân phối điện, Nghị định 58/2025/NĐ-CP về điện mặt trời mái nhà tự sản xuất, tự tiêu thụ, và thỏa thuận đấu nối với Điện lực địa phương:",
         ],
         list: {
           ordered: false,
           items: [
-            "<strong>Relay bảo vệ 27/59/81:</strong> Kém áp (27), quá áp (59), tần số (81) — ngắt hòa lưới khi lưới bất thường.",
-            "<strong>Anti-islanding:</strong> Ngắt hòa lưới khi lưới EVN mất điện, tránh nuôi ngược lưới.",
+            "<strong>Bảo vệ điện áp (27/59) và tần số (81/81O/81U):</strong> Inverter đạt chuẩn đã tích hợp các chức năng này. Tủ hòa lưới chỉ cần thêm rơ le riêng khi thỏa thuận đấu nối hoặc thiết kế yêu cầu.",
+            "<strong>Chống tách đảo (anti-islanding):</strong> Inverter phải tự ngắt khi lưới mất điện, tránh cấp ngược lên lưới (inverter đạt IEC 62116). Cần có biên bản thử chức năng này khi nghiệm thu.",
+            "<strong>Kết nối giám sát, điều khiển:</strong> Hệ thống từ 100 kW trở lên đấu nối lưới phải trang bị thiết bị kết nối với hệ thống giám sát, điều khiển của cấp điều độ phân phối, theo yêu cầu kỹ thuật EVN công bố (Quyết định 378/QĐ-EVN ngày 12/3/2025). Tủ hòa lưới cần có chỗ lắp datalogger, thiết bị truyền thông và đồng hồ đo đếm theo yêu cầu này.",
             "<strong>ACB:</strong> Máy cắt chính, dòng định mức theo công suất inverter tổng.",
             "<strong>Đo lường:</strong> Đồng hồ đo sản lượng điện bán lên lưới (kWh meter).",
             "<strong>Liên động:</strong> ACB hòa lưới liên động với ACB máy phát (nếu có) để không đóng song song.",
           ],
         },
+      },
+      {
+        heading: "Nghiệm thu và các lỗi thiết kế thường gặp",
+        paragraphs: [
+          "Trước khi đóng điện, đối chiếu tủ với <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a>. Khi duyệt bản vẽ, rà theo <a href=\"/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap\" class=\"text-primary font-medium\">10 lỗi thiết kế tủ điện solar thường gặp</a>.",
+        ],
       },
       {
         heading: "Kinh nghiệm thực tế từ dự án Powertech / PTC",
@@ -3433,6 +3440,248 @@ export const KNOWLEDGE_ARTICLES = [
           type: "tip",
           title: "EPC solar cần tủ DC/AC + tủ hòa lưới?",
           text: "Gửi thông số inverter (model, công suất, số string), sơ đồ string, và yêu cầu đấu nối EVN qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ thiết kế tủ DC/AC, tính toán bảo vệ, và gửi báo giá trong thời gian sớm nhất. PTC kế thừa kinh nghiệm Powertech — đã thực hiện nhiều dự án solar MWp. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "checklist-nghiem-thu-tu-dien-solar-hoa-luoi",
+    title: "Checklist nghiệm thu tủ điện solar hòa lưới: tủ DC, tủ AC và hồ sơ đấu nối",
+    category: "EPC & Solar",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi.svg",
+      og: "/images/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi.png",
+      alt: "Sơ đồ 4 bước nghiệm thu tủ điện solar hòa lưới: FAT tại xưởng, kiểm tra trước đóng điện, thử chức năng hòa lưới và hồ sơ đấu nối",
+      caption: "4 bước nghiệm thu tủ điện solar hòa lưới và các hạng mục chính cần kiểm tra ở mỗi bước.",
+    },
+    readTime: "9 phút",
+    quickAnswer: "Nghiệm thu tủ điện solar hòa lưới có 3 bước. (1) Nghiệm thu tại xưởng (FAT): Routine Test từng tủ theo IEC 61439 và kiểm tra định mức DC của thiết bị. (2) Kiểm tra tại hiện trường trước khi đóng điện theo IEC 62446-1: cực tính, Voc/Isc từng string, điện trở cách điện mạch DC, nối đất và SPD. (3) Thử chức năng hòa lưới: chống tách đảo, setting bảo vệ điện áp/tần số, đo đếm, giới hạn phát lên lưới, và kết nối giám sát nếu hệ thống từ 100 kW trở lên. Hồ sơ đấu nối làm theo Nghị định 58/2025/NĐ-CP, Thông tư 05/2025/TT-BCT và yêu cầu của Điện lực địa phương.",
+    summary: [
+      "Chia nghiệm thu thành 3 bước: tại xưởng, tại hiện trường trước khi đóng điện, và thử chức năng hòa lưới. Lỗi phát hiện ở xưởng rẻ hơn nhiều so với lỗi phát hiện trên mái.",
+      "Phần DC là nơi dễ sai nhất: định mức điện áp DC của thiết bị, cực tính, fuse gPV, SPD và độ kín của ốc siết cáp.",
+      "Chuẩn bị hồ sơ từ đầu dự án: biên bản Routine Test, biên bản thử nghiệm string, bảng setting bảo vệ và hồ sơ theo Nghị định 58/2025/NĐ-CP.",
+    ],
+    body: [
+      {
+        heading: "3 bước nghiệm thu tủ điện solar",
+        table: {
+          headers: ["Bước", "Thực hiện tại", "Mục tiêu", "Căn cứ"],
+          rows: [
+            [
+              "1. Nghiệm thu tại xưởng (FAT)",
+              "Xưởng sản xuất tủ",
+              "Tủ đúng bản vẽ, đạt Routine Test",
+              "IEC 61439-1/-2, Shop Drawing đã duyệt",
+            ],
+            ["2. Kiểm tra trước đóng điện", "Hiện trường", "Lắp đặt, đấu nối, cách điện đúng", "IEC 62446-1, IEC 60364-6"],
+            [
+              "3. Thử chức năng hòa lưới",
+              "Hiện trường, có Điện lực khi được yêu cầu",
+              "Inverter và tủ hòa lưới tác động đúng",
+              "Thỏa thuận đấu nối, IEC 62116",
+            ],
+            [
+              "4. Hồ sơ đấu nối",
+              "Sở Công Thương, Điện lực",
+              "Hệ thống được phép vận hành",
+              "Nghị định 58/2025/NĐ-CP, Thông tư 05/2025/TT-BCT",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Checklist FAT tủ DC combiner tại xưởng",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Định mức điện áp DC:</strong> cầu chì, cầu dao DC, SPD và thanh cái chịu được Voc lớn nhất của string ở nhiệt độ thấp nhất tại công trình (thường là cấp 1000 V hoặc 1500 V DC).",
+            "<strong>Cầu dao cách ly DC:</strong> định mức cho mạch PV (loại sử dụng DC-PV2 theo IEC 60947-3), không dùng thiết bị chỉ có định mức AC.",
+            "<strong>Fuse gPV:</strong> đúng định mức trên bản vẽ, lắp trên cả cực + và − nếu thiết kế yêu cầu, đế fuse có định mức DC.",
+            "<strong>SPD DC:</strong> điện áp Ucpv không nhỏ hơn Voc lớn nhất; đúng Type 1 hoặc Type 2 theo thiết kế; dây nối SPD ngắn và thẳng.",
+            "<strong>Cực tính và nhãn:</strong> mỗi string có ký hiệu +/−, số string khớp sơ đồ; có nhãn cảnh báo mạch DC vẫn có điện khi đã cắt phía AC.",
+            "<strong>Vỏ và ốc siết cáp:</strong> cấp IP, gioăng, ốc siết cáp và lỗ thông hơi đạt cùng cấp IP của tủ.",
+            "<strong>Routine Test:</strong> điện trở cách điện, thử điện môi, liên tục dây bảo vệ PE, kiểm tra lực siết đầu cốt.",
+          ],
+        },
+      },
+      {
+        heading: "Checklist FAT tủ AC và tủ hòa lưới",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Máy cắt tổng:</strong> ACB/MCCB chọn theo dòng ra lớn nhất của các inverter, có tính hệ số nhiệt độ khi đặt tủ trên mái.",
+            "<strong>Liên động:</strong> logic liên động với máy phát hoặc ATS đúng bản vẽ, thử bằng mạch điều khiển tại xưởng.",
+            "<strong>Đo đếm:</strong> vị trí CT, chiều CT và đấu dây đồng hồ đúng sơ đồ; chừa chỗ cho công tơ của Điện lực nếu được yêu cầu.",
+            "<strong>Giám sát:</strong> có chỗ lắp datalogger, bộ điều khiển giới hạn phát (nếu có), thiết bị truyền thông và nguồn cấp cho chúng.",
+            "<strong>Routine Test đủ 10 hạng mục</strong> theo IEC 61439, xem <a href=\"/kien-thuc/tieu-chuan-iec-61439-la-gi\" class=\"text-primary font-medium\">bài IEC 61439</a>.",
+            "<strong>Nhãn hai nguồn:</strong> cảnh báo tủ được cấp điện từ cả lưới và hệ thống solar.",
+          ],
+        },
+      },
+      {
+        heading: "Kiểm tra tại hiện trường trước khi đóng điện (IEC 62446-1)",
+        list: {
+          ordered: true,
+          items: [
+            "Kiểm tra trực quan: tủ đúng vị trí, có mái che nếu thiết kế yêu cầu, ốc siết cáp đã siết, không có lỗ hở.",
+            "Đo liên tục dây bảo vệ và dây nối đẳng thế của khung giàn pin, vỏ tủ.",
+            "Kiểm tra cực tính từng string trước khi lắp fuse hoặc đóng cầu dao DC.",
+            "Đo Voc từng string, so với giá trị tính toán. Sai lệch lớn thường do thiếu tấm, đấu nhầm hoặc đảo cực.",
+            "Đo dòng Isc hoặc dòng vận hành từng string, so sánh giữa các string cùng hướng mái.",
+            "Đo điện trở cách điện mạch DC giữa cực +/− và đất.",
+            "Kiểm tra SPD (cửa sổ trạng thái), đánh dấu lực siết đầu cốt, chụp ảnh nhiệt tủ sau khi chạy tải.",
+          ],
+        },
+      },
+      {
+        heading: "Thử chức năng hòa lưới",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Chống tách đảo:</strong> cắt nguồn lưới phía trên, inverter phải ngừng phát trong thời gian theo tiêu chuẩn và thỏa thuận đấu nối.",
+            "<strong>Setting bảo vệ:</strong> ngưỡng điện áp, tần số và thời gian tác động của inverter (và rơ le nếu có) khớp bảng setting đã được duyệt.",
+            "<strong>Giới hạn phát lên lưới:</strong> nếu dự án không bán điện dư, thử bộ điều khiển chống phát ngược (zero export) ở mức tải thấp.",
+            "<strong>Đo đếm và giám sát:</strong> công tơ ghi đúng chiều; hệ thống từ 100 kW trở lên kết nối được với hệ thống giám sát, điều khiển theo Quyết định 378/QĐ-EVN.",
+          ],
+        },
+      },
+      {
+        heading: "Hồ sơ cần chuẩn bị",
+        table: {
+          headers: ["Hồ sơ", "Bên cung cấp"],
+          rows: [
+            ["CO/CQ module, inverter, tủ điện", "Nhà cung cấp thiết bị, nhà sản xuất tủ"],
+            ["Biên bản Routine Test từng tủ", "Nhà sản xuất tủ"],
+            ["Bản vẽ hoàn công: SLD, sơ đồ string, mặt bằng", "EPC"],
+            ["Biên bản thử nghiệm hiện trường (Voc, Isc, cách điện)", "EPC"],
+            ["Bảng setting bảo vệ inverter, rơ le", "EPC, thống nhất với Điện lực"],
+            ["Thông báo/hồ sơ theo Nghị định 58/2025/NĐ-CP", "Chủ đầu tư hoặc EPC được ủy quyền"],
+            ["Biên bản kết nối giám sát (hệ thống từ 100 kW trở lên)", "EPC và Điện lực"],
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Thủ tục phụ thuộc quy mô và địa phương",
+          text: "Thủ tục đấu nối khác nhau theo quy mô và địa phương. Ví dụ, hệ thống dưới 100 kW chủ yếu gửi thông báo tới Sở Công Thương và Điện lực; hệ thống từ 100 kW trở lên phải có thêm kết nối giám sát, điều khiển. Bài viết dựa trên Nghị định 58/2025/NĐ-CP, Thông tư 05/2025/TT-BCT và Quyết định 378/QĐ-EVN. Trước khi nộp hồ sơ, hãy kiểm tra văn bản sửa đổi mới nhất với Sở Công Thương và Điện lực địa phương.",
+        },
+      },
+      {
+        heading: "Tài liệu liên quan",
+        paragraphs: [
+          "Quy cách tủ DC/AC xem bài <a href=\"/kien-thuc/tu-dien-cho-du-an-epc-solar\" class=\"text-primary font-medium\">tủ điện cho dự án EPC điện mặt trời</a>. Các lỗi thường gặp ở khâu thiết kế xem bài <a href=\"/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap\" class=\"text-primary font-medium\">10 lỗi thiết kế tủ điện solar</a>.",
+        ],
+        callout: {
+          type: "info",
+          title: "Cần PTC rà soát tủ solar cho dự án?",
+          text: "Gửi SLD, model inverter và sơ đồ string qua trang <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ/BOQ</a>. Kỹ sư PTC sẽ rà soát bản vẽ theo checklist này và gửi phương án tủ DC/AC kèm báo giá.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "10-loi-thiet-ke-tu-dien-solar-thuong-gap",
+    title: "10 lỗi thiết kế tủ điện solar thường gặp và cách tránh",
+    category: "EPC & Solar",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap.svg",
+      og: "/images/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap.png",
+      alt: "Sơ đồ hệ thống điện mặt trời từ dàn pin, tủ DC, inverter, tủ AC hòa lưới tới lưới EVN, đánh số 10 lỗi thiết kế tủ điện thường gặp",
+      caption: "Vị trí 10 lỗi thiết kế thường gặp: lỗi 1–5 ở tủ DC, lỗi 6–10 ở tủ AC và hòa lưới.",
+    },
+    readTime: "7 phút",
+    quickAnswer: "Các lỗi thiết kế tủ điện solar thường gặp nhất nằm ở phía DC: thiết bị không đủ định mức điện áp DC ở nhiệt độ thấp, dùng thiết bị AC cho mạch DC, chọn sai fuse gPV hoặc SPD, và đặt tủ IP54 lộ thiên trên mái. Phía AC hay sai ở máy cắt tổng (không tính nhiệt độ trên mái), thiếu liên động với máy phát, đặt sai CT của bộ chống phát ngược, và thiếu nhãn cảnh báo hai nguồn. Hầu hết các lỗi này phát hiện được khi duyệt Shop Drawing, trước khi sản xuất.",
+    summary: [
+      "5 lỗi phía DC và 5 lỗi phía AC/hòa lưới, kèm hậu quả và cách tránh.",
+      "Phần lớn lỗi xuất phát từ việc thiết kế tủ solar như tủ AC thông thường, chưa tính đặc điểm dòng DC và môi trường trên mái.",
+      "Rà các lỗi này ngay ở bước duyệt Shop Drawing sẽ rẻ hơn nhiều so với sửa khi tủ đã lên mái.",
+    ],
+    body: [
+      {
+        heading: "5 lỗi ở tủ DC combiner",
+        table: {
+          headers: ["Lỗi", "Hậu quả", "Cách tránh"],
+          rows: [
+            [
+              "1. Chọn định mức điện áp DC theo Voc ở điều kiện chuẩn (STC)",
+              "Voc tăng khi trời lạnh, có thể vượt định mức thiết bị",
+              "Tính Voc lớn nhất ở nhiệt độ thấp nhất tại công trình",
+            ],
+            [
+              "2. Dùng MCB/cầu dao chỉ có định mức AC cho mạch DC",
+              "Không dập được hồ quang DC khi cắt, có thể cháy thiết bị",
+              "Dùng thiết bị có định mức DC cho mạch PV (DC-PV2)",
+            ],
+            [
+              "3. Fuse gPV sai định mức, hoặc bỏ fuse khi cần",
+              "Fuse nhảy khi vận hành bình thường, hoặc không bảo vệ được module khi có dòng ngược",
+              "Chọn theo IEC 62548: 1,5–2,4 lần Isc, không vượt giá trị cầu chì tối đa của module",
+            ],
+            [
+              "4. SPD sai Ucpv, sai Type, dây nối SPD dài",
+              "SPD hỏng sớm hoặc bảo vệ kém khi có sét",
+              "Ucpv ≥ Voc lớn nhất, chọn Type theo hệ chống sét, dây nối ngắn",
+            ],
+            [
+              "5. Tủ IP54 lộ thiên, hoặc ốc siết cáp không đạt IP",
+              "Nước và hơi ẩm vào tủ, phóng điện DC",
+              "IP65 cho tủ lộ thiên, ốc siết cáp cùng cấp IP, che nắng mưa",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "5 lỗi ở tủ AC và tủ hòa lưới",
+        table: {
+          headers: ["Lỗi", "Hậu quả", "Cách tránh"],
+          rows: [
+            [
+              "6. Không tính nhiệt độ trong tủ đặt trên mái",
+              "Máy cắt bị suy giảm định mức, nhảy vào giờ nắng gắt",
+              "Áp hệ số suy giảm theo nhiệt độ, thông gió, che nắng",
+            ],
+            [
+              "7. Chọn máy cắt tổng theo công suất danh định, bỏ qua dòng ra lớn nhất của inverter",
+              "Máy cắt quá nhỏ thì nhảy, quá lớn thì không bảo vệ được cáp",
+              "Chọn theo dòng ra lớn nhất trên datasheet inverter và tiết diện cáp",
+            ],
+            [
+              "8. Thiếu liên động với máy phát hoặc ATS",
+              "Inverter phát vào nguồn máy phát, máy phát bị công suất ngược",
+              "Liên động cắt solar hoặc giới hạn công suất khi chạy máy phát",
+            ],
+            [
+              "9. Đặt sai vị trí hoặc chiều CT của bộ chống phát ngược",
+              "Hệ thống vẫn phát lên lưới khi không được phép",
+              "Đặt CT tại điểm đấu nối, thử ở mức tải thấp khi nghiệm thu",
+            ],
+            [
+              "10. Thiếu nhãn hai nguồn và điểm cách ly DC",
+              "Nguy hiểm khi bảo trì và chữa cháy",
+              "Nhãn cảnh báo ở tủ AC, tủ DC; bố trí cầu dao cách ly DC dễ tiếp cận",
+            ],
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Kiểm tra lại với datasheet thực tế",
+          text: "Các ngưỡng trong bảng là nguyên tắc chung. Giá trị cụ thể phải lấy từ datasheet của module, inverter, thiết bị đóng cắt đã chọn, và yêu cầu trong thỏa thuận đấu nối của dự án.",
+        },
+      },
+      {
+        heading: "Rà soát các lỗi này ở bước nào",
+        paragraphs: [
+          "Lỗi 1–4 và 6–7 kiểm tra được trên SLD và bảng tính chọn thiết bị. Lỗi 5, 8–10 kiểm tra trên Shop Drawing và bản vẽ mặt bằng đặt tủ. Xem thêm <a href=\"/kien-thuc/tham-dinh-shop-drawing-tu-dien-ha-the\" class=\"text-primary font-medium\">hướng dẫn thẩm định Shop Drawing</a> và <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a>.",
+        ],
+        callout: {
+          type: "info",
+          title: "Cần PTC rà soát tủ solar cho dự án?",
+          text: "Gửi SLD, model inverter và sơ đồ string qua trang <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ/BOQ</a>. Kỹ sư PTC sẽ rà SLD và Shop Drawing theo 10 lỗi này và gửi phương án tủ DC/AC kèm báo giá.",
         },
       },
     ],
