@@ -1039,17 +1039,17 @@ export const KNOWLEDGE_ARTICLES = [
   },
   {
     slug: "tieu-chuan-iec-61439-la-gi",
-    title: "Tiêu chuẩn IEC 61439 trong sản xuất tủ điện hạ thế: Type Test & Routine Test",
+    title: "Tiêu chuẩn IEC 61439 trong sản xuất tủ điện hạ thế: Type Test, Routine Test và hồ sơ hoàn công",
     category: "Tiêu chuẩn & QC",
-    readTime: "8 phút",
+    readTime: "11 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2025-01-20",
-    dateModified: "2026-02-20",
-    quickAnswer: "IEC 61439 là tiêu chuẩn quốc tế cho cụm đóng cắt và điều khiển hạ thế (thay IEC 60439). Quy định: Nhà sản xuất thiết kế gốc (Original Manufacturer) làm Type Test, Nhà sản xuất lắp ráp (Assembly Manufacturer) làm 100% Routine Test trước khi xuất xưởng.",
+    dateModified: "2026-10-27",
+    quickAnswer: "IEC 61439 là tiêu chuẩn quốc tế cho cụm đóng cắt và điều khiển hạ thế (thay IEC 60439). Có 2 lớp kiểm chứng: Design Verification (Type Test) do nhà sản xuất gốc của hệ tủ thực hiện 1 lần cho mỗi thiết kế, gồm 13 đặc tính; Routine Test do nhà lắp ráp thực hiện trên 100% tủ trước khi xuất xưởng, gồm 10 hạng mục theo Mục 11 IEC 61439-1. Hồ sơ hoàn công cần có biên bản Routine Test, bằng chứng Design Verification, bản vẽ As-built và CO/CQ thiết bị.",
     summary: [
       "Phân biệt IEC 61439-1 (Quy tắc chung) và IEC 61439-2 (Tủ phân phối và điều khiển công nghiệp).",
-      "Routine Test bắt buộc 100% từng tủ: Kiểm tra liên tục mạch bảo vệ, đo cách điện (Insulation resistance), thử nghiệm điện áp xoay chiều chịu áp (Dielectric test) và kiểm tra chức năng đóng cắt.",
-      "Hồ sơ nghiệm thu: Tủ xuất xưởng tại PTC luôn đi kèm Biên bản Routine Test và phiếu xuất xưởng chuẩn ISO 9001:2015.",
+      "Routine Test bắt buộc 100% từng tủ với 10 hạng mục: IP, khoảng cách cách điện, mạch bảo vệ PE, lắp đặt thiết bị, mối nối, đầu nối, vận hành cơ khí, điện môi, đi dây/chức năng, nhãn và tài liệu.",
+      "Hồ sơ hoàn công gồm 7 tài liệu: bằng chứng Design Verification, biên bản Routine Test, As-built, CO/CQ, BOM, biên bản nghiệm thu công trường, tài liệu vận hành.",
     ],
     body: [
       {
@@ -1084,58 +1084,101 @@ export const KNOWLEDGE_ARTICLES = [
         ],
       },
       {
-        heading: "Type Test vs Routine Test — 2 lớp thử nghiệm bắt buộc",
+        heading: "Design Verification (Type Test) và Routine Test — 2 lớp kiểm chứng bắt buộc",
         paragraphs: [
-          "IEC 61439 quy định 2 lớp thử nghiệm độc lập, mỗi lớp có mục đích và phạm vi khác nhau:",
+          "IEC 61439 dùng thuật ngữ <strong>Design Verification</strong> (kiểm chứng thiết kế, ngành thường gọi là Type Test) và <strong>Routine Verification</strong> (kiểm chứng xuất xưởng, thường gọi là Routine Test). Hai lớp này khác nhau về mục đích, người thực hiện và tần suất:",
         ],
+        table: {
+          headers: ["Tiêu chí", "Design Verification (Type Test)", "Routine Verification (Routine Test)"],
+          rows: [
+            ["Mục đích", "Chứng minh thiết kế hệ tủ đạt yêu cầu", "Phát hiện lỗi vật liệu và lỗi lắp ráp của từng tủ"],
+            ["Ai thực hiện", "Nhà sản xuất gốc (Original Manufacturer) của hệ tủ", "Nhà lắp ráp tủ (Assembly Manufacturer)"],
+            ["Tần suất", "1 lần cho mỗi thiết kế/hệ tủ", "100% từng tủ, trước khi xuất xưởng"],
+            ["Phương pháp", "Thử nghiệm, so sánh với thiết kế tham chiếu đã thử, hoặc đánh giá/tính toán", "Kiểm tra trực quan, đo và thử tại xưởng"],
+            ["Điều khoản", "Mục 10 IEC 61439-1 — 13 đặc tính", "Mục 11 IEC 61439-1 — 10 hạng mục"],
+            ["Bằng chứng", "Báo cáo thử nghiệm/kiểm chứng của hệ tủ", "Biên bản Routine Test kèm số serial tủ"],
+          ],
+        },
         list: {
           ordered: false,
           items: [
-            "<strong>Type Test (Thử nghiệm kiểu):</strong> Thử nghiệm 1 tủ đại diện trong phòng lab độc lập (như QUATEST 3). Bao gồm 13 hạng mục thử nghiệm: chịu nhiệt, chịu ngắn mạch, bảo vệ IP, khoảng cách điện khí, độ bền cơ khí, rò rỉ dòng điện, cách điện, điện áp chịu đựng, tăng nhiệt, sợi dây nhị thứ, EMC... Type Test chỉ làm 1 lần cho 1 thiết kế tủ, do hãng thiết bị gốc (OM) thực hiện.",
-            "<strong>Routine Test (Thử nghiệm xuất xưởng):</strong> Thử nghiệm 100% MỖI tủ trước khi xuất xưởng — không có ngoại lệ. Do nhà lắp ráp (AM/PTC) thực hiện tại xưởng. Bao gồm 4 hạng mục cốt lõi theo IEC 61439-2 Clause 11.",
+            "<strong>13 đặc tính Design Verification:</strong> độ bền vật liệu và chi tiết, cấp bảo vệ IP, khoảng cách cách điện trong không khí và khoảng cách rò, bảo vệ chống điện giật và tính toàn vẹn mạch bảo vệ, lắp đặt thiết bị đóng cắt, mạch điện bên trong, đầu nối dây ngoài, đặc tính điện môi, độ tăng nhiệt, khả năng chịu ngắn mạch, tương thích điện từ (EMC), vận hành cơ khí.",
+            "<strong>Lưu ý về \"Original Manufacturer\":</strong> Đây là tổ chức đã thiết kế và kiểm chứng hệ tủ — có thể là hãng cung cấp hệ tủ có sẵn kết quả thử, hoặc chính nhà sản xuất tủ nếu tự làm Design Verification. Hãng thiết bị đóng cắt (ACB/MCCB) chỉ chịu trách nhiệm thử thiết bị của họ theo IEC 60947, không thay cho Design Verification của cả tủ.",
           ],
         },
         callout: {
           type: "warning",
           title: "Rủi ro khi nhận tủ không có Routine Test",
-          text: "Nhiều dự án nhỏ hoặc nhà thầu tự lắp ráp không thực hiện Routine Test. Hậu quả: (1) không phát hiện được lỗi đấu nối nhị thứ, (2) không phát hiện cách điện kém do va đập vận chuyển, (3) không nghiệm thu được theo IEC, (4) bảo hiểm từ chối bồi thường khi sự cố. <strong>Luôn yêu cầu biên bản Routine Test khi nhận tủ.</strong>",
+          text: "Nhiều dự án nhỏ hoặc nhà thầu tự lắp ráp không thực hiện Routine Test. Hậu quả: (1) không phát hiện được lỗi đấu nối nhị thứ, (2) không phát hiện cách điện kém do va đập vận chuyển, (3) không nghiệm thu được theo IEC, (4) khó đối chứng trách nhiệm khi có sự cố. <strong>Luôn yêu cầu biên bản Routine Test khi nhận tủ.</strong>",
         },
       },
       {
-        heading: "4 hạng mục Routine Test 100% theo IEC 61439-2 Clause 11",
+        heading: "Danh mục 10 hạng mục Routine Test theo Mục 11 IEC 61439-1",
         paragraphs: [
-          "Tại PTC, mỗi tủ điện xuất xưởng đều trải qua 4 hạng mục Routine Test, được ghi vào biên bản và bàn giao cùng hồ sơ nghiệm thu:",
+          "IEC 61439-2 áp dụng danh mục Routine Verification của IEC 61439-1. Mỗi tủ xuất xưởng cần được kiểm tra đủ 10 hạng mục dưới đây và ghi kết quả vào biên bản:",
         ],
+        table: {
+          headers: ["#", "Hạng mục (Mục 11)", "Nội dung kiểm tra", "Cách thực hiện"],
+          rows: [
+            ["1", "Cấp bảo vệ của vỏ (IP)", "Gioăng, tấm che, lỗ đi cáp, thiết bị gắn cửa đúng thiết kế", "Kiểm tra trực quan"],
+            ["2", "Khoảng cách cách điện và khoảng cách rò", "Khoảng cách giữa các pha, pha–vỏ tại thanh cái và đầu nối", "Đo hoặc kiểm tra trực quan theo thiết kế"],
+            ["3", "Bảo vệ chống điện giật và mạch bảo vệ", "Tấm che IPXXB, liên kết PE của vỏ, cửa, tấm đáy; siết chặt mối nối PE", "Kiểm tra trực quan và kiểm tra ngẫu nhiên lực siết"],
+            ["4", "Lắp đặt thiết bị", "Thiết bị đúng chủng loại, thông số, vị trí theo bản vẽ và hướng dẫn hãng", "Đối chiếu SLD/BOM"],
+            ["5", "Mạch điện bên trong và mối nối", "Lực siết bu-lông thanh cái, đấu nối dây động lực và nhị thứ", "Kiểm tra ngẫu nhiên lực siết bằng cờ lê lực"],
+            ["6", "Đầu nối dây ngoài", "Số lượng, loại và tiết diện đầu cốt/terminal phù hợp cáp đến", "Kiểm tra trực quan"],
+            ["7", "Vận hành cơ khí", "Thao tác ACB/MCCB, khóa liên động cơ khí, khóa cửa, kéo rút ngăn kéo", "Thao tác thực tế"],
+            ["8", "Đặc tính điện môi", "Thử điện áp tần số công nghiệp trong 1 giây (hoặc đo điện trở cách điện cho trường hợp tiêu chuẩn cho phép)", "Máy thử cao áp / megohmmeter"],
+            ["9", "Đi dây, chức năng vận hành", "Đi dây gọn, đánh số dây, nhãn thiết bị; thử chức năng mạch điều khiển, ATS, interlock điện, báo tín hiệu", "Cấp nguồn thử chức năng"],
+            ["10", "Tài liệu và nhãn tủ", "Nhãn thông số tủ (tên nhà sản xuất, mã tủ, tiêu chuẩn, In, Icw, IP…), tài liệu đi kèm", "Kiểm tra trực quan"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Điện áp thử điện môi lấy theo Ui",
+          text: "Giá trị điện áp thử không phải một con số cố định — lấy theo Bảng 8 IEC 61439-1 ứng với điện áp cách điện định mức Ui của mạch chính (ví dụ 1890 V AC cho 300 V < Ui ≤ 690 V). Biên bản cần ghi rõ giá trị điện áp, thời gian và mạch được thử.",
+        },
+      },
+      {
+        heading: "Mẫu nội dung biên bản Routine Test cần có",
         list: {
-          ordered: true,
+          ordered: false,
           items: [
-            "<strong>Kiểm tra liên tục mạch bảo vệ PE (Protective earth continuity):</strong> Đo điện trở giữa terminal PE và mọi phần kim loại trần của vỏ tủ. Điện trở phải ≤ 0.1Ω — đảm bảo khi có dòng rò, bảo vệ sẽ trip trước khi người tiếp xúc bị giật.",
-            "<strong>Đo điện trở cách điện (Insulation resistance test):</strong> Đo bằng megohmmeter 500V/1000V giữa pha-pha, pha-vỏ, pha-PE. Điện trở cách điện phải ≥ 1 MΩ — phát hiện ẩm, bẩn, hoặc cách điện bị thủng.",
-            "<strong>Thử nghiệm điện áp xoay chiều chịu đựng (Dielectric test / Power frequency withstand):</strong> Áp điện áp thử nghiệm 2500V AC (cho tủ 400V) giữa tất cả pha và vỏ trong 1 giây. Không được đánh thủng cách điện — kiểm tra khoảng cách điện khí và chất lượng cách điện.",
-            "<strong>Kiểm tra chức năng đóng cắt (Function test):</strong> Mô phỏng thao tác đóng/cắt ACB/MCCB, kiểm tra relay bảo vệ trip đúng thông số, kiểm tra tín hiệu báo, interlock cơ khí và điện. Đảm bảo tủ vận hành đúng bản vẽ nguyên lý.",
+            "Tên dự án, tên tủ theo SLD, số serial, revision bản vẽ được dùng để sản xuất.",
+            "Thông số định mức: Ue, Ui, In thanh cái, Icw/thời gian, IP, Form phân ngăn.",
+            "Kết quả từng hạng mục trong 10 hạng mục ở trên: Đạt / Không đạt, giá trị đo được (điện áp thử, điện trở cách điện).",
+            "Thiết bị đo đã dùng kèm số hiệu chuẩn còn hiệu lực.",
+            "Ngày thử, người thử, người kiểm tra QC; chữ ký đại diện chủ đầu tư/TVGS nếu có chứng kiến.",
           ],
         },
       },
       {
-        heading: "Hồ sơ nghiệm thu IEC 61439 — chủ đầu tư cần yêu cầu gì?",
+        heading: "Bộ hồ sơ hoàn công tủ điện — chủ đầu tư cần yêu cầu gì?",
         paragraphs: [
-          "Khi nghiệm thu tủ điện theo IEC 61439, chủ đầu tư / tư vấn giám sát cần yêu cầu nhà sản xuất cung cấp bộ hồ sơ đầy đủ:",
+          "Khi nghiệm thu và hoàn công, chủ đầu tư / tư vấn giám sát nên yêu cầu nhà sản xuất bàn giao đủ bộ hồ sơ sau. Với dự án FDI, nên thống nhất danh mục này ngay trong hợp đồng hoặc chỉ dẫn kỹ thuật:",
         ],
-        list: {
-          ordered: false,
-          items: [
-            "<strong>Biên bản Routine Test</strong> — ghi rõ 4 hạng mục, kết quả pass/fail, ngày thử, người thử, số serial tủ.",
-            "<strong>Bản vẽ As-built</strong> — sơ đồ nguyên lý hoàn công, sơ đồ bố trí thiết bị (Layout), sơ đồ đấu nối nhị thứ — có chữ ký kỹ sư thiết kế và kiểm duyệt.",
-            "<strong>CO/CQ thiết bị</strong> — Certificate of Origin / Certificate of Quality cho ACB, MCCB, relay, biến tần... từ hãng chính hãng.",
-            "<strong>Phiếu xuất xưởng</strong> — theo hệ thống ISO 9001:2015, ghi số lot, ngày sản xuất, kiểm tra QC.",
-            "<strong>Tài liệu vận hành</strong> — hướng dẫn vận hành, bảo trì, thông số cài đặt relay, lịch bảo trì định kỳ.",
+        table: {
+          headers: ["Tài liệu", "Nội dung", "Dùng để"],
+          rows: [
+            ["Bằng chứng Design Verification", "Báo cáo thử nghiệm/kiểm chứng của hệ tủ: Icw, độ tăng nhiệt, IP…", "Chứng minh thiết kế tủ đạt IEC 61439"],
+            ["Biên bản Routine Test", "10 hạng mục, kết quả đo, số serial từng tủ", "Nghiệm thu xuất xưởng"],
+            ["Bản vẽ As-built", "SLD, layout mặt trước/mặt cắt, sơ đồ nhị thứ đúng thực tế", "Vận hành, bảo trì, cải tạo sau này"],
+            ["CO/CQ thiết bị chính", "Xuất xứ và chất lượng của ACB, MCCB, relay, CT, đồng thanh cái", "Đối chiếu chủng loại theo BOQ"],
+            ["Danh mục thiết bị (BOM)", "Mã thiết bị, số lượng, hãng, vị trí trong tủ", "Đặt hàng dự phòng, thay thế"],
+            ["Biên bản nghiệm thu tại công trường", "Kiểm tra sau lắp đặt: lực siết, cách điện, PE, thử trip", "Đóng điện vận hành"],
+            ["Tài liệu vận hành & bảo trì", "Hướng dẫn vận hành, cài đặt relay, lịch bảo trì", "Bàn giao cho đội vận hành nhà máy"],
           ],
         },
         callout: {
           type: "tip",
-          title: "PTC bàn giao đầy đủ hồ sơ IEC 61439",
-          text: "Mọi tủ điện xuất xưởng từ PTC đều đi kèm bộ hồ sơ nghiệm thu đầy đủ: Biên bản Routine Test, bản vẽ As-built, CO/CQ thiết bị chính hãng, phiếu xuất xưởng ISO 9001. Quý kỹ sư / tư vấn giám sát có thể yêu cầu xem mẫu hồ sơ trước khi đặt hàng qua Zalo Ban Kỹ thuật PTC.",
+          title: "Chứng kiến thử nghiệm tại xưởng (FAT)",
+          text: "Với tủ MSB và tủ ATS quan trọng, chủ đầu tư/TVGS có thể đề nghị chứng kiến Routine Test tại xưởng trước khi giao hàng. Kết hợp với <a href=\"/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the\" class=\"text-primary font-medium\">checklist nghiệm thu tại công trường</a> để kiểm soát cả trước và sau vận chuyển.",
         },
+      },
+      {
+        heading: "PTC bàn giao hồ sơ IEC 61439 cùng mỗi tủ",
+        paragraphs: [
+          "Mọi tủ điện xuất xưởng từ PTC đều đi kèm biên bản Routine Test, bản vẽ As-built, CO/CQ thiết bị và phiếu xuất xưởng theo ISO 9001. Trước khi đặt hàng, quý kỹ sư / tư vấn giám sát có thể yêu cầu xem mẫu hồ sơ qua Zalo Ban Kỹ thuật PTC, hoặc <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi SLD/BOQ</a> để PTC rà soát yêu cầu thử nghiệm ngay từ đầu.",
+        ],
       },
     ],
   },
