@@ -2205,6 +2205,115 @@ export const KNOWLEDGE_ARTICLES = [
     ],
   },
   {
+    slug: "cai-tao-he-thong-dien-nha-may-khong-dung-san-xuat",
+    title: "Cải tạo, nâng cấp hệ thống điện nhà máy đang vận hành mà không dừng sản xuất: Quy trình và phương án chuyển tải",
+    category: "Nghiệm thu & Vận hành",
+    readTime: "9 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    quickAnswer: "Muốn cải tạo hoặc thay tủ MSB mà không dừng sản xuất, cần: (1) khảo sát và đo tải thực tế, (2) phân loại tải theo mức độ được phép gián đoạn, (3) chọn phương án chuyển tải: thi công cuốn chiếu trong giờ nghỉ, dùng nguồn tạm (máy phát + tủ ATS tạm), hoặc lắp tủ mới song song rồi chuyển từng lộ, (4) lập kế hoạch cutover chi tiết theo từng bước và có phương án quay lui, (5) thực hiện cắt điện an toàn LOTO, thử nghiệm và kiểm tra thứ tự pha trước khi đóng điện lại.",
+    summary: [
+      "Không dừng sản xuất toàn nhà máy không có nghĩa là không cắt điện: mỗi lộ vẫn bị cắt trong khung chuyển tải ngắn, đã được lên lịch trước với sản xuất.",
+      "3 phương án chính: cuốn chiếu theo lộ, nguồn tạm (máy phát + ATS tạm), lắp tủ mới song song rồi chuyển tải từng lộ.",
+      "PTC khảo sát hiện trạng, sản xuất tủ mới và thi công chuyển tải tại nhà máy đang vận hành.",
+    ],
+    body: [
+      {
+        heading: "Vì sao cải tạo điện nhà máy đang chạy là bài toán khó?",
+        paragraphs: [
+          "Nhà máy mở rộng dây chuyền, tăng công suất trạm biến áp hoặc thay tủ MSB đã xuống cấp đều phải can thiệp vào hệ thống đang mang tải. Cắt điện toàn bộ nhà máy trong nhiều ngày thường không chấp nhận được: dây chuyền liên tục (nhựa, thực phẩm, dệt nhuộm, kho lạnh) có thể mất cả mẻ hàng, vi phạm hợp đồng giao hàng hoặc hỏng thiết bị khi dừng đột ngột.",
+          "Vì vậy mục tiêu thực tế là <strong>giảm thời gian gián đoạn của từng phụ tải xuống mức chấp nhận được và đưa vào khung giờ đã thống nhất</strong>, không phải là không bao giờ cắt điện. Muốn làm được vậy, khâu chuẩn bị phải kỹ hơn nhiều so với một dự án xây mới.",
+        ],
+      },
+      {
+        heading: "Bước 1: Khảo sát hiện trạng và đo tải thực tế",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Đối chiếu bản vẽ với hiện trạng:</strong> Bản vẽ hoàn công cũ thường không còn đúng sau nhiều lần cải tạo. Cần đi dò từng lộ ra, ghi nhãn và cập nhật lại SLD trước khi thiết kế.",
+            "<strong>Đo tải thực tế:</strong> Dùng máy phân tích điện năng ghi dòng, công suất, hệ số công suất, sóng hài theo chu kỳ sản xuất để biết tải đỉnh, tải nền và giờ thấp điểm.",
+            "<strong>Đánh giá thiết bị cũ:</strong> Chụp ảnh nhiệt thanh cái và đầu cáp, kiểm tra tình trạng ACB/MCCB, tụ bù, cáp. Đây là cơ sở để quyết định giữ lại, thay một phần hay thay toàn bộ.",
+            "<strong>Kiểm tra không gian và đường cáp:</strong> Vị trí đặt tủ mới hoặc tủ tạm, đường kéo cáp tạm, mương cáp, khả năng đưa tủ vào phòng điện.",
+          ],
+        },
+      },
+      {
+        heading: "Bước 2: Phân loại phụ tải theo mức độ được phép gián đoạn",
+        table: {
+          headers: ["Nhóm tải", "Ví dụ", "Cách xử lý khi chuyển tải"],
+          rows: [
+            ["Không được gián đoạn", "Kho lạnh, lò nung, server, hệ thống PCCC, chiếu sáng sự cố", "Cấp từ nguồn tạm/UPS trước khi cắt, hoặc chuyển nóng qua ATS"],
+            ["Gián đoạn ngắn theo lịch", "Dây chuyền có thể dừng giữa ca, máy nén khí có bình tích", "Chuyển tải trong giờ nghỉ ca, theo lịch đã thống nhất với sản xuất"],
+            ["Gián đoạn dài được", "Văn phòng, kho khô, xưởng phụ", "Chuyển vào cuối tuần hoặc ngày nghỉ của nhà máy"],
+          ],
+        },
+        callout: {
+          type: "tip",
+          title: "Lịch sản xuất quyết định lịch thi công",
+          text: "Ngồi với bộ phận sản xuất để lấy lịch dừng máy bảo trì, ngày nghỉ, ca có tải thấp. Kế hoạch chuyển tải nên bám theo lịch này thay vì theo tiến độ thuận tiện cho đội thi công.",
+        },
+      },
+      {
+        heading: "Bước 3: Chọn phương án chuyển tải",
+        table: {
+          headers: ["Phương án", "Cách làm", "Phù hợp khi"],
+          rows: [
+            ["Thi công cuốn chiếu theo lộ", "Thay/cải tạo từng ngăn, từng lộ ra trong các khung giờ nghỉ ngắn", "Tủ cũ còn tốt, chỉ thay một phần hoặc thêm lộ"],
+            ["Nguồn tạm (máy phát + tủ ATS/phân phối tạm)", "Chuyển tải quan trọng sang nguồn tạm, cắt tủ chính để thi công", "Phải thay thanh cái/ACB tổng hoặc thay cả tủ MSB"],
+            ["Lắp tủ mới song song rồi chuyển từng lộ", "Đặt tủ mới cạnh tủ cũ, đấu nguồn, chuyển lần lượt từng lộ cáp sang", "Thay MSB/SDB cũ, có đủ không gian và nguồn cấp"],
+            ["Đấu nối qua ngăn dự phòng", "Dùng ngăn/MCCB dự phòng sẵn có để cấp cho tủ mới mở rộng", "Mở rộng dây chuyền mới, tủ cũ còn dư công suất"],
+          ],
+        },
+        paragraphs: [
+          "Nhiều dự án kết hợp nhiều phương án: tải không được gián đoạn chạy bằng nguồn tạm, tải còn lại chuyển cuốn chiếu. Khi dùng máy phát tạm, cần tính công suất theo tải đỉnh đo được, dòng khởi động của động cơ lớn và kiểm tra bảo vệ của tủ tạm. Xem thêm <a href=\"/kien-thuc/tu-hoa-dong-bo-la-gi\" class=\"text-primary font-medium\">tủ hòa đồng bộ và ATS</a>.",
+        ],
+      },
+      {
+        heading: "Bước 4: Lập kế hoạch cutover chi tiết",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Biện pháp thi công (method statement):</strong> Mô tả từng bước, thiết bị nào cắt, ai thao tác, ai giám sát, thời điểm bắt đầu và kết thúc dự kiến.",
+            "<strong>Chuẩn bị trước:</strong> Tủ mới đã qua Routine Test tại xưởng, cáp tạm và đầu cốt đã làm sẵn, nhãn lộ đã đánh dấu. Mục tiêu là trong khung cắt điện chỉ còn việc tháo, đấu nối và thử.",
+            "<strong>Phương án quay lui (rollback):</strong> Nếu quá thời gian hoặc có sự cố, phải biết rõ cách đưa hệ thống về trạng thái cũ để sản xuất chạy lại.",
+            "<strong>Phối hợp bên ngoài:</strong> Nếu phải cắt phía trung thế hoặc trạm biến áp, cần đăng ký lịch cắt điện với điện lực từ trước.",
+            "<strong>Kênh liên lạc:</strong> Một đầu mối của nhà máy có quyền quyết định tại chỗ trong suốt khung chuyển tải.",
+          ],
+        },
+      },
+      {
+        heading: "Bước 5: Thi công an toàn và đóng điện lại",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Cắt điện, khóa và treo biển (LOTO):</strong> Có phiếu công tác, kiểm tra không còn điện bằng thiết bị đo trước khi chạm vào, tiếp địa di động khi cần.",
+            "<strong>Cẩn trọng với nguồn ngược:</strong> Máy phát, hệ thống solar áp mái, tụ bù có thể cấp ngược vào phần đã cắt. Cần cô lập tất cả các nguồn.",
+            "<strong>Thử nghiệm trước khi đóng điện:</strong> Đo cách điện cáp và tủ, kiểm tra lực siết đầu cáp, kiểm tra cài đặt bảo vệ của thiết bị mới.",
+            "<strong>Kiểm tra thứ tự pha:</strong> Đổi đầu cáp sai thứ tự pha sẽ làm động cơ quay ngược. Kiểm tra bằng đồng hồ thứ tự pha trước khi cho máy chạy lại.",
+            "<strong>Theo dõi sau đóng điện:</strong> Ghi dòng tải, chụp ảnh nhiệt mối nối mới sau khi có tải và cập nhật bản vẽ hoàn công.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Không làm việc trên thiết bị đang mang điện để kịp tiến độ",
+          text: "Áp lực không dừng sản xuất không phải lý do để thao tác trên thanh cái đang mang điện. Nếu không thể cắt điện, hãy chọn phương án nguồn tạm hoặc tủ song song thay vì làm việc có điện.",
+        },
+      },
+      {
+        heading: "PTC hỗ trợ cải tạo hệ thống điện nhà máy đang vận hành",
+        paragraphs: [
+          "PTC nhận khảo sát hiện trạng, thiết kế lại SLD, sản xuất tủ mới (MSB, SDB, MCC, ATS) và thi công chuyển tải tại nhà máy đang vận hành, theo lịch sản xuất của khách hàng. Tủ được thử nghiệm Routine Test tại xưởng trước khi đưa vào công trường để rút ngắn khung cắt điện. Sau khi đóng điện, PTC bàn giao <a href=\"/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the\" class=\"text-primary font-medium\">hồ sơ nghiệm thu</a> đầy đủ.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Cần cải tạo hoặc mở rộng hệ thống điện nhà máy?",
+          text: "<a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">Gửi bản vẽ hiện trạng hoặc SLD</a> kèm mô tả dây chuyền và lịch sản xuất. Kỹ sư PTC sẽ liên hệ khảo sát và đề xuất phương án chuyển tải phù hợp.",
+        },
+      },
+    ],
+  },
+  {
     slug: "case-study-dien-mat-troi-phuc-y-kcn-phu-my-1",
     title: "Case Study: Dự án điện mặt trời Phúc Ý – KCN Phú Mỹ 1 (999 kWp)",
     category: "Case Study",
