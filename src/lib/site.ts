@@ -4605,4 +4605,246 @@ export const KNOWLEDGE_ARTICLES = [
       },
     ],
   },
+  {
+    slug: "case-study-dien-mat-troi-solarlink-ong-bien-1250kwp",
+    title: "Case Study: Dự án Solarlink – Nhà máy phân bón Ong Biển (1.250 kWp)",
+    category: "Case Study",
+    readTime: "7 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/du-an/dien-mat-troi-solarlink-ong-bien-1250kwp-nha-may.webp",
+      og: "/images/du-an/dien-mat-troi-solarlink-ong-bien-og.png",
+      alt: "Nhà máy phân bón Ong Biển tại Tóc Tiên, Phú Mỹ lắp hệ điện mặt trời áp mái 1.250 kWp do Powertech (tiền thân PTC) làm tổng thầu EPC",
+      caption: "Nhà máy phân bón Ong Biển lắp hệ điện mặt trời áp mái 1.250 kWp — ảnh thực tế công trình do Powertech (tiền thân PTC) triển khai.",
+    },
+    quickAnswer: "Dự án điện mặt trời áp mái 1.250 kWp tại nhà máy phân bón Ong Biển, Tóc Tiên, Phú Mỹ (Bà Rịa – Vũng Tàu), do Powertech (tiền thân PTC) làm tổng thầu EPC cho Công ty TNHH Solarlink. Hệ thống gồm 2.499 tấm pin Longi 450Wp và 8 inverter Kehua 125kW, hoàn thành tháng 12/2020.",
+    summary: [
+      "Chủ đầu tư: Công ty TNHH Solarlink. Tổng thầu EPC: Powertech (tiền thân PTC).",
+      "Cấu hình: 2.499 tấm pin Longi 450Wp + 8 inverter Kehua 125kW.",
+      "Quy mô 1.250 kWp tại Tóc Tiên, Phú Mỹ, Bà Rịa – Vũng Tàu. Hoàn thành tháng 12/2020.",
+    ],
+    body: [
+      {
+        heading: "Dự án điện mặt trời Solarlink Ong Biển 1.250 kWp",
+        paragraphs: [
+          "Tháng 12/2020, <strong>Powertech</strong> (nay là PTC) hoàn thành hệ thống điện mặt trời áp mái 1.250 kWp cho nhà máy phân bón Ong Biển tại Tóc Tiên, thị xã Phú Mỹ, Bà Rịa – Vũng Tàu. Chủ đầu tư là Công ty TNHH Solarlink, Powertech làm tổng thầu EPC.",
+          "Với quy mô 1.250 kWp, đây là một trong những hệ thống áp mái công suất lớn mà đội ngũ Powertech triển khai cuối năm 2020 — song song với dự án Phúc Ý 999 kWp, cho thấy năng lực EPC đồng thời nhiều công trình quy mô megawatt.",
+        ],
+      },
+      {
+        heading: "Thông tin chi tiết dự án",
+        table: {
+          headers: ["Hạng mục", "Thông tin"],
+          rows: [
+            ["Tên dự án", "Điện mặt trời Solarlink – Nhà máy phân bón Ong Biển"],
+            ["Chủ đầu tư", "Công ty TNHH Solarlink"],
+            ["Tổng thầu EPC", "Công ty TNHH TM & KT Powertech (tiền thân PTC)"],
+            ["Công suất lắp đặt", "1.250 kWp"],
+            ["Địa điểm", "Nhà máy phân bón Ong Biển, Tóc Tiên, Phú Mỹ, Bà Rịa – Vũng Tàu"],
+            ["Thời gian hoàn thành", "Tháng 12/2020"],
+          ],
+        },
+      },
+      {
+        heading: "Cấu hình thiết bị kỹ thuật",
+        paragraphs: [
+          "Cấu hình chính của hệ thống 1.250 kWp:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Tấm pin:</strong> 2.499 tấm pin Longi 450Wp bố trí trên mái nhà máy phân bón.",
+            "<strong>Inverter:</strong> 08 bộ inverter Kehua 125kW — inverter công suất cụm lớn phù hợp dự án quy mô megawatt, giảm số lượng thiết bị so với phương án inverter nhỏ.",
+            "<strong>Hệ thống tủ điện:</strong> tủ DC, tủ AC phân phối và tủ hòa lưới sản xuất theo IEC 61439, phối hợp thông số đầu ra của inverter Kehua.",
+            "<strong>Cáp và máng cáp:</strong> tuyến cáp DC từ dàn pin xuống khu vực inverter, cáp AC từ inverter về tủ hòa lưới; máng cáp ngoài trời chịu thời tiết khu vực ven biển.",
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Vì sao dùng inverter 125kW thay vì inverter nhỏ?",
+          text: "Với 1.250 kWp, phương án inverter cụm 125kW chỉ cần 8 bộ thay vì 12–13 bộ loại 100kW — giảm số điểm đấu nối AC, giảm tiết diện và chiều dài cáp AC, đồng thời thuận tiện giám sát và bảo trì tập trung tại một khu vực kỹ thuật.",
+        },
+      },
+      {
+        heading: "Quy trình thực hiện",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Khảo sát & Thiết kế:</strong> khảo sát kết cấu mái nhà máy phân bón, thiết kế layout 2.499 tấm pin và tuyến cáp DC/AC tối ưu.",
+            "<strong>Sản xuất tủ điện:</strong> chế tạo tủ DC, tủ AC và tủ hòa lưới tại xưởng theo bản vẽ shop drawing đã duyệt.",
+            "<strong>Thi công lắp đặt:</strong> lắp khung giá đỡ và dàn pin trên mái, đi cáp trong máng cáp, lắp inverter và tủ điện — phối hợp với vận hành nhà máy đang hoạt động.",
+            "<strong>Đấu nối & Nghiệm thu:</strong> chạy thử, đấu nối lên lưới điện và bàn giao hồ sơ hoàn công cho chủ đầu tư.",
+          ],
+        },
+      },
+      {
+        heading: "Điểm đáng chú ý kỹ thuật của dự án",
+        paragraphs: [
+          "Nhà máy phân bón là môi trường khắt khe về vật liệu: hơi amoniac và bụi phân bón có tính ăn mòn cao, đòi hỏi vỏ tủ và phụ kiện phải chọn lớp phủ phù hợp. Tủ điện solar đặt trong nhà máy hóa chất/phân bón thường cần <a href=\"/kien-thuc/so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54\" class=\"text-primary font-medium\">cấp bảo vệ IP</a> và lớp sơn/mạ cao hơn môi trường thông thường.",
+          "Khu vực Tóc Tiên – Phú Mỹ cũng là vùng ven biển: gió biển mang hơi muối tăng tốc độ ăn mòn máng cáp và giá đỡ. Việc chọn vật liệu máng cáp (mạ kẽm nhúng nóng, inox hoặc composite) ảnh hưởng trực tiếp đến tuổi thọ hệ thống — xem <a href=\"/kien-thuc/ma-kem-nhung-nong-va-ma-kem-dien-phan\" class=\"text-primary font-medium\">bảng chọn lớp phủ theo cấp ăn mòn C1–CX</a>.",
+        ],
+      },
+      {
+        heading: "Các dự án solar khác PTC đã thực hiện",
+        paragraphs: [
+          "Ngoài Solarlink Ong Biển, đội ngũ Powertech/PTC đã triển khai nhiều hệ thống áp mái công nghiệp như <a href=\"/kien-thuc/case-study-dien-mat-troi-phuc-y-kcn-phu-my-1\" class=\"text-primary font-medium\">Phúc Ý 999 kWp tại KCN Phú Mỹ 1</a>, <a href=\"/kien-thuc/case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp\" class=\"text-primary font-medium\">Xưởng gạch Tuynel 2 – 1.460 kWp tại Gia Lai</a> và <a href=\"/kien-thuc/case-study-dien-mat-troi-kho-hai-duc-960kwp\" class=\"text-primary font-medium\">Kho Hải Đức 960 kWp tại Quận 2</a>. Xem thêm các dự án tại trang <a href=\"/du-an\" class=\"text-primary font-medium\">Dự án tiêu biểu</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Cần tham khảo phương án solar cho nhà máy của bạn?",
+          text: "Gửi thông tin công suất dự kiến và mặt bằng mái qua Zalo hoặc trang <a href=\"/lien-he\" class=\"text-primary font-medium\">Liên hệ</a>. Ban Kỹ thuật PTC tư vấn cấu hình tủ điện solar, phương án đấu nối và hồ sơ kỹ thuật cần chuẩn bị.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp",
+    title: "Case Study: Điện mặt trời Xưởng gạch Tuynel 2 – 1.460 kWp, Gia Lai",
+    category: "Case Study",
+    readTime: "5 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/du-an/dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp.webp",
+      og: "/images/du-an/dien-mat-troi-tuynel-2-og.png",
+      alt: "Dàn pin điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai do PTC thực hiện",
+      caption: "Dàn pin áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai — ảnh thực tế công trình PTC thực hiện.",
+    },
+    quickAnswer: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Gia Lai do PTC thực hiện — quy mô megawatt phục vụ dây chuyền sản xuất gạch tuynel với nhu cầu điện lớn.",
+    summary: [
+      "Chủ đầu tư: chủ đầu tư nhà máy gạch Tuynel 2, Gia Lai.",
+      "Công suất: 1.460 kWp áp mái phục vụ sản xuất gạch tuynel.",
+      "Hạng mục gồm dàn pin áp mái, khu vực inverter và tủ điện solar, tuyến cáp và máng cáp.",
+    ],
+    body: [
+      {
+        heading: "Điện mặt trời 1.460 kWp cho xưởng gạch Tuynel 2",
+        paragraphs: [
+          "PTC thực hiện hệ thống điện mặt trời áp mái <strong>1.460 kWp</strong> cho xưởng gạch Tuynel 2 tại Gia Lai. Đây là công suất lớn hơn cả hai dự án Phúc Ý (999 kWp) và Solarlink Ong Biển (1.250 kWp), phục vụ trực tiếp dây chuyền sản xuất gạch tuynel — ngành có mức tiêu hao điện năng cao do lò nung, máy nghiền và hệ thống sấy vận hành liên tục.",
+          "Điện mặt trời áp mái giúp nhà máy gạch tự sản xuất một phần đáng kể điện năng tiêu thụ ban ngày — khoảng thời gian trùng với ca sản xuất chính — giảm phụ thuộc vào điện lưới và giảm chi phí điện tính theo giờ cao điểm.",
+        ],
+      },
+      {
+        heading: "Thông tin dự án",
+        table: {
+          headers: ["Hạng mục", "Thông tin"],
+          rows: [
+            ["Tên dự án", "Điện mặt trời Xưởng gạch Tuynel 2"],
+            ["Chủ đầu tư", "Chủ đầu tư nhà máy gạch Tuynel 2"],
+            ["Đơn vị thực hiện", "PTC"],
+            ["Công suất lắp đặt", "1.460 kWp"],
+            ["Địa điểm", "Gia Lai"],
+            ["Ứng dụng", "Cung cấp điện cho dây chuyền sản xuất gạch tuynel"],
+          ],
+        },
+      },
+      {
+        heading: "Phạm vi triển khai",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Dàn pin áp mái:</strong> bố trí theo mặt bằng mái xưởng gạch đã được tính toán tải trọng và bóng đổ.",
+            "<strong>Khu vực inverter và tủ điện solar:</strong> đặt tập trung trong phòng kỹ thuật, gồm tủ DC, tủ AC và tủ hòa lưới sản xuất theo IEC 61439.",
+            "<strong>Cáp và máng cáp:</strong> tuyến cáp DC từ dàn pin về khu vực inverter, cáp AC về tủ hòa lưới; máng cáp ngoài trời chịu nắng mưa.",
+            "<strong>Đấu nối và bàn giao:</strong> đấu nối vào hệ thống điện nhà máy, vận hành ổn định sau bàn giao.",
+          ],
+        },
+      },
+      {
+        heading: "Vì sao nhà máy gạch phù hợp với điện mặt trời áp mái",
+        paragraphs: [
+          "Nhà máy gạch tuynel có ba đặc điểm rất thuận lợi cho solar: diện tích mái lớn (thường hàng chục nghìn m² mái liên tục), phụ tải ban ngày cao và ổn định (lò nung và dây chuyền chạy liên tục), và vị trí nắng tốt ở Tây Nguyên. Nhờ đó, phần lớn điện solar tự tiêu thụ ngay tại chỗ thay vì phải bán lên lưới — mô hình hiệu quả kinh tế cao nhất theo cơ chế điện mặt trời mái nhà tự sản tự tiêu.",
+          "Lưu ý kỹ thuật riêng của nhà máy gạch là <strong>bụi</strong>: bụi đất nung và bụi than bám lên tấm pin và vỏ tủ nhanh hơn môi trường thông thường, cần lịch vệ sinh tấm pin định kỳ và cấp bảo vệ tủ điện phù hợp — xem thêm <a href=\"/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap\" class=\"text-primary font-medium\">10 lỗi thiết kế tủ điện solar thường gặp</a> và <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a>.",
+        ],
+      },
+      {
+        heading: "Các dự án solar khác PTC đã thực hiện",
+        paragraphs: [
+          "Xem thêm các case study khác: <a href=\"/kien-thuc/case-study-dien-mat-troi-phuc-y-kcn-phu-my-1\" class=\"text-primary font-medium\">Phúc Ý 999 kWp – KCN Phú Mỹ 1</a>, <a href=\"/kien-thuc/case-study-dien-mat-troi-solarlink-ong-bien-1250kwp\" class=\"text-primary font-medium\">Solarlink Ong Biển 1.250 kWp</a> và <a href=\"/kien-thuc/case-study-dien-mat-troi-kho-hai-duc-960kwp\" class=\"text-primary font-medium\">Kho Hải Đức 960 kWp – Quận 2</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Nhà máy của bạn cần phương án điện mặt trời áp mái?",
+          text: "Gửi thông tin phụ tải và mặt bằng mái qua Zalo hoặc trang <a href=\"/lien-he\" class=\"text-primary font-medium\">Liên hệ</a>. Ban Kỹ thuật PTC tư vấn cấu hình phù hợp cho nhà máy sản xuất.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "case-study-dien-mat-troi-kho-hai-duc-960kwp",
+    title: "Case Study: Điện mặt trời Kho Hải Đức – 960 kWp, Quận 2, TP.HCM",
+    category: "Case Study",
+    readTime: "5 phút",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    cover: {
+      src: "/images/du-an/dien-mat-troi-kho-hai-duc-dan-pin-960kwp.webp",
+      og: "/images/du-an/dien-mat-troi-kho-hai-duc-og.png",
+      alt: "Dàn pin điện mặt trời áp mái 960 kWp tại kho Hải Đức, Quận 2, TP.HCM do PTC thực hiện",
+      caption: "Dàn pin áp mái 960 kWp tại kho Hải Đức, Quận 2, TP.HCM — ảnh thực tế công trình PTC thực hiện.",
+    },
+    quickAnswer: "Hệ thống điện mặt trời áp mái 960 kWp cho kho Hải Đức tại Quận 2, TP.HCM do PTC thực hiện — hoàn thành đúng tiến độ, hệ thống vận hành ổn định sau bàn giao.",
+    summary: [
+      "Chủ đầu tư: chủ đầu tư kho Hải Đức, Quận 2, TP.HCM.",
+      "Công suất: 960 kWp áp mái.",
+      "Hạng mục gồm dàn pin áp mái, dãy inverter và tủ điện solar, tuyến cáp và máng cáp.",
+    ],
+    body: [
+      {
+        heading: "Điện mặt trời 960 kWp cho kho Hải Đức, Quận 2",
+        paragraphs: [
+          "PTC thực hiện hệ thống điện mặt trời áp mái <strong>960 kWp</strong> cho kho Hải Đức tại Quận 2, TP.HCM. Dự án hoàn thành đúng tiến độ và hệ thống vận hành ổn định sau bàn giao.",
+          "Kho logistics là dạng công trình rất hợp điện mặt trời áp mái: mái rộng, ít vật cản, và phụ tải ban ngày (chiếu sáng, nạp xe nâng điện, điều hòa văn phòng, hệ thống quạt) trùng với giờ phát điện solar.",
+        ],
+      },
+      {
+        heading: "Thông tin dự án",
+        table: {
+          headers: ["Hạng mục", "Thông tin"],
+          rows: [
+            ["Tên dự án", "Điện mặt trời Kho Hải Đức"],
+            ["Chủ đầu tư", "Chủ đầu tư kho Hải Đức"],
+            ["Đơn vị thực hiện", "PTC"],
+            ["Công suất lắp đặt", "960 kWp"],
+            ["Địa điểm", "Quận 2 (nay thuộc TP. Thủ Đức), TP.HCM"],
+            ["Kết quả", "Hoàn thành đúng tiến độ, vận hành ổn định sau bàn giao"],
+          ],
+        },
+      },
+      {
+        heading: "Phạm vi triển khai",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Dàn pin áp mái:</strong> bố trí theo mặt bằng mái kho đã tính toán tải trọng và tối ưu hướng.",
+            "<strong>Dãy inverter và tủ điện solar:</strong> inverter, tủ DC, tủ AC và tủ hòa lưới sản xuất theo IEC 61439, đặt tại khu vực kỹ thuật của kho.",
+            "<strong>Cáp và máng cáp:</strong> tuyến cáp DC/AC và máng cáp từ mái xuống khu vực thiết bị.",
+            "<strong>Đấu nối và bàn giao:</strong> đấu nối vào hệ thống điện của kho, nghiệm thu và bàn giao vận hành.",
+          ],
+        },
+      },
+      {
+        heading: "Lưu ý kỹ thuật cho dự án solar tại kho logistics",
+        paragraphs: [
+          "Với kho hàng, hai điểm kỹ thuật cần chú ý là <strong>tải trọng mái</strong> (mái kho thường là tôn lợp trên xà gồ thép mạ, cần kiểm tra khả năng chịu tải giá đỡ + pin trước khi thiết kế) và <strong>vị trí đặt inverter/tủ điện</strong> — khu vực kỹ thuật phải tách khỏi luồng xe nâng, tránh va chạm cơ học và giảm rủi ro cháy lan từ hàng hóa.",
+          "Các nội dung kiểm tra chi tiết khi nhận bàn giao hệ thống solar xem tại <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a> và <a href=\"/kien-thuc/tu-dien-cho-du-an-epc-solar\" class=\"text-primary font-medium\">tủ điện cho dự án EPC solar</a>.",
+        ],
+      },
+      {
+        heading: "Các dự án solar khác PTC đã thực hiện",
+        paragraphs: [
+          "Xem thêm: <a href=\"/kien-thuc/case-study-dien-mat-troi-phuc-y-kcn-phu-my-1\" class=\"text-primary font-medium\">Phúc Ý 999 kWp – KCN Phú Mỹ 1</a>, <a href=\"/kien-thuc/case-study-dien-mat-troi-solarlink-ong-bien-1250kwp\" class=\"text-primary font-medium\">Solarlink Ong Biển 1.250 kWp</a> và <a href=\"/kien-thuc/case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp\" class=\"text-primary font-medium\">Xưởng gạch Tuynel 2 – 1.460 kWp</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Kho/xưởng của bạn cần lắp điện mặt trời áp mái?",
+          text: "Gửi thông tin công suất và mặt bằng mái qua Zalo hoặc trang <a href=\"/lien-he\" class=\"text-primary font-medium\">Liên hệ</a>. Ban Kỹ thuật PTC tư vấn cấu hình và phương án đấu nối phù hợp.",
+        },
+      },
+    ],
+  },
 ];
