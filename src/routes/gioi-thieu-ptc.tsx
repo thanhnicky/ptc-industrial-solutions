@@ -162,6 +162,32 @@ function Page() {
             </div>
           </div>
 
+          {/* Ảnh thực tế nhà máy */}
+          <div>
+            <SectionHeading
+              eyebrow="Nhà máy PTC thực tế"
+              title="Xưởng sản xuất, thiết bị và khách hàng tham quan tại Linh Xuân"
+            />
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {[
+                { src: "/images/nha-may/khu-vuc-gia-cong-nha-may-ptc.webp", alt: "Khu vực gia công cơ khí với máy dập và cuộn tôn tại nhà máy PTC, Linh Xuân, TP.HCM" },
+                { src: "/images/nha-may/vo-tu-dien-dang-lap-rap-nha-may-ptc.webp", alt: "Vỏ tủ điện đang lắp ráp tại khu vực lắp ráp nhà máy PTC" },
+                { src: "/images/nha-may/khach-hang-tham-quan-nha-may-ptc.webp", alt: "Khách hàng tham quan nhà máy sản xuất tủ điện PTC tại Linh Xuân" },
+                { src: "/images/nha-may/khach-hang-tham-quan-xuong-san-xuat-ptc.webp", alt: "Đoàn khách hàng tham quan xưởng sản xuất PTC với biểu ngữ an toàn – chất lượng – tiến độ" },
+              ].map((p) => (
+                <img
+                  key={p.src}
+                  src={p.src}
+                  alt={p.alt}
+                  loading="lazy"
+                  width={1478}
+                  height={1108}
+                  className="aspect-[4/3] w-full rounded-lg border border-border object-cover"
+                />
+              ))}
+            </div>
+          </div>
+
           {/* Quy trình sản xuất 7 bước */}
           <div>
             <SectionHeading

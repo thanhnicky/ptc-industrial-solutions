@@ -76,6 +76,24 @@ function Page() {
             </div>
           ))}
         </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { src: "/images/nha-may/may-dap-jh21-110-bo-cap-cuon-ncf-400-ptc.webp", alt: "Máy dập JH21-110 và bộ cấp cuộn tự động NCF-400 tại nhà máy PTC" },
+            { src: "/images/nha-may/day-chuyen-dap-cat-nha-may-ptc.webp", alt: "Dây chuyền dập cắt tôn cuộn tại nhà máy PTC" },
+            { src: "/images/nha-may/may-dot-lo-cnc-nha-may-ptc.webp", alt: "Máy đột lỗ tấm kim loại gia công vỏ tủ và máng cáp tại nhà máy PTC" },
+            { src: "/images/nha-may/cau-truc-va-vat-tu-nha-may-ptc.webp", alt: "Cầu trục và khu vực vật tư sản xuất tại nhà máy PTC" },
+          ].map((p) => (
+            <img
+              key={p.src}
+              src={p.src}
+              alt={p.alt}
+              loading="lazy"
+              width={1108}
+              height={1477}
+              className="aspect-[4/3] w-full rounded-lg border border-border object-cover"
+            />
+          ))}
+        </div>
       </Section>
 
       <Section>

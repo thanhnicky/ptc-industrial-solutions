@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { QuickSummary } from "@/components/site/QuickSummary";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { LeadSection } from "@/components/site/LeadSection";
-import { IMAGES } from "@/components/site/images";
 import { PRODUCTION_STEPS_7 } from "@/lib/site";
 import { OrganizationSchema, FAQSchema } from "@/components/seo/JsonLd";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
@@ -58,7 +57,7 @@ function Page() {
       <PageHero
         title="Quy trình sản xuất tủ điện hạ thế"
         subtitle="7 bước khép kín từ thiết kế kỹ thuật, gia công cơ khí CNC, sơn tĩnh điện đến Routine Test 100% theo IEC 61439-2 và ISO 9001:2015 tại nhà máy PTC."
-        image={IMAGES.switchboard}
+        image="/images/nha-may/khu-vuc-gia-cong-nha-may-ptc.webp"
       >
         <ZaloButton size="lg" location="hero-quy-trinh" />
         <CallButton size="lg" location="hero-quy-trinh" variant="outlineLight" />
