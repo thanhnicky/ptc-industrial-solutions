@@ -694,6 +694,11 @@ export type Project = {
   scope?: string;
   client?: string;
   note?: string;
+  /** Ảnh thực tế dự án (ghi đè ảnh minh họa `image`) */
+  photo?: string;
+  photoAlt?: string;
+  /** Ảnh thực tế bổ sung hiển thị dạng thumbnail */
+  gallery?: { src: string; alt: string }[];
 };
 
 export const PROJECTS: Project[] = [
@@ -704,6 +709,12 @@ export const PROJECTS: Project[] = [
     tags: ["solar"],
     scope: "EPC hệ thống điện mặt trời áp mái 999 kWp — pin Longi 445Wp, inverter Huawei 100kW",
     client: "Công ty Cổ phần Điện mặt trời Sunword",
+    photo: "/images/du-an/dien-mat-troi-phuc-y-dan-pin-ap-mai.webp",
+    photoAlt: "Dàn pin điện mặt trời áp mái 999 kWp dự án Phúc Ý tại KCN Phú Mỹ 1 do PTC (tiền thân Powertech) làm tổng thầu EPC",
+    gallery: [
+      { src: "/images/du-an/dien-mat-troi-phuc-y-kcn-phu-my-1-toan-canh.webp", alt: "Toàn cảnh nhà máy tại KCN Phú Mỹ 1 lắp hệ điện mặt trời áp mái Phúc Ý 999 kWp" },
+      { src: "/images/du-an/khu-vuc-inverter-phuc-y-999kwp.webp", alt: "Khu vực inverter Huawei và tủ điện solar tại dự án Phúc Ý 999 kWp, Bà Rịa – Vũng Tàu" },
+    ],
   },
   {
     name: "ĐMTMN Solarlink – Nhà máy phân bón Ong Biển (1.250 kWp)",
@@ -712,6 +723,12 @@ export const PROJECTS: Project[] = [
     tags: ["solar"],
     scope: "EPC hệ thống điện mặt trời áp mái 1.250 kWp — pin Longi 450Wp, inverter Kehua 125kW",
     client: "Công ty TNHH Solarlink",
+    photo: "/images/du-an/dien-mat-troi-solarlink-ong-bien-1250kwp-nha-may.webp",
+    photoAlt: "Nhà máy phân bón Ong Biển tại Tóc Tiên, Phú Mỹ lắp hệ điện mặt trời áp mái 1.250 kWp do PTC (tiền thân Powertech) làm tổng thầu EPC",
+    gallery: [
+      { src: "/images/du-an/dien-mat-troi-solarlink-ong-bien-dan-pin-ap-mai.webp", alt: "Dàn pin điện mặt trời áp mái tại nhà máy phân bón Ong Biển, Bà Rịa – Vũng Tàu" },
+      { src: "/images/du-an/tu-inverter-solarlink-ong-bien-1250kwp.webp", alt: "Tủ inverter Kehua 125kW và tủ điện DC/AC tại dự án Solarlink Ong Biển 1.250 kWp" },
+    ],
   },
   {
     name: "ĐMTMN Kho DPL – 960 kWp, Quận 2, TP.HCM",
@@ -728,6 +745,12 @@ export const PROJECTS: Project[] = [
     tags: ["solar"],
     scope: "Hệ thống điện mặt trời áp mái 960 kWp",
     client: "Chủ đầu tư kho Hải Đức",
+    photo: "/images/du-an/dien-mat-troi-kho-hai-duc-quan-2-960kwp.webp",
+    photoAlt: "Hệ điện mặt trời áp mái 960 kWp tại kho Hải Đức, Quận 2, TP.HCM do PTC thực hiện",
+    gallery: [
+      { src: "/images/du-an/tu-inverter-kho-hai-duc-960kwp.webp", alt: "Dãy inverter và tủ điện solar tại kho Hải Đức 960 kWp, Quận 2" },
+      { src: "/images/du-an/dien-mat-troi-kho-hai-duc-dan-pin-960kwp.webp", alt: "Dàn pin điện mặt trời áp mái tại kho Hải Đức 960 kWp, Quận 2, TP.HCM" },
+    ],
   },
   {
     name: "ĐMTMN Xưởng gạch Tuynel 2 – 1.460 kWp, Gia Lai",
@@ -736,6 +759,12 @@ export const PROJECTS: Project[] = [
     tags: ["solar"],
     scope: "Hệ thống điện mặt trời áp mái 1.460 kWp",
     client: "Chủ đầu tư nhà máy gạch Tuynel 2",
+    photo: "/images/du-an/dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp.webp",
+    photoAlt: "Dàn pin điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai do PTC thực hiện",
+    gallery: [
+      { src: "/images/du-an/tu-inverter-xuong-gach-tuynel-2-gia-lai.webp", alt: "Khu vực inverter và tủ điện solar trong phòng kỹ thuật xưởng gạch Tuynel 2, Gia Lai" },
+      { src: "/images/du-an/mat-bang-pin-xuong-gach-tuynel-2-gia-lai.webp", alt: "Bản vẽ mặt bằng bố trí dàn pin 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai" },
+    ],
   },
   {
     name: "ĐMTMN Lexus – 250.96 kWp, TP.HCM",
@@ -744,6 +773,11 @@ export const PROJECTS: Project[] = [
     tags: ["solar"],
     scope: "Hệ thống điện mặt trời áp mái 250.96 kWp",
     client: "Chủ đầu tư Lexus",
+    photo: "/images/du-an/dien-mat-troi-lexus-tphcm-250kwp.webp",
+    photoAlt: "Hệ điện mặt trời áp mái 250.96 kWp tại cơ sở Lexus, TP.HCM do PTC thực hiện",
+    gallery: [
+      { src: "/images/du-an/tu-inverter-lexus-tphcm.webp", alt: "Dãy inverter và tủ điện solar tại cơ sở Lexus 250.96 kWp, TP.HCM" },
+    ],
   },
   {
     name: "Dự án Nhà máy LEGO – VSIP 3",
@@ -2568,7 +2602,13 @@ export const KNOWLEDGE_ARTICLES = [
     readTime: "8 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2026-03-10",
-    dateModified: "2026-03-10",
+    dateModified: "2026-10-29",
+    cover: {
+      src: "/images/du-an/dien-mat-troi-phuc-y-dan-pin-ap-mai.webp",
+      og: "/images/du-an/dien-mat-troi-phuc-y-og.png",
+      alt: "Dàn pin điện mặt trời áp mái 999 kWp dự án Phúc Ý tại KCN Phú Mỹ 1 do Powertech (nay là PTC) làm tổng thầu EPC",
+      caption: "Dàn pin áp mái tại dự án Phúc Ý 999 kWp — ảnh thực tế công trình do Powertech (tiền thân PTC) triển khai.",
+    },
     quickAnswer: "Dự án điện mặt trời Phúc Ý tại KCN Phú Mỹ 1 (Bà Rịa – Vũng Tàu) công suất 999 kWp, do Công ty Cổ phần Điện mặt trời Sunword làm chủ đầu tư và Powertech (tiền thân PTC) làm tổng thầu EPC. Hoàn thành tháng 10/2020 với 2.245 tấm pin Longi 445Wp và 8 inverter Huawei 100kW, bán điện trực tiếp lên lưới quốc gia.",
     summary: [
       "Chủ đầu tư: Công ty Cổ phần Điện mặt trời Sunword. Tổng thầu EPC: Powertech (tiền thân PTC).",

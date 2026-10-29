@@ -392,8 +392,8 @@ function Index() {
             <article className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-2xs lg:col-span-2 lg:flex-row">
               <div className="overflow-hidden lg:w-[55%]">
                 <img
-                  src={IMAGES[lead.image]}
-                  alt={lead.name}
+                  src={lead.photo ?? IMAGES[lead.image]}
+                  alt={lead.photoAlt ?? lead.name}
                   loading="lazy"
                   width={1200}
                   height={800}
@@ -418,8 +418,8 @@ function Index() {
                 <article key={p.name} className="group flex overflow-hidden rounded-lg border border-border bg-card shadow-2xs">
                   <div className="w-32 shrink-0 overflow-hidden sm:w-40">
                     <img
-                      src={IMAGES[p.image]}
-                      alt={p.name}
+                      src={p.photo ?? IMAGES[p.image]}
+                      alt={p.photoAlt ?? p.name}
                       loading="lazy"
                       width={1200}
                       height={800}
@@ -442,8 +442,8 @@ function Index() {
               >
                 <div className="w-32 shrink-0 overflow-hidden sm:w-40">
                   <img
-                    src={IMAGES[p.image]}
-                    alt={p.name}
+                    src={p.photo ?? IMAGES[p.image]}
+                    alt={p.photoAlt ?? p.name}
                     loading="lazy"
                     width={1200}
                     height={800}
