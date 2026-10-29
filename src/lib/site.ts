@@ -3709,7 +3709,7 @@ export const KNOWLEDGE_ARTICLES = [
         list: {
           ordered: false,
           items: [
-            "<strong>Chỉ định hãng thiết bị:</strong> FDI thường yêu cầu Schneider, ABB, Siemens — không chấp nhận LS, Hyundai. Lý do: tiêu chuẩn toàn cầu, dễ thay thế quốc tế.",
+            "<strong>Chỉ định hãng thiết bị:</strong> Nhiều chủ đầu tư FDI chỉ định hãng theo tiêu chuẩn của tập đoàn, thường là Schneider, ABB, Siemens; nhà máy vốn Nhật hay chỉ định Mitsubishi. Kiểm tra danh sách hãng được duyệt (approved vendor list) trong Specification trước khi báo giá. Xem <a href=\"/kien-thuc/so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi\" class=\"text-primary font-medium\">so sánh Schneider, ABB, LS, Mitsubishi</a>.",
             "<strong>Form tủ cao:</strong> Form 3b hoặc 4b (cách ly hoàn toàn giữa thanh cái, thiết bị, cáp ra) để bảo trì an toàn. Nhà máy nội thường dùng Form 2b.",
             "<strong>Type Test + Routine Test:</strong> FDI yêu cầu Type Test (thử nghiệm kiểu theo IEC 61439-1) ngoài Routine Test. Type Test do phòng thí nghiệm độc lập (KEMA, ASTA, QUATEST 3) thực hiện.",
             "<strong>Hồ sơ tiếng Anh:</strong> CO/CQ, test report, As-built drawing, operation manual — tất cả bằng tiếng Anh.",
@@ -3765,6 +3765,130 @@ export const KNOWLEDGE_ARTICLES = [
           type: "tip",
           title: "Cần tủ điện cho nhà máy FDI?",
           text: "Gửi specification (tiếng Anh hoặc tiếng Việt) qua Zalo cho Ban Kỹ thuật PTC. Kỹ sư sẽ bóc tách, phát hành shop drawing 3D, và gửi báo giá theo đúng spec FDI. PTC có kinh nghiệm sản xuất tủ theo tiêu chuẩn quốc tế từ đội ngũ Powertech. Kèm theo: <strong>Checklist 12 hạng mục nghiệm thu tủ điện</strong> (PDF) — yêu cầu qua Zalo.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi",
+    title: "So sánh Schneider, ABB, LS, Mitsubishi cho tủ điện hạ thế: Chọn hãng ACB, MCCB theo dự án",
+    category: "So sánh & Lựa chọn",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-28",
+    dateModified: "2026-10-28",
+    cover: {
+      src: "/images/kien-thuc/so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi.svg",
+      og: "/images/kien-thuc/so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi.png",
+      alt: "Bảng so sánh dòng ACB, MCCB, contactor của Schneider Electric, ABB, Mitsubishi Electric và LS Electric dùng trong tủ điện hạ thế",
+      caption: "Dòng sản phẩm chính của 4 hãng thiết bị đóng cắt phổ biến tại Việt Nam và loại dự án thường chỉ định từng hãng.",
+    },
+    readTime: "9 phút",
+    quickAnswer: "Không có hãng tốt nhất cho mọi dự án. Schneider Electric và ABB thường được chủ đầu tư FDI châu Âu, Mỹ chỉ định, dải sản phẩm rộng, giá thường ở nhóm cao. Mitsubishi Electric phổ biến trong nhà máy vốn Nhật. LS Electric có giá cạnh tranh, phổ biến trong nhà máy vốn Hàn và dự án nội địa. Nên chọn hãng theo 5 tiêu chí: yêu cầu chỉ định của chủ đầu tư, thông số kỹ thuật (Icu/Ics, Icw, chọn lọc), khả năng có hàng và hỗ trợ tại Việt Nam, đồng bộ với hệ thống sẵn có, và ngân sách.",
+    summary: [
+      "Cả 4 hãng đều có ACB, MCCB, contactor đạt IEC 60947 cho tủ hạ thế. Khác biệt nằm ở phân khúc giá, dòng sản phẩm, hệ sinh thái giám sát và loại dự án thường chỉ định.",
+      "So sánh bằng thông số (Icu/Ics, Icw, bảng chọn lọc) thay vì chỉ so tên hãng và dòng định mức.",
+      "Phối hợp nhiều hãng trong một tủ giúp giảm giá nhưng phải kiểm tra lại phối hợp bảo vệ và hồ sơ IEC 61439.",
+    ],
+    body: [
+      {
+        heading: "Dòng sản phẩm chính của 4 hãng",
+        paragraphs: [
+          "Bảng dưới liệt kê các dòng thiết bị thường gặp trong tủ MSB, MDB, MCC tại Việt Nam. Mỗi hãng còn có dòng kinh tế với thông số và giá thấp hơn dòng chính:",
+        ],
+        table: {
+          headers: ["Hãng", "ACB", "MCCB", "Contactor", "Dòng kinh tế"],
+          rows: [
+            ["Schneider Electric", "MasterPact MTZ", "ComPacT NSX", "TeSys", "EasyPact"],
+            ["ABB", "SACE Emax 2", "SACE Tmax XT", "AF", "SACE Formula"],
+            ["Mitsubishi Electric", "World Super AE-SW", "WS-V (NF)", "MS-T", "NF-C"],
+            ["LS Electric", "Susol, Metasol (AN/AS)", "Susol (TD/TS), Metasol (ABN/ABS)", "Metasol MC", "Metasol ABN"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Tên dòng sản phẩm thay đổi theo thời gian",
+          text: "Các hãng thường xuyên ra dòng mới và ngừng dòng cũ. Khi chốt thiết bị, hãy đối chiếu catalogue mới nhất của hãng và hỏi nhà phân phối chính thức tại Việt Nam.",
+        },
+      },
+      {
+        heading: "So sánh theo tiêu chí ra quyết định",
+        table: {
+          headers: ["Tiêu chí", "Schneider", "ABB", "Mitsubishi", "LS"],
+          rows: [
+            ["Phân khúc giá (tương đối)", "Cao", "Cao", "Trung bình – cao", "Cạnh tranh"],
+            [
+              "Thường gặp trong dự án",
+              "FDI châu Âu/Mỹ, tòa nhà, data center",
+              "FDI châu Âu, công nghiệp, data center",
+              "Nhà máy vốn Nhật",
+              "Nhà máy vốn Hàn, dự án nội địa",
+            ],
+            ["Bộ bảo vệ điện tử ACB", "MicroLogic", "Ekip", "ETR", "Bộ trip điện tử (digital trip relay)"],
+            [
+              "Giám sát, truyền thông",
+              "Có module truyền thông, hệ sinh thái EcoStruxure",
+              "Có module truyền thông, hệ sinh thái ABB Ability",
+              "Có module truyền thông",
+              "Có module truyền thông",
+            ],
+          ],
+        },
+        paragraphs: [
+          "Mức giá tương đối thay đổi theo chiết khấu dự án, nhà phân phối và thời điểm đặt hàng. Xem <a href=\"/kien-thuc/bao-gia-tu-msb-theo-dong-ngan-mach\" class=\"text-primary font-medium\">khoảng giá tham khảo tủ MSB theo hãng thiết bị</a> để biết ảnh hưởng của hãng tới giá tủ.",
+        ],
+      },
+      {
+        heading: "5 tiêu chí chọn hãng thiết bị cho tủ điện",
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Yêu cầu chỉ định của chủ đầu tư:</strong> nếu Specification hoặc danh sách hãng được duyệt (approved vendor list) đã ghi hãng, phải tuân thủ. Muốn đề xuất hãng tương đương thì cần chứng minh thông số và được tư vấn giám sát duyệt.",
+            "<strong>Thông số kỹ thuật, không chỉ tên hãng:</strong> so Icu/Ics ở điện áp vận hành, Icw của ACB, đặc tính bộ bảo vệ. Bảng chọn lọc (selectivity) và cascading thường chỉ có giữa các thiết bị cùng hãng.",
+            "<strong>Có hàng và hỗ trợ tại Việt Nam:</strong> thời gian giao thiết bị, phụ kiện thay thế, kỹ sư hỗ trợ cài đặt bộ bảo vệ. Các yếu tố này thay đổi theo thời điểm, cần hỏi nhà phân phối khi đặt hàng.",
+            "<strong>Đồng bộ với hệ thống sẵn có:</strong> nhà máy mở rộng hoặc <a href=\"/kien-thuc/cai-tao-he-thong-dien-nha-may-khong-dung-san-xuat\" class=\"text-primary font-medium\">cải tạo</a> nên dùng cùng hãng để dùng chung phụ tùng và kỹ năng vận hành.",
+            "<strong>Ngân sách và chi phí vòng đời:</strong> tính cả chi phí phụ tùng, bảo trì và thời gian dừng máy khi thay thế, không chỉ giá mua ban đầu.",
+          ],
+        },
+      },
+      {
+        heading: "Có nên phối hợp nhiều hãng trong một tủ?",
+        paragraphs: [
+          "Có thể. Ví dụ phổ biến là ACB tổng một hãng, MCCB các lộ ra hãng khác để giảm giá. Cách làm này cần lưu ý 2 điểm:",
+        ],
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Phối hợp bảo vệ:</strong> giữa 2 hãng thường không có bảng chọn lọc và cascading sẵn, phải kiểm tra bằng đường đặc tính cắt. Không được dùng giá trị cascading để giảm Icu của MCCB.",
+            "<strong>Hồ sơ IEC 61439:</strong> thay hãng thiết bị so với cấu hình đã được kiểm chứng thiết kế (Design Verification) có thể phải đánh giá lại độ tăng nhiệt và khả năng chịu ngắn mạch. Xem <a href=\"/kien-thuc/tieu-chuan-iec-61439-la-gi\" class=\"text-primary font-medium\">tiêu chuẩn IEC 61439</a>.",
+          ],
+        },
+        callout: {
+          type: "warning",
+          title: "Không đổi hãng sau khi duyệt Shop Drawing mà không báo tư vấn",
+          text: "Đổi hãng làm thay đổi kích thước lắp đặt, thanh cái đấu nối và setting bảo vệ. Mọi thay đổi cần được cập nhật Shop Drawing và duyệt lại.",
+        },
+      },
+      {
+        heading: "Kiểm tra hàng chính hãng",
+        list: {
+          ordered: false,
+          items: [
+            "Yêu cầu CO/CQ của thiết bị chính khi giao tủ.",
+            "Đối chiếu mã thiết bị đầy đủ trên báo giá, Shop Drawing và nhãn thiết bị.",
+            "Kiểm tra tem, mã QR hoặc số serial theo hướng dẫn của hãng.",
+            "Ưu tiên nhà sản xuất tủ mua thiết bị qua nhà phân phối chính thức. Dự án FDI thường yêu cầu thêm hồ sơ này, xem <a href=\"/kien-thuc/tu-dien-nha-may-fdi-tieu-chuan\" class=\"text-primary font-medium\">tủ điện cho nhà máy FDI</a>.",
+          ],
+        },
+      },
+      {
+        heading: "Ghi hãng thiết bị trong yêu cầu báo giá",
+        paragraphs: [
+          "Khi gửi yêu cầu báo giá, ghi rõ hãng chỉ định cho từng nhóm thiết bị (ACB, MCCB, contactor, đồng hồ, rơ le), hoặc ghi \"chưa chỉ định\" để nhà sản xuất đề xuất phương án. Xem <a href=\"/kien-thuc/ho-so-can-co-de-bao-gia-tu-dien\" class=\"text-primary font-medium\">hồ sơ cần có để báo giá tủ điện</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Chưa chốt hãng?",
+          text: "Gửi SLD/BOQ qua trang <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ/BOQ</a>. PTC có thể đề xuất 2–3 phương án hãng thiết bị để chủ đầu tư so sánh thông số và giá trên cùng một cấu hình tủ.",
         },
       },
     ],
@@ -3852,7 +3976,7 @@ export const KNOWLEDGE_ARTICLES = [
         callout: {
           type: "info",
           title: "Không chỉ định hãng? PTC đề xuất 2-3 phương án",
-          text: "Nếu chủ đầu tư không chỉ định hãng, PTC gửi 2-3 phương án: (1) Schneider/ABB cho FDI, (2) LS/Hyundai cho nhà máy nội, (3) mix (ACB Schneider + MCCB LS) để cân bằng giá và chất lượng.",
+          text: "Nếu chủ đầu tư không chỉ định hãng, PTC gửi 2-3 phương án: (1) Schneider/ABB cho FDI, (2) LS/Hyundai cho nhà máy nội, (3) mix (ACB Schneider + MCCB LS) để cân bằng giá và chất lượng. Xem <a href=\"/kien-thuc/so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi\" class=\"text-primary font-medium\">so sánh 4 hãng thiết bị</a> và lưu ý khi phối hợp nhiều hãng.",
         },
       },
       {
