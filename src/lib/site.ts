@@ -2121,12 +2121,19 @@ export const KNOWLEDGE_ARTICLES = [
     readTime: "6 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-18",
-    dateModified: "2026-02-21",
-    quickAnswer: "Mạ kẽm nhúng nóng (Hot-dip Galvanizing) phủ lớp kẽm dày 65–85 µm bằng cách nhúng trực tiếp vào bể kẽm nóng chảy 450°C, cho độ bền ngoài trời và môi trường ăn mòn trên 20–30 năm; trong khi Mạ kẽm điện phân chỉ phủ lớp mạ mỏng 8–15 µm, chỉ thích hợp cho môi trường trong nhà khô ráo.",
+    dateModified: "2026-10-28",
+    cover: {
+      src: "/images/kien-thuc/ma-kem-nhung-nong-va-ma-kem-dien-phan.svg",
+      og: "/images/kien-thuc/ma-kem-nhung-nong-va-ma-kem-dien-phan.png",
+      alt: "Bảng chọn lớp phủ thang máng cáp theo cấp ăn mòn ISO 9223 từ C1 đến CX: mạ điện phân, tôn Z275, mạ kẽm nhúng nóng, HDG kèm sơn, inox 316",
+      caption: "Chọn lớp phủ thang máng cáp theo cấp ăn mòn khí quyển (ISO 9223) và tốc độ ăn mòn kẽm năm đầu.",
+    },
+    quickAnswer: "Mạ kẽm nhúng nóng (Hot-dip Galvanizing) phủ lớp kẽm dày khoảng 45–85 µm tùy độ dày thép (ISO 1461) bằng cách nhúng trực tiếp vào bể kẽm nóng chảy 450°C, thường bền 20–30 năm trở lên ngoài trời ở môi trường ăn mòn trung bình (cấp C3 theo ISO 9223); trong khi Mạ kẽm điện phân chỉ phủ lớp mạ mỏng 8–15 µm, chỉ thích hợp cho môi trường trong nhà khô ráo.",
     summary: [
-      "Độ dày lớp mạ: Nhúng nóng (65-85 µm) so với Điện phân (8-15 µm).",
+      "Độ dày lớp mạ: Nhúng nóng (45-85 µm tùy độ dày thép) so với Điện phân (8-15 µm).",
+      "Chọn lớp phủ theo cấp ăn mòn ISO 9223: C1–C2 trong nhà khô dùng điện phân/Z275; C3–C4 dùng HDG; C5 dùng HDG + sơn hoặc inox 316; CX cần đánh giá riêng.",
       "Tiêu chuẩn áp dụng: ASTM A123 / ISO 1461 cho mạ kẽm nhúng nóng; TCVN 5408.",
-      "Ứng dụng: Máng mạ kẽm nhúng nóng là bắt buộc cho hệ điện mặt trời mái nhà xưởng, khu vực ven biển, trạm xử lý nước thải và nhà máy hóa chất.",
+      "Ứng dụng: Nên dùng tối thiểu mạ kẽm nhúng nóng cho hệ điện mặt trời mái nhà xưởng, ngoài trời, ven biển, trạm xử lý nước thải và nhà máy hóa chất.",
     ],
     body: [
       {
@@ -2141,7 +2148,7 @@ export const KNOWLEDGE_ARTICLES = [
           headers: ["Tiêu chí", "Mạ kẽm nhúng nóng (HDG)", "Mạ kẽm điện phân (EG)"],
           rows: [
             ["Quy trình", "Nhúng toàn bộ vào bể kẽm nóng chảy 450°C", "Điện phân Zn trong dung dịch muối"],
-            ["Độ dày lớp mạ", "65–85 µm (có thể 100+ µm)", "8–15 µm"],
+            ["Độ dày lớp mạ", "45–85 µm tùy độ dày thép (ISO 1461), có thể dày hơn theo yêu cầu", "8–15 µm"],
             ["Cơ chế bảo vệ", "Sacrificial + barrier (kẽm hy sinh + lớp màng)", "Chỉ barrier (lớp màng mỏng)"],
             ["Tuổi thọ ngoài trời", "20–30 năm", "3–5 năm"],
             ["Tuổi thọ trong nhà khô", "50+ năm", "10–15 năm"],
@@ -2157,7 +2164,7 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "Mạ kẽm nhúng nóng tạo liên kết <strong>metallurgical</strong> giữa kẽm và thép — không phải lớp sơn bám trên bề mặt mà là hợp kim Zn-Fe hình thành ở nhiệt độ 450°C. Lớp mạ dày 65–85 µm bảo vệ thép bằng 2 cơ chế:",
           "<strong>(1) Barrier protection:</strong> Lớp kẽm cách ly thép khỏi oxy và ẩm. <strong>(2) Sacrificial (cathodic) protection:</strong> Kẽm có thế điện cao hơn thép — khi bề mặt bị xước, kẽm sẽ \"hy sinh\" oxy hóa trước, bảo vệ thép gốc không rỉ. Đây là lý do HDG vẫn bảo vệ tốt ngay cả khi lớp mạ bị xước.",
-          "Ưu điểm chính: tuổi thọ ngoài trời 20–30 năm không cần bảo trì, chịu va đập tốt, bảo vệ cathodic. Nhược điểm: chi phí cao hơn 30–50%, có thể gây cong vênh tôn mỏng (< 1.0mm) do nhiệt nhúng — cần chọn độ dày phù hợp (≥ 1.2mm cho HDG).",
+          "Ưu điểm chính: tuổi thọ ngoài trời thường 20–30 năm trở lên ở môi trường C3, chịu va đập tốt, bảo vệ cathodic. Nhược điểm: chi phí cao hơn 30–50%, có thể gây cong vênh tôn mỏng (< 1.0mm) do nhiệt nhúng — cần chọn độ dày phù hợp (≥ 1.2mm cho HDG).",
         ],
       },
       {
@@ -2165,29 +2172,58 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "Mạ kẽm điện phân phủ lớp Zn mỏng 8–15 µm bằng điện phân trong dung dịch muối kẽm. Lớp mạ mỏng, chỉ bảo vệ bằng cơ chế barrier — không có bảo vệ cathodic. Khi lớp mạ bị xước, thép gốc sẽ rỉ.",
           "Phù hợp cho: <strong>môi trường trong nhà khô ráo</strong>, thang máng cáp trong văn phòng, tòa nhà, khu vực không ẩm và không corrosive. Tuổi thọ 10–15 năm trong nhà khô, nhưng chỉ 3–5 năm ngoài trời.",
-          "Thường dùng tôn mạ kẽm Z275 (Z = 275 g/m², tương đương ~20 µm) nhập sẵn — gia công thang máng từ tôn này, không cần mạ lại. Chi phí thấp, phù hợp dự án ngân sách vừa.",
+          "Một lựa chọn phổ biến khác là tôn mạ kẽm sẵn Z275 (mạ nhúng nóng liên tục trên dây chuyền cán, tổng 275 g/m² cho 2 mặt, khoảng 20 µm mỗi mặt). Thang máng gia công từ tôn này không cần mạ lại, chi phí thấp, nhưng mép cắt và lỗ đột không được phủ kẽm dày như HDG nên cũng chỉ hợp môi trường trong nhà khô (C1–C2).",
         ],
         callout: {
           type: "warning",
           title: "Cảnh báo: Không dùng điện phân cho ngoài trời",
-          text: "Nhiều dự án nhỏ dùng máng cáp điện phân cho ngoài trời để tiết kiệm chi phí → rỉ sét sau 2–3 năm, phải thay toàn bộ. Chi phí thay > chi phí chênh HDG ban đầu. <strong>Luôn dùng HDG cho ngoài trời, ven biển, hóa chất, solar.</strong>",
+          text: "Nhiều dự án nhỏ dùng máng cáp điện phân cho ngoài trời để tiết kiệm chi phí → có thể rỉ sét chỉ sau vài năm, phải thay toàn bộ. Chi phí thay > chi phí chênh HDG ban đầu. <strong>Ngoài trời, ven biển, hóa chất và solar cần tối thiểu HDG.</strong> Ven biển sát bờ hoặc hóa chất mạnh (C5, CX) cần HDG + sơn phủ hoặc inox 316, xem bảng chọn lớp phủ theo môi trường bên dưới.",
         },
       },
       {
-        heading: "Khi nào bắt buộc dùng mạ kẽm nhúng nóng?",
+        heading: "Khi nào nên dùng mạ kẽm nhúng nóng?",
         paragraphs: [
-          "Dựa trên kinh nghiệm thực hiện dự án, PTC khuyến nghị <strong>bắt buộc dùng HDG</strong> trong các trường hợp:",
+          "Dựa trên kinh nghiệm thực hiện dự án, PTC khuyến nghị <strong>dùng tối thiểu HDG</strong> trong các trường hợp sau. Nếu Specification dự án quy định lớp phủ khác thì theo Specification.",
         ],
         list: {
           ordered: false,
           items: [
-            "<strong>Hệ điện mặt trời mái nhà xưởng (solar):</strong> Cáp DC trên mái tiếp xúc UV + mưa + gió. HDG là bắt buộc theo IEC 62548.",
-            "<strong>Khu vực ven biển (≤ 5km từ biển):</strong> Muối biển Cl- gây ăn mòn cực mạnh. HDG hoặc Inox 316.",
+            "<strong>Hệ điện mặt trời mái nhà xưởng (solar):</strong> Cáp DC trên mái tiếp xúc UV + mưa + gió. Thường chỉ định HDG; mái gần biển hoặc gần ống xả hóa chất cần xét HDG + sơn hoặc inox.",
+            "<strong>Khu vực ven biển:</strong> Muối biển Cl- làm tăng mạnh tốc độ ăn mòn. Mức độ phụ thuộc khoảng cách tới biển, hướng gió và độ mặn, thường từ C3 đến C5. HDG cho C3–C4; HDG + sơn hoặc inox 316 cho C5.",
             "<strong>Nhà máy hóa chất / phân bón:</strong> Khí corrosive (H₂S, NH₃, acid) — HDG + sơn epoxy.",
             "<strong>Trạm xử lý nước thải:</strong> Môi trường ẩm + H₂S — HDG.",
             "<strong>Ngoài trời nói chung:</strong> Trạm biến áp ngoài trời, hạ tầng KCN, chiếu sáng đô thị.",
             "<strong>Yêu cầu nghiệm thu FDI:</strong> Nhiều chủ đầu tư FDI (Nhật, Hàn, châu Âu) yêu cầu HDG trong spec.",
           ],
+        },
+      },
+      {
+        heading: "Bảng chọn lớp phủ thang máng cáp theo môi trường (cấp ăn mòn C1–CX)",
+        paragraphs: [
+          "ISO 9223 chia môi trường khí quyển thành 6 cấp ăn mòn, từ C1 (rất thấp) tới CX (cực cao), dựa trên tốc độ ăn mòn thép và kẽm trong năm đầu. Ví dụ môi trường điển hình dưới đây tham khảo theo ISO 9223 và ISO 12944-2. Cùng một nhà máy có thể có nhiều cấp: phòng điện có điều hòa là C1, còn khu xử lý nước thải ngay bên cạnh có thể là C4.",
+        ],
+        table: {
+          headers: ["Cấp ăn mòn (ISO 9223)", "Môi trường điển hình", "Tốc độ ăn mòn kẽm năm đầu", "Lớp phủ khuyến nghị"],
+          rows: [
+            ["C1 – Rất thấp", "Trong nhà có điều hòa, không khí sạch: văn phòng, phòng server, phòng điện kín", "≤ 0,1 µm/năm", "Mạ điện phân, tôn mạ kẽm Z275 hoặc sơn tĩnh điện"],
+            ["C2 – Thấp", "Trong nhà không điều hòa, có thể ngưng tụ: kho, nhà xưởng khô. Ngoài trời vùng nông thôn ít ô nhiễm", "0,1–0,7 µm/năm", "Tôn Z275 hoặc sơn tĩnh điện cho trong nhà; HDG nếu đặt ngoài trời"],
+            ["C3 – Trung bình", "Nhà xưởng độ ẩm cao, ô nhiễm nhẹ (chế biến thực phẩm, giặt là, nhà máy bia, sữa). Ngoài trời đô thị, ven biển độ mặn thấp", "0,7–2,1 µm/năm", "Mạ kẽm nhúng nóng (HDG)"],
+            ["C4 – Cao", "Nhà máy hóa chất, hồ bơi, xưởng đóng tàu ven biển. Ngoài trời khu công nghiệp, ven biển độ mặn trung bình", "2,1–4,2 µm/năm", "HDG; cần tuổi thọ dài thì dùng HDG + sơn phủ (duplex)"],
+            ["C5 – Rất cao", "Khu vực gần như ngưng tụ liên tục và ô nhiễm cao. Ngoài trời công nghiệp ẩm, ven biển độ mặn cao", "4,2–8,4 µm/năm", "HDG + sơn phủ (duplex) hoặc inox 316"],
+            ["CX – Cực cao", "Ngoài khơi, vùng triều, môi trường hóa chất cực mạnh", "8,4–25 µm/năm", "Inox 316L hoặc thang máng composite (FRP); cần đánh giá riêng"],
+          ],
+        },
+      },
+      {
+        heading: "Ước tính tuổi thọ lớp mạ kẽm nhúng nóng theo cấp ăn mòn",
+        paragraphs: [
+          "Có thể ước tính nhanh và thận trọng: <strong>tuổi thọ ≈ độ dày lớp mạ ÷ tốc độ ăn mòn kẽm</strong>. Tốc độ năm đầu theo ISO 9223 thường cao hơn tốc độ dài hạn (ISO 9224), nên kết quả nghiêng về phía an toàn.",
+          "Ví dụ thang máng thép dày 2 mm mạ HDG, độ dày trung bình 55 µm (mức tối thiểu theo ISO 1461): ở C3 (0,7–2,1 µm/năm) ước tính khoảng 26–78 năm; ở C4 (2,1–4,2 µm/năm) khoảng 13–26 năm; ở C5 (4,2–8,4 µm/năm) chỉ khoảng 6–13 năm. Vì vậy cùng một lớp HDG nhưng đặt sát biển sẽ phải bảo trì sớm hơn nhiều, và đây là lý do C5 nên dùng thêm lớp sơn phủ hoặc chuyển sang inox.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Ghi rõ môi trường lắp đặt khi gửi BOQ",
+          text: "Nếu Specification đã quy định cấp ăn mòn (theo ISO 9223 hoặc ISO 12944-2) hoặc lớp phủ, chọn theo Specification. Nếu chưa có, hãy ghi rõ cho từng tuyến: trong nhà/ngoài trời/trên mái, khoảng cách tới biển, loại hóa chất trong khu vực. Kỹ sư PTC sẽ đề xuất lớp phủ cho từng khu vực, tránh dùng HDG cho cả tuyến trong nhà khô hoặc dùng điện phân ở nơi ẩm. Xem thêm <a href=\"/kien-thuc/chon-kich-thuoc-thang-mang-cap-he-so-lap-day\" class=\"text-primary font-medium\">cách chọn kích thước thang máng cáp</a> hoặc <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ/BOQ</a>.",
         },
       },
       {
@@ -2198,7 +2234,7 @@ export const KNOWLEDGE_ARTICLES = [
             "<strong>Gia công thang máng:</strong> Cắt, đột, chấn từ tôn thép ≥ 1.2mm — độ dày tối thiểu để không cong vênh khi nhúng.",
             "<strong>Làm sạch bề mặt:</strong> Tẩy dầu, tẩy gỉ bằng acid (pickling), rửa nước, flux (kẽm chloride) — chuẩn bị bề mặt sạch cho mạ bám.",
             "<strong>Nhúng kẽm nóng chảy:</strong> Nhúng toàn bộ vào bể kẽm 450°C trong 3–10 phút tùy độ dày. Kẽm phản ứng với thép tạo hợp kim Zn-Fe.",
-            "<strong>Làm nguội & Kiểm tra:</strong> Làm nguội trong nước/hơi nước. Kiểm tra độ dày mạ bằng đồng hồ đo lớp mạ (≥ 65 µm). Kiểm tra bề mặt đều, không có vết thiếu mạ.",
+            "<strong>Làm nguội & Kiểm tra:</strong> Làm nguội trong nước/hơi nước. Kiểm tra độ dày mạ bằng đồng hồ đo lớp mạ theo ISO 1461: thép 1,5–3 mm trung bình ≥ 55 µm, thép 3–6 mm trung bình ≥ 70 µm. Kiểm tra bề mặt đều, không có vết thiếu mạ.",
             "<strong>Đóng gói:</strong> Bọc PE, đóng kiện — tránh va đập làm xước lớp mạ trong vận chuyển.",
           ],
         },
