@@ -2332,10 +2332,16 @@ export const KNOWLEDGE_ARTICLES = [
     slug: "luu-y-nghiem-thu-tu-dien-ha-the",
     title: "Checklist 10 lưu ý quan trọng khi nghiệm thu lắp đặt tủ điện hạ thế tại công trường",
     category: "Nghiệm thu & Vận hành",
-    readTime: "7 phút",
+    readTime: "9 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2025-02-21",
-    dateModified: "2026-02-21",
+    dateModified: "2026-10-29",
+    cover: {
+      src: "/images/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the.svg",
+      og: "/images/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the.png",
+      alt: "Checklist 10 hạng mục nghiệm thu tủ điện hạ thế tại công trường: cơ khí, điện, chức năng, hồ sơ và chụp nhiệt sau đóng điện",
+      caption: "Nghiệm thu tại công trường kiểm tra lại sau vận chuyển và lắp đặt — bổ sung cho Routine Test tại xưởng, không thay thế nó.",
+    },
     quickAnswer: "Nghiệm thu tủ điện hạ thế cần kiểm tra 6 hạng mục: (1) đối chiếu bản vẽ hoàn công, (2) siết lực bu-lông thanh cái bằng torque wrench, (3) đo cách điện pha-pha và pha-vỏ (≥ 1MΩ), (4) kiểm tra tiếp địa PE, (5) test trip rơ-le, (6) kiểm tra interlock an toàn.",
     summary: [
       "Kiểm tra ngoại quan: Sơn không trầy xước, nhãn tên tủ, biển cảnh báo nguy hiểm điện giật đầy đủ.",
@@ -2349,6 +2355,27 @@ export const KNOWLEDGE_ARTICLES = [
           "Nghiệm thu tủ điện hạ thế tại công trường là <strong>bước kiểm soát chất lượng cuối cùng</strong> trước khi đưa tủ vào vận hành. Dù tủ đã qua Routine Test 100% tại xưởng, quá trình vận chuyển, bốc dỡ và lắp đặt tại công trường có thể gây sai lệch: bu-lông thanh cái lỏng, gioăng rách, sơn xước, dây nhị thứ bị kéo đứt — những lỗi này nếu không phát hiện khi nghiệm thu sẽ gây sự cố khi vận hành.",
           "Đối với tư vấn giám sát (TVGĐ) và nhà thầu M&E, checklist nghiệm thu dưới đây được biên soạn theo <strong>IEC 61439-2 Clause 11</strong> và kinh nghiệm thực tế hàng trăm dự án của PTC — áp dụng cho cả MSB, SDB, DB, MCC và tủ solar.",
         ],
+      },
+      {
+        heading: "Routine Test tại xưởng (FAT) và nghiệm thu tại công trường (SAT) — hai bước không thay thế nhau",
+        paragraphs: [
+          "Tổng thầu M&E cần phân biệt rõ hai lớp kiểm soát: <strong>Routine Test (FAT)</strong> do nhà sản xuất thực hiện tại xưởng trước khi giao, và <strong>nghiệm thu tại công trường (SAT)</strong> do TVGĐ/chủ đầu tư thực hiện sau khi lắp đặt. FAT chứng minh tủ đúng thiết kế khi rời xưởng; SAT phát hiện sai lệch phát sinh trong vận chuyển, bốc dỡ và lắp đặt — hai đợt này bổ sung nhau, không thay thế nhau.",
+        ],
+        table: {
+          headers: ["Nội dung", "Routine Test tại xưởng (FAT)", "Nghiệm thu tại công trường (SAT)"],
+          rows: [
+            ["Ai thực hiện", "Kỹ sư QC nhà sản xuất (TVGĐ/chủ đầu tư có thể chứng kiến)", "TVGĐ, tổng thầu M&E, chủ đầu tư"],
+            ["Khi nào", "Trước xuất xưởng, trên 100% số tủ", "Sau lắp đặt, trước khi đóng điện"],
+            ["Nội dung chính", "10 hạng mục theo IEC 61439-2 Clause 11: đấu nối, cách điện, điện áp thử, chức năng bảo vệ", "Đối chiếu As-built, ngoại quan sau vận chuyển, siết lực thanh cái, cách điện, PE, interlock"],
+            ["Phát hiện được", "Sai thiết kế, sai thiết bị, lỗi lắp ráp", "Lỏng bu-lông, rách gioăng, xước sơn, kéo đứt dây nhị thứ do vận chuyển/lắp đặt"],
+            ["Hồ sơ", "Biên bản Routine Test có chữ ký QC", "Biên bản nghiệm thu SAT + danh mục khuyết điểm cần khắc phục (nếu có)"],
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Chứng kiến FAT tại xưởng",
+          text: "Với tủ MSB, ATS hoặc tủ quan trọng, chủ đầu tư/TVGĐ có thể yêu cầu chứng kiến Routine Test tại xưởng trước khi đóng gói giao hàng. Ghi yêu cầu này trong Specification hoặc điều khoản hợp đồng để nhà sản xuất sắp lịch thử nghiệm phù hợp.",
+        },
       },
       {
         heading: "Checklist 10 hạng mục nghiệm thu tủ điện hạ thế",
@@ -4432,5 +4459,110 @@ export const KNOWLEDGE_ARTICLES = [
       },
     ],
   },
+  {
+    slug: "tu-dien-san-xuat-trong-nuoc-vs-nhap-khau",
+    title: "Tủ điện sản xuất trong nước vs nhập khẩu nguyên chiếc: Khi nào nên chọn từng phương án?",
+    category: "So sánh & Lựa chọn",
+    author: "Mr X.Bach PTC",
+    datePublished: "2026-10-29",
+    dateModified: "2026-10-29",
+    cover: {
+      src: "/images/kien-thuc/tu-dien-san-xuat-trong-nuoc-vs-nhap-khau.svg",
+      og: "/images/kien-thuc/tu-dien-san-xuat-trong-nuoc-vs-nhap-khau.png",
+      alt: "Bảng so sánh tủ điện sản xuất trong nước bởi panel builder và tủ điện nhập khẩu nguyên chiếc theo giá, tiến độ, tùy biến và hồ sơ nghiệm thu",
+      caption: "Hai phương án cung cấp tủ điện hạ thế: đóng tại nhà máy trong nước hoặc nhập khẩu nguyên chiếc từ hãng.",
+    },
+    readTime: "9 phút",
+    quickAnswer: "Với đa số nhà máy và dự án công nghiệp tại Việt Nam, tủ sản xuất trong nước bởi panel builder đạt IEC 61439 là phương án hợp lý hơn: tùy biến theo phòng điện và tuyến cáp thực tế, giao theo đợt thi công, phụ tùng và hỗ trợ hiện trường nhanh, giá thấp hơn đáng kể — trong khi thiết bị đóng cắt bên trong (ACB, MCCB) vẫn của hãng quốc tế được chỉ định. Chỉ nên chọn tủ nhập khẩu nguyên chiếc khi Specification bắt buộc type-tested assembly của hãng, khi cấu hình đặc biệt vượt năng lực nhà sản xuất nội địa, hoặc khi chủ đầu tư yêu cầu tủ đồng bộ với hệ thống toàn cầu.",
+    summary: [
+      "\"Tủ nhập khẩu\" và \"tủ nội địa\" chỉ khác ở vỏ tủ, thanh cái và địa điểm lắp ráp — thiết bị đóng cắt bên trong đa số đều của Schneider, ABB, LS, Mitsubishi.",
+      "Chất lượng tủ nội địa phụ thuộc nhà sản xuất: kiểm tra Design Verification IEC 61439, quy trình Routine Test và năng lực xưởng trước khi quyết định.",
+      "Tủ nhập khẩu nguyên chiếc phù hợp khi Specification bắt buộc, hoặc cấu hình đặc biệt (Form 4b cao, arc-proof, IP65+); cần tính thời gian chờ hàng và phụ tùng.",
+    ],
+    body: [
+      {
+        heading: "Phân biệt 3 phương án trên thị trường",
+        paragraphs: [
+          "Khi so sánh \"tủ nội địa\" và \"tủ nhập khẩu\", thực tế có 3 phương án, không phải 2:",
+          "<strong>Tủ nhập khẩu nguyên chiếc (imported switchboard):</strong> tủ được thiết kế, đóng và thử nghiệm tại nhà máy hãng ở nước ngoài (ví dụ các dòng system switchboard của ABB, Schneider, Siemens). Chứng nhận Design Verification theo cấu hình gốc của hãng.",
+          "<strong>Tủ do nhà máy hãng tại Việt Nam lắp ráp:</strong> vỏ và kit của hãng, lắp ráp tại nhà máy/licensed partner của hãng trong nước theo tài liệu kỹ thuật của hãng.",
+          "<strong>Tủ do panel builder trong nước đóng:</strong> nhà sản xuất độc lập (như PTC) tự thiết kế, gia công vỏ, thanh cái, lắp ráp và thử nghiệm — dùng thiết bị đóng cắt của các hãng quốc tế theo chỉ định của chủ đầu tư. Đây là phương án phổ biến nhất tại Việt Nam.",
+        ],
+      },
+      {
+        heading: "Bảng so sánh hai phương án chính",
+        table: {
+          headers: ["Tiêu chí", "Tủ nhập khẩu nguyên chiếc", "Tủ đóng trong nước (panel builder đạt chuẩn)"],
+          rows: [
+            ["Giá thành", "Cao (chi phí vỏ, logistics, thuế, lợi nhuận hãng)", "Thấp hơn đáng kể cho cùng cấu hình thiết bị bên trong"],
+            ["Tiến độ", "Phụ thuộc lead time hãng + vận chuyển, khó điều chỉnh", "Linh hoạt, có thể giao theo đợt/block thi công"],
+            ["Tùy biến", "Cấu hình khung chuẩn của hãng, khó thay đổi", "Tùy biến theo phòng điện, tuyến cáp, mương cáp, hướng cáp vào/ra"],
+            ["Thiết bị bên trong", "Thiết bị của chính hãng đóng tủ", "Thiết bị hãng quốc tế theo chỉ định (Schneider, ABB, LS, Mitsubishi)"],
+            ["Tiêu chuẩn & chứng nhận", "Design Verification cho cấu hình gốc của hãng", "Design Verification của chính nhà sản xuất theo IEC 61439-1/2 + Routine Test"],
+            ["Phụ tùng, bảo hành", "Phụ thuộc kênh hãng; vỏ tủ/linh kiện đặc chủng chờ lâu", "Nhà sản xuất cung cấp trực tiếp; vỏ, thanh cái, phụ kiện gia công lại được"],
+            ["Mở rộng về sau", "Mua thêm ngăn/dãy cùng mã hãng, giá cao, chờ hàng", "Gia công thêm ngăn, đấu nối thanh cái mở rộng tại chỗ"],
+            ["Hồ sơ dự án FDI", "Mạnh khi Specification chỉ định tủ hãng", "Đủ khi hồ sơ Design Verification, Routine Test, CO/CQ thiết bị đầy đủ"],
+          ],
+        },
+      },
+      {
+        heading: "Khi nào nên chọn tủ sản xuất trong nước",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Phòng điện và tuyến cáp cần tùy biến:</strong> dãy tủ phải khớp mặt bằng thực tế, hướng cáp vào/ra theo mương cáp, thang máng cáp của dự án — panel builder bản vẽ theo điều kiện hiện trường.",
+            "<strong>Tiến độ phụ thuộc đợt thi công:</strong> cần giao tủ theo block/đợt theo tiến độ M&E thay vì nhận cả lô một lần.",
+            "<strong>Cần hỗ trợ nhanh tại hiện trường:</strong> đấu nối, chuyển tải, mở rộng, thay thế linh kiện trong vận hành — nhà sản xuất nội địa cử kỹ sư và gia công phụ tùng trực tiếp.",
+            "<strong>Dự án có nhiều lần mở rộng:</strong> thêm ngăn, thêm lộ ra, đấu thanh cái nối tiếp — chi phí và thời gian thấp hơn nhiều so với mua ngăn mở rộng của hãng.",
+            "<strong>Ngân sách tối ưu:</strong> cùng một cấu hình ACB/MCCB hãng chỉ định, tủ nội địa tiết kiệm đáng kể phần vỏ, thanh cái và lắp ráp — ngân sách dồn cho thiết bị bên trong.",
+          ],
+        },
+      },
+      {
+        heading: "Khi nào nên cân nhắc tủ nhập khẩu nguyên chiếc",
+        list: {
+          ordered: false,
+          items: [
+            "<strong>Specification bắt buộc type-tested assembly của hãng:</strong> một số chủ đầu tư FDI chỉ định cụ thể hệ thống tủ của hãng (không chấp nhận panel builder). Kiểm tra mục này trong Specification trước khi báo giá.",
+            "<strong>Cấu hình đặc biệt:</strong> Form 4b cao cấp, vỏ arc-proof chịu hồ quang nội (internal arc) theo IEC/TR 61641, IP65+ cho môi trường đặc thù — những cấu hình này cần Design Verification đặc biệt mà không phải nhà sản xuất nội địa nào cũng có.",
+            "<strong>Đồng bộ toàn cầu:</strong> tập đoàn có nhiều nhà máy muốn thống nhất mã tủ và phụ tùng giữa các quốc gia.",
+            "<strong>Lưu ý ngược lại:</strong> ngay cả khi Specification ghi 'tủ nhập khẩu', cần kiểm tra điều kiện bảo hành, lead time, chi phí phụ tùng về sau và kích thước thực tế của khung tủ chuẩn so với phòng điện Việt Nam.",
+          ],
+        },
+      },
+      {
+        heading: "Cách đánh giá năng lực nhà sản xuất tủ trong nước",
+        paragraphs: [
+          "Quyết định 'nội địa hay nhập khẩu' chỉ đúng khi panel builder đạt chuẩn. Kiểm tra 5 điểm sau trước khi đặt hàng:",
+        ],
+        list: {
+          ordered: true,
+          items: [
+            "<strong>Design Verification theo IEC 61439:</strong> yêu cầu hồ sơ chứng minh thiết kế (độ bền nhiệt, cách điện, chịu ngắn mạch) theo IEC 61439-1/2 — đây là điểm phân biệt xưởng đạt chuẩn và xưởng lắp ráp thủ công. Xem <a href=\"/kien-thuc/tieu-chuan-iec-61439-la-gi\" class=\"text-primary font-medium\">bài IEC 61439</a>.",
+            "<strong>Routine Test 100%:</strong> mọi tủ phải được thử đầy đủ các hạng mục routine test trước xuất xưởng, có biên bản ký duyệt.",
+            "<strong>Năng lực xưởng:</strong> cơ khí vỏ, sơn tĩnh điện, gia công thanh cái tại chỗ hay gia công ngoài — khép kín thì kiểm soát dung sai và tiến độ tốt hơn.",
+            "<strong>Chất lượng Shop Drawing:</strong> bản vẽ phát hành có đầy đủ SLD, layout, mặt cắt ngăn, BOM không. Xem <a href=\"/kien-thuc/tham-dinh-shop-drawing-tu-dien-ha-the\" class=\"text-primary font-medium\">checklist thẩm định Shop Drawing</a>.",
+            "<strong>Hồ sơ bàn giao:</strong> CO/CQ thiết bị chính hãng, bản vẽ As-built, tài liệu vận hành — xem <a href=\"/kien-thuc/luu-y-nghiem-thu-tu-dien-ha-the\" class=\"text-primary font-medium\">checklist nghiệm thu</a>.",
+          ],
+        },
+        callout: {
+          type: "info",
+          title: "Vai trò của 'manufacturer' theo IEC 61439",
+          text: "Theo IEC 61439-1, đơn vị chịu trách nhiệm về Design Verification và Routine Test là <strong>manufacturer</strong> — tức nhà sản xuất bộ tủ đóng cắt hoàn chỉnh, không phải hãng thiết bị bên trong. Vì vậy 'tủ Schneider' và 'tủ đóng tại xưởng đạt chuẩn dùng thiết bị Schneider' khác nhau ở người chịu trách nhiệm kỹ thuật — đây chính là thứ cần đánh giá khi chọn panel builder.",
+        },
+      },
+      {
+        heading: "Ghi phương án trong yêu cầu báo giá thế nào",
+        paragraphs: [
+          "Để so sánh công bằng giữa các nhà cung cấp, Specification hoặc BOQ nên ghi rõ: cấu hình tủ (Form, IP, Icu/Icw), hãng thiết bị đóng cắt chỉ định, yêu cầu Design Verification/Routine Test, và đơn vị sản xuất được chấp nhận (panel builder nội địa, licensed partner hay tủ hãng nguyên chiếc). Nếu chỉ ghi 'tủ hãng X', báo giá nhận được sẽ không so được vì mỗi nơi hiểu một cách.",
+          "Khi nhận báo giá, đối chiếu cùng một cấu hình thiết bị bên trong trước, rồi mới so phần vỏ, thanh cái và dịch vụ đi kèm — xem <a href=\"/kien-thuc/bao-gia-tu-msb-theo-dong-ngan-mach\" class=\"text-primary font-medium\">cách đọc báo giá tủ MSB</a>.",
+        ],
+        callout: {
+          type: "tip",
+          title: "Gửi SLD/BOQ để PTC tư vấn phương án phù hợp",
+          text: "Gửi sơ đồ nguyên lý, Specification và yêu cầu chỉ định hãng qua Zalo hoặc trang <a href=\"/gui-ban-ve-boq\" class=\"text-primary font-medium\">gửi bản vẽ / BOQ</a>. Ban Kỹ thuật PTC sẽ phản hồi cấu hình, phương án sản xuất và hồ sơ kỹ thuật đi kèm.",
+        },
+      },
+    ],
+  },
 ];
-
