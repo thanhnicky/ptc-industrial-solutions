@@ -12,7 +12,7 @@ import { OrganizationSchema, FAQSchema } from "@/components/seo/JsonLd";
 
 const TITLE = "Chính sách Bảo hành & Hỗ trợ kỹ thuật hiện trường | PTC Switchboard";
 const DESC =
-  "Cam kết dịch vụ hậu mãi PTC: Phản hồi bảo hành trong 2 giờ, hỗ trợ kỹ thuật hiện trường trong 24–48 giờ tại khu vực phù hợp, hỗ trợ đấu nối và nghiệm thu.";
+  "Cam kết dịch vụ hậu mãi PTC: phản hồi nhanh khi có sự cố kỹ thuật, cử kỹ sư hỗ trợ hiện trường theo phạm vi hợp đồng, hỗ trợ đấu nối và nghiệm thu.";
 
 const FAQS = [
   {
@@ -21,9 +21,9 @@ const FAQS = [
       "Thời gian bảo hành tiêu chuẩn là 12 đến 24 tháng kể từ ngày giao hàng hoặc nghiệm thu đóng điện (tùy theo điều khoản cụ thể trong hợp đồng kinh tế và chính sách bảo hành của hãng thiết bị đóng cắt chỉ định).",
   },
   {
-    question: "SLA phản hồi sự cố kỹ thuật của PTC được thực hiện như thế nào?",
+    question: "PTC tiếp nhận và xử lý sự cố kỹ thuật như thế nào?",
     answer:
-      "Kỹ sư PTC tiếp nhận thông tin và phản hồi giải pháp sơ bộ trong vòng 2 giờ sau khi nhận được thông báo qua Hotline/Zalo/Email. Đối với các sự cố cần xử lý hiện trường, PTC cử kỹ sư có mặt trong vòng 24–48 giờ đối với các khu vực phù hợp theo cam kết hợp đồng.",
+      "Kỹ sư PTC tiếp nhận thông tin và phản hồi giải pháp sơ bộ trong thời gian sớm nhất sau khi nhận được thông báo qua Hotline/Zalo/Email. Đối với các sự cố cần xử lý hiện trường, PTC cử kỹ sư theo phạm vi và thời gian thỏa thuận trong hợp đồng.",
   },
   {
     question: "PTC có hỗ trợ kỹ thuật trong giai đoạn đấu nối và đóng điện chạy thử (Commissioning) không?",
@@ -56,7 +56,7 @@ function Page() {
 
       <PageHero
         title="Bảo hành & Hỗ trợ kỹ thuật"
-        subtitle="Hỗ trợ dài hạn trong suốt vòng đời dự án: phản hồi kỹ thuật trong 2 giờ, hiện trường 24–48 giờ, bàn giao đầy đủ hồ sơ nghiệm thu."
+        subtitle="Hỗ trợ dài hạn trong suốt vòng đời dự án: phản hồi kỹ thuật nhanh, hỗ trợ hiện trường theo phạm vi hợp đồng, bàn giao đầy đủ hồ sơ nghiệm thu."
         image={IMAGES.warehouse}
       >
         <ZaloButton size="lg" location="hero-bao-hanh" />
@@ -72,15 +72,15 @@ function Page() {
               Chính sách bảo hành và cam kết hỗ trợ kỹ thuật của PTC Switchboard
             </h1>
             <p className="text-base leading-relaxed text-muted-foreground">
-              PTC Switchboard phụ trách kỹ thuật từ thiết kế, giao hàng, đấu nối đến vận hành cho tổng thầu M&E và chủ đầu tư. Mọi yêu cầu hỗ trợ kỹ thuật đều được xử lý theo quy trình SLA rõ ràng.
+              PTC Switchboard phụ trách kỹ thuật từ thiết kế, giao hàng, đấu nối đến vận hành cho tổng thầu M&E và chủ đầu tư. Mọi yêu cầu hỗ trợ kỹ thuật đều được xử lý theo quy trình dịch vụ rõ ràng.
             </p>
           </div>
 
           <QuickSummary
-            title="Cam kết SLA dịch vụ hậu mãi của PTC"
+            title="Cam kết dịch vụ hậu mãi của PTC"
             bullets={[
-              "Phản hồi kỹ thuật trong 2 giờ: Tiếp nhận thông tin và hướng dẫn xử lý sơ bộ nhanh chóng.",
-              "Hiện trường trong 24–48 giờ: Có mặt tại công trình đối với các khu vực phù hợp theo chính sách dự án.",
+              "Phản hồi kỹ thuật nhanh: Tiếp nhận thông tin và hướng dẫn xử lý sơ bộ.",
+              "Hỗ trợ hiện trường: Cử kỹ sư tới công trình theo phạm vi thỏa thuận trong hợp đồng.",
               "Bảo hành chính hãng: Thiết bị đóng cắt được bảo hành theo tiêu chuẩn nhà sản xuất (Schneider, ABB, Mitsubishi, LS...).",
               "Lưu trữ hồ sơ dự án: Bản vẽ As-built và cấu hình tủ được lưu trữ để phục vụ bảo trì, nâng cấp mở rộng sau này.",
             ]}
@@ -90,14 +90,14 @@ function Page() {
           <div className="grid gap-6 sm:grid-cols-3">
             <div className="rounded-lg border border-border bg-card p-5">
               <Clock className="size-6 text-primary" aria-hidden="true" />
-              <h2 className="mt-3 text-sm font-semibold text-ink">Phản hồi 2 giờ</h2>
+              <h2 className="mt-3 text-sm font-semibold text-ink">Phản hồi nhanh</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Kênh tiếp nhận trực tiếp qua Hotline CSKH và Zalo kỹ sư phụ trách dự án, giải đáp thắc mắc đấu nối 24/7.
               </p>
             </div>
             <div className="rounded-lg border border-border bg-card p-5">
               <MapPin className="size-6 text-primary" aria-hidden="true" />
-              <h2 className="mt-3 text-sm font-semibold text-ink">Hiện trường 24–48h</h2>
+              <h2 className="mt-3 text-sm font-semibold text-ink">Hỗ trợ hiện trường</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Cử kỹ sư giàu kinh nghiệm trực tiếp kiểm tra, phối hợp xử lý sự cố tại hiện trường dự án.
               </p>
@@ -132,7 +132,7 @@ function Page() {
                   2
                 </span>
                 <div>
-                  <h3 className="text-sm font-semibold text-ink">Chẩn đoán và phản hồi sơ bộ (Trong 2 giờ)</h3>
+                  <h3 className="text-sm font-semibold text-ink">Chẩn đoán và phản hồi sơ bộ</h3>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Kỹ sư PTC tra cứu hồ sơ hoàn công của tủ, phân tích nguyên nhân và hướng dẫn biện pháp an toàn/cách ly phụ tải.
                   </p>
@@ -144,7 +144,7 @@ function Page() {
                   3
                 </span>
                 <div>
-                  <h3 className="text-sm font-semibold text-ink">Xử lý hiện trường (24–48 giờ)</h3>
+                  <h3 className="text-sm font-semibold text-ink">Xử lý hiện trường</h3>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     Kỹ sư kỹ thuật PTC có mặt tại công trình cùng thiết bị đo kiểm và linh kiện thay thế dự phòng để xử lý dứt điểm.
                   </p>

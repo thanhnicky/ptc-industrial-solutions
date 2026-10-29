@@ -183,17 +183,17 @@ function Page() {
             </div>
           </div>
 
-          {/* Cam kết SLA Hậu Mãi */}
+          {/* Cam kết Hậu mãi */}
           <div className="rounded-lg border border-primary/20 bg-primary/[0.02] p-6">
-            <h2 className="text-base font-semibold text-ink">Cam kết bảo hành & Hỗ trợ kỹ thuật (SLA)</h2>
+            <h2 className="text-base font-semibold text-ink">Cam kết bảo hành & Hỗ trợ kỹ thuật</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm leading-relaxed text-muted-foreground">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                <span><strong>Phản hồi trong 2 giờ:</strong> Tiếp nhận thông tin sự cố kỹ thuật và đưa ra phương án xử lý sơ bộ qua điện thoại/Zalo.</span>
+                <span><strong>Phản hồi nhanh:</strong> Tiếp nhận thông tin sự cố kỹ thuật và đưa ra phương án xử lý sơ bộ qua điện thoại/Zalo.</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                <span><strong>Hiện trường trong 24–48 giờ:</strong> Cử kỹ sư trực tiếp hỗ trợ xử lý tại hiện trường cho các dự án theo thỏa thuận hợp đồng.</span>
+                <span><strong>Hỗ trợ hiện trường:</strong> Cử kỹ sư trực tiếp hỗ trợ xử lý tại hiện trường cho các dự án theo thỏa thuận hợp đồng.</span>
               </div>
             </div>
           </div>

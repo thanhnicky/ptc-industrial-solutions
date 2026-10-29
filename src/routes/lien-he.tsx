@@ -34,7 +34,7 @@ function Page() {
 
       <PageHero
         title="Liên hệ PTC"
-        subtitle="Gọi hotline hoặc nhắn Zalo để được kỹ sư PTC tư vấn ngay. Yêu cầu báo giá gửi qua form sẽ được phản hồi trong vòng 24h."
+        subtitle="Gọi hotline hoặc nhắn Zalo để được kỹ sư PTC tư vấn ngay. Yêu cầu báo giá gửi qua form sẽ được phản hồi trong thời gian sớm nhất."
         image={IMAGES.warehouse}
       >
         <ZaloButton size="lg" location="hero-lien-he" />

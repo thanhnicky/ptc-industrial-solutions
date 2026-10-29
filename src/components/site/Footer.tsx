@@ -22,7 +22,7 @@ export function Footer() {
           <div className="space-y-1.5 text-sm text-steel-foreground/70">
             <p><strong>Mã số thuế:</strong> {CONTACT.taxCode}</p>
             <p><strong>Tiêu chuẩn:</strong> ISO 9001:2015 · IEC 61439-1/2 · QUATEST 3</p>
-            <p><strong>SLA Hậu mãi:</strong> Phản hồi 2h · Hiện trường 24–48h</p>
+            <p><strong>Hậu mãi:</strong> Hỗ trợ kỹ thuật &amp; hiện trường</p>
           </div>
           <Link to={"/gioi-thieu-ptc" as never} className="inline-block text-[14px] font-medium text-steel-foreground/80 transition-colors hover:text-white">
             Giới thiệu PTC

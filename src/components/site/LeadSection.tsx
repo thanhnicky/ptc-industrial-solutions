@@ -4,7 +4,7 @@ import { Section, SectionHeading } from "./Section";
 
 export function LeadSection({
   title = "Yêu cầu báo giá & tư vấn dự án",
-  intro = "Để lại thông tin dự án, chúng tôi sẽ liên hệ lại trong vòng 24h để hỗ trợ báo giá và tư vấn giải pháp tủ điện & thang máng cáp phù hợp.",
+  intro = "Để lại thông tin dự án, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất để hỗ trợ báo giá và tư vấn giải pháp tủ điện & thang máng cáp phù hợp.",
   defaultNeed = "khac",
   sourcePage,
 }: {

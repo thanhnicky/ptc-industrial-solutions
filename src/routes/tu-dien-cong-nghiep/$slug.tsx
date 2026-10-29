@@ -158,7 +158,7 @@ function Page() {
             <div className="mt-4 flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-sm font-semibold text-ink">Cần shop drawing 2D/3D cho dự án?</p>
-                <p className="mt-0.5 text-xs text-muted-foreground">Gửi SLD qua Zalo — PTC phát hành shop drawing trong 24-48h.</p>
+                <p className="mt-0.5 text-xs text-muted-foreground">Gửi SLD qua Zalo — PTC phát hành shop drawing theo tiến độ thống nhất.</p>
               </div>
               <ZaloButton size="sm" location={`shop-drawing-${product.slug}`} label="Yêu cầu shop drawing" />
             </div>

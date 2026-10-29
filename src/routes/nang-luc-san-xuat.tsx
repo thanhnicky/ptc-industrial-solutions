@@ -38,7 +38,7 @@ const STATS = [
   ["~ 3.000 m²", "Diện tích nhà máy"],
   ["3", "Văn phòng: TP.HCM – Hà Nội – Đà Nẵng"],
   ["6300A", "Dòng định mức tủ MSB tối đa"],
-  ["24h", "Thời gian phản hồi báo giá"],
+  ["IEC 61439-1/2", "Chuẩn thiết kế tủ hạ thế"],
 ];
 
 function Page() {

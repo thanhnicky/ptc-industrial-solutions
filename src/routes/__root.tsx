@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Công ty Cổ phần Tủ bảng điện PTC – Sản xuất tủ điện hạ thế (MSB, MCC, DB, ATS, Solar) và thang máng cáp theo chuẩn IEC 61439-1/2, ISO 9001:2015 tại TP.HCM. Báo giá trong 24h.",
+          "Công ty Cổ phần Tủ bảng điện PTC – Sản xuất tủ điện hạ thế (MSB, MCC, DB, ATS, Solar) và thang máng cáp theo chuẩn IEC 61439-1/2, ISO 9001:2015 tại TP.HCM. Báo giá theo SLD/BOQ.",
       },
       { name: "author", content: "PTC Switchboard" },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },

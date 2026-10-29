@@ -40,11 +40,6 @@ export const CONTACT = {
   mapEmbed:
     "https://www.google.com/maps?q=15%20%C4%90%C6%B0%E1%BB%9Dng%2015%20Linh%20Xu%C3%A2n%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed",
   
-  // SLA Hỗ trợ kỹ thuật & bảo hành
-  sla: {
-    responseHours: 2, // Phản hồi trong 2 giờ
-    fieldDispatchHours: "24–48 giờ", // Xử lý hiện trường trong 24-48h theo khu vực
-  },
 
   // Chứng nhận & tiêu chuẩn công bố
   standards: [
@@ -597,8 +592,8 @@ export const AUDIENCES = [
   },
   {
     title: "EPC điện mặt trời",
-    pain: "Đúng thông số inverter · phản hồi trong ngày",
-    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của điện lực; máng cáp mạ kẽm nhúng nóng chịu bức xạ và gió trên mái nhà xưởng. Phản hồi kỹ thuật trong ngày, giao hàng bám lịch lắp đặt trên mái.",
+    pain: "Đúng thông số inverter · phản hồi nhanh",
+    desc: "Tủ DC combiner, tủ AC và tủ hòa lưới đúng thông số inverter, cấp bảo vệ và yêu cầu đấu nối của điện lực; máng cáp mạ kẽm nhúng nóng chịu bức xạ và gió trên mái nhà xưởng. Kỹ sư phản hồi nhanh, giao hàng bám lịch lắp đặt trên mái.",
   },
 ];
 
@@ -2318,8 +2313,8 @@ export const KNOWLEDGE_ARTICLES = [
         list: {
           ordered: true,
           items: [
-            "<strong>Tiếp nhận & Phân công (trong 2 giờ):</strong> Kỹ sư dự án tiếp nhận, phân công cho kỹ sư thiết kế phù hợp ngành (nhà máy / solar / tòa nhà).",
-            "<strong>Bóc tách & Tính toán (4–8 giờ):</strong> Rà soát thông số, tính Icw nếu chưa có, bóc tách vật tư, tính toán thanh cái, đề xuất cấu hình phù hợp.",
+            "<strong>Tiếp nhận & Phân công:</strong> Kỹ sư dự án tiếp nhận, phân công cho kỹ sư thiết kế phù hợp ngành (nhà máy / solar / tòa nhà).",
+            "<strong>Bóc tách & Tính toán:</strong> Rà soát thông số, tính Icw nếu chưa có, bóc tách vật tư, tính toán thanh cái, đề xuất cấu hình phù hợp.",
             "<strong>Làm rõ thông số thiếu (nếu có):</strong> Kỹ sư PTC chủ động gọi/Zalo hỏi bổ sung — không để khách hàng tự tìm.",
             "<strong>Phát hành báo giá (trong thời gian sớm nhất):</strong> Báo giá chi tiết theo tủ, kèm tiến độ sản xuất, phương án hãng thiết bị, và ghi rõ điều kiện kỹ thuật.",
             "<strong>Theo dõi & Hỗ trợ kỹ thuật:</strong> Sau khi gửi báo giá, PTC tiếp tục hỗ trợ giải thích, điều chỉnh, và phối hợp với tư vấn thiết kế nếu cần.",
@@ -2801,7 +2796,7 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "Xưởng nhỏ thường không có bảo hành hoặc chỉ bảo hành miệng (không có hợp đồng). Khi sự cố xảy ra, 3 kịch bản:",
           "(1) Xưởng không nhận trách nhiệm — cho rằng lỗi do lắp đặt hoặc vận hành. (2) Xưởng đã đóng cửa hoặc chuyển đổi — không liên lạc được. (3) Xưởng nhận sửa nhưng tính phí đầy đủ — chi phí sửa = 30–50% giá tủ mới.",
-          "PTC bảo hành 12–24 tháng có hợp đồng, rõ phạm vi (lỗi sản xuất, lỗi vật tư) và SLA (phản hồi 2 giờ, đến hiện trường 24–48 giờ). Chi phí bảo hành đã bao gồm trong giá tủ — không phát sinh thêm.",
+          "PTC bảo hành 12–24 tháng có hợp đồng, rõ phạm vi (lỗi sản xuất, lỗi vật tư) và hỗ trợ kỹ thuật (phản hồi nhanh, cử kỹ sư hiện trường theo thỏa thuận hợp đồng). Chi phí bảo hành đã bao gồm trong giá tủ — không phát sinh thêm.",
         ],
       },
       {
@@ -2838,55 +2833,55 @@ export const KNOWLEDGE_ARTICLES = [
   },
   {
     slug: "tu-dien-cong-nghiep-kcn-binh-duong-dong-nai",
-    title: "Tủ điện công nghiệp tại KCN Bình Dương, Đồng Nai — Nhà máy PTC giao hàng 24h",
+    title: "Tủ điện công nghiệp tại KCN Bình Dương, Đồng Nai — Nhà máy PTC gần công trình",
     category: "Khu vực",
     readTime: "6 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2026-03-22",
     dateModified: "2026-03-22",
-    quickAnswer: "PTC cung cấp tủ điện và thang máng cáp cho KCN Bình Dương (VSIP, Mỹ Phước, Đồng An) và Đồng Nai (Long Đức, Amata, Long Bình). Thời gian giao: 24-48h cho tủ DB/SDB, 10-15 ngày cho MSB/MCC theo bản vẽ. Hỗ trợ hiện trường trong 24h.",
+    quickAnswer: "PTC cung cấp tủ điện và thang máng cáp cho KCN Bình Dương (VSIP, Mỹ Phước, Đồng An) và Đồng Nai (Long Đức, Amata, Long Bình). Nhà máy PTC gần các KCN nên giao hàng và hỗ trợ hiện trường thuận tiện; thời gian giao theo thỏa thuận từng đơn hàng.",
     summary: [
       "Phạm vi phục vụ: VSIP 1/2/3, Mỹ Phước 1/2/3, Đồng An, Kizuna (Bình Dương) + Long Đức, Amata, Long Bình, Biên Hòa (Đồng Nai).",
-      "Thời gian giao: 24-48h cho tủ DB/SDB có sẵn, 10-15 ngày cho MSB/MCC sản xuất theo bản vẽ.",
-      "Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương/Đồng Nai — phản hồi Zalo trong 2 giờ.",
+      "Thời gian giao: theo thỏa thuận từng đơn hàng, thông báo rõ trong báo giá; tủ DB/SDB có sẵn thì nhanh hơn tủ MSB/MCC sản xuất theo bản vẽ.",
+      "Nhà máy PTC gần các KCN nên thuận tiện cho giao hàng và hỗ trợ kỹ thuật tại hiện trường.",
     ],
     body: [
       {
         heading: "Vì sao KCN Bình Dương và Đồng Nai là thị trường trọng điểm của PTC",
         paragraphs: [
           "Bình Dương và Đồng Nai là 2 tỉnh có <strong>mật độ KCN cao nhất miền Nam</strong> sau TP.HCM — với hàng nghìn nhà máy FDI (Nhật, Hàn, Đài Loan, châu Âu) và nhà máy nội địa. Nhu cầu tủ điện công nghiệp và thang máng cáp cho nhà máy mới + mở rộng + bảo trì định kỳ là liên tục.",
-          "Nhà máy PTC tại Linh Xuân, TP.HCM cách Bình Dương 30–60 phút, cách Đồng Nai 45–90 phút — cho phép giao hàng nhanh và hỗ trợ kỹ thuật hiện trường trong ngày. Đây là lợi thế cạnh tranh so với xưởng ở miền Bắc hoặc miền Trung.",
+          "Nhà máy PTC tại Linh Xuân, TP.HCM cách Bình Dương 30–60 phút, cách Đồng Nai 45–90 phút — cho phép giao hàng thuận tiện và hỗ trợ kỹ thuật hiện trường nhanh. Đây là lợi thế cạnh tranh so với xưởng ở miền Bắc hoặc miền Trung.",
         ],
       },
       {
         heading: "Danh sách KCN phục vụ — Bình Dương",
         table: {
-          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Thời gian giao"],
+          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Ghi chú giao hàng"],
           rows: [
-            ["VSIP 1", "Thuận An", "FDI đa quốc gia", "24-48h DB, 10-15 ngày MSB"],
-            ["VSIP 2", "Bến Cát", "FDI, KCN xanh", "24-48h DB, 10-15 ngày MSB"],
-            ["VSIP 3", "Bàu Bàng", "FDI mới, LG/Schneider", "24-48h DB, 10-15 ngày MSB"],
-            ["Mỹ Phước 1/2/3", "Bến Cát", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
-            ["Đồng An 1/2", "Dĩ An", "FDI Đài Loan, Hàn", "24-48h DB, 10-15 ngày MSB"],
-            ["Kizuna", "Bến Cát", "SME + FDI nhỏ", "24-48h DB, 10-15 ngày MSB"],
-            ["Sóng Thần 1/2/3", "Dĩ An", "Hỗn hợp", "24-48h DB, 10-15 ngày MSB"],
-            ["Mapletree", "Bến Cát", "Logistics + FDI", "24-48h DB, 10-15 ngày MSB"],
+            ["VSIP 1", "Thuận An", "FDI đa quốc gia", "Theo đơn hàng"],
+            ["VSIP 2", "Bến Cát", "FDI, KCN xanh", "Theo đơn hàng"],
+            ["VSIP 3", "Bàu Bàng", "FDI mới, LG/Schneider", "Theo đơn hàng"],
+            ["Mỹ Phước 1/2/3", "Bến Cát", "FDI + nội địa", "Theo đơn hàng"],
+            ["Đồng An 1/2", "Dĩ An", "FDI Đài Loan, Hàn", "Theo đơn hàng"],
+            ["Kizuna", "Bến Cát", "SME + FDI nhỏ", "Theo đơn hàng"],
+            ["Sóng Thần 1/2/3", "Dĩ An", "Hỗn hợp", "Theo đơn hàng"],
+            ["Mapletree", "Bến Cát", "Logistics + FDI", "Theo đơn hàng"],
           ],
         },
       },
       {
         heading: "Danh sách KCN phục vụ — Đồng Nai",
         table: {
-          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Thời gian giao"],
+          headers: ["KCN", "Huyện/Thành phố", "Loại hình", "Ghi chú giao hàng"],
           rows: [
-            ["Long Đức", "Trảng Bom", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
-            ["Amata", "Biên Hòa", "FDI cao cấp", "24-48h DB, 10-15 ngày MSB"],
-            ["Long Bình", "Biên Hòa", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
-            ["Biên Hòa 1/2", "Biên Hòa", "Hỗn hợp", "24-48h DB, 10-15 ngày MSB"],
-            ["Bàu Xéo", "Trảng Bom", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
-            ["Long Khánh", "Long Khánh", "Nội địa + FDI", "24-48h DB, 10-15 ngày MSB"],
-            ["Nhơn Trạch 1/2/3", "Nhơn Trạch", "FDI + nội địa", "24-48h DB, 10-15 ngày MSB"],
-            ["Phúc Điền", "Cẩm Mỹ", "FDI mới", "24-48h DB, 10-15 ngày MSB"],
+            ["Long Đức", "Trảng Bom", "FDI + nội địa", "Theo đơn hàng"],
+            ["Amata", "Biên Hòa", "FDI cao cấp", "Theo đơn hàng"],
+            ["Long Bình", "Biên Hòa", "FDI + nội địa", "Theo đơn hàng"],
+            ["Biên Hòa 1/2", "Biên Hòa", "Hỗn hợp", "Theo đơn hàng"],
+            ["Bàu Xéo", "Trảng Bom", "FDI + nội địa", "Theo đơn hàng"],
+            ["Long Khánh", "Long Khánh", "Nội địa + FDI", "Theo đơn hàng"],
+            ["Nhơn Trạch 1/2/3", "Nhơn Trạch", "FDI + nội địa", "Theo đơn hàng"],
+            ["Phúc Điền", "Cẩm Mỹ", "FDI mới", "Theo đơn hàng"],
           ],
         },
       },
@@ -2910,18 +2905,18 @@ export const KNOWLEDGE_ARTICLES = [
         list: {
           ordered: true,
           items: [
-            "<strong>Gửi yêu cầu qua Zalo</strong> — sơ đồ đơn tuyến, BOQ, hoặc mô tả nhu cầu. Kỹ sư PTC phản hồi trong 2 giờ.",
+            "<strong>Gửi yêu cầu qua Zalo</strong> — sơ đồ đơn tuyến, BOQ, hoặc mô tả nhu cầu. Kỹ sư PTC phản hồi trong thời gian sớm nhất.",
             "<strong>Kỹ sư PTC đến hiện trường khảo sát</strong> — cho dự án lớn (MSB > 1600A, KCN mới). Miễn phí trong Bình Dương/Đồng Nai.",
             "<strong>Nhận báo giá kỹ thuật trong thời gian sớm nhất</strong> — chi tiết theo tủ, kèm tiến độ và hãng thiết bị.",
             "<strong>Phát hành bản vẽ Shop drawing</strong> — sau khi chốt, kỹ sư phát hành bản vẽ để phê duyệt trước khi sản xuất.",
-            "<strong>Sản xuất + Routine Test</strong> — 10-15 ngày cho MSB/MCC, 3-7 ngày cho DB/SDB.",
-            "<strong>Giao hàng + hỗ trợ lắp đặt</strong> — giao trong 24-48h, kỹ sư hỗ trợ đấu nối nếu cần.",
+            "<strong>Sản xuất + Routine Test</strong> — theo tiến độ thống nhất trong báo giá/đơn hàng.",
+            "<strong>Giao hàng + hỗ trợ lắp đặt</strong> — giao theo tiến độ thống nhất, kỹ sư hỗ trợ đấu nối nếu cần.",
           ],
         },
         callout: {
           type: "tip",
           title: "Nhà máy tại KCN Bình Dương / Đồng Nai cần tủ điện?",
-          text: "Gửi yêu cầu qua Zalo cho Ban Kỹ thuật PTC — phản hồi trong 2 giờ, báo giá trong thời gian sớm nhất, giao hàng 24-48h cho tủ có sẵn. Hỗ trợ kỹ thuật hiện trường trong 24h tại Bình Dương và Đồng Nai.",
+          text: "Gửi yêu cầu qua Zalo cho Ban Kỹ thuật PTC — phản hồi và báo giá trong thời gian sớm nhất; thời gian giao thỏa thuận theo từng đơn hàng. Nhà máy PTC gần các KCN Bình Dương, Đồng Nai nên thuận tiện cho giao hàng và hỗ trợ hiện trường.",
         },
       },
     ],
@@ -3206,10 +3201,10 @@ export const KNOWLEDGE_ARTICLES = [
         list: {
           ordered: true,
           items: [
-            "<strong>Nhận hồ sơ (0-2h):</strong> Tiếp nhận SLD, BOQ, yêu cầu kỹ thuật qua Zalo hoặc email. Kỹ sư xác nhận đủ/thiếu thông tin.",
+            "<strong>Nhận hồ sơ:</strong> Tiếp nhận SLD, BOQ, yêu cầu kỹ thuật qua Zalo hoặc email. Kỹ sư xác nhận đủ/thiếu thông tin.",
             "<strong>Rà soát thông số (2-8h):</strong> Kiểm tra dòng định mức, Icw, cấp IP, Form tủ, hãng thiết bị chỉ định. Nếu thiếu, PTC đề xuất giá trị mặc định hoặc hỏi lại.",
             "<strong>Bóc tách vật tư:</strong> Bóc tách từng ngăn lộ: ACB, MCCB, contactor, relay, thanh cái đồng, vỏ tủ, phụ kiện. Tính khối lượng vật tư chính xác theo SLD.",
-            "<strong>Tính toán thanh cái + vỏ (8-48h):</strong> Tính tiết diện thanh cái theo Icw, chọn vật liệu vỏ (sơn tĩnh điện/Inox), xác định kích thước tủ theo số ngăn + Form.",
+            "<strong>Tính toán thanh cái + vỏ:</strong> Tính tiết diện thanh cái theo Icw, chọn vật liệu vỏ (sơn tĩnh điện/Inox), xác định kích thước tủ theo số ngăn + Form.",
             "<strong>Gửi báo giá (trong thời gian sớm nhất):</strong> Phát hành báo giá chi tiết kèm: bảng bóc tách vật tư, tiến độ sản xuất, hồ sơ kỹ thuật (CO/CQ, Routine Test).",
           ],
         },
@@ -3354,7 +3349,7 @@ export const KNOWLEDGE_ARTICLES = [
             ["CO/CQ thiết bị", "Đầy đủ chính hãng", "Không rõ nguồn gốc"],
             ["Shop drawing", "Phát hành trước sản xuất", "Không"],
             ["Hồ sơ nghiệm thu", "As-built + Routine Test + CO/CQ", "Thiếu"],
-            ["Bảo hành", "12-24 tháng, có SLA", "Không rõ ràng"],
+            ["Bảo hành", "12-24 tháng, có hợp đồng bảo hành", "Không rõ ràng"],
           ],
         },
         callout: {
@@ -3762,7 +3757,7 @@ export const KNOWLEDGE_ARTICLES = [
             "<strong>Form 3b/4b:</strong> Cách ly hoàn toàn giữa khoang thanh cái, khoang thiết bị, khoang cáp ra. Kỹ sư bảo trì từng ngăn lộ an toàn.",
             "<strong>Routine Test 100%:</strong> Dielectric test, PE continuity, polarity, kiểm tra thao tác cơ khí. Có biên bản test cho từng tủ.",
             "<strong>CO/CQ chính hãng:</strong> Thiết bị đóng cắt (ACB, MCCB, contactor) có CO/CQ từ nhà sản xuất. Không dùng hàng tương đương không rõ nguồn gốc.",
-            "<strong>Bảo hành 24 tháng:</strong> FDI thường yêu cầu bảo hành 24 tháng (vs 12 tháng nhà máy nội), có SLA phản hồi + sửa chữa.",
+            "<strong>Bảo hành 24 tháng:</strong> FDI thường yêu cầu bảo hành 24 tháng (vs 12 tháng nhà máy nội), có điều khoản hỗ trợ kỹ thuật phản hồi + sửa chữa.",
           ],
         },
       },
