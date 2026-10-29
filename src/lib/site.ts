@@ -529,9 +529,9 @@ export const PROJECTS_AUTHENTIC = [
   {
     id: "gach-tuynel-2",
     name: "Dự án 1.460 kWp – Xưởng gạch Tuynel 2, Gia Lai",
-    client: "Chủ đầu tư nhà máy gạch",
-    scope: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Gia Lai.",
-    highlight: "Quy mô lớn, đáp ứng nhu cầu điện năng cho dây chuyền sản xuất gạch tuynel.",
+    client: "Công ty TNHH Năng lượng Thái Bảo",
+    scope: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Phú Thiện, Gia Lai, do Powertech (tiền thân PTC) làm tổng thầu EPC.",
+    highlight: "3.318 tấm pin Longi 440Wp + 12 inverter Huawei 100kW, hoàn thành 7/2020, sản lượng hơn 5.840 kWh/tháng.",
     tags: ["solar"],
   },
   {
@@ -754,11 +754,11 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ĐMTMN Xưởng gạch Tuynel 2 – 1.460 kWp, Gia Lai",
-    desc: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Gia Lai. Quy mô lớn, đáp ứng nhu cầu điện năng cho dây chuyền sản xuất gạch tuynel.",
+    desc: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Phú Thiện, Gia Lai, do Powertech (tiền thân PTC) làm tổng thầu EPC cho Công ty TNHH Năng lượng Thái Bảo. 3.318 tấm pin Longi 440Wp + 12 inverter Huawei 100kW, hoàn thành 7/2020, sản lượng hơn 5.840 kWh/tháng.",
     image: "plant",
     tags: ["solar"],
     scope: "Hệ thống điện mặt trời áp mái 1.460 kWp",
-    client: "Chủ đầu tư nhà máy gạch Tuynel 2",
+    client: "Công ty TNHH Năng lượng Thái Bảo",
     photo: "/images/du-an/dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp.webp",
     photoAlt: "Dàn pin điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai do PTC thực hiện",
     gallery: [
@@ -4703,61 +4703,78 @@ export const KNOWLEDGE_ARTICLES = [
     slug: "case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp",
     title: "Case Study: Điện mặt trời Xưởng gạch Tuynel 2 – 1.460 kWp, Gia Lai",
     category: "Case Study",
-    readTime: "5 phút",
+    readTime: "7 phút",
     author: "Mr X.Bach PTC",
     datePublished: "2026-10-27",
     dateModified: "2026-10-27",
     cover: {
       src: "/images/du-an/dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp.webp",
       og: "/images/du-an/dien-mat-troi-tuynel-2-og.png",
-      alt: "Dàn pin điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai do PTC thực hiện",
-      caption: "Dàn pin áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai — ảnh thực tế công trình PTC thực hiện.",
+      alt: "Dàn pin điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai do Powertech (tiền thân PTC) làm tổng thầu EPC",
+      caption: "Dàn pin áp mái 1.460 kWp tại xưởng gạch Tuynel 2, Gia Lai — ảnh thực tế công trình do Powertech (tiền thân PTC) triển khai.",
     },
-    quickAnswer: "Hệ thống điện mặt trời áp mái 1.460 kWp cho xưởng gạch Tuynel 2 tại Gia Lai do PTC thực hiện — quy mô megawatt phục vụ dây chuyền sản xuất gạch tuynel với nhu cầu điện lớn.",
+    quickAnswer: "Dự án điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, xã Chư A Thai, huyện Phú Thiện, Gia Lai, do Powertech (tiền thân PTC) làm tổng thầu EPC cho Công ty TNHH Năng lượng Thái Bảo. Hệ thống gồm 3.318 tấm pin Longi 440Wp và 12 inverter Huawei 100kW, hoàn thành tháng 7/2020, sản lượng hơn 5.840 kWh/tháng.",
     summary: [
-      "Chủ đầu tư: chủ đầu tư nhà máy gạch Tuynel 2, Gia Lai.",
-      "Công suất: 1.460 kWp áp mái phục vụ sản xuất gạch tuynel.",
-      "Hạng mục gồm dàn pin áp mái, khu vực inverter và tủ điện solar, tuyến cáp và máng cáp.",
+      "Chủ đầu tư: Công ty TNHH Năng lượng Thái Bảo. Tổng thầu EPC: Powertech (tiền thân PTC).",
+      "Cấu hình: 3.318 tấm pin Longi 440Wp (Mono Half-cells) + 12 inverter Huawei 100kW 3 pha.",
+      "Quy mô 1.460 kWp tại xã Chư A Thai, Phú Thiện, Gia Lai. Doanh nghiệp đầu tư 100%, bán điện lên lưới. Sản lượng hơn 5.840 kWh/tháng.",
     ],
     body: [
       {
-        heading: "Điện mặt trời 1.460 kWp cho xưởng gạch Tuynel 2",
+        heading: "Dự án điện mặt trời Xưởng gạch Tuynel 2 1.460 kWp",
         paragraphs: [
-          "PTC thực hiện hệ thống điện mặt trời áp mái <strong>1.460 kWp</strong> cho xưởng gạch Tuynel 2 tại Gia Lai. Đây là công suất lớn hơn cả hai dự án Phúc Ý (999 kWp) và Solarlink Ong Biển (1.250 kWp), phục vụ trực tiếp dây chuyền sản xuất gạch tuynel — ngành có mức tiêu hao điện năng cao do lò nung, máy nghiền và hệ thống sấy vận hành liên tục.",
-          "Điện mặt trời áp mái giúp nhà máy gạch tự sản xuất một phần đáng kể điện năng tiêu thụ ban ngày — khoảng thời gian trùng với ca sản xuất chính — giảm phụ thuộc vào điện lưới và giảm chi phí điện tính theo giờ cao điểm.",
+          "Tháng 7/2020, <strong>Powertech</strong> (nay là PTC) hoàn thành hệ thống điện mặt trời áp mái 1.460 kWp tại xưởng gạch Tuynel 2, xã Chư A Thai, huyện Phú Thiện, tỉnh Gia Lai. Chủ đầu tư là Công ty TNHH Năng lượng Thái Bảo, Powertech làm tổng thầu EPC.",
+          "Với công suất 1.460 kWp, hệ thống tạo ra sản lượng điện hơn 5.840 kWh mỗi tháng. Hình thức đầu tư: doanh nghiệp đầu tư toàn bộ, bán điện lên lưới quốc gia.",
+          "Đây là dự án solar công suất lớn nhất trong bộ ba dự án Powertech triển khai năm 2020 (Phúc Ý 999 kWp, Solarlink 1.250 kWp, Tuynel 2 1.460 kWp), tại khu vực Tây Nguyên có tiềm năng bức xạ cao.",
         ],
       },
       {
-        heading: "Thông tin dự án",
+        heading: "Thông tin chi tiết dự án",
         table: {
           headers: ["Hạng mục", "Thông tin"],
           rows: [
-            ["Tên dự án", "Điện mặt trời Xưởng gạch Tuynel 2"],
-            ["Chủ đầu tư", "Chủ đầu tư nhà máy gạch Tuynel 2"],
-            ["Đơn vị thực hiện", "PTC"],
+            ["Tên dự án", "Điện mặt trời Xưởng gạch Tuynel 2 – 1.460 kWp"],
+            ["Chủ đầu tư", "Công ty TNHH Năng lượng Thái Bảo"],
+            ["Tổng thầu EPC", "Công ty TNHH TM & KT Powertech (tiền thân PTC)"],
             ["Công suất lắp đặt", "1.460 kWp"],
-            ["Địa điểm", "Gia Lai"],
-            ["Ứng dụng", "Cung cấp điện cho dây chuyền sản xuất gạch tuynel"],
+            ["Sản lượng", "Hơn 5.840 kWh/tháng"],
+            ["Hình thức đầu tư", "Doanh nghiệp đầu tư 100%, bán điện lên lưới quốc gia"],
+            ["Địa điểm", "Xã Chư A Thai, huyện Phú Thiện, tỉnh Gia Lai"],
+            ["Thời gian hoàn thành", "Tháng 7/2020"],
           ],
         },
       },
       {
-        heading: "Phạm vi triển khai",
+        heading: "Cấu hình thiết bị kỹ thuật",
+        paragraphs: [
+          "Cấu hình chính của hệ thống 1.460 kWp:",
+        ],
         list: {
           ordered: false,
           items: [
-            "<strong>Dàn pin áp mái:</strong> bố trí theo mặt bằng mái xưởng gạch đã được tính toán tải trọng và bóng đổ.",
-            "<strong>Khu vực inverter và tủ điện solar:</strong> đặt tập trung trong phòng kỹ thuật, gồm tủ DC, tủ AC và tủ hòa lưới sản xuất theo IEC 61439.",
-            "<strong>Cáp và máng cáp:</strong> tuyến cáp DC từ dàn pin về khu vực inverter, cáp AC về tủ hòa lưới; máng cáp ngoài trời chịu nắng mưa.",
-            "<strong>Đấu nối và bàn giao:</strong> đấu nối vào hệ thống điện nhà máy, vận hành ổn định sau bàn giao.",
+            "<strong>Tấm pin:</strong> 3.318 tấm pin Longi 440Wp Mono Half-cells.",
+            "<strong>Inverter:</strong> 12 bộ inverter hòa lưới Huawei 100kW – 3 pha.",
+            "<strong>Hệ thống tủ điện:</strong> tủ DC, tủ AC phân phối và tủ hòa lưới sản xuất theo IEC 61439, phối hợp thông số đầu ra của 12 inverter Huawei.",
+            "<strong>Cáp và máng cáp:</strong> tuyến cáp DC từ dàn pin về khu vực inverter, cáp AC về tủ hòa lưới; máng cáp ngoài trời.",
           ],
         },
+        callout: {
+          type: "info",
+          title: "Cấu hình Longi 440Wp + Huawei 100kW",
+          text: "3.318 tấm Longi 440Wp Mono Half-cells cho hiệu suất chuyển đổi tốt trên diện tích mái lớn. 12 inverter Huawei 100kW 3 pha là cấu hình công nghiệp phổ biến cho dự án trên 1 MWp — dễ giám sát tập trung qua SmartLogger và thuận tiện bảo trì từng cụm.",
+        },
+      },
+      {
+        heading: "Vận hành và hậu mãi sau bàn giao",
+        paragraphs: [
+          "Hệ thống đang hoạt động ổn định nhờ quy trình triển khai chuẩn từ khâu thiết kế đến thi công. Sau bàn giao, hệ thống tiếp tục được đội ngũ kỹ sư và chuyên viên kỹ thuật của Powertech <strong>giám sát và kiểm tra định kỳ</strong> để đảm bảo hiệu suất luôn ở mức tốt nhất.",
+          "Nhà máy gạch là môi trường có <strong>bụi đất nung và bụi than</strong> bám lên tấm pin nhanh hơn bình thường — việc vệ sinh tấm pin và kiểm tra tủ điện định kỳ ảnh hưởng trực tiếp đến sản lượng thực tế. Xem thêm <a href=\"/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap\" class=\"text-primary font-medium\">10 lỗi thiết kế tủ điện solar thường gặp</a> và <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a>.",
+        ],
       },
       {
         heading: "Vì sao nhà máy gạch phù hợp với điện mặt trời áp mái",
         paragraphs: [
-          "Nhà máy gạch tuynel có ba đặc điểm rất thuận lợi cho solar: diện tích mái lớn (thường hàng chục nghìn m² mái liên tục), phụ tải ban ngày cao và ổn định (lò nung và dây chuyền chạy liên tục), và vị trí nắng tốt ở Tây Nguyên. Nhờ đó, phần lớn điện solar tự tiêu thụ ngay tại chỗ thay vì phải bán lên lưới — mô hình hiệu quả kinh tế cao nhất theo cơ chế điện mặt trời mái nhà tự sản tự tiêu.",
-          "Lưu ý kỹ thuật riêng của nhà máy gạch là <strong>bụi</strong>: bụi đất nung và bụi than bám lên tấm pin và vỏ tủ nhanh hơn môi trường thông thường, cần lịch vệ sinh tấm pin định kỳ và cấp bảo vệ tủ điện phù hợp — xem thêm <a href=\"/kien-thuc/10-loi-thiet-ke-tu-dien-solar-thuong-gap\" class=\"text-primary font-medium\">10 lỗi thiết kế tủ điện solar thường gặp</a> và <a href=\"/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi\" class=\"text-primary font-medium\">checklist nghiệm thu tủ điện solar hòa lưới</a>.",
+          "Nhà máy gạch tuynel có ba đặc điểm rất thuận lợi cho solar: diện tích mái lớn (thường hàng chục nghìn m² mái liên tục), phụ tải ban ngày cao và ổn định (lò nung và dây chuyền chạy liên tục), và bức xạ nắng tốt ở Tây Nguyên. Nhờ đó, phần lớn điện solar được tận dụng hiệu quả — dù tự tiêu thụ hay bán lên lưới như dự án này.",
         ],
       },
       {
