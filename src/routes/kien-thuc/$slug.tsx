@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { Calendar, Clock, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section, SectionHeading } from "@/components/site/Section";
@@ -306,6 +306,28 @@ function Page() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Về tác giả — E-E-A-T */}
+          <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6 sm:flex-row sm:items-start">
+            <span className="grid size-12 shrink-0 place-items-center rounded bg-primary font-mono text-sm font-bold text-primary-foreground" aria-hidden="true">
+              PTC
+            </span>
+            <div>
+              <p className="eyebrow text-primary">Về tác giả</p>
+              <h3 className="mt-1.5 text-base font-bold text-ink">
+                {article.author} — Đội ngũ kỹ sư PTC Switchboard
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Đội ngũ kỹ sư PTC kế thừa hơn 10 năm kinh nghiệm cơ điện &amp; năng lượng của đội ngũ
+                tiền thân Powertech — trực tiếp thiết kế, chọn thiết bị, lắp ráp và Routine Test tủ
+                điện hạ thế theo IEC 61439-1/2 tại nhà máy ~ 3.000 m² ở TP.HCM. Xem thêm về{" "}
+                <Link to="/gioi-thieu-ptc" className="font-medium text-primary underline-offset-4 hover:underline">
+                  năng lực và hồ sơ pháp nhân PTC
+                </Link>
+                .
+              </p>
             </div>
           </div>
 

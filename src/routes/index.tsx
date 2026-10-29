@@ -16,11 +16,49 @@ import {
   TRUST_STRIP,
 } from "@/lib/site";
 import { Button } from "@/components/ui/button";
-import { WebSiteSchema } from "@/components/seo/JsonLd";
+import { WebSiteSchema, FAQSchema } from "@/components/seo/JsonLd";
 
-const TITLE = "Tủ điện công nghiệp & thang máng cáp | PTC Switchboard";
+const TITLE = "Nhà sản xuất tủ điện hạ thế & thang máng cáp | PTC Switchboard";
 const DESC =
   "PTC sản xuất tủ điện hạ thế (MSB, MDB, DB, ATS, MCC, VSD) và thang máng cáp theo IEC 61439, ISO 9001:2015. Nhà máy ~ 3.000 m² tại TP.HCM, báo giá kỹ thuật theo SLD/BOQ.";
+
+const FAQS = [
+  {
+    question: "PTC Switchboard là nhà sản xuất trực tiếp hay đơn vị lắp ráp?",
+    answer:
+      "PTC là nhà sản xuất: nhà máy ~ 3.000 m² tại Phường Linh Xuân, TP.HCM khép kín các công đoạn cơ khí vỏ tủ, sơn tĩnh điện, lắp ráp thanh cái và thiết bị, thử nghiệm trước khi xuất xưởng. Đội ngũ kỹ sư kế thừa hơn 10 năm kinh nghiệm của đội ngũ tiền thân Powertech.",
+  },
+  {
+    question: "Nhà máy và trụ sở PTC nằm ở đâu?",
+    answer:
+      "Nhà máy sản xuất ~ 3.000 m²: Số 15, Đường 15, Phường Linh Xuân, TP.HCM. Trụ sở công ty: 3C Nguyễn Văn Quỳ, Phường Phú Thuận, TP.HCM. Tên pháp lý: Công ty Cổ phần Tủ bảng điện PTC, MST 0319324471.",
+  },
+  {
+    question: "Tủ điện PTC sản xuất theo tiêu chuẩn nào? Có Routine Test không?",
+    answer:
+      "Tủ điện hạ thế PTC thiết kế và sản xuất theo IEC 61439-1 & 61439-2, ISO 9001:2015 và TCVN 7994-1:2009; thử nghiệm tham chiếu tại QUATEST 3. 100% tủ được Routine Test trước khi xuất xưởng và bàn giao kèm hồ sơ thử nghiệm, nghiệm thu.",
+  },
+  {
+    question: "PTC có sản xuất thang máng cáp không?",
+    answer:
+      "Có. Thang cáp, khay cáp, máng cáp và phụ kiện được sản xuất trong cùng nhà máy với các lớp phủ mạ điện phân, tôn mạ kẽm và mạ kẽm nhúng nóng (HDG) theo yêu cầu môi trường dự án – đồng bộ quy cách và hồ sơ với phần tủ điện.",
+  },
+  {
+    question: "PTC có nhận cải tạo, nâng cấp tủ điện tại nhà máy đang vận hành không?",
+    answer:
+      "Có. PTC nhận thi công cải tạo, đấu nối và chuyển tải tại nhà máy đang vận hành: khảo sát hiện trạng, lập phương án cắt điện từng phần và thi công theo khung thời gian thống nhất với chủ đầu tư để hạn chế ảnh hưởng sản xuất.",
+  },
+  {
+    question: "Thời gian sản xuất và giao tủ khoảng bao lâu?",
+    answer:
+      "Tùy cấu hình, số lượng và mức độ tùy biến của từng đơn hàng. PTC thông báo tiến độ cụ thể trong báo giá, có thể giao theo đợt/block thi công và cập nhật trạng thái sản xuất từng tủ định kỳ cho tổng thầu.",
+  },
+  {
+    question: "Cần gửi những gì để PTC báo giá tủ điện?",
+    answer:
+      "Bản vẽ SLD hoặc Shop Drawing, BOQ/danh mục thiết bị, và các yêu cầu chỉ định như Form cách ly, cấp IP, hãng thiết bị. Gửi qua Zalo, Hotline CSKH hoặc email – kỹ sư PTC sẽ bóc tách và phản hồi phương án kỹ thuật.",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,6 +91,7 @@ function Index() {
   return (
     <>
       <WebSiteSchema />
+      <FAQSchema items={FAQS} />
       {/* 2. HERO */}
       <section className="relative overflow-hidden border-b border-border bg-background">
         <div className="hairline-grid pointer-events-none absolute inset-0 opacity-45" aria-hidden="true" />
@@ -447,6 +486,24 @@ function Index() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* 9.5. FAQ — hỗ trợ Entity SEO & GEO */}
+      <section className="border-b border-border bg-secondary/40">
+        <div className="container-wide py-16 lg:py-24">
+          <Eyebrow>Câu hỏi thường gặp</Eyebrow>
+          <h2 className="mt-4 max-w-2xl text-2xl font-bold leading-snug md:text-[2.15rem] tracking-tight">
+            Những điều khách hàng hay hỏi về PTC
+          </h2>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {FAQS.map((faq) => (
+              <div key={faq.question} className="rounded-lg border border-border bg-card p-6 shadow-2xs">
+                <h3 className="text-[15px] font-bold leading-snug text-ink">{faq.question}</h3>
+                <p className="mt-2.5 text-[14px] leading-relaxed text-muted-foreground">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
