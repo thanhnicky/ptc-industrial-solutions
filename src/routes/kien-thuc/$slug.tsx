@@ -316,9 +316,10 @@ function Page() {
             </span>
             <div>
               <p className="eyebrow text-primary">Về tác giả</p>
-              <h3 className="mt-1.5 text-base font-bold text-ink">
-                {article.author} — Đội ngũ kỹ sư PTC Switchboard
-              </h3>
+              <h3 className="mt-1.5 text-base font-bold text-ink">{article.author}</h3>
+              <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                Đội ngũ kỹ sư PTC Switchboard
+              </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Đội ngũ kỹ sư PTC kế thừa hơn 10 năm kinh nghiệm cơ điện &amp; năng lượng của đội ngũ
                 tiền thân Powertech — trực tiếp thiết kế, chọn thiết bị, lắp ráp và Routine Test tủ
