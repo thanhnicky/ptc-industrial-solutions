@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, BookOpen } from "lucide-react";
-import { KNOWLEDGE_ARTICLES } from "@/lib/site";
+import { getRelatedArticles, KNOWLEDGE_ARTICLES } from "@/lib/site";
 
 interface RelatedArticlesProps {
   currentSlug?: string;
@@ -15,20 +15,21 @@ export function RelatedArticles({
   title = "Tài liệu & Kiến thức kỹ thuật liên quan",
   limit = 3,
 }: RelatedArticlesProps) {
-  let list = KNOWLEDGE_ARTICLES;
+  let items;
 
   if (currentSlug) {
-    list = list.filter((a) => a.slug !== currentSlug);
-  }
-
-  if (category) {
-    const sameCat = list.filter((a) => a.category === category);
-    if (sameCat.length >= limit) {
-      list = sameCat;
+    // Nhóm theo topic cluster thay vì category (nhiều bài có category riêng lẻ)
+    items = getRelatedArticles(currentSlug, limit);
+  } else {
+    let list = KNOWLEDGE_ARTICLES;
+    if (category) {
+      const sameCat = list.filter((a) => a.category === category);
+      if (sameCat.length >= limit) {
+        list = sameCat;
+      }
     }
+    items = list.slice(0, limit);
   }
-
-  const items = list.slice(0, limit);
   if (items.length === 0) return null;
 
   return (

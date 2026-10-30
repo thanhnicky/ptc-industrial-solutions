@@ -4882,3 +4882,60 @@ export const KNOWLEDGE_ARTICLES = [
     ],
   },
 ];
+
+/**
+ * Topic clusters cho block "Bài viết liên quan" — nhóm theo chủ đề kỹ thuật
+ * (không theo field `category` vì nhiều bài mang category riêng lẻ).
+ * Mục đích: củng cố topical authority, giúp Google/AI hiểu mối quan hệ giữa các bài.
+ */
+export const ARTICLE_CLUSTERS: Record<string, string> = {
+  // Cụm tủ điện hạ thế: lý thuyết, tiêu chuẩn, thiết kế
+  "tu-dien-cong-nghiep-la-gi": "tu-dien",
+  "cach-chon-tu-dien-msb": "tu-dien",
+  "tieu-chuan-iec-61439-la-gi": "tu-dien",
+  "phan-biet-msb-sdb-db": "tu-dien",
+  "tu-mcc-la-gi": "tu-dien",
+  "tu-hoa-dong-bo-la-gi": "tu-dien",
+  "tu-dien-ngoai-troi-ip55-ip65": "tu-dien",
+  "so-sanh-cap-bao-ve-ip-tu-dien-ip31-ip42-ip54": "tu-dien",
+  "so-sanh-form-tu-dien-form-1-2b-3b-4b": "tu-dien",
+  "cach-tinh-dong-ngan-mach-icw-tu-msb": "tu-dien",
+  "roi-tu-mcc-dung-vsd-cho-bom-quat": "tu-dien",
+  "tham-dinh-shop-drawing-tu-dien-ha-the": "tu-dien",
+  // Cụm thang máng cáp
+  "thang-mang-cap-la-gi": "thang-mang-cap",
+  "phan-biet-thang-cap-khay-cap-mang-cap": "thang-mang-cap",
+  "chon-kich-thuoc-thang-mang-cap-he-so-lap-day": "thang-mang-cap",
+  "ma-kem-nhung-nong-va-ma-kem-dien-phan": "thang-mang-cap",
+  "boc-tach-boq-thang-mang-cap-khong-thieu-phu-kien": "thang-mang-cap",
+  // Cụm solar + case study solar
+  "tu-dien-cho-du-an-epc-solar": "solar",
+  "checklist-nghiem-thu-tu-dien-solar-hoa-luoi": "solar",
+  "10-loi-thiet-ke-tu-dien-solar-thuong-gap": "solar",
+  "case-study-dien-mat-troi-phuc-y-kcn-phu-my-1": "solar",
+  "case-study-dien-mat-troi-solarlink-ong-bien-1250kwp": "solar",
+  "case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp": "solar",
+  "case-study-dien-mat-troi-kho-hai-duc-960kwp": "solar",
+  // Cụm chọn nhà sản xuất, báo giá, nghiệm thu, thi công
+  "ho-so-can-co-de-bao-gia-tu-dien": "mua-hang",
+  "yeu-to-quyet-dinh-gia-tu-dien-cong-nghiep": "mua-hang",
+  "bao-gia-tu-dien-cong-nghiep-theo-boq": "mua-hang",
+  "bao-gia-tu-msb-theo-dong-ngan-mach": "mua-hang",
+  "nha-san-xuat-tu-dien-cong-nghiep-tphcm": "mua-hang",
+  "ptc-vs-xuong-gia-cong-nho-5-rui-ro": "mua-hang",
+  "tu-dien-cong-nghiep-kcn-binh-duong-dong-nai": "mua-hang",
+  "tu-dien-nha-may-fdi-tieu-chuan": "mua-hang",
+  "so-sanh-hang-thiet-bi-tu-dien-schneider-abb-ls-mitsubishi": "mua-hang",
+  "tu-dien-san-xuat-trong-nuoc-vs-nhap-khau": "mua-hang",
+  "luu-y-nghiem-thu-tu-dien-ha-the": "mua-hang",
+  "cai-tao-he-thong-dien-nha-may-khong-dung-san-xuat": "mua-hang",
+};
+
+export function getRelatedArticles(currentSlug: string, limit = 3) {
+  const cluster = ARTICLE_CLUSTERS[currentSlug];
+  const pool = KNOWLEDGE_ARTICLES.filter((a) => a.slug !== currentSlug);
+  if (!cluster) return pool.slice(0, limit);
+  const sameCluster = pool.filter((a) => ARTICLE_CLUSTERS[a.slug] === cluster);
+  const rest = pool.filter((a) => ARTICLE_CLUSTERS[a.slug] !== cluster);
+  return [...sameCluster, ...rest].slice(0, limit);
+}

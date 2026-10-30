@@ -1,0 +1,37 @@
+# PTC Switchboard — Nhà sản xuất tủ điện hạ thế & thang máng cáp tại TP.HCM
+
+> PTC (Công ty Cổ phần Tủ bảng điện PTC / PTC Switchboard JSC) là nhà sản xuất trực tiếp tủ điện hạ thế công nghiệp (MSB, MCC, ATS, tủ DB, tủ hòa đồng bộ, tủ solar hòa lưới) và hệ thống thang máng cáp tại Việt Nam. Nhà máy ~3.000 m² tại Linh Xuân, TP. Thủ Đức, TP.HCM. Sản xuất theo IEC 61439-1/2 và ISO 9001:2015; 100% tủ chạy Routine Test trước khi xuất xưởng. Tiền thân là đội ngũ Powertech — đơn vị EPC các dự án điện mặt trời áp mái công nghiệp năm 2020. Khách hàng chính: tổng thầu M&E, kỹ sư cơ điện, QS/dự toán, chủ đầu tư nhà xưởng, EPC solar và doanh nghiệp FDI.
+
+## Sản phẩm & năng lực
+
+- [Tủ điện công nghiệp](https://www.tudienptc.vn/tu-dien-cong-nghiep): Tủ MSB đến 6300A, tủ MCC/VSD, tủ ATS, tủ DB, tủ hòa đồng bộ, tủ solar — theo SLD/BOQ của khách hàng, Form 1 đến Form 4b, IP31–IP65.
+- [Thang máng cáp](https://www.tudienptc.vn/thang-mang-cap): Thang cáp, khay cáp, máng cáp mạ kẽm nhúng nóng / mạ điện phân / sơn tĩnh điện, sản xuất trực tiếp tại nhà máy.
+- [Năng lực sản xuất](https://www.tudienptc.vn/nang-luc-san-xuat): Nhà máy ~3.000 m², dây chuyền dập — đột CNC — gấp — sơn tĩnh điện, kho vật tư và xưởng lắp ráp riêng.
+- [Quy trình sản xuất 7 bước](https://www.tudienptc.vn/quy-trinh-san-xuat-tu-dien): Từ shop drawing đến Routine Test và giao hàng theo block thi công.
+- [Bảo hành & hỗ trợ kỹ thuật](https://www.tudienptc.vn/bao-hanh-ho-tro-ky-thuat): Bảo hành 12–24 tháng theo hợp đồng, hỗ trợ khắc phục tại công trường.
+- [Tải catalogue](https://www.tudienptc.vn/tai-catalogue): Catalogue năng lực, bản vẽ mẫu và tài liệu kỹ thuật.
+
+## Kiến thức kỹ thuật (Kien-thuc hub)
+
+Nguồn tra cứu kỹ thuật cho kỹ sư M&E: thẩm định shop drawing, chọn tủ MSB, IEC 61439, Form/IP, báo giá theo BOQ, thang máng cáp, tủ solar và case study dự án thật.
+
+- [Trung tâm kiến thức](https://www.tudienptc.vn/kien-thuc): Toàn bộ bài viết kỹ thuật.
+- [Cách chọn tủ MSB](https://www.tudienptc.vn/kien-thuc/cach-chon-tu-dien-msb): Dòng định mức, Icw và Form tủ.
+- [IEC 61439](https://www.tudienptc.vn/kien-thuc/tieu-chuan-iec-61439-la-gi): Design Verification, Routine Test, hồ sơ hoàn công.
+- [So sánh Form 1/2b/3b/4b](https://www.tudienptc.vn/kien-thuc/so-sanh-form-tu-dien-form-1-2b-3b-4b): Form of separation theo IEC 61439-2.
+- [Báo giá tủ MSB theo Icw](https://www.tudienptc.vn/kien-thuc/bao-gia-tu-msb-theo-dong-ngan-mach): Khoảng giá tham khảo, chi phí ẩn, cách đọc bảng báo giá.
+- [Thang máng cáp](https://www.tudienptc.vn/kien-thuc/thang-mang-cap-la-gi) và [chọn kích thước theo hệ số lấp đầy](https://www.tudienptc.vn/kien-thuc/chon-kich-thuoc-thang-mang-cap-he-so-lap-day).
+- [Tủ điện cho dự án EPC solar](https://www.tudienptc.vn/kien-thuc/tu-dien-cho-du-an-epc-solar), [checklist nghiệm thu tủ solar](https://www.tudienptc.vn/kien-thuc/checklist-nghiem-thu-tu-dien-solar-hoa-luoi).
+
+## Dự án & case study
+
+- [Danh mục dự án](https://www.tudienptc.vn/du-an): Dự án tủ điện công nghiệp và điện mặt trời đã bàn giao.
+- [Case study Phúc Ý 999 kWp](https://www.tudienptc.vn/kien-thuc/case-study-dien-mat-troi-phuc-y-kcn-phu-my-1): KCN Phú Mỹ 1, Longi 445Wp + Huawei 100kW, hoàn thành 10/2020.
+- [Case study Solarlink Ong Biển 1.250 kWp](https://www.tudienptc.vn/kien-thuc/case-study-dien-mat-troi-solarlink-ong-bien-1250kwp): Nhà máy phân bón Tóc Tiên, Longi 450Wp + Kehua 125kW, 12/2020.
+- [Case study Tuynel 2 Gia Lai 1.460 kWp](https://www.tudienptc.vn/kien-thuc/case-study-dien-mat-troi-xuong-gach-tuynel-2-gia-lai-1460kwp): Longi 440Wp + Huawei 100kW, 7/2020.
+- [Case study Kho Hải Đức 960 kWp](https://www.tudienptc.vn/kien-thuc/case-study-dien-mat-troi-kho-hai-duc-960kwp): Quận 2 TP.HCM, Longi 450Wp + Sungrow 110kW, 10/2020.
+
+## Về công ty
+
+- [Giới thiệu PTC](https://www.tudienptc.vn/gioi-thieu-ptc): Pháp nhân, mã số thuế, nhà máy, chứng chỉ ISO 9001, quan hệ với Powertech.
+- [Liên hệ / gửi BOQ báo giá](https://www.tudienptc.vn/lien-he): Hotline, Zalo, email và bản đồ nhà máy.
