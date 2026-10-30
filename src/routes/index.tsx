@@ -128,8 +128,8 @@ function Index() {
           <div className="rise-in relative">
             <div className="grid grid-cols-5 grid-rows-5 gap-3 rounded-lg overflow-hidden border border-border/70 lg:h-[30rem] shadow-2xs">
               <img
-                src={IMAGES.hero}
-                alt="Nhà máy sản xuất tủ điện PTC tại TP.HCM"
+                src="/images/nha-may/nha-may-tu-dien-ptc-cong-chinh.webp"
+                alt="Cổng chính nhà máy sản xuất tủ điện PTC Switchboard tại Linh Xuân, TP.HCM"
                 width={1400}
                 height={1000}
                 loading="eager"
@@ -137,16 +137,16 @@ function Index() {
                 className="col-span-5 row-span-3 h-full w-full object-cover"
               />
               <img
-                src={IMAGES.busbar}
-                alt="Thanh cái đồng và đấu nối trong tủ điện hạ thế PTC"
+                src="/images/nha-may/khu-vuc-gia-cong-nha-may-ptc.webp"
+                alt="Khu vực gia công cơ khí với máy dập và cuộn tôn tại nhà máy PTC"
                 loading="lazy"
                 width={1408}
                 height={1008}
                 className="col-span-3 row-span-2 h-full w-full object-cover"
               />
               <img
-                src={IMAGES.tray}
-                alt="Hệ thang máng cáp mạ kẽm nhúng nóng"
+                src="/images/nha-may/khach-hang-tham-quan-nha-may-ptc.webp"
+                alt="Khách hàng tham quan nhà máy sản xuất tủ điện PTC"
                 loading="lazy"
                 width={1408}
                 height={1008}

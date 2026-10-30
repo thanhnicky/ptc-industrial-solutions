@@ -1,11 +1,9 @@
 import type { ReactNode } from "react";
-import { IMAGES } from "./images";
-
 export function PageHero({
   title,
   subtitle,
   children,
-  image = IMAGES.hero,
+  image = "/images/nha-may/nha-may-tu-dien-ptc-cong-chinh.webp",
 }: {
   title: string;
   subtitle?: string;
