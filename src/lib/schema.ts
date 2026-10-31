@@ -75,24 +75,24 @@ export function getOrganizationSchema() {
         {
           "@type": "Offer",
           itemOffered: {
-            "@type": "Product",
-            name: "Tủ điện tổng MSB đến 6300A Form 3b/4b",
+            "@type": "Service",
+            name: "Sản xuất tủ điện tổng MSB đến 6300A Form 3b/4b",
             description: "Tủ phân phối tổng MSB sản xuất theo tiêu chuẩn IEC 61439-1/2, Icw đến 100kA.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
-            "@type": "Product",
-            name: "Tủ điều khiển động cơ MCC & Biến tần VSD",
+            "@type": "Service",
+            name: "Sản xuất tủ điều khiển động cơ MCC & Biến tần VSD",
             description: "Tủ điều khiển động cơ cho dây chuyền nhà máy, xử lý nước, bơm quạt.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
-            "@type": "Product",
-            name: "Thang máng cáp mạ kẽm nhúng nóng",
+            "@type": "Service",
+            name: "Sản xuất thang máng cáp mạ kẽm nhúng nóng",
             description: "Thang cáp, máng cáp, khay cáp mạ kẽm nhúng nóng chuẩn ASTM A123 / ISO 1461.",
           },
         },

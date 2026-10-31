@@ -196,6 +196,11 @@ export interface ProductSchemaProps {
   image?: string;
 }
 
+/**
+ * Chú ý: Google yêu cầu Product phải có offers/review/aggregateRating,
+ * nên site chỉ dùng Service schema cho các hạng mục sản xuất theo đơn.
+ * Component này giữ lại cho trường hợp sản phẩm có giá niêm yết sau này.
+ */
 export function ProductSchema({ name, description, category, url, image }: ProductSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -211,6 +216,19 @@ export function ProductSchema({ name, description, category, url, image }: Produ
     },
     manufacturer: {
       "@id": `${SITE_URL}/#organization`,
+    },
+    // Bắt buộc để tránh lỗi GSC "Đoạn trích về sản phẩm":
+    // Offers theo hình thức báo giá theo đơn hàng (không giá cố định).
+    offers: {
+      "@type": "Offer",
+      url: `${SITE_URL}/lien-he`,
+      priceCurrency: "VND",
+      availability: "https://schema.org/MadeToOrder",
+      itemCondition: "https://schema.org/NewCondition",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "VND",
+      },
     },
   };
 

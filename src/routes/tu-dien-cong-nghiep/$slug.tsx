@@ -9,7 +9,7 @@ import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { LeadSection } from "@/components/site/LeadSection";
 import { IMAGES } from "@/components/site/images";
 import { ELECTRICAL_PRODUCTS } from "@/lib/site";
-import { ProductSchema, FAQSchema } from "@/components/seo/JsonLd";
+import { ServiceSchema, FAQSchema } from "@/components/seo/JsonLd";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { RelatedArticles } from "@/components/site/RelatedArticles";
 
@@ -88,12 +88,11 @@ function Page() {
 
   return (
     <>
-      <ProductSchema
-        name={product.name}
+      <ServiceSchema
+        name={`Sản xuất ${product.name}`}
         description={product.shortDesc}
-        category="Tủ điện hạ thế công nghiệp"
+        serviceType="Tủ điện hạ thế công nghiệp"
         url={`/tu-dien-cong-nghiep/${product.slug}`}
-        image="/logo-ptc.png"
       />
       <FAQSchema items={faqs} />
 
