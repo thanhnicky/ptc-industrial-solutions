@@ -1,11 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2 } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { CheckCircle2, ArrowRight, BookOpen } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
-import { OrganizationSchema } from "@/components/seo/JsonLd";
+import { OrganizationSchema, CollectionPageSchema } from "@/components/seo/JsonLd";
+import { KNOWLEDGE_ARTICLES } from "@/lib/site";
 
 const TITLE = "Thang máng cáp mạ kẽm nhúng nóng, sơn tĩnh điện | PTC";
 const DESC =
@@ -35,9 +36,24 @@ const PRODUCTS = [
 ];
 
 function Page() {
+  const cableTrayArticles = KNOWLEDGE_ARTICLES.filter((a) =>
+    [
+      "thang-mang-cap-la-gi",
+      "phan-biet-thang-cap-khay-cap-mang-cap",
+      "chon-kich-thuoc-thang-mang-cap-he-so-lap-day",
+      "so-sanh-ma-kem-nhung-nong-vs-dien-phan",
+    ].includes(a.slug)
+  );
+
   return (
     <>
       <OrganizationSchema />
+      <CollectionPageSchema
+        name="Danh mục Thang máng cáp PTC"
+        description="Thư viện kiến thức kỹ thuật về thang máng cáp: cách chọn kích thước, phân biệt thang/khay/máng, so sánh mạ kẽm nhúng nóng và điện phân."
+        url="/thang-mang-cap"
+        itemCount={cableTrayArticles.length}
+      />
 
       <PageHero
         title="Thang máng cáp công nghiệp"
@@ -96,6 +112,49 @@ function Page() {
               ))}
             </ul>
           </div>
+        </div>
+      </Section>
+
+      <Section tone="muted">
+        <SectionHeading
+          eyebrow="Kiến thức kỹ thuật"
+          title="Tài liệu tham khảo về thang máng cáp"
+          description="Bài viết chuyên sâu về cách chọn kích thước, phân biệt thang/khay/máng, so sánh phương pháp mạ kẽm và tiêu chuẩn IEC 61537."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {cableTrayArticles.map((article) => (
+            <Link
+              key={article.slug}
+              to={`/kien-thuc/${article.slug}` as never}
+              className="group flex flex-col justify-between rounded-lg border border-border bg-card p-5 transition-all duration-200 hover:border-primary/50 hover:shadow-md"
+            >
+              <div>
+                <div className="flex items-center justify-between text-xs font-semibold text-primary">
+                  <span className="rounded bg-primary/10 px-2 py-0.5">{article.category}</span>
+                  <span className="text-muted-foreground">{article.readTime}</span>
+                </div>
+                <h3 className="mt-3 text-sm font-bold leading-snug text-ink transition-colors group-hover:text-primary">
+                  {article.title}
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-2">
+                  {article.quickAnswer}
+                </p>
+              </div>
+              <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-primary">
+                Đọc bài viết <ArrowRight className="size-3 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-6 text-center">
+          <Link
+            to="/kien-thuc" as never
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+          >
+            <BookOpen className="size-4" aria-hidden="true" />
+            Xem tất cả bài viết kiến thức kỹ thuật
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
         </div>
       </Section>
 

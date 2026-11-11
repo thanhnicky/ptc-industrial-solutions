@@ -1,5 +1,13 @@
 import { CONTACT, SITE_URL } from "@/lib/site";
 
+const AUTHOR_INFO = {
+  name: "Mr X.Bach PTC",
+  fullName: "Nguyễn Xuân Bách",
+  facebook: "https://www.facebook.com/xuan.bach.787037",
+  role: "Kỹ sư Trưởng",
+  description: "Kỹ sư Trưởng PTC Switchboard với chuyên môn sâu về thiết kế tủ điện hạ thế theo tiêu chuẩn IEC 61439, hệ thống thang máng cáp công nghiệp và giải pháp năng lượng mặt trời.",
+};
+
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -59,6 +67,10 @@ export function OrganizationSchema() {
         credentialCategory: "standard",
         name: "IEC 61439-1 / IEC 61439-2",
       },
+    ],
+    sameAs: [
+      AUTHOR_INFO.facebook,
+      "https://www.tudienptc.vn",
     ],
   };
 
@@ -270,9 +282,13 @@ export function ArticleSchema({
     dateModified,
     inLanguage: "vi-VN",
     author: {
-      "@type": "Organization",
+      "@type": "Person",
       name: authorName,
+      additionalName: AUTHOR_INFO.fullName,
+      jobTitle: AUTHOR_INFO.role,
+      description: AUTHOR_INFO.description,
       url: SITE_URL,
+      sameAs: [AUTHOR_INFO.facebook],
     },
     publisher: {
       "@id": `${SITE_URL}/#organization`,
@@ -324,6 +340,36 @@ export function ServiceSchema({
       "@type": "Country",
       name: areaServed,
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface CollectionPageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  itemCount: number;
+}
+
+export function CollectionPageSchema({
+  name,
+  description,
+  url,
+  itemCount,
+}: CollectionPageSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url: url.startsWith("http") ? url : `${SITE_URL}${url}`,
+    numberOfItems: itemCount,
   };
 
   return (

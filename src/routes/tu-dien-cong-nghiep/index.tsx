@@ -1,11 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2 } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { CheckCircle2, ArrowRight, BookOpen } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { LeadSection } from "@/components/site/LeadSection";
 import { ZaloButton, CallButton } from "@/components/site/ZaloButton";
 import { IMAGES } from "@/components/site/images";
-import { OrganizationSchema } from "@/components/seo/JsonLd";
+import { OrganizationSchema, CollectionPageSchema } from "@/components/seo/JsonLd";
+import { KNOWLEDGE_ARTICLES } from "@/lib/site";
 
 const TITLE = "Tủ điện công nghiệp – MSB, MCC, ATS, tủ solar | PTC";
 const DESC =
@@ -46,9 +47,26 @@ const PROCESS = [
 ];
 
 function Page() {
+  const electricalArticles = KNOWLEDGE_ARTICLES.filter((a) =>
+    [
+      "tu-dien-cong-nghiep-la-gi",
+      "tieu-chuan-iec-61439-la-gi",
+      "cach-tinh-dong-ngan-mach-icw-tu-msb",
+      "roi-tu-mcc-dung-vsd-cho-bom-quat",
+      "so-sanh-form-tu-dien-form-1-2b-3b-4b",
+      "tham-dinh-shop-drawing-tu-dien-ha-the",
+    ].includes(a.slug)
+  );
+
   return (
     <>
       <OrganizationSchema />
+      <CollectionPageSchema
+        name="Danh mục Tủ điện công nghiệp PTC"
+        description="Thư viện kiến thức kỹ thuật về tủ điện hạ thế: tiêu chuẩn IEC 61439, cách tính dòng ngắn mạch, chọn Form tủ, ROI biến tần và quy trình nghiệm thu."
+        url="/tu-dien-cong-nghiep"
+        itemCount={electricalArticles.length}
+      />
 
       <PageHero
         title="Tủ điện công nghiệp hạ thế"
@@ -122,6 +140,60 @@ function Page() {
             </li>
           ))}
         </ul>
+      </Section>
+
+      <Section tone="muted">
+        <SectionHeading
+          eyebrow="Kiến thức kỹ thuật"
+          title="Tài liệu tham khảo về tủ điện hạ thế"
+          description="Bài viết chuyên sâu về tiêu chuẩn IEC 61439, cách tính dòng ngắn mạch, chọn Form tủ và quy trình nghiệm thu."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {KNOWLEDGE_ARTICLES
+            .filter((a) =>
+              [
+                "tu-dien-cong-nghiep-la-gi",
+                "tieu-chuan-iec-61439-la-gi",
+                "cach-tinh-dong-ngan-mach-icw-tu-msb",
+                "roi-tu-mcc-dung-vsd-cho-bom-quat",
+                "so-sanh-form-tu-dien-form-1-2b-3b-4b",
+                "tham-dinh-shop-drawing-tu-dien-ha-the",
+              ].includes(a.slug)
+            )
+            .map((article) => (
+              <Link
+                key={article.slug}
+                to={`/kien-thuc/${article.slug}` as never}
+                className="group flex flex-col justify-between rounded-lg border border-border bg-card p-5 transition-all duration-200 hover:border-primary/50 hover:shadow-md"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-xs font-semibold text-primary">
+                    <span className="rounded bg-primary/10 px-2 py-0.5">{article.category}</span>
+                    <span className="text-muted-foreground">{article.readTime}</span>
+                  </div>
+                  <h3 className="mt-3 text-sm font-bold leading-snug text-ink transition-colors group-hover:text-primary">
+                    {article.title}
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-2">
+                    {article.quickAnswer}
+                  </p>
+                </div>
+                <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-primary">
+                  Đọc bài viết <ArrowRight className="size-3 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </div>
+              </Link>
+            ))}
+        </div>
+        <div className="mt-6 text-center">
+          <Link
+            to="/kien-thuc" as never
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+          >
+            <BookOpen className="size-4" aria-hidden="true" />
+            Xem tất cả bài viết kiến thức kỹ thuật
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
+        </div>
       </Section>
 
       <LeadSection

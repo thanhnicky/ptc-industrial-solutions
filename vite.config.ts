@@ -12,4 +12,16 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor-react': ['react', 'react-dom'],
+            'vendor-tanstack': ['@tanstack/react-router', '@tanstack/react-query'],
+          },
+        },
+      },
+    },
+  },
 });

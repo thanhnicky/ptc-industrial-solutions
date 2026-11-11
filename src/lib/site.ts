@@ -26,6 +26,15 @@ export const CONTACT = {
   // Zalo config: Lấy từ env VITE_ZALO_URL hoặc fallback chính thức
   zalo: import.meta.env.VITE_ZALO_URL || "https://zalo.me/0836977799",
 
+  // Tác giả kỹ thuật - E-E-A-T
+  author: {
+    name: "Mr X.Bach PTC",
+    fullName: "Nguyễn Xuân Bách",
+    facebook: "https://www.facebook.com/xuan.bach.787037",
+    role: "Kỹ sư Trưởng",
+    description: "Kỹ sư Trưởng PTC Switchboard với chuyên môn sâu về thiết kế tủ điện hạ thế theo tiêu chuẩn IEC 61439, hệ thống thang máng cáp công nghiệp và giải pháp năng lượng mặt trời.",
+  },
+
   // Địa chỉ nhà máy: Chuẩn hóa theo tài liệu xác minh doanh nghiệp
   factoryAddress: "Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh",
   factory: "Số 15, Đường 15, Phường Linh Xuân, TP. Hồ Chí Minh",
@@ -2064,10 +2073,10 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Công thức tính chiều rộng máng cáp theo hệ số lấp đầy",
         paragraphs: [
-          "<strong>Bước 1 — Tổng tiết diện cáp:</strong> A = Σ n × π × d² / 4 (n: số sợi mỗi loại, d: đường kính ngoài, mm).",
-          "<strong>Bước 2 — Chiều rộng tối thiểu:</strong> W ≥ A × (1 + dự phòng) ÷ (K × H), với H là chiều cao thành máng (50 / 75 / 100 / 150 mm).",
+          "<strong>Bước 1 — Tổng tiết diện cáp:</strong> $$A = \\sum n \\times \\frac{\\pi \\times d^2}{4}$$ (n: số sợi mỗi loại, d: đường kính ngoài, mm).",
+          "<strong>Bước 2 — Chiều rộng tối thiểu:</strong> $$W \\ge \\frac{A \\times (1 + \\text{dự phòng})}{K \\times H}$$ với H là chiều cao thành máng (50 / 75 / 100 / 150 mm).",
           "<strong>Bước 3 — Làm tròn lên kích thước tiêu chuẩn:</strong> 100, 150, 200, 300, 400, 500, 600, 800 mm… và kiểm tra lại hệ số lấp đầy thực tế.",
-          "<strong>Ví dụ:</strong> Tuyến máng kín đi 20 sợi cáp 4×16 mm² (d ≈ 21 mm) và 10 sợi 4×25 mm² (d ≈ 25 mm). A = 20 × 346 + 10 × 491 ≈ 11.836 mm². Chọn K = 45%, dự phòng 20%, H = 100 mm → W ≥ 11.836 × 1,2 ÷ (0,45 × 100) ≈ 316 mm → chọn <strong>máng 400×100</strong>. Lấp đầy thực tế hiện tại ≈ 30%, sau khi dùng hết dự phòng ≈ 36%.",
+          "<strong>Ví dụ:</strong> Tuyến máng kín đi 20 sợi cáp 4×16 mm² (d ≈ 21 mm) và 10 sợi 4×25 mm² (d ≈ 25 mm). $$A = 20 \\times 346 + 10 \\times 491 \\approx 11.836 \\text{ mm}^2$$. Chọn K = 45%, dự phòng 20%, H = 100 mm → $$W \\ge \\frac{11.836 \\times 1.2}{0.45 \\times 100} \\approx 316 \\text{ mm}$$ → chọn <strong>máng 400×100</strong>. Lấp đầy thực tế hiện tại ≈ 30%, sau khi dùng hết dự phòng ≈ 36%.",
         ],
         callout: {
           type: "tip",
@@ -2996,9 +3005,9 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-03-28",
     dateModified: "2026-03-28",
-    quickAnswer: "Dòng ngắn mạch Icw của tủ MSB được tính theo công thức Isc = S / (√3 × U × Z%), trong đó S là công suất máy biến áp (kVA), U là điện áp hạ thế (400V), Z% là tổng impedance % của máy biến áp + cáp + lưới. Bài viết cung cấp công thức, bảng tra sẵn cho trạm 630-2500kVA, và 3 ví dụ tính toán thực tế cho nhà máy.",
+    quickAnswer: "Dòng ngắn mạch Icw của tủ MSB được tính theo công thức $$I_{sc} = \\frac{S}{\\sqrt{3} \\times U \\times Z\\%}$$, trong đó S là công suất máy biến áp (kVA), U là điện áp hạ thế (400V), Z% là tổng impedance % của máy biến áp + cáp + lưới. Bài viết cung cấp công thức, bảng tra sẵn cho trạm 630-2500kVA, và 3 ví dụ tính toán thực tế cho nhà máy.",
     summary: [
-      "Công thức cơ bản: Isc = S × 1000 / (√3 × U × Z%) — với S tính bằng VA, U tính bằng V, Z% là tổng impedance.",
+      "Công thức cơ bản: $$I_{sc} = \\frac{S \\times 1000}{\\sqrt{3} \\times U \\times Z\\%}$$ — với S tính bằng VA, U tính bằng V, Z% là tổng impedance.",
       "Bảng tra sẵn: trạm 630kVA → Isc ~18kA, 1600kVA → ~46kA, 2500kVA → ~72kA (Z=5%).",
       "Icw thanh cái MSB phải ≥ Isc × 1.1 (hệ số an toàn) — chọn theo dải chuẩn 25/35/50/65/80/100 kA.",
     ],
@@ -3014,7 +3023,7 @@ export const KNOWLEDGE_ARTICLES = [
         heading: "Công thức tính dòng ngắn mạch Isc",
         paragraphs: [
           "Dòng ngắn mạch đối xứng 3 pha tại đầu ra máy biến áp được tính theo công thức:",
-          "<strong>Isc = S / (√3 × U × Z%)</strong>",
+          "$$I_{sc} = \\frac{S}{\\sqrt{3} \\times U \\times Z\\%}$$",
           "Trong đó:",
           "<strong>S</strong> = công suất định mức máy biến áp (VA — lưu ý đổi kVA sang VA bằng cách × 1000)",
           "<strong>U</strong> = điện áp hạ thế pha-pha (V — thường 400V)",
@@ -3052,7 +3061,7 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "<strong>Đề bài:</strong> Nhà máy có trạm biến áp 1600 kVA, 22kV/0.4kV, impedance ngắn mạch 6%. Cáp từ MBA đến MSB dài 5m, cáp XLPE 4×1×500mm². Tính Icw cho MSB.",
           "<strong>Bước 1: Tính Isc MBA</strong>",
-          "Isc_MBA = 1.600.000 / (1.732 × 400 × 0.06) = 1.600.000 / 41.57 = ~38.5 kA",
+          "$$I_{sc\\_MBA} = \\frac{1.600.000}{1.732 \\times 400 \\times 0.06} = \\frac{1.600.000}{41.57} \\approx 38.5 \\text{ kA}$$",
           "<strong>Bước 2: Tính giảm dòng do cáp</strong>",
           "Impedance cáp XLPE 500mm² Cu ≈ 0.046 mΩ/m × 5m = 0.23 mΩ. Giảm Isc ~2-3% — có thể bỏ qua cho tính nhanh.",
           "<strong>Bước 3: Chọn Icw</strong>",
@@ -3065,8 +3074,8 @@ export const KNOWLEDGE_ARTICLES = [
         paragraphs: [
           "<strong>Đề bài:</strong> Nhà máy lớn có 2 trạm 2000 kVA chạy song song (N-1 redundancy). Tính Icw cho MSB tổng.",
           "<strong>Lưu ý quan trọng:</strong> Khi 2 MBA song song, dòng ngắn mạch <strong>gấp đôi</strong> (Isc tổng = Isc_MBA1 + Isc_MBA2) vì 2 nguồn cùng cấp dòng sự cố.",
-          "Isc_MBA1 = Isc_MBA2 = 2.000.000 / (1.732 × 400 × 0.05) = ~57.7 kA",
-          "Isc tổng = 57.7 × 2 = ~115 kA",
+          "$$I_{sc\\_MBA1} = I_{sc\\_MBA2} = \\frac{2.000.000}{1.732 \\times 400 \\times 0.05} \\approx 57.7 \\text{ kA}$$",
+          "$$I_{sc\\_\\text{tổng}} = 57.7 \\times 2 \\approx 115 \\text{ kA}$$",
           "<strong>Chọn Icw:</strong> Cần Icw ≥ 115 × 1.1 = 127 kA. Đây là dải rất cao — cần thiết kế đặc biệt: thanh cái đồng lớn hơn, busbar trunking, hoặc tách thành 2 MSB riêng (mỗi MSB nhận 1 MBA). PTC khuyến nghị <strong>tách 2 MSB</strong> + ATS chuyển đổi — giảm Icw xuống 65 kA cho mỗi MSB, dễ sản xuất và bảo trì.",
         ],
         callout: {
@@ -3081,8 +3090,8 @@ export const KNOWLEDGE_ARTICLES = [
           "<strong>Đề bài:</strong> Tủ SDB đặt cách MSB 50m, cáp XLPE 4×1×240mm² Cu. MSB có Isc = 50 kA. Tính Icw cho SDB.",
           "<strong>Điểm khác biệt:</strong> Khoảng cách cáp dài làm giảm dòng ngắn mạch — impedance cáp giảm Isc tại SDB.",
           "Impedance cáp XLPE 240mm² Cu ≈ 0.098 mΩ/m × 50m = 4.9 mΩ",
-          "Isc_SDB ≈ Isc_MSB × (Z_MSB / (Z_MSB + Z_cable)) — tính gần đúng:",
-          "Isc_SDB ≈ 50 × (5 / (5 + 4.9)) ≈ 25 kA",
+          "$$I_{sc\\_SDB} \\approx I_{sc\\_MSB} \\times \\frac{Z_{MSB}}{Z_{MSB} + Z_{cable}} \\text{ — tính gần đúng}$$",
+          "$$I_{sc\\_SDB} \\approx 50 \\times \\frac{5}{5 + 4.9} \\approx 25 \\text{ kA}$$",
           "<strong>Chọn Icw SDB:</strong> 25 × 1.1 = 27.5 kA → chọn <strong>Icw = 35 kA / 1s</strong> (dải chuẩn).",
           "Đây là lý do SDB có thể chọn Icw thấp hơn MSB — khoảng cách cáp giảm dòng ngắn mạch. Nhưng <strong>phải tính chính xác</strong> cho từng SDB, không giả định.",
         ],
@@ -3120,7 +3129,7 @@ export const KNOWLEDGE_ARTICLES = [
     author: "Mr X.Bach PTC",
     datePublished: "2026-04-02",
     dateModified: "2026-04-02",
-    quickAnswer: "Tủ MCC dùng biến tần VSD cho bơm/quạt công nghiệp có thể tiết kiệm 20-50% điện năng so với dùng van tiết lưu hoặc damper, với ROI thường 8-18 tháng. Bài viết cung cấp công thức tính tiết kiệm theo luật affinity (P ∝ N³), bảng tính ROI cho bơm 30kW và 75kW, và 3 ví dụ tính toán điển hình cho nhà máy công nghiệp.",
+    quickAnswer: "Tủ MCC dùng biến tần VSD cho bơm/quạt công nghiệp có thể tiết kiệm 20-50% điện năng so với dùng van tiết lưu hoặc damper, với ROI thường 8-18 tháng. Bài viết cung cấp công thức tính tiết kiệm theo luật affinity ($$P \\propto N^3$$), bảng tính ROI cho bơm 30kW và 75kW, và 3 ví dụ tính toán điển hình cho nhà máy công nghiệp.",
     summary: [
       "Luật affinity: Công suất bơm/quạt tỷ lệ với lập phương tốc độ (P ∝ N³) — giảm tốc 20% = giảm công suất 49%.",
       "VSD vs van tiết lưu: VSD tiết kiệm 20-50% điện tùy tải, van tiết lưu chỉ giảm dòng nhưng motor vẫn chạy 100% tốc độ.",
@@ -3138,9 +3147,9 @@ export const KNOWLEDGE_ARTICLES = [
         heading: "Luật affinity — cơ sở tính tiết kiệm VSD",
         paragraphs: [
           "Đối với bơm ly tâm và quạt ly tâm, 3 đại lượng tỷ lệ theo tốc độ motor (N):",
-          "<strong>Lưu lượng Q ∝ N</strong> (tuyến tính)",
-          "<strong>Áp suất H ∝ N²</strong> (bình phương)",
-          "<strong>Công suất P ∝ N³</strong> (lập phương)",
+          "$$Q \\propto N$$ (tuyến tính)",
+          "$$H \\propto N^2$$ (bình phương)",
+          "$$P \\propto N^3$$ (lập phương)",
           "Đây là <strong>luật affinity</strong> — cơ sở tính tiết kiệm VSD. Khi giảm tốc độ motor từ 100% xuống 80%, công suất giảm từ 100% xuống 80³ = 51.2% — tiết kiệm 48.8%.",
           "Bảng tham khảo tiết kiệm theo tốc độ:",
         ],
@@ -3164,7 +3173,7 @@ export const KNOWLEDGE_ARTICLES = [
       {
         heading: "Công thức tính tiết kiệm điện VSD",
         paragraphs: [
-          "Tiết kiệm điện năm = P_motor × T_chạy × (1 - (N_thực/N_100)³) × Giá_điện",
+          "$$\\text{Tiết kiệm điện năm} = P_{motor} \\times T_{chạy} \\times \\left(1 - \\left(\\frac{N_{thực}}{N_{100}}\\right)^3\\right) \\times \\text{Giá}_{điện}$$",
           "Trong đó:",
           "<strong>P_motor</strong> = công suất motor (kW)",
           "<strong>T_chạy</strong> = số giờ chạy/năm (thường 6000-8000h cho nhà máy 3 ca)",

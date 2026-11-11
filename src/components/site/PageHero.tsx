@@ -20,6 +20,8 @@ export function PageHero({
         height={600}
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
         loading="eager"
+        fetchPriority="high"
+        decoding="async"
       />
       <div className="hairline-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       <div className="container-page py-14 sm:py-16 md:py-20 lg:py-24">

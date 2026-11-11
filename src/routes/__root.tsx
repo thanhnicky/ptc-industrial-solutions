@@ -109,12 +109,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://www.tudienptc.vn/nha-may-tu-dien-ptc.jpg" },
       { name: "twitter:image:alt", content: "Nhà máy sản xuất tủ điện và thang máng cáp PTC Switchboard tại TP.HCM" },
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(getOrganizationSchema()),
-      },
-    ],
     links: [
       { rel: "canonical", href: "https://www.tudienptc.vn" },
       {
@@ -124,6 +118,62 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/logo-ptc.png", type: "image/png" },
       { rel: "shortcut icon", href: "/logo-ptc.png", type: "image/png" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      // Preload critical resources for LCP optimization
+      {
+        rel: "preload",
+        as: "image",
+        href: "/images/nha-may/nha-may-tu-dien-ptc-cong-chinh.webp",
+        fetchPriority: "high",
+      },
+      // Preconnect for external fonts
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      // KaTeX CSS for math rendering
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+        integrity: "sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV",
+        crossOrigin: "anonymous",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(getOrganizationSchema()),
+      },
+      // KaTeX JS for math rendering - defer to avoid blocking
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",
+        integrity: "sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8",
+        crossOrigin: "anonymous",
+        defer: true,
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",
+        integrity: "sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05",
+        crossOrigin: "anonymous",
+        defer: true,
+        onLoad: () => {
+          // @ts-ignore - KaTeX types not loaded
+          if (window.renderMathInElement) {
+            // @ts-ignore
+            window.renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+              ],
+              throwOnError: false,
+            });
+          }
+        },
+      },
     ],
   }),
 
@@ -142,6 +192,19 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js').catch((error) => {
+                    console.error('Service Worker registration failed:', error);
+                  });
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   );
