@@ -69,8 +69,10 @@ export function OrganizationSchema() {
       },
     ],
     sameAs: [
+      CONTACT.social.facebook,
       CONTACT.social.linkedin,
       CONTACT.social.instagram,
+      CONTACT.social.threads,
       CONTACT.social.x,
       SITE_URL,
     ],

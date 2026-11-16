@@ -28,8 +28,10 @@ export const CONTACT = {
 
   // Social profiles chính thức của công ty
   social: {
+    facebook: "https://www.facebook.com/tudienptc/",
     linkedin: "https://www.linkedin.com/company/tu-dien-ptc/",
     instagram: "https://www.instagram.com/tudienptc.vn",
+    threads: "https://www.threads.com/@tudienptc.vn",
     x: "https://x.com/tudienptc",
   },
 
