@@ -47,7 +47,8 @@ export const CONTACT = {
   ],
   
   mapEmbed:
-    "https://www.google.com/maps?q=15%20%C4%90%C6%B0%E1%BB%9Dng%2015%20Linh%20Xu%C3%A2n%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed",
+    "https://www.google.com/maps?q=S%E1%BB%91%2015%20%C4%90%C6%B0%E1%BB%9Dng%2015%20Linh%20Xu%C3%A2n%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed",
+  mapLink: "https://maps.app.goo.gl/eQQA7RH6Bv4JuhzS7",
   
 
   // Chứng nhận & tiêu chuẩn công bố

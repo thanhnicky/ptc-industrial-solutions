@@ -87,6 +87,16 @@ function Page() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+        <div className="mt-4 text-center">
+          <a
+            href={CONTACT.mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+          >
+            Xem bản đồ đầy đủ trên Google Maps →
+          </a>
+        </div>
       </Section>
     </>
   );
