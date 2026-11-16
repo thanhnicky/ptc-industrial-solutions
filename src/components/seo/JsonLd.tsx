@@ -69,8 +69,10 @@ export function OrganizationSchema() {
       },
     ],
     sameAs: [
-      AUTHOR_INFO.facebook,
-      "https://www.tudienptc.vn",
+      CONTACT.social.linkedin,
+      CONTACT.social.instagram,
+      CONTACT.social.x,
+      SITE_URL,
     ],
   };
 

@@ -26,6 +26,13 @@ export const CONTACT = {
   // Zalo config: Lấy từ env VITE_ZALO_URL hoặc fallback chính thức
   zalo: import.meta.env.VITE_ZALO_URL || "https://zalo.me/0836977799",
 
+  // Social profiles chính thức của công ty
+  social: {
+    linkedin: "https://www.linkedin.com/company/tu-dien-ptc/",
+    instagram: "https://www.instagram.com/tudienptc.vn",
+    x: "https://x.com/tudienptc",
+  },
+
   // Tác giả kỹ thuật - E-E-A-T
   author: {
     name: "Mr X.Bach PTC",

@@ -1,6 +1,25 @@
 import { Link } from "@tanstack/react-router";
+import { Linkedin, Instagram, Twitter } from "lucide-react";
 import { CONTACT } from "@/lib/site";
 import { track } from "@/lib/analytics";
+
+const SOCIAL_LINKS = [
+  {
+    label: "LinkedIn PTC",
+    href: CONTACT.social.linkedin,
+    icon: Linkedin,
+  },
+  {
+    label: "Instagram PTC",
+    href: CONTACT.social.instagram,
+    icon: Instagram,
+  },
+  {
+    label: "X (Twitter) PTC",
+    href: CONTACT.social.x,
+    icon: Twitter,
+  },
+];
 
 export function Footer() {
   return (
@@ -183,7 +202,7 @@ export function Footer() {
               </a>
             </li>
           </ul>
-          <div className="mt-5 pt-4 border-t border-steel-foreground/15">
+          <div className="mt-5 pt-4 border-t border-steel-foreground/15 space-y-4">
             <a
               href={CONTACT.zalo}
               target="_blank"
@@ -193,6 +212,27 @@ export function Footer() {
             >
               Nhắn Zalo gửi bản vẽ kỹ thuật
             </a>
+            <div>
+              <span className="block text-xs font-medium text-steel-foreground/60 uppercase mb-2">
+                Kết nối với PTC
+              </span>
+              <div className="flex items-center gap-3">
+                {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    title={label}
+                    onClick={() => track("social_click", { social: label, cta_location: "footer" })}
+                    className="inline-flex size-10 items-center justify-center rounded-md border border-steel-foreground/30 text-steel-foreground/80 transition-colors hover:bg-steel-foreground/15 hover:border-steel-foreground/60 hover:text-white"
+                  >
+                    <Icon className="size-4" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
