@@ -47,7 +47,7 @@ export const CONTACT = {
   ],
   
   mapEmbed:
-    "https://www.google.com/maps?q=S%E1%BB%91%2015%20%C4%90%C6%B0%E1%BB%9Dng%2015%20Linh%20Xu%C3%A2n%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.258797681207!2d106.7754602!3d10.867910199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527943553e273%3A0x1d1fcfd993f8a565!2zTmjDoCBNw6F5IFPhuqNuIFh14bqldCBU4bunIMSQaeG7h24gQ8O0bmcgTmdoaeG7h3AgUFRD!5e0!3m2!1svi!2s!4v1794809984587!5m2!1svi!2s",
   mapLink: "https://maps.app.goo.gl/eQQA7RH6Bv4JuhzS7",
   
 

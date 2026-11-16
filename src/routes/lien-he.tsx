@@ -83,8 +83,10 @@ function Page() {
             src={CONTACT.mapEmbed}
             title="Bản đồ nhà máy PTC"
             className="h-[380px] w-full"
+            style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
         <div className="mt-4 text-center">
